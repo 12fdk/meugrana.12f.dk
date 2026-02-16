@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404 — MeuGrana</title>
+  <meta name="robots" content="noindex">
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+  <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      background: linear-gradient(160deg, #004D38 0%, #006B4F 50%, #00A676 100%);
+      color: #fff;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 24px;
+      -webkit-font-smoothing: antialiased;
+    }
+    .container { max-width: 480px; }
+    img { width: 80px; height: 80px; border-radius: 18px; margin-bottom: 24px; }
+    h1 { font-size: 5rem; font-weight: 800; letter-spacing: -0.03em; opacity: 0.3; margin-bottom: 8px; }
+    p { font-size: 1.1rem; opacity: 0.85; line-height: 1.6; margin-bottom: 32px; }
+    a {
+      display: inline-block;
+      background: rgba(255,255,255,0.15);
+      color: #fff;
+      text-decoration: none;
+      padding: 12px 32px;
+      border-radius: 8px;
+      font-weight: 600;
+      border: 1px solid rgba(255,255,255,0.3);
+      transition: background 0.2s;
+    }
+    a:hover { background: rgba(255,255,255,0.25); }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="images/app-icon.png" alt="MeuGrana">
+    <h1>404</h1>
+    <p id="message">Página não encontrada. A página que você procura não existe ou foi movida.</p>
+    <a href="/" id="link">Voltar ao início</a>
+  </div>
+  <script>
+    if (!navigator.language.startsWith('pt')) {
+      document.getElementById('message').textContent = 'Page not found. The page you are looking for doesn\'t exist or has been moved.';
+      document.getElementById('link').textContent = 'Back to home';
+    }
+  </script>
+</body>
+</html>
