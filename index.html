@@ -40,6 +40,9 @@
 
   <link rel="stylesheet" href="css/style.css">
 
+  <!-- AI crawler metadata -->
+  <link rel="alternate" type="text/plain" href="https://meugrana.12f.dk/llms.txt" title="LLM-friendly site summary">
+
   <script defer src="https://umami.robert-jensen.dk/script.js" data-website-id="6c5c421d-2eb8-4e0e-b1a3-3d945360f67f"></script>
 
   <!-- Structured Data -->
@@ -48,16 +51,50 @@
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
     "name": "MeuGrana",
+    "alternateName": "MeuGrana: Parcelas & Finanças",
     "operatingSystem": "iOS",
     "applicationCategory": "FinanceApplication",
     "description": "O app de finanças feito para o Brasil. Acompanhe parcelas, cartões de crédito e projete suas faturas futuras.",
     "url": "https://meugrana.12f.dk/",
     "image": "https://meugrana.12f.dk/images/og-image.png",
-    "offers": {
-      "@type": "Offer",
-      "price": "0",
-      "priceCurrency": "BRL"
-    },
+    "screenshot": [
+      "https://meugrana.12f.dk/images/screenshots/pt-BR/screenshot-1.png",
+      "https://meugrana.12f.dk/images/screenshots/pt-BR/screenshot-2.png",
+      "https://meugrana.12f.dk/images/screenshots/pt-BR/screenshot-3.png",
+      "https://meugrana.12f.dk/images/screenshots/pt-BR/screenshot-4.png",
+      "https://meugrana.12f.dk/images/screenshots/pt-BR/screenshot-5.png"
+    ],
+    "featureList": [
+      "Installment tracking (parcelas)",
+      "Credit card bill projection (12 months)",
+      "PIX, boleto, meal voucher support",
+      "Monthly dashboard with spending charts",
+      "Custom categories",
+      "CSV export",
+      "iCloud sync (Premium)"
+    ],
+    "inLanguage": ["pt-BR", "en-US"],
+    "availableCountry": "BR",
+    "offers": [
+      {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "BRL",
+        "name": "Free"
+      },
+      {
+        "@type": "Offer",
+        "price": "14.90",
+        "priceCurrency": "BRL",
+        "name": "Premium",
+        "priceSpecification": {
+          "@type": "UnitPriceSpecification",
+          "price": "14.90",
+          "priceCurrency": "BRL",
+          "billingDuration": "P1M"
+        }
+      }
+    ],
     "installUrl": "https://apps.apple.com/br/app/meugrana-parcelas-finan%C3%A7as/id6759177555",
     "author": {
       "@type": "Organization",
@@ -70,6 +107,7 @@
 <body>
 
   <!-- Navigation -->
+  <header>
   <nav class="navbar" role="navigation" aria-label="Main navigation">
     <div class="container">
       <a href="#" class="nav-brand">
@@ -90,6 +128,9 @@
       </ul>
     </div>
   </nav>
+  </header>
+
+  <main>
 
   <!-- Hero -->
   <section class="hero">
@@ -108,7 +149,7 @@
   </section>
 
   <!-- Features -->
-  <section class="features" id="features">
+  <section class="features" id="features" aria-label="Features">
     <div class="container">
       <div class="section-header fade-in">
         <h2 data-i18n="features.title">Feito para o Brasil</h2>
@@ -148,7 +189,7 @@
   </section>
 
   <!-- Screenshots -->
-  <section class="screenshots" id="screenshots">
+  <section class="screenshots" id="screenshots" aria-label="Screenshots">
     <div class="section-header fade-in">
       <h2 data-i18n="screenshots.title">Veja o app em ação</h2>
       <p data-i18n="screenshots.subtitle">Interface moderna e intuitiva, pensada para facilitar seu controle financeiro.</p>
@@ -185,7 +226,7 @@
   </section>
 
   <!-- Premium -->
-  <section class="premium" id="premium">
+  <section class="premium" id="premium" aria-label="Premium">
     <div class="container">
       <div class="premium-card fade-in">
         <h2 data-i18n="premium.title">MeuGrana Premium</h2>
@@ -222,7 +263,7 @@
   </section>
 
   <!-- Download CTA -->
-  <section class="download-cta" id="download">
+  <section class="download-cta" id="download" aria-label="Download">
     <div class="container fade-in">
       <h2 data-i18n="cta.title">Comece a controlar seu dinheiro hoje</h2>
       <p data-i18n="cta.subtitle">Baixe o MeuGrana gratuitamente e veja para onde vai cada real.</p>
@@ -231,6 +272,8 @@
       </a>
     </div>
   </section>
+
+  </main>
 
   <!-- Footer -->
   <footer class="footer">

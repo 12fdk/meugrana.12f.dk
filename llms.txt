@@ -1,0 +1,43 @@
+# MeuGrana — Parcelas & Finanças
+
+> The finance app built for Brazil. Track installments (parcelas), credit cards, and project your future bills.
+
+MeuGrana is an iOS personal finance app designed specifically for the Brazilian financial system — installment purchases (parcelas), PIX, boleto, meal vouchers (vale-refeição), INSS, IRRF, and 13th salary.
+
+## Key Features
+
+- **Installment Tracker (Rastreador de Parcelas):** Track all installment purchases in one place. See current installment, remaining balance, and end dates.
+- **Bill Projection (Projeção de Faturas):** See your credit card bill for the next 12 months. No surprises when it's time to pay.
+- **Built for Brazil:** Supports PIX, boleto, meal vouchers, INSS, IRRF, 13th salary — everything international apps don't understand.
+- **Complete Control:** Monthly dashboard, spending charts by category, and detailed reports.
+
+## Premium
+
+MeuGrana Premium unlocks:
+- Unlimited cards & installments
+- 12-month bill projection
+- Custom categories
+- Reports & trends
+- CSV export
+- Extra widgets
+
+Starting at R$ 14.90/month.
+
+## Privacy
+
+MeuGrana is offline-first. All financial data is stored exclusively on your device (SwiftData). No personal data is collected. Premium users can optionally sync via Apple iCloud/CloudKit — MeuGrana has no access to that data.
+
+## Links
+
+- Website: https://meugrana.12f.dk/
+- App Store: https://apps.apple.com/br/app/meugrana-parcelas-finan%C3%A7as/id6759177555
+- Privacy Policy: https://meugrana.12f.dk/privacy-policy.html
+
+## Technical Details
+
+- Platform: iOS
+- Price: Free (with Premium subscription)
+- Currency: BRL (Brazilian Real)
+- Languages: Portuguese (Brazil), English
+- Available in: Brazil
+- Contact: support@12f.dk

@@ -1,16 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://meugrana.12f.dk/</loc>
-    <lastmod>2026-02-16</lastmod>
+    <lastmod>2026-02-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://meugrana.12f.dk/images/og-image.png</image:loc>
+      <image:title>MeuGrana — Parcelas &amp; Finanças</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://meugrana.12f.dk/images/screenshots/pt-BR/screenshot-1.png</image:loc>
+      <image:title>MeuGrana Dashboard</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://meugrana.12f.dk/images/screenshots/pt-BR/screenshot-2.png</image:loc>
+      <image:title>Parcelas — Acompanhamento de parcelamentos</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://meugrana.12f.dk/images/screenshots/pt-BR/screenshot-3.png</image:loc>
+      <image:title>Projeção de faturas futuras</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://meugrana.12f.dk/images/screenshots/pt-BR/screenshot-4.png</image:loc>
+      <image:title>Cartões de crédito</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://meugrana.12f.dk/images/screenshots/pt-BR/screenshot-5.png</image:loc>
+      <image:title>Histórico de transações</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://meugrana.12f.dk/privacy-policy.html</loc>
     <lastmod>2026-02-16</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://meugrana.12f.dk/llms.txt</loc>
+    <lastmod>2026-02-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
 </urlset>
