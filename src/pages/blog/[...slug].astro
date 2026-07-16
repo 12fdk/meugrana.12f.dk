@@ -35,6 +35,12 @@ const related = (
     : allPosts.filter((p) => p.id !== post.id)
 ).slice(0, 3);
 
+// Author bio (E-E-A-T): shown under the post and mirrored into
+// BlogPosting.author.description. Keep it factual.
+const AUTHOR_BIO =
+  "Robert Jensen é o desenvolvedor independente por trás do MeuGrana. Cria apps para iPhone na Dinamarca e escreve guias práticos sobre parcelas, cartão de crédito e controle financeiro para o público brasileiro.";
+const AUTHOR_URL = "https://12f.dk";
+
 const ogImage = post.data.cover ? `${SITE}${post.data.cover}` : `${SITE}/images/og-image.png`;
 // Blog covers are 1200×700; the site-wide OG fallback is 1200×630.
 const ogImageHeight = post.data.cover ? "700" : "630";
@@ -49,12 +55,33 @@ const structuredData = {
   ...(post.data.updatedDate
     ? { dateModified: post.data.updatedDate.toISOString().slice(0, 10) }
     : {}),
-  author: { "@type": "Person", name: post.data.author, url: "https://12f.dk" },
+  author: {
+    "@type": "Person",
+    name: post.data.author,
+    url: AUTHOR_URL,
+    description: AUTHOR_BIO,
+  },
   publisher: { "@id": ORG_ID },
   image: ogImage,
   mainEntityOfPage: canonical,
   ...(post.data.tags.length > 0 ? { keywords: post.data.tags.join(", ") } : {}),
 };
+
+// FAQPage JSON-LD from the same frontmatter that renders the visible
+// "Perguntas frequentes" section below the post body.
+const faqData =
+  post.data.faq.length > 0
+    ? {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        inLanguage: "pt-BR",
+        mainEntity: post.data.faq.map((f) => ({
+          "@type": "Question",
+          name: f.q,
+          acceptedAnswer: { "@type": "Answer", text: f.a },
+        })),
+      }
+    : null;
 
 // Mirrors the visible "← Blog" breadcrumb.
 const breadcrumbData = {
@@ -88,6 +115,7 @@ const breadcrumbData = {
     <link rel="alternate" type="application/rss+xml" title="Blog do MeuGrana" href="/rss.xml" />
     <script is:inline type="application/ld+json" set:html={JSON.stringify(structuredData)} />
     <script is:inline type="application/ld+json" set:html={JSON.stringify(breadcrumbData)} />
+    {faqData && <script is:inline type="application/ld+json" set:html={JSON.stringify(faqData)} />}
   </Fragment>
 
   <Navbar root />
@@ -122,6 +150,20 @@ const breadcrumbData = {
         <Content />
       </div>
 
+      {
+        post.data.faq.length > 0 && (
+          <section class="blog-content blog-faq">
+            <h2>Perguntas frequentes</h2>
+            {post.data.faq.map((f) => (
+              <>
+                <h3>{f.q}</h3>
+                <p>{f.a}</p>
+              </>
+            ))}
+          </section>
+        )
+      }
+
       <aside class="blog-cta">
         <img src="/images/app-icon.png" alt="" width="48" height="48" />
         <div>
@@ -137,6 +179,14 @@ const breadcrumbData = {
         >
           <img src={APP_STORE_BADGE_URL} data-badge alt="Download on the App Store" height="44" />
         </a>
+      </aside>
+
+      <aside class="blog-author">
+        <p class="blog-author-label">Sobre o autor</p>
+        <strong>{post.data.author}</strong>
+        <p>
+          {AUTHOR_BIO} Mais em <a href={AUTHOR_URL} rel="author">12f.dk</a>.
+        </p>
       </aside>
 
       {

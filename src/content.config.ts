@@ -16,6 +16,11 @@ const blog = defineCollection({
     tags: z.array(z.string()).default([]),
     /** Slugs of related posts to show at the end of the article. */
     relatedSlugs: z.array(z.string()).default([]),
+    /**
+     * FAQ entries rendered as the "Perguntas frequentes" section AND emitted
+     * as FAQPage JSON-LD — one source keeps visible text and schema in sync.
+     */
+    faq: z.array(z.object({ q: z.string(), a: z.string() })).default([]),
     /** Cover illustration (root-absolute path under /images/blog/). */
     cover: z.string().optional(),
     coverAlt: z.string().optional(),

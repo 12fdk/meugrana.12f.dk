@@ -1294,6 +1294,32 @@ a:hover {
   color: var(--text-secondary);
 }
 
+.blog-author {
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 20px 24px;
+  margin: 0 0 48px;
+}
+
+.blog-author-label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-secondary);
+  margin-bottom: 6px;
+}
+
+.blog-author strong {
+  display: block;
+  color: var(--text-primary);
+  margin-bottom: 4px;
+}
+
+.blog-author p:last-child {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
 .blog-related h2 {
   font-size: 1.2rem;
   font-weight: 700;

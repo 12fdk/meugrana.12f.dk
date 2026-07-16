@@ -5,6 +5,27 @@ keyword: "como organizar compras parceladas"
 publishDate: 2026-07-16
 tags: ["parcelas", "cartão de crédito", "organização"]
 relatedSlugs: ["melhor-app-para-controlar-parcelas", "quanto-da-fatura-esta-comprometida"]
+faq:
+  - q: "Quantas parcelas posso ter ao mesmo tempo?"
+    a: >-
+      Não existe número certo — o que importa é a soma mensal, não a quantidade
+      de parcelamentos. Duas parcelas de R$ 400 pesam mais que cinco de R$ 50.
+      Use o teto definido no passo 5 como critério: se a nova parcela faz a
+      soma passar do teto, é sinal de esperar.
+  - q: "Vale a pena antecipar parcelas do cartão?"
+    a: >-
+      Parcelamento sem juros no cartão não gera desconto automático por
+      antecipação — você pagaria o mesmo valor antes da hora. Em geral, só vale
+      antecipar se houver desconto oferecido ou se você quer liberar limite do
+      cartão. Se as parcelas têm juros embutidos (como em alguns crediários), a
+      antecipação com desconto dos juros futuros pode compensar; pergunte o
+      valor de quitação antes de decidir.
+  - q: "Como saber quando cada parcela termina?"
+    a: >-
+      Pegue o número da parcela atual na fatura (ex.: "4 de 10"), calcule
+      quantas faltam (6) e conte esse número de meses à frente. Fazendo isso
+      para cada compra, você monta a projeção do passo 4. Um app de controle de
+      parcelas faz esse cálculo automaticamente a partir do registro da compra.
 cover: "/images/blog/como-organizar-compras-parceladas.jpg"
 coverAlt: "Ilustração: mesa organizada com cartões de crédito, calendário e moedas"
 ---
@@ -97,24 +118,10 @@ Se você usa iPhone, o MeuGrana foi feito exatamente para esse fluxo: é grátis
 
 Alguns pontos que merecem atenção extra no dia a dia:
 
-- **Fuja do rotativo.** Se a fatura vier maior do que você consegue pagar, pagar só o mínimo joga o restante no crédito rotativo — uma das linhas de crédito mais caras que existem no Brasil. Organizar as parcelas serve justamente para a fatura nunca chegar como surpresa.
+- **Fuja do rotativo.** Se a fatura vier maior do que você consegue pagar, pagar só o mínimo joga o restante no crédito rotativo — uma das linhas de crédito mais caras que existem no Brasil, segundo as [taxas de juros divulgadas pelo Banco Central](https://www.bcb.gov.br/estatisticas/txjuros). Organizar as parcelas serve justamente para a fatura nunca chegar como surpresa.
 - **Desconfie da parcela "pequena".** R$ 40 por mês parece nada. Cinco compras de R$ 40 são R$ 200 todo mês, durante muitos meses. O perigo não está no valor de cada parcela, e sim na soma.
 - **Conheça o dia de fechamento do seu cartão.** Fechamento e vencimento são datas diferentes. Uma compra feita logo **depois** do fechamento só entra na fatura seguinte — o que te dá quase um mês extra de folga. Comprar um dia antes do fechamento faz a primeira parcela chegar já na próxima fatura.
 
 ## Conclusão
 
 Organizar compras parceladas se resume a enxergar três números: quanto você paga por mês, até quando, e quanto ainda cabe. Levante as parcelas de todas as faturas, anote valor e data de término, some o total, projete os próximos meses e defina um teto para compras novas. Depois, escolha uma ferramenta — papel, planilha ou um app como o MeuGrana — para manter esse retrato sempre atualizado. O esforço inicial é de uma tarde; o resultado é nunca mais ser pego de surpresa pela fatura.
-
-## Perguntas frequentes
-
-### Quantas parcelas posso ter ao mesmo tempo?
-
-Não existe número certo — o que importa é a soma mensal, não a quantidade de parcelamentos. Duas parcelas de R$ 400 pesam mais que cinco de R$ 50. Use o teto definido no passo 5 como critério: se a nova parcela faz a soma passar do teto, é sinal de esperar.
-
-### Vale a pena antecipar parcelas do cartão?
-
-Parcelamento sem juros no cartão não gera desconto automático por antecipação — você pagaria o mesmo valor antes da hora. Em geral, só vale antecipar se houver desconto oferecido ou se você quer liberar limite do cartão. Se as parcelas têm juros embutidos (como em alguns crediários), a antecipação com desconto dos juros futuros pode compensar; pergunte o valor de quitação antes de decidir.
-
-### Como saber quando cada parcela termina?
-
-Pegue o número da parcela atual na fatura (ex.: "4 de 10"), calcule quantas faltam (6) e conte esse número de meses à frente. Fazendo isso para cada compra, você monta a projeção do passo 4. Um app de controle de parcelas faz esse cálculo automaticamente a partir do registro da compra.
