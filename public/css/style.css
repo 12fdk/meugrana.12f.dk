@@ -575,6 +575,13 @@ a:hover {
   }
 }
 
+.screenshot-caption {
+  margin-top: 14px;
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
 /* ── Premium Section ── */
 .premium {
   padding: 96px 24px;
