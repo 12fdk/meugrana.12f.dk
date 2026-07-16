@@ -4,7 +4,7 @@ description: "Fatura do cartão veio alta? Veja o que fazer agora para fugir do 
 keyword: "fatura do cartão veio alta"
 publishDate: 2026-07-16
 tags: ["fatura", "cartão de crédito", "dívidas"]
-relatedSlugs: ["quanto-da-fatura-esta-comprometida", "como-organizar-compras-parceladas"]
+relatedSlugs: ["quanto-da-fatura-esta-comprometida", "como-organizar-compras-parceladas", "como-sair-do-rotativo-do-cartao"]
 faq:
   - q: "O que acontece se eu pagar só o mínimo da fatura?"
     a: >-

@@ -4,7 +4,7 @@ description: "Descubra quanto da sua fatura já nasce comprometida com parcelas:
 keyword: "fatura comprometida com parcelas"
 publishDate: 2026-07-16
 tags: ["fatura", "cartão de crédito", "parcelas"]
-relatedSlugs: ["como-organizar-compras-parceladas", "fatura-do-cartao-veio-alta-o-que-fazer"]
+relatedSlugs: ["como-organizar-compras-parceladas", "fatura-do-cartao-veio-alta-o-que-fazer", "vale-a-pena-parcelar"]
 faq:
   - q: "Toda compra parcelada aparece na fatura seguinte?"
     a: >-
