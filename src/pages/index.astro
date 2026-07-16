@@ -15,7 +15,7 @@ import InlineCta from "../components/InlineCta.astro";
 import StickyDownload from "../components/StickyDownload.astro";
 import DownloadCta from "../components/DownloadCta.astro";
 import Footer from "../components/Footer.astro";
-import { SITE, APP_STORE_URL } from "../consts";
+import { SITE, ORG_ID, APP_STORE_URL } from "../consts";
 import { fetchAppStoreData, MIN_RATING_COUNT } from "../utils/appStoreData";
 
 const title = "MeuGrana — Parcelas & Finanças";
@@ -57,7 +57,8 @@ const structuredData = {
     },
   ],
   installUrl: APP_STORE_URL,
-  author: { "@type": "Organization", name: "MeuGrana", url: `${SITE}/` },
+  author: { "@id": ORG_ID },
+  publisher: { "@id": ORG_ID },
   // Only claim a rating once there are enough reviews to be credible.
   ...(appStore.rating > 0 && appStore.ratingCount >= MIN_RATING_COUNT
     ? {
