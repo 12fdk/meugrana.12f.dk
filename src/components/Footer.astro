@@ -1,30 +1,81 @@
 ---
+// Site footer. Full version (homepage): brand + maker line, sitemap columns,
+// legal and contact links. Minimal version (legal pages): no section anchors.
+import { APP_STORE_URL } from "../consts";
+
 interface Props {
   minimal?: boolean;
 }
 
 const { minimal = false } = Astro.props;
+
+const sectionLinks = [
+  { href: "#features", key: "nav.features", text: "Recursos" },
+  { href: "#how-it-works", key: "nav.how", text: "Como funciona" },
+  { href: "#screenshots", key: "nav.screenshots", text: "Capturas" },
+  { href: "#premium", key: "nav.premium", text: "Premium" },
+  { href: "#faq", key: "nav.faq", text: "FAQ" },
+  { href: "#download", key: "nav.download", text: "Baixar" },
+];
 ---
 
 <footer class="footer">
-  <div class="container">
+  {
+    !minimal && (
+      <div class="container footer-main">
+        <div class="footer-brand">
+          <a href="#" class="nav-brand">
+            <img src="images/app-icon.png" alt="MeuGrana" width="36" height="36" />
+            MeuGrana
+          </a>
+          <p class="footer-madein" data-i18n="footer.madein">
+            Feito com carinho na Dinamarca 🇩🇰
+          </p>
+          <a class="footer-email" href="mailto:support@12f.dk">
+            support@12f.dk
+          </a>
+        </div>
+        <nav class="footer-col" aria-label="App">
+          <h4 data-i18n="footer.app">App</h4>
+          {sectionLinks.map((l) => (
+            <a href={l.href} data-i18n={l.key}>
+              {l.text}
+            </a>
+          ))}
+        </nav>
+        <nav class="footer-col" aria-label="Legal">
+          <h4 data-i18n="footer.legal">Legal</h4>
+          <a href="privacy-policy.html" data-i18n="footer.privacy">
+            Política de Privacidade
+          </a>
+          <a href="terms-of-use.html" data-i18n="footer.terms">
+            Termos de Uso
+          </a>
+        </nav>
+        <nav class="footer-col" aria-label="Contato">
+          <h4 data-i18n="footer.contactTitle">Contato</h4>
+          <a href="mailto:support@12f.dk" data-i18n="footer.support">
+            Suporte
+          </a>
+          <a href={APP_STORE_URL}>App Store</a>
+        </nav>
+      </div>
+    )
+  }
+  <div class="container footer-bottom">
     {
       minimal ? (
-        <span class="copyright">&copy; 2026 MeuGrana. Todos os direitos reservados. / All rights reserved.</span>
-      ) : (
         <>
-          <span class="copyright" data-i18n="footer.copyright">
-            &copy; 2026 MeuGrana. Todos os direitos reservados.
-          </span>
+          <span class="copyright">&copy; 2026 MeuGrana. Todos os direitos reservados. / All rights reserved.</span>
           <div class="footer-links">
-            <a href="#faq" data-i18n="nav.faq">
-              FAQ
-            </a>
-            <a href="privacy-policy.html" data-i18n="footer.privacy">
-              Política de Privacidade
-            </a>
+            <a href="privacy-policy.html">Política de Privacidade · Privacy Policy</a>
+            <a href="terms-of-use.html">Termos de Uso · Terms of Use</a>
           </div>
         </>
+      ) : (
+        <span class="copyright" data-i18n="footer.copyright">
+          &copy; 2026 MeuGrana. Todos os direitos reservados.
+        </span>
       )
     }
   </div>

@@ -39,6 +39,12 @@
     <priority>0.3</priority>
   </url>
   <url>
+    <loc>https://meugrana.12f.dk/terms-of-use.html</loc>
+    <lastmod>2026-07-16</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
     <loc>https://meugrana.12f.dk/llms.txt</loc>
     <lastmod>2026-02-25</lastmod>
     <changefreq>monthly</changefreq>
