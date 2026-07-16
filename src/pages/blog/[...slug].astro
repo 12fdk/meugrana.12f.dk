@@ -3,7 +3,7 @@ import { render } from "astro:content";
 import Layout from "../../layouts/Layout.astro";
 import Navbar from "../../components/Navbar.astro";
 import Footer from "../../components/Footer.astro";
-import { SITE, APP_STORE_URL, APP_STORE_BADGE_URL } from "../../consts";
+import { SITE, ORG_ID, APP_STORE_URL, APP_STORE_BADGE_URL } from "../../consts";
 import { getPublishedPosts, postUrl, formatDate, type BlogPost } from "../../utils/blog";
 import { readingTime } from "../../utils/readingTime";
 
@@ -48,7 +48,7 @@ const structuredData = {
     ? { dateModified: post.data.updatedDate.toISOString().slice(0, 10) }
     : {}),
   author: { "@type": "Person", name: post.data.author, url: "https://12f.dk" },
-  publisher: { "@type": "Organization", name: "MeuGrana", url: `${SITE}/` },
+  publisher: { "@id": ORG_ID },
   image: ogImage,
   mainEntityOfPage: canonical,
 };

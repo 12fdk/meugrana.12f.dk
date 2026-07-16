@@ -1,6 +1,11 @@
 // Shared site-wide constants.
 export const SITE = "https://meugrana.12f.dk";
 
+// JSON-LD @id anchors for the site-wide entities emitted by Layout.astro.
+// Reference these from page-level schema (SoftwareApplication, BlogPosting).
+export const ORG_ID = `${SITE}/#organization`;
+export const WEBSITE_ID = `${SITE}/#website`;
+
 export const APP_STORE_URL =
   "https://apps.apple.com/br/app/meugrana-parcelas-finan%C3%A7as/id6759177555";
 

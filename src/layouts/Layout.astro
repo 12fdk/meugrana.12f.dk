@@ -2,6 +2,8 @@
 // Shared page shell: head metadata, favicons, stylesheet, Umami analytics.
 // Pages pass their own title/description/canonical and extend the head via
 // the named "head" slot (OG tags, structured data, extra styles).
+import { SITE, ORG_ID, WEBSITE_ID, APP_STORE_URL } from "../consts";
+
 interface Props {
   title: string;
   description?: string;
@@ -21,6 +23,40 @@ const {
   siteStylesheet = true,
   analytics = true,
 } = Astro.props;
+
+// Site-wide brand entity graph: Organization + WebSite, referenced by
+// page-level schema (SoftwareApplication author, BlogPosting publisher)
+// via their @id anchors from consts.ts.
+const siteEntities = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": ORG_ID,
+      name: "MeuGrana",
+      url: `${SITE}/`,
+      logo: {
+        "@type": "ImageObject",
+        url: `${SITE}/images/app-icon.png`,
+      },
+      contactPoint: {
+        "@type": "ContactPoint",
+        contactType: "customer support",
+        email: "support@12f.dk",
+        availableLanguage: ["Portuguese", "English"],
+      },
+      sameAs: [APP_STORE_URL, "https://12f.dk"],
+    },
+    {
+      "@type": "WebSite",
+      "@id": WEBSITE_ID,
+      name: "MeuGrana",
+      url: `${SITE}/`,
+      inLanguage: "pt-BR",
+      publisher: { "@id": ORG_ID },
+    },
+  ],
+};
 ---
 
 <!doctype html>
@@ -42,6 +78,9 @@ const {
     <link rel="apple-touch-icon" href="/images/apple-touch-icon.png" />
 
     {siteStylesheet && <link rel="stylesheet" href="/css/style.css" />}
+
+    <!-- Brand entity graph (Organization + WebSite) -->
+    <script is:inline type="application/ld+json" set:html={JSON.stringify(siteEntities)} />
 
     <slot name="head" />
 
