@@ -33,6 +33,8 @@ Você abre o app do banco e sente aquele frio na barriga: a fatura do cartão ve
 
 Vamos em três partes: o que fazer imediatamente, por que a fatura veio alta e como evitar que a próxima te pegue de surpresa.
 
+![Mulher brasileira preocupada olhando o celular com a fatura alta do cartão de crédito](/images/blog/fatura-alta-inline.jpg)
+
 ## O que fazer agora que a fatura veio alta
 
 ### 1. Não entre no rotativo se puder evitar

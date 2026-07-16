@@ -75,6 +75,8 @@ Aqui a coisa complica. Digamos que você parcelou um celular em 10x de R$ 250 no
 
 E tem um agravante: cada cartão tem **data de fechamento diferente**. Uma compra do dia 28 pode cair na fatura deste mês num cartão e só na do mês seguinte no outro. A planilha não sabe disso — quem calcula é você, compra por compra.
 
+![Mulher brasileira preocupada olhando projeções financeiras no celular, com caderno e calculadora na mesa](/images/blog/planilha-inline.jpg)
+
 Com duas ou três parcelas ativas, dá para administrar. Com dez ou quinze compras parceladas espalhadas em dois cartões, a manutenção vira um trabalho mensal de verdade — e é aí que a maioria das planilhas morre abandonada.
 
 ## Quando a planilha funciona (e quando ela quebra)

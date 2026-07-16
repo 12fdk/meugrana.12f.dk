@@ -45,6 +45,8 @@ Antes de comparar, vale definir o critério. Para resolver o problema das compra
 
 Com esses critérios em mente, vamos às opções.
 
+![Tela de aplicativo de finanças mostrando checklist de funcionalidades com marcações verdes](/images/blog/app-features-inline.jpg)
+
 ## As opções para controlar parcelas em 2026
 
 ### Planilha (Google Sheets ou Excel)

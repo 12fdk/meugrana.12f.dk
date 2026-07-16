@@ -34,6 +34,8 @@ Se toda fatura chega maior do que você esperava, provavelmente o problema não 
 
 A boa notícia: aprender como organizar compras parceladas não exige planilha complicada nem curso de finanças. É um processo de seis passos que você faz uma vez e depois só mantém atualizado. Vamos a ele.
 
+![Mulher brasileira planejando compras em um calendário, com cartões de crédito e caneta em cima da mesa](/images/blog/organizar-inline.jpg)
+
 ## Passo 1: Levante todas as parcelas ativas
 
 Abra a fatura de cada cartão que você usa — inclusive aquele cartão de loja que só serve para uma compra por ano. Vá linha por linha e marque tudo o que aparece com indicação de parcela, normalmente no formato "3/10" ou "PARC 03/10".

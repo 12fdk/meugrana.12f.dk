@@ -29,7 +29,7 @@ faq:
       mais segura — alguns apps, como o MeuGrana, foram pensados exatamente para
       esse perfil.
 cover: "/images/blog/mobills-vs-organizze.jpg"
-coverAlt: "Ilustração: comparação lado a lado entre três apps de finanças no celular"
+coverAlt: "Ilustração: duas mulheres brasileiras usando apps de finanças no celular, estilo flat vector"
 ---
 
 Se você já tentou organizar as finanças no papel e desistiu — ou gastou mais tempo atualizando a planilha do que realmente gerenciando o dinheiro — provavelmente já esbarrou em um app de finanças. E aí surge a dúvida clássica: **Mobills ou Organizze**? Qual deles vale a pena?
@@ -51,6 +51,8 @@ Vamos à comparação.
 | **Conexão com banco** | Não | Não |
 
 Ambos são apps consolidados no mercado brasileiro, com milhares de downloads e anos de vida na App Store. Ambos oferecem uma versão gratuita com recursos limitados e planos pagos para quem quer mais.
+
+![Três smartphones mostrando interfaces de apps de finanças com gráficos e dados financeiros em verde](/images/blog/mobills-vs-organizze-comparison.jpg)
 
 A diferença não está no preço, mas na **filosofia de uso**.
 
@@ -91,6 +93,8 @@ Não é uma versão "lite" do Mobills ou do Organizze — é um app que escolheu
 
 Para quem já lê sobre [como organizar compras parceladas](/como-organizar-compras-parceladas/) e quer ir direto ao ponto, o MeuGrana entrega o cálculo e a projeção sem exigir que você mantenha duas ferramentas atualizadas.
 
+![Mulher brasileira relaxada no sofá usando o celular para controlar suas parcelas de cartão de crédito](/images/blog/mobills-vs-organizze-parcelas.jpg)
+
 ## Tabela de decisão: qual escolher?
 
 | O que você precisa | Indicação |
@@ -114,13 +118,17 @@ Ambos os apps cobram pelo upgrade, mas os valores mudam com o tempo. Antes de as
 
 Se conectar a conta bancária no app te preocupa (e a maioria das pessoas acha que deveria), saiba que existe a opção de lançamento manual. Alguns apps, como o MeuGrana, são desenhados para funcionar totalmente sem conexão com banco — os dados ficam só no seu aparelho.
 
+![Smartphone com ícone de cadeado verde, representando proteção de dados financeiros](/images/blog/mobills-vs-organizze-security.jpg)
+
 ### A armadilha da complexidade
 
 App com 20 categorias, gráficos de pizza, relatórios de investimentos e alertas de cada tipo de gasto parece poderoso. Na prática, é difícil manter tudo atualizado por mais de três semanas. Se o app exige mais esforço do que a operação que você quer facilitar, ele está atrapalhando — não ajudando.
 
 ## Conclusão
 
-A pergunta "Mobills ou Organizze" tem uma resposta simples: **qual dos dois melhor se encaixa no seu estilo de uso.** Se você quer uma ferramenta completa com orçamento, investimentos e projeções, o Mobills é a escolha. Se quer simplicidade e foco no registro do dia a dia, o Organizze funciona bem.
+![Mulher brasileira analisando opções financeiras com notepad e caneta, expressão pensativa](/images/blog/mobills-vs-organizze-decision.jpg)
+
+A pergunta "Mobills ou Organizze" tem uma resposta simples: **qual dos dois melhor se encaixa no seu estilo de uso**.
 
 Mas se o seu foco é parcelas — que é o que mais causa surpresas na fatura — talvez nenhum dos dois seja a opção mais eficiente. O MeuGrana foi criado para resolver exatamente esse problema, sem enrolação e sem custo: cadastro manual das parcelas, projeção automática das faturas e alertas de vencimento. Sem conectar banco, sem compromisso.
 
