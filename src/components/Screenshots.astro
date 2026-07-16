@@ -21,7 +21,7 @@ const screenshots = [
     <div class="screenshot-gallery">
       {
         screenshots.map((s) => (
-          <div class="screenshot-item">
+          <figure class="screenshot-item">
             <div class="phone-frame">
               <img
                 src={`images/screenshots/pt-BR/screenshot-${s.num}.png`}
@@ -33,7 +33,10 @@ const screenshots = [
                 loading="lazy"
               />
             </div>
-          </div>
+            <figcaption class="screenshot-caption" data-i18n={s.altKey}>
+              {s.alt}
+            </figcaption>
+          </figure>
         ))
       }
     </div>
