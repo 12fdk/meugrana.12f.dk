@@ -341,6 +341,92 @@ a:hover {
   }
 }
 
+/* ── How It Works Section ── */
+.how-it-works {
+  padding: 96px 24px;
+  background: var(--bg-light);
+}
+
+.how-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 72px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.how-step {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+}
+
+/* Alternate text/image sides */
+.how-step:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.how-step-text {
+  flex: 1;
+}
+
+.how-step-number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--brand-green);
+  color: var(--text-light);
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.how-step-text h3 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 10px;
+}
+
+.how-step-text p {
+  font-size: 1rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+.how-step-image {
+  flex: 0 0 auto;
+  width: 240px;
+}
+
+.how-step-image .phone-frame {
+  box-shadow: var(--shadow-lg);
+}
+
+@media (max-width: 768px) {
+  .how-it-works {
+    padding: 64px 20px;
+  }
+
+  .how-steps {
+    gap: 56px;
+  }
+
+  .how-step,
+  .how-step:nth-child(even) {
+    flex-direction: column;
+    gap: 28px;
+    text-align: center;
+  }
+
+  .how-step-image {
+    width: 200px;
+  }
+}
+
 /* ── Features Section ── */
 .features {
   padding: 96px 24px;
