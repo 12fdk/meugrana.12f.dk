@@ -4,9 +4,10 @@ import { defineConfig } from "astro/config";
 export default defineConfig({
   site: "https://meugrana.12f.dk",
   base: "/",
-  // Emit `privacy-policy.html` instead of `privacy-policy/index.html` so the
-  // URLs of the previous pure-HTML site keep working unchanged.
+  // 'preserve' mirrors the source structure: named pages keep their .html
+  // URLs from the pre-Astro site (privacy-policy.html), while index files
+  // stay directory indexes (blog/index.astro → /blog/).
   build: {
-    format: "file",
+    format: "preserve",
   },
 });

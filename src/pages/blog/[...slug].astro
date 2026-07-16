@@ -1,0 +1,125 @@
+---
+import { render } from "astro:content";
+import Layout from "../../layouts/Layout.astro";
+import Navbar from "../../components/Navbar.astro";
+import Footer from "../../components/Footer.astro";
+import { SITE, APP_STORE_URL, APP_STORE_BADGE_URL } from "../../consts";
+import { getPublishedPosts, postUrl, formatDate, type BlogPost } from "../../utils/blog";
+import { readingTime } from "../../utils/readingTime";
+
+export async function getStaticPaths() {
+  const posts = await getPublishedPosts();
+  return posts.map((post) => ({
+    params: { slug: post.id },
+    props: { post, allPosts: posts },
+  }));
+}
+
+interface Props {
+  post: BlogPost;
+  allPosts: BlogPost[];
+}
+
+const { post, allPosts } = Astro.props;
+const { Content } = await render(post);
+
+const canonical = `${SITE}${postUrl(post)}`;
+const minutes = readingTime(post.body ?? "");
+
+// Related: explicit slugs first, else the 3 newest other posts.
+const related = (
+  post.data.relatedSlugs.length > 0
+    ? post.data.relatedSlugs
+        .map((slug) => allPosts.find((p) => p.id === slug))
+        .filter((p): p is BlogPost => Boolean(p))
+    : allPosts.filter((p) => p.id !== post.id)
+).slice(0, 3);
+
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  headline: post.data.title,
+  description: post.data.description,
+  inLanguage: "pt-BR",
+  datePublished: post.data.publishDate.toISOString().slice(0, 10),
+  ...(post.data.updatedDate
+    ? { dateModified: post.data.updatedDate.toISOString().slice(0, 10) }
+    : {}),
+  author: { "@type": "Person", name: post.data.author, url: "https://12f.dk" },
+  publisher: { "@type": "Organization", name: "MeuGrana", url: `${SITE}/` },
+  image: `${SITE}/images/og-image.png`,
+  mainEntityOfPage: canonical,
+};
+---
+
+<Layout title={`${post.data.title} — MeuGrana`} description={post.data.description} canonical={canonical}>
+  <Fragment slot="head">
+    <meta property="og:title" content={post.data.title} />
+    <meta property="og:description" content={post.data.description} />
+    <meta property="og:image" content={`${SITE}/images/og-image.png`} />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:site_name" content="MeuGrana" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="article:published_time" content={post.data.publishDate.toISOString()} />
+    <link rel="alternate" type="application/rss+xml" title="Blog do MeuGrana" href="/rss.xml" />
+    <script is:inline type="application/ld+json" set:html={JSON.stringify(structuredData)} />
+  </Fragment>
+
+  <Navbar root />
+
+  <main class="blog-post">
+    <article class="container">
+      <header class="blog-post-header">
+        <p class="blog-breadcrumb"><a href="/blog/">← Blog</a></p>
+        <h1>{post.data.title}</h1>
+        <p class="blog-meta">
+          <time datetime={post.data.publishDate.toISOString().slice(0, 10)}>
+            {formatDate(post.data.publishDate)}
+          </time>
+          {" · "}{minutes} min de leitura · {post.data.author}
+        </p>
+      </header>
+
+      <div class="blog-content">
+        <Content />
+      </div>
+
+      <aside class="blog-cta">
+        <img src="/images/app-icon.png" alt="" width="48" height="48" />
+        <div>
+          <strong>Controle suas parcelas com o MeuGrana</strong>
+          <p>Grátis para baixar · Sem cadastro · Dados só no seu iPhone</p>
+        </div>
+        <a
+          href={APP_STORE_URL}
+          class="app-store-badge"
+          aria-label="Download on the App Store"
+          data-umami-event="app-store-click"
+          data-umami-event-placement={`blog-${post.id}`}
+        >
+          <img src={APP_STORE_BADGE_URL} data-badge alt="Download on the App Store" height="44" />
+        </a>
+      </aside>
+
+      {
+        related.length > 0 && (
+          <section class="blog-related">
+            <h2>Leia também</h2>
+            <ul>
+              {related.map((p) => (
+                <li>
+                  <a href={postUrl(p)}>{p.data.title}</a>
+                </li>
+              ))}
+            </ul>
+          </section>
+        )
+      }
+    </article>
+  </main>
+
+  <Footer root />
+
+  <script is:inline src="/js/main.js"></script>
+</Layout>

@@ -1,0 +1,63 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Navbar from "../../components/Navbar.astro";
+import Footer from "../../components/Footer.astro";
+import { SITE } from "../../consts";
+import { getPublishedPosts, postUrl, formatDate } from "../../utils/blog";
+import { readingTime } from "../../utils/readingTime";
+
+const posts = await getPublishedPosts();
+
+const title = "Blog do MeuGrana — parcelas, cartões e finanças no Brasil";
+const description =
+  "Guias práticos sobre parcelas, fatura do cartão e controle financeiro do jeito brasileiro.";
+---
+
+<Layout title={title} description={description} canonical={`${SITE}/blog/`}>
+  <Fragment slot="head">
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={`${SITE}/images/og-image.png`} />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={`${SITE}/blog/`} />
+    <meta property="og:site_name" content="MeuGrana" />
+    <meta property="og:locale" content="pt_BR" />
+    <link rel="alternate" type="application/rss+xml" title="Blog do MeuGrana" href="/rss.xml" />
+  </Fragment>
+
+  <Navbar root />
+
+  <main class="blog-index">
+    <div class="container">
+      <header class="blog-index-header">
+        <h1>Blog do MeuGrana</h1>
+        <p>Parcelas, fatura do cartão e controle financeiro — do jeito brasileiro.</p>
+      </header>
+      {
+        posts.length === 0 ? (
+          <p class="blog-empty">Em breve: guias práticos sobre parcelas e finanças.</p>
+        ) : (
+          <div class="blog-grid">
+            {posts.map((post) => (
+              <a class="blog-card" href={postUrl(post)}>
+                <h2>{post.data.title}</h2>
+                <p>{post.data.description}</p>
+                <span class="blog-meta">
+                  <time datetime={post.data.publishDate.toISOString().slice(0, 10)}>
+                    {formatDate(post.data.publishDate)}
+                  </time>
+                  {" · "}
+                  {readingTime(post.body ?? "")} min de leitura
+                </span>
+              </a>
+            ))}
+          </div>
+        )
+      }
+    </div>
+  </main>
+
+  <Footer root />
+
+  <script is:inline src="/js/main.js"></script>
+</Layout>

@@ -1,0 +1,39 @@
+---
+// "Do blog" homepage preview: 3 newest posts + link to the index.
+// Renders nothing while there are no published posts.
+import { getPublishedPosts, postUrl, formatDate } from "../utils/blog";
+import { readingTime } from "../utils/readingTime";
+
+const posts = (await getPublishedPosts()).slice(0, 3);
+---
+
+{
+  posts.length > 0 && (
+    <section class="from-the-blog" id="blog" aria-label="Blog">
+      <div class="container">
+        <div class="section-header fade-in">
+          <h2>Do blog</h2>
+          <p>Guias práticos sobre parcelas, cartões e finanças.</p>
+        </div>
+        <div class="blog-grid fade-in">
+          {posts.map((post) => (
+            <a class="blog-card" href={postUrl(post)}>
+              <h3>{post.data.title}</h3>
+              <p>{post.data.description}</p>
+              <span class="blog-meta">
+                <time datetime={post.data.publishDate.toISOString().slice(0, 10)}>
+                  {formatDate(post.data.publishDate)}
+                </time>
+                {" · "}
+                {readingTime(post.body ?? "")} min
+              </span>
+            </a>
+          ))}
+        </div>
+        <p class="blog-all-link fade-in">
+          <a href="/blog/">Ver todos os posts →</a>
+        </p>
+      </div>
+    </section>
+  )
+}
