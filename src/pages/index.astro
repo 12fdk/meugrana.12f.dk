@@ -78,9 +78,9 @@ const structuredData = {
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
-    <link rel="alternate" hreflang="pt-BR" href={`${SITE}/`} />
-    <link rel="alternate" hreflang="en" href={`${SITE}/`} />
-    <link rel="alternate" hreflang="x-default" href={`${SITE}/`} />
+    {/* No hreflang: the EN translation is client-side only (js/main.js), so
+        there is no distinct EN URL to annotate. hreflang variants pointing at
+        the same URL are invalid. Reinstate if a prerendered /en/ page ships. */}
 
     <!-- Open Graph -->
     <meta property="og:title" content={title} />
