@@ -15,10 +15,10 @@ export const faq: FaqEntry[] = [
     key: "faq.q1",
     questionPt: "O MeuGrana é grátis? O que está incluído no plano gratuito?",
     answerPt:
-      "Sim, o MeuGrana é grátis para baixar e usar. O plano gratuito inclui o dashboard mensal, registro de transações e acompanhamento de parcelas. O Premium desbloqueia cartões e parcelas ilimitados, projeção de 12 meses, categorias personalizadas, relatórios, exportação CSV e widgets extras — a partir de R$ 14,90/mês.",
+      "Sim, o MeuGrana é grátis para baixar e usar. O plano gratuito inclui o dashboard mensal, registro de transações e acompanhamento de parcelas. O Premium desbloqueia cartões e parcelas ilimitados, projeção de 12 meses, categorias personalizadas, relatórios, exportação CSV e widgets extras — pagamento único de R$ 19,90 (acesso vitalício).",
     questionEn: "Is MeuGrana free? What's included in the free plan?",
     answerEn:
-      "Yes, MeuGrana is free to download and use. The free plan includes the monthly dashboard, transaction logging and installment tracking. Premium unlocks unlimited cards and installments, 12-month projection, custom categories, reports, CSV export and extra widgets — from R$ 14.90/month.",
+      "Yes, MeuGrana is free to download and use. The free plan includes the monthly dashboard, transaction logging and installment tracking. Premium unlocks unlimited cards and installments, 12-month projection, custom categories, reports, CSV export and extra widgets — a one-time payment of R$ 19.90 (lifetime access).",
   },
   {
     key: "faq.q2",
@@ -74,12 +74,12 @@ export const faq: FaqEntry[] = [
   },
   {
     key: "faq.q8",
-    questionPt: "Como cancelo o Premium?",
+    questionPt: "O Premium é assinatura? Como cancelo?",
     answerPt:
-      "A assinatura é gerenciada pela Apple. Cancele a qualquer momento em Ajustes → seu nome → Assinaturas, sem multa.",
-    questionEn: "How do I cancel Premium?",
+      "Não precisa ser: o Premium pode ser comprado com pagamento único de R$ 19,90 (acesso vitalício), sem mensalidade. Se você optar pelo plano mensal ou anual, a assinatura é gerenciada pela Apple — cancele a qualquer momento em Ajustes → seu nome → Assinaturas, sem multa.",
+    questionEn: "Is Premium a subscription? How do I cancel?",
     answerEn:
-      "The subscription is managed by Apple. Cancel anytime in Settings → your name → Subscriptions, with no penalty.",
+      "It doesn't have to be: Premium can be bought with a one-time payment of R$ 19.90 (lifetime access), no monthly fee. If you choose the monthly or annual plan, the subscription is managed by Apple — cancel anytime in Settings → your name → Subscriptions, with no penalty.",
   },
   {
     key: "faq.q9",

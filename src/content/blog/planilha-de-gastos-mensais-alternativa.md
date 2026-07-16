@@ -86,7 +86,7 @@ O [MeuGrana](https://apps.apple.com/br/app/meugrana-parcelas-finan%C3%A7as/id675
 - **Gráficos prontos e alertas**, sem montar fórmula nenhuma.
 - **Funciona offline e os dados ficam no aparelho** — o app não pede para conectar sua conta bancária.
 
-Os recursos essenciais são gratuitos; quem quiser mais tem o Premium a partir de R$ 14,90/mês.
+Os recursos essenciais são gratuitos; quem quiser mais tem o Premium por pagamento único de R$ 19,90 (acesso vitalício).
 
 E vale repetir: se você gosta de planilha e seu orçamento é simples, a planilha continua ótima — ela dá um controle total do formato que nenhum app oferece. A troca faz sentido principalmente para quem vive de compras parceladas e cansou da manutenção manual.
 
