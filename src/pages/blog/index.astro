@@ -40,6 +40,16 @@ const description =
           <div class="blog-grid">
             {posts.map((post) => (
               <a class="blog-card" href={postUrl(post)}>
+                {post.data.cover && (
+                  <img
+                    class="blog-card-cover"
+                    src={post.data.cover}
+                    alt={post.data.coverAlt ?? ""}
+                    width="1200"
+                    height="700"
+                    loading="lazy"
+                  />
+                )}
                 <h2>{post.data.title}</h2>
                 <p>{post.data.description}</p>
                 <span class="blog-meta">

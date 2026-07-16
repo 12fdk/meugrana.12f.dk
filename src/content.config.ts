@@ -16,6 +16,9 @@ const blog = defineCollection({
     tags: z.array(z.string()).default([]),
     /** Slugs of related posts to show at the end of the article. */
     relatedSlugs: z.array(z.string()).default([]),
+    /** Cover illustration (root-absolute path under /images/blog/). */
+    cover: z.string().optional(),
+    coverAlt: z.string().optional(),
     draft: z.boolean().default(false),
   }),
 });
