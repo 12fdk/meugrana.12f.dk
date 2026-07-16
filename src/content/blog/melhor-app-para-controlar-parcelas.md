@@ -4,7 +4,7 @@ description: "Planilha, Mobills, Organizze ou MeuGrana? Compare as opções e ve
 keyword: "app para controlar parcelas"
 publishDate: 2026-07-16
 tags: ["parcelas", "apps"]
-relatedSlugs: ["como-organizar-compras-parceladas", "quanto-da-fatura-esta-comprometida"]
+relatedSlugs: ["como-organizar-compras-parceladas", "quanto-da-fatura-esta-comprometida", "mobills-ou-organizze-qual-escolher"]
 faq:
   - q: "Preciso conectar minha conta bancária para controlar parcelas?"
     a: >-

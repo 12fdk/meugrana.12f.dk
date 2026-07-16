@@ -35,18 +35,24 @@ automatically; per-post clicks are tracked in Umami as
 | 3 | `planilha-de-gastos-mensais-alternativa` | planilha de gastos mensais | Mid/Bottom | ✅ 2026-07-16 |
 | 4 | `quanto-da-fatura-esta-comprometida` | fatura comprometida com parcelas | Mid | ✅ 2026-07-16 |
 | 5 | `fatura-do-cartao-veio-alta-o-que-fazer` | fatura do cartão veio alta | Top | ✅ 2026-07-16 |
+| 6 | `mobills-ou-organizze-qual-escolher` | mobills ou organizze | Bottom | ✅ 2026-07-16 |
+| 7 | `como-planejar-o-13-salario` | como planejar o 13º salário | Top | ✅ 2026-07-16 (seasonal — indexed early, peaks Oct–Dec) |
+| 8 | `vale-a-pena-parcelar` | vale a pena parcelar | Top | ✅ 2026-07-16 |
+| 9 | `fechamento-da-fatura-como-funciona` | fechamento da fatura | Mid | ✅ 2026-07-16 |
+| 10 | `como-sair-do-rotativo-do-cartao` | como sair do rotativo | Top | ✅ 2026-07-16 |
+| 11 | `app-de-financas-sem-conectar-banco` | app de finanças sem conectar banco | Bottom | ✅ 2026-07-16 |
+| 12 | `quantos-cartoes-de-credito-ter` | quantos cartões de crédito ter | Top | ✅ 2026-07-16 |
+| 13 | `como-controlar-gastos-com-assinaturas` | controlar gastos com assinaturas | Mid | ✅ 2026-07-16 |
+| 14 | `parcelamento-com-juros-ou-sem-juros` | parcelamento com juros ou sem juros | Mid | ✅ 2026-07-16 |
+| 15 | `como-evitar-compras-por-impulso` | como evitar compras por impulso | Top | ✅ 2026-07-16 |
 
 ## Backlog (validate keyword before writing)
 
 | # | Working title | Keyword idea | Funnel | Notes |
 |---|---------------|--------------|--------|-------|
-| 6 | Mobills vs Organizze vs MeuGrana: qual escolher | mobills ou organizze | Bottom | Highest-converting pattern; research competitor features/prices carefully before writing — no guessing |
-| 7 | 13º salário: como planejar (e não deixar sumir) | como planejar o 13º salário | Top | Seasonal — publish October/November |
-| 8 | Vale a pena parcelar? Quando o parcelamento ajuda e quando vira bola de neve | vale a pena parcelar | Top | Links to posts 2 & 4 |
-| 9 | Como funciona o fechamento da fatura do cartão | fechamento da fatura como funciona | Mid | Explains melhor dia de compra angle |
-| 10 | Como sair do rotativo do cartão | como sair do rotativo | Top | Sensitive: practical, no rate claims, no financial-advice framing |
-| 11 | App de finanças sem conectar o banco: por que escolher | app de finanças sem conectar banco | Bottom | Privacy angle, MeuGrana's differentiator |
-| 12 | Quantos cartões de crédito ter (e como não se perder) | quantos cartões de crédito ter | Top | Multi-card pain → projection per card |
+| 16 | Limite do cartão de crédito: como as parcelas ocupam seu limite | parcelas ocupam limite do cartão | Mid | Common surprise: limit doesn't free up until installments end |
+| 17 | Cartão adicional: como controlar gastos da família | cartão adicional controle | Mid | Shared-invoice pain → per-card view |
+| 18 | Como anotar gastos no celular sem planilha | como anotar gastos no celular | Bottom | Manual-entry-as-a-feature angle |
 
 ## Per-post checklist
 
