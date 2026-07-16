@@ -2,7 +2,7 @@
 import Layout from "../../layouts/Layout.astro";
 import Navbar from "../../components/Navbar.astro";
 import Footer from "../../components/Footer.astro";
-import { SITE } from "../../consts";
+import { SITE, ORG_ID } from "../../consts";
 import { getPublishedPosts, postUrl, formatDate } from "../../utils/blog";
 import { readingTime } from "../../utils/readingTime";
 
@@ -11,6 +11,23 @@ const posts = await getPublishedPosts();
 const title = "Blog do MeuGrana — parcelas, cartões e finanças no Brasil";
 const description =
   "Guias práticos sobre parcelas, fatura do cartão e controle financeiro do jeito brasileiro.";
+
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "Blog",
+  name: "Blog do MeuGrana",
+  description,
+  url: `${SITE}/blog/`,
+  inLanguage: "pt-BR",
+  publisher: { "@id": ORG_ID },
+  blogPost: posts.map((post) => ({
+    "@type": "BlogPosting",
+    headline: post.data.title,
+    url: `${SITE}${postUrl(post)}`,
+    datePublished: post.data.publishDate.toISOString().slice(0, 10),
+    author: { "@type": "Person", name: post.data.author },
+  })),
+};
 ---
 
 <Layout title={title} description={description} canonical={`${SITE}/blog/`}>
@@ -31,6 +48,7 @@ const description =
     <meta name="twitter:description" content={description} />
     <meta name="twitter:image" content={`${SITE}/images/og-image.png`} />
     <link rel="alternate" type="application/rss+xml" title="Blog do MeuGrana" href="/rss.xml" />
+    <script is:inline type="application/ld+json" set:html={JSON.stringify(structuredData)} />
   </Fragment>
 
   <Navbar root />
