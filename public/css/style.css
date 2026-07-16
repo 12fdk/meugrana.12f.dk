@@ -631,55 +631,87 @@ a:hover {
   color: var(--text-primary);
 }
 
-/* ── Premium Section ── */
-.premium {
+/* ── Pricing Section (Free vs Premium) ── */
+.pricing {
   padding: 96px 24px;
   background: var(--bg-white);
 }
 
-.premium-card {
-  max-width: 700px;
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  max-width: 860px;
   margin: 0 auto;
-  background: linear-gradient(135deg, var(--brand-green-dark) 0%, var(--brand-green) 100%);
+  align-items: stretch;
+}
+
+.pricing-card {
+  background: var(--bg-light);
+  border: 1px solid var(--border-color);
   border-radius: var(--radius-lg);
-  padding: 48px;
+  padding: 40px 32px;
+  display: flex;
+  flex-direction: column;
+}
+
+.pricing-card-premium {
+  background: linear-gradient(135deg, var(--brand-green-dark) 0%, var(--brand-green) 100%);
+  border: none;
   color: var(--text-light);
-  text-align: center;
   box-shadow: var(--shadow-lg);
 }
 
-.premium-card h2 {
-  font-size: 2rem;
+.pricing-card h3 {
+  font-size: 1.3rem;
   font-weight: 800;
-  margin-bottom: 8px;
+  margin-bottom: 4px;
 }
 
-.premium-card .premium-subtitle {
-  font-size: 1.1rem;
+.pricing-price {
+  font-size: 1.6rem;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+  margin-bottom: 4px;
+}
+
+.pricing-card-premium .pricing-price {
+  font-size: 1.3rem;
+}
+
+.pricing-tagline {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  margin-bottom: 24px;
+}
+
+.pricing-card-premium .pricing-tagline {
+  color: inherit;
   opacity: 0.85;
-  margin-bottom: 32px;
 }
 
-.premium-features {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 16px;
-  text-align: left;
-  margin-bottom: 32px;
+.pricing-features {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 28px;
+  flex: 1;
 }
 
-.premium-feature {
+.pricing-features li {
   display: flex;
   align-items: center;
   gap: 10px;
   font-size: 0.95rem;
 }
 
-.premium-feature .check {
+.pricing-features .check {
   flex-shrink: 0;
   width: 22px;
   height: 22px;
-  background: rgba(255, 255, 255, 0.2);
+  background: var(--brand-green-light);
+  color: var(--brand-green);
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -687,10 +719,18 @@ a:hover {
   font-size: 0.75rem;
 }
 
-.premium-price {
-  font-size: 1rem;
+.pricing-card-premium .pricing-features .check {
+  background: rgba(255, 255, 255, 0.2);
+  color: var(--text-light);
+}
+
+.pricing-card .app-store-badge {
+  align-self: flex-start;
+}
+
+.pricing-note {
+  font-size: 0.85rem;
   opacity: 0.8;
-  margin-top: 8px;
 }
 
 /* ── FAQ Section ── */
@@ -908,20 +948,16 @@ a:hover {
     height: 15px;
   }
 
-  .premium {
+  .pricing {
     padding: 64px 20px;
   }
 
-  .premium-card {
-    padding: 32px 24px;
-  }
-
-  .premium-card h2 {
-    font-size: 1.6rem;
-  }
-
-  .premium-features {
+  .pricing-grid {
     grid-template-columns: 1fr;
+  }
+
+  .pricing-card {
+    padding: 32px 24px;
   }
 
   .download-cta {

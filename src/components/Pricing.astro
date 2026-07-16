@@ -1,0 +1,78 @@
+---
+// Free vs Premium comparison. Free column comes first and gets the App Store
+// badge — the goal is the download, not the subscription. Feature lists match
+// the App Store listing (Premium = unlimited cards/installments, 12-month
+// projection, custom categories, widgets, CSV; iCloud sync per privacy policy).
+import { APP_STORE_URL, APP_STORE_BADGE_URL } from "../consts";
+
+const freeFeatures = [
+  { key: "pricing.free.f1", text: "Dashboard com resumo do mês" },
+  { key: "pricing.free.f2", text: "Registro rápido de transações" },
+  { key: "pricing.free.f3", text: "Acompanhamento de parcelas por cartão" },
+  { key: "pricing.free.f4", text: "Projeção das próximas faturas" },
+  { key: "pricing.free.f5", text: "Gráficos de gastos por categoria" },
+  { key: "pricing.free.f6", text: "Alertas de fechamento e vencimento" },
+  { key: "pricing.free.f7", text: "PIX, boleto e vale-refeição" },
+  { key: "pricing.free.f8", text: "100% offline — dados só no seu iPhone" },
+];
+
+const premiumFeatures = [
+  { key: "pricing.premium.f1", text: "Tudo do plano grátis" },
+  { key: "pricing.premium.f2", text: "Cartões e parcelas ilimitados" },
+  { key: "pricing.premium.f3", text: "Projeção completa de 12 meses" },
+  { key: "pricing.premium.f4", text: "Categorias personalizadas" },
+  { key: "pricing.premium.f5", text: "Relatórios e tendências" },
+  { key: "pricing.premium.f6", text: "Widgets na tela inicial" },
+  { key: "pricing.premium.f7", text: "Exportação CSV" },
+  { key: "pricing.premium.f8", text: "Sincronização via iCloud" },
+];
+---
+
+<section class="pricing" id="premium" aria-label="Pricing">
+  <div class="container">
+    <div class="section-header fade-in">
+      <h2 data-i18n="pricing.title">Comece grátis. Evolua quando quiser.</h2>
+      <p data-i18n="pricing.subtitle">
+        O plano grátis já organiza suas parcelas. O Premium desbloqueia o controle total.
+      </p>
+    </div>
+    <div class="pricing-grid">
+      <div class="pricing-card fade-in">
+        <h3 data-i18n="pricing.free.name">Grátis</h3>
+        <p class="pricing-price" data-i18n="pricing.free.price">R$ 0</p>
+        <p class="pricing-tagline" data-i18n="pricing.free.tagline">Para organizar o dia a dia</p>
+        <ul class="pricing-features">
+          {
+            freeFeatures.map((f) => (
+              <li>
+                <span class="check">&#10003;</span>
+                <span data-i18n={f.key}>{f.text}</span>
+              </li>
+            ))
+          }
+        </ul>
+        <a href={APP_STORE_URL} class="app-store-badge" aria-label="Download on the App Store">
+          <img src={APP_STORE_BADGE_URL} data-badge alt="Download on the App Store" height="48" />
+        </a>
+      </div>
+      <div class="pricing-card pricing-card-premium fade-in">
+        <h3 data-i18n="pricing.premium.name">Premium</h3>
+        <p class="pricing-price" data-i18n="pricing.premium.price">A partir de R$ 14,90/mês</p>
+        <p class="pricing-tagline" data-i18n="pricing.premium.tagline">Para controle total</p>
+        <ul class="pricing-features">
+          {
+            premiumFeatures.map((f) => (
+              <li>
+                <span class="check">&#10003;</span>
+                <span data-i18n={f.key}>{f.text}</span>
+              </li>
+            ))
+          }
+        </ul>
+        <p class="pricing-note" data-i18n="pricing.premium.note">
+          Assinatura pela App Store — cancele quando quiser, sem multa.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
