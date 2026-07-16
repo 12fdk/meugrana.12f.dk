@@ -8,10 +8,13 @@ import Premium from "../components/Premium.astro";
 import DownloadCta from "../components/DownloadCta.astro";
 import Footer from "../components/Footer.astro";
 import { SITE, APP_STORE_URL } from "../consts";
+import { fetchAppStoreData, MIN_RATING_COUNT } from "../utils/appStoreData";
 
 const title = "MeuGrana — Parcelas & Finanças";
 const description =
   "O app de finanças feito para o Brasil. Acompanhe parcelas, cartões de crédito e projete suas faturas futuras.";
+
+const appStore = await fetchAppStoreData();
 
 const structuredData = {
   "@context": "https://schema.org",
@@ -52,6 +55,17 @@ const structuredData = {
   ],
   installUrl: APP_STORE_URL,
   author: { "@type": "Organization", name: "MeuGrana", url: `${SITE}/` },
+  // Only claim a rating once there are enough reviews to be credible.
+  ...(appStore.rating > 0 && appStore.ratingCount >= MIN_RATING_COUNT
+    ? {
+        aggregateRating: {
+          "@type": "AggregateRating",
+          ratingValue: appStore.rating.toFixed(1),
+          ratingCount: appStore.ratingCount,
+          bestRating: "5",
+        },
+      }
+    : {}),
 };
 ---
 
@@ -92,7 +106,7 @@ const structuredData = {
   <Navbar />
 
   <main>
-    <Hero />
+    <Hero rating={appStore.rating} ratingCount={appStore.ratingCount} />
     <Features />
     <Screenshots />
     <Premium />

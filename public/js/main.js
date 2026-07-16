@@ -6,9 +6,11 @@ const translations = {
     'nav.screenshots': 'Capturas',
     'nav.premium': 'Premium',
     'nav.download': 'Baixar',
-    'hero.tagline': 'Controle seus gastos e parcelas',
-    'hero.subtitle': 'O app de finanças feito para o jeito brasileiro de lidar com dinheiro. Acompanhe parcelas, cartões de crédito e projete suas faturas futuras.',
+    'hero.headline': 'Nunca mais perca o controle das parcelas',
+    'hero.subtitle': 'Chega de planilha e de susto na fatura. O MeuGrana reúne as parcelas espalhadas nos seus cartões e mostra quanto da fatura já está comprometida — mês a mês.',
     'hero.cta': 'Baixar na App Store',
+    'hero.microcopy': 'Grátis para baixar · Sem cadastro · Dados só no seu iPhone',
+    'hero.ratingLabel': 'avaliações na App Store',
     'features.title': 'Feito para o Brasil',
     'features.subtitle': 'Recursos pensados para como você realmente usa seu dinheiro.',
     'feature1.title': 'Rastreador de Parcelas',
@@ -47,9 +49,11 @@ const translations = {
     'nav.screenshots': 'Screenshots',
     'nav.premium': 'Premium',
     'nav.download': 'Download',
-    'hero.tagline': 'Track your spending & installments',
-    'hero.subtitle': 'The finance app built for how Brazilians actually manage money. Track installments, credit cards, and project your future bills.',
+    'hero.headline': 'Never lose track of your installments again',
+    'hero.subtitle': 'No more spreadsheets, no more bill shock. MeuGrana brings together the installments scattered across your cards and shows how much of your bill is already committed — month by month.',
     'hero.cta': 'Download on the App Store',
+    'hero.microcopy': 'Free to download · No sign-up · Your data stays on your iPhone',
+    'hero.ratingLabel': 'ratings on the App Store',
     'features.title': 'Built for Brazil',
     'features.subtitle': 'Features designed for how you actually use your money.',
     'feature1.title': 'Installment Tracker',
@@ -115,6 +119,12 @@ function setLanguage(lang) {
   document.querySelectorAll('[data-screenshot]').forEach(img => {
     const num = img.getAttribute('data-screenshot');
     img.src = `images/screenshots/${screenshotLang}/screenshot-${num}.png`;
+  });
+
+  // Swap the App Store badge for the localized version
+  const badgeLang = lang === 'pt' ? 'pt-br' : 'en-us';
+  document.querySelectorAll('img[data-badge]').forEach(img => {
+    img.src = `https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/${badgeLang}?size=250x83`;
   });
 
   // Update toggle button text

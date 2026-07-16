@@ -1,0 +1,30 @@
+---
+// App Store star rating + review count. Renders nothing until the app has
+// enough ratings for the number to be credible social proof.
+import { MIN_RATING_COUNT } from "../utils/appStoreData";
+
+interface Props {
+  rating: number;
+  ratingCount: number;
+}
+
+const { rating, ratingCount } = Astro.props;
+const show = rating > 0 && ratingCount >= MIN_RATING_COUNT;
+const fullStars = Math.round(rating);
+const ratingLabel = rating.toFixed(1).replace(".", ",");
+---
+
+{
+  show && (
+    <p class="hero-rating" aria-label={`${ratingLabel} de 5 estrelas, ${ratingCount} avaliações na App Store`}>
+      <span class="stars" aria-hidden="true">
+        {"★".repeat(fullStars)}
+        {"☆".repeat(5 - fullStars)}
+      </span>
+      <span class="rating-value">{ratingLabel}</span>
+      <span class="rating-count">
+        · {ratingCount} <span data-i18n="hero.ratingLabel">avaliações na App Store</span>
+      </span>
+    </p>
+  )
+}
