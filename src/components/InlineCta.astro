@@ -1,0 +1,23 @@
+---
+// Slim mid-page App Store CTA to catch scroll intent between sections.
+// `placement` feeds Umami so we learn which position converts.
+import { APP_STORE_URL, APP_STORE_BADGE_URL } from "../consts";
+
+interface Props {
+  placement: string;
+}
+
+const { placement } = Astro.props;
+---
+
+<div class="inline-cta fade-in">
+  <a
+    href={APP_STORE_URL}
+    class="app-store-badge"
+    aria-label="Download on the App Store"
+    data-umami-event="app-store-click"
+    data-umami-event-placement={placement}
+  >
+    <img src={APP_STORE_BADGE_URL} data-badge alt="Download on the App Store" height="48" />
+  </a>
+</div>

@@ -10,6 +10,8 @@ import VsSpreadsheet from "../components/VsSpreadsheet.astro";
 import Personas from "../components/Personas.astro";
 import Pricing from "../components/Pricing.astro";
 import Faq from "../components/Faq.astro";
+import InlineCta from "../components/InlineCta.astro";
+import StickyDownload from "../components/StickyDownload.astro";
 import DownloadCta from "../components/DownloadCta.astro";
 import Footer from "../components/Footer.astro";
 import { SITE, APP_STORE_URL } from "../consts";
@@ -115,15 +117,18 @@ const structuredData = {
     <Features />
     <HowItWorks />
     <Screenshots />
+    <InlineCta placement="after-screenshots" />
     <Testimonials rating={appStore.rating} ratingCount={appStore.ratingCount} />
     <VsSpreadsheet />
     <Personas />
+    <InlineCta placement="after-personas" />
     <Pricing />
     <Faq />
     <DownloadCta />
   </main>
 
   <Footer />
+  <StickyDownload />
 
   <script is:inline src="js/main.js"></script>
 </Layout>
