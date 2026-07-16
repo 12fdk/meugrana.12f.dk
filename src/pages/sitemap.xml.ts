@@ -9,8 +9,13 @@ const day = (d: Date) => d.toISOString().slice(0, 10);
 export async function GET(_context: APIContext) {
   const posts = await getPublishedPosts();
 
+  // Homepage and blog index surface the latest posts, so their lastmod
+  // tracks the newest post (getPublishedPosts sorts newest first).
+  const newestPostDate = posts[0] ? day(posts[0].data.updatedDate ?? posts[0].data.publishDate) : null;
+  const lastmod = newestPostDate ? `\n    <lastmod>${newestPostDate}</lastmod>` : "";
+
   const staticUrls = `  <url>
-    <loc>${SITE}/</loc>
+    <loc>${SITE}/</loc>${lastmod}
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image>
@@ -26,7 +31,7 @@ ${[1, 2, 3, 4, 5]
   .join("\n")}
   </url>
   <url>
-    <loc>${SITE}/blog/</loc>
+    <loc>${SITE}/blog/</loc>${lastmod}
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -39,11 +44,6 @@ ${[1, 2, 3, 4, 5]
     <loc>${SITE}/terms-of-use.html</loc>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>${SITE}/llms.txt</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
   </url>`;
 
   const postUrls = posts
