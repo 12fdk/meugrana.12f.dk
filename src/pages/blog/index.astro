@@ -18,10 +18,18 @@ const description =
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:image" content={`${SITE}/images/og-image.png`} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content={`${SITE}/blog/`} />
     <meta property="og:site_name" content="MeuGrana" />
     <meta property="og:locale" content="pt_BR" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={`${SITE}/images/og-image.png`} />
     <link rel="alternate" type="application/rss+xml" title="Blog do MeuGrana" href="/rss.xml" />
   </Fragment>
 
