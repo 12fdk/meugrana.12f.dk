@@ -82,7 +82,7 @@ A partir do mês 7, o compromisso da Carla zera — se ela não parcelar mais na
 
 ![Mulher brasileira analisando projeções financeiras no laptop com expressão pensativa, mesa organizada ao fundo](/images/blog/fatura-inline.jpg)
 
-Se fazer essa conta na mão parece trabalhoso, o [MeuGrana](https://apps.apple.com/br/app/meugrana-parcelas-finan%C3%A7as/id6759177555) faz exatamente isso automaticamente: você cadastra suas compras parceladas e o app soma o compromisso mensal e projeta as faturas dos próximos 12 meses. É grátis, funciona offline, o registro é manual — sem conectar banco — e os dados ficam só no seu aparelho.
+Se fazer essa conta na mão parece trabalhoso, o [MeuGrana](https://apps.apple.com/br/app/meugrana-parcelas-finan%C3%A7as/id6759177555) faz exatamente isso automaticamente: você cadastra suas compras parceladas e o app soma o compromisso mensal e projeta as suas próximas faturas. É grátis, funciona offline, o registro é manual — sem conectar banco — e os dados ficam só no seu aparelho.
 
 ## Fechamento vs. vencimento: por que a compra de hoje pode cair só na próxima fatura
 
@@ -110,4 +110,4 @@ Um teste simples: se perder a renda por um mês transformaria essas parcelas num
 
 Calcular quanto da sua fatura já está comprometida com parcelas leva dez minutos e muda completamente a forma como você enxerga o cartão. Em vez de descobrir o estrago quando a fatura fecha, você passa a saber, com antecedência, quanto cada mês já nasce devendo — e quando cada parcelamento sai da sua vida.
 
-Liste as parcelas ativas, some o compromisso mensal, projete os próximos meses e use essa projeção antes de qualquer parcelamento novo. Se preferir automatizar, o MeuGrana faz o cálculo e a projeção de 12 meses por você, direto no iPhone e sem precisar conectar sua conta bancária.
+Liste as parcelas ativas, some o compromisso mensal, projete os próximos meses e use essa projeção antes de qualquer parcelamento novo. Se preferir automatizar, o MeuGrana faz o cálculo e a projeção das próximas faturas por você, direto no iPhone e sem precisar conectar sua conta bancária.

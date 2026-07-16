@@ -28,7 +28,7 @@ cover: "/images/blog/planilha-de-gastos-mensais-alternativa.jpg"
 coverAlt: "Ilustração: notebook com planilha ao lado de um celular com app de finanças"
 ---
 
-Uma planilha de gastos mensais continua sendo uma das formas mais baratas e flexíveis de organizar o dinheiro: basta o Google Sheets ou o Excel, sem assinatura, com tudo do seu jeito. Neste guia, você aprende a criar a sua do zero em uns 10 minutos — e depois vê, com honestidade, quando a planilha funciona muito bem e quando ela começa a quebrar (spoiler: parcelas no cartão são o calcanhar de aquiles).
+Uma planilha de gastos mensais continua sendo uma das formas mais baratas e flexíveis de organizar o dinheiro: basta o Google Sheets ou o Excel, sem assinatura, com tudo do seu jeito. Neste guia, você aprende a criar a sua do zero em uns 10 minutos — e depois vê, com honestidade, quando a planilha funciona muito bem e quando ela começa a quebrar (spoiler: parcelas no cartão são o calcanhar de Aquiles).
 
 ## Como montar sua planilha de gastos mensais do zero
 
@@ -105,7 +105,7 @@ O [MeuGrana](https://apps.apple.com/br/app/meugrana-parcelas-finan%C3%A7as/id675
 
 - **Registro em segundos, no celular.** Você anota a compra na hora, em vez de acumular notinhas para lançar "quando sentar no computador".
 - **Parcelas terminam sozinhas.** Você registra "10x de R$ 250" uma única vez; o app distribui as parcelas nos meses certos e encerra tudo automaticamente quando a última cai. Nada de copiar linha e trocar "3/10" por "4/10".
-- **Projeção de fatura para os próximos 12 meses.** Você vê hoje quanto já está comprometido em cada mês futuro, cartão por cartão.
+- **Projeção das próximas faturas.** Você vê hoje quanto já está comprometido nos meses seguintes, cartão por cartão — a projeção completa de 12 meses faz parte do Premium.
 - **Gráficos prontos e alertas**, sem montar fórmula nenhuma.
 - **Funciona offline e os dados ficam no aparelho** — o app não pede para conectar sua conta bancária.
 
@@ -122,7 +122,7 @@ E vale repetir: se você gosta de planilha e seu orçamento é simples, a planil
 | Registrar na hora da compra | Trabalhoso no celular | Segundos |
 | Parcelas | Linhas repetidas, atualização manual | Terminam sozinhas no mês certo |
 | Fechamento de cada cartão | Você calcula | O app calcula |
-| Projeção de meses futuros | Exige fórmulas e disciplina | Pronta, 12 meses |
+| Projeção de meses futuros | Exige fórmulas e disciplina | Pronta no app |
 | Gráficos | Você monta | Prontos |
 | Alertas | Não tem | Tem |
 | Privacidade | Depende de onde salva | Dados no aparelho, sem conectar banco |

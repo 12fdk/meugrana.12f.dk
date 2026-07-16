@@ -57,7 +57,7 @@ Anote tudo numa lista: nome do serviço, valor e se a cobrança é mensal ou anu
 
 Some o valor mensal de tudo (dividindo as anuais por 12). Esse é o seu custo mensal com assinaturas. Agora multiplique por 12.
 
-Esse segundo número é o que muda decisões. R$ 190 por mês parece administrável; o mesmo gasto visto como mais de R$ 2.000 por ano vira uma pergunta concreta: "isso vale uma viagem curta? um mês de mercado?". A multiplicação por 12 assusta na medida certa.
+Esse segundo número é o que muda decisões. Um gasto na casa dos R$ 200 por mês parece administrável; o mesmo gasto visto como mais de R$ 2.000 por ano vira uma pergunta concreta: "isso vale uma viagem curta? um mês de mercado?". A multiplicação por 12 assusta na medida certa.
 
 Para visualizar, veja uma lista típica — os números abaixo são um exemplo inventado, apenas para ilustrar o método:
 
@@ -100,7 +100,7 @@ A auditoria resolve o estoque; estes hábitos seguram o fluxo:
 - **Repita a auditoria duas vezes por ano.** Vinte minutos em janeiro e julho bastam, porque o grosso do trabalho já foi feito na primeira vez.
 - **Dificulte a entrada de novas assinaturas.** Tirar o cartão salvo de lojas e navegadores adiciona o atrito de digitar os dados — tempo suficiente para pensar duas vezes, a mesma lógica que usamos no guia de [como evitar compras por impulso](/blog/como-evitar-compras-por-impulso.html).
 
-Um último hábito que amarra tudo: olhe as assinaturas e as parcelas como um bloco só. Somadas, elas formam o "piso" da sua fatura — o valor que chega todo mês antes de qualquer compra nova. Se você usa iPhone, o [MeuGrana](https://apps.apple.com/br/app/meugrana-parcelas-finan%C3%A7as/id6759177555) cuida da metade das parcelas desse piso: é um app grátis e focado em parcelas do cartão, em que você registra cada compra manualmente (sem conectar conta bancária) e vê o total comprometido por mês. Com o total de assinaturas da sua auditoria ao lado, você sabe exatamente quanto da fatura já está tomado — os dados ficam no aparelho e o app funciona offline.
+Um último hábito que amarra tudo: olhe as assinaturas e as parcelas como um bloco só. Somadas, elas formam o "piso" da sua fatura — o valor que chega todo mês antes de qualquer compra nova. Se você usa iPhone, o [MeuGrana](https://apps.apple.com/br/app/meugrana-parcelas-finan%C3%A7as/id6759177555) cuida da parte das parcelas desse piso: é um app grátis e focado em parcelas do cartão, em que você registra cada compra manualmente (sem conectar conta bancária) e vê o total comprometido por mês. Com o total de assinaturas da sua auditoria ao lado, você sabe exatamente quanto da fatura já está tomado — os dados ficam no aparelho e o app funciona offline.
 
 ## Conclusão
 

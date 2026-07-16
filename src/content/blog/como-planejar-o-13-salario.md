@@ -10,8 +10,9 @@ faq:
     a: >-
       Para quem trabalha com carteira assinada (CLT), o 13º é pago em duas
       parcelas: a primeira até 30 de novembro e a segunda até 20 de dezembro.
-      Algumas empresas permitem adiantar a primeira parcela junto com as
-      férias, se você solicitar no início do ano — vale perguntar ao RH.
+      Você também tem direito, por lei, de receber a primeira parcela junto
+      com as férias — desde que faça o pedido em janeiro. Vale avisar o RH
+      com antecedência.
   - q: "Por que a segunda parcela do 13º vem menor que a primeira?"
     a: >-
       A primeira parcela é paga sem descontos. Os descontos de INSS e de
@@ -66,7 +67,7 @@ Se você ainda não tem reserva nenhuma, essa prioridade ganha peso extra: é ju
 
 Presentes, ceia, viagem, roupa nova: tudo isso é legítimo — e entra por último de propósito. Quando as três primeiras prioridades já estão cobertas, o que sobrar pode ser gasto **sem culpa e sem susto em janeiro**. É a diferença entre gastar o que sobrou e descobrir em fevereiro que faltou.
 
-Uma dica para esta fase: antes de parcelar presentes ou viagem, vale entender [quando vale a pena parcelar](/blog/vale-a-pena-parcelar.html) — parcela de dezembro é fatura de janeiro a outubro do ano seguinte.
+Uma dica para esta fase: antes de parcelar presentes ou viagem, vale entender [quando vale a pena parcelar](/blog/vale-a-pena-parcelar.html) — compra parcelada em dezembro ocupa faturas ao longo do ano seguinte.
 
 ## Um exemplo de divisão na prática
 
