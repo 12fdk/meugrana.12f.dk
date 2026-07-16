@@ -5,6 +5,25 @@ keyword: "planilha de gastos mensais"
 publishDate: 2026-07-16
 tags: ["planilha", "orçamento", "organização"]
 relatedSlugs: ["melhor-app-para-controlar-parcelas", "como-organizar-compras-parceladas"]
+faq:
+  - q: "É melhor controlar gastos por planilha ou por app?"
+    a: >-
+      Depende do seu perfil. Planilha ganha em flexibilidade e custo zero, e
+      funciona bem para orçamentos simples e pagamentos à vista. App ganha
+      quando há muitas parcelas, mais de um cartão e necessidade de registrar
+      na hora da compra.
+  - q: "Como registrar compras parceladas na planilha de gastos?"
+    a: >-
+      Crie uma coluna "Parcela" no formato x/y (ex.: 3/12) e repita a linha da
+      compra em cada aba mensal até a última parcela, atualizando o número a
+      cada mês. Funciona, mas é manual — e é o principal motivo de abandono das
+      planilhas.
+  - q: "Qual fórmula usar para somar gastos por categoria?"
+    a: >-
+      Use SOMASE (SUMIF no Excel em inglês): ela soma os valores da coluna
+      Valor sempre que a coluna Categoria corresponde ao critério que você
+      definir, como "alimentação". É a fórmula ideal para alimentar a aba de
+      resumo mensal.
 cover: "/images/blog/planilha-de-gastos-mensais-alternativa.jpg"
 coverAlt: "Ilustração: notebook com planilha ao lado de um celular com app de finanças"
 ---
@@ -109,15 +128,3 @@ E vale repetir: se você gosta de planilha e seu orçamento é simples, a planil
 ## Conclusão
 
 Montar uma planilha de gastos mensais é rápido: seis colunas, uma aba por mês, uma aba de resumo e o SOMASE fazendo o trabalho por categoria. Para orçamentos simples e pagamentos à vista, é uma solução excelente e gratuita. O problema são as parcelas: repetir linhas, acompanhar fechamentos diferentes e projetar meses futuros exige uma manutenção que quase ninguém sustenta. Se esse é o seu caso, um app como o MeuGrana faz essa parte chata sozinho — e você gasta seu tempo decidindo, não digitando.
-
-### É melhor controlar gastos por planilha ou por app?
-
-Depende do seu perfil. Planilha ganha em flexibilidade e custo zero, e funciona bem para orçamentos simples e pagamentos à vista. App ganha quando há muitas parcelas, mais de um cartão e necessidade de registrar na hora da compra.
-
-### Como registrar compras parceladas na planilha de gastos?
-
-Crie uma coluna "Parcela" no formato x/y (ex.: 3/12) e repita a linha da compra em cada aba mensal até a última parcela, atualizando o número a cada mês. Funciona, mas é manual — e é o principal motivo de abandono das planilhas.
-
-### Qual fórmula usar para somar gastos por categoria?
-
-Use SOMASE (SUMIF no Excel em inglês): ela soma os valores da coluna Valor sempre que a coluna Categoria corresponde ao critério que você definir, como "alimentação". É a fórmula ideal para alimentar a aba de resumo mensal.

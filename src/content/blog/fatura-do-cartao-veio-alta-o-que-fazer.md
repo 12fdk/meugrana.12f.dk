@@ -5,6 +5,26 @@ keyword: "fatura do cartão veio alta"
 publishDate: 2026-07-16
 tags: ["fatura", "cartão de crédito", "dívidas"]
 relatedSlugs: ["quanto-da-fatura-esta-comprometida", "como-organizar-compras-parceladas"]
+faq:
+  - q: "O que acontece se eu pagar só o mínimo da fatura?"
+    a: >-
+      O valor que ficar sem pagar entra no crédito rotativo, uma das
+      modalidades de crédito mais caras do mercado, e a dívida cresce rápido.
+      Sempre que possível, pague o total ou negocie o parcelamento da fatura
+      com o banco, que costuma ter condições melhores que o rotativo.
+  - q: "Parcelar a fatura no banco vale a pena?"
+    a: >-
+      É melhor do que deixar o valor no rotativo: os juros costumam ser menores
+      e as parcelas são fixas e previsíveis. Mas continua sendo uma dívida com
+      juros — só use quando não conseguir pagar o total, e evite novas compras
+      parceladas enquanto estiver pagando a fatura parcelada.
+  - q: "Como saber quanto da minha próxima fatura já está comprometido?"
+    a: >-
+      Some todas as parcelas de compras antigas que ainda vão cair nas próximas
+      faturas. Dá para fazer manualmente, revisando as últimas faturas, ou usar
+      um app como o MeuGrana, que projeta suas faturas dos próximos 12 meses
+      automaticamente a partir das parcelas que você registrar — assim você vê
+      o valor comprometido antes de decidir qualquer compra nova.
 cover: "/images/blog/fatura-do-cartao-veio-alta-o-que-fazer.jpg"
 coverAlt: "Ilustração: pessoa surpresa com um recibo comprido saindo da maquininha"
 ---
@@ -91,17 +111,3 @@ Se você quer fazer tudo isso sem planilha, o [MeuGrana](https://apps.apple.com/
 ## Conclusão
 
 Fatura alta não é sentença: é um sinal. No curto prazo, a prioridade é escapar do rotativo — pagando o total se possível, ou negociando o parcelamento com o banco. No médio prazo, o objetivo é recuperar a visibilidade: saber quanto das próximas faturas já está comprometido, acompanhar o valor parcial e definir um teto para novas parcelas. Com esses hábitos, a próxima fatura deixa de ser uma surpresa e volta a ser apenas uma conta do mês.
-
-## Perguntas frequentes
-
-### O que acontece se eu pagar só o mínimo da fatura?
-
-O valor que ficar sem pagar entra no crédito rotativo, uma das modalidades de crédito mais caras do mercado, e a dívida cresce rápido. Sempre que possível, pague o total ou negocie o parcelamento da fatura com o banco, que costuma ter condições melhores que o rotativo.
-
-### Parcelar a fatura no banco vale a pena?
-
-É melhor do que deixar o valor no rotativo: os juros costumam ser menores e as parcelas são fixas e previsíveis. Mas continua sendo uma dívida com juros — só use quando não conseguir pagar o total, e evite novas compras parceladas enquanto estiver pagando a fatura parcelada.
-
-### Como saber quanto da minha próxima fatura já está comprometido?
-
-Some todas as parcelas de compras antigas que ainda vão cair nas próximas faturas. Dá para fazer manualmente, revisando as últimas faturas, ou usar um app como o MeuGrana, que projeta suas faturas dos próximos 12 meses automaticamente a partir das parcelas que você registrar — assim você vê o valor comprometido antes de decidir qualquer compra nova.

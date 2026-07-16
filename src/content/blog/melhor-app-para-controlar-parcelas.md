@@ -5,6 +5,26 @@ keyword: "app para controlar parcelas"
 publishDate: 2026-07-16
 tags: ["parcelas", "apps"]
 relatedSlugs: ["como-organizar-compras-parceladas", "quanto-da-fatura-esta-comprometida"]
+faq:
+  - q: "Preciso conectar minha conta bancária para controlar parcelas?"
+    a: >-
+      Não. Conexão bancária ajuda a importar gastos automaticamente, mas
+      parcelas são previsíveis: você sabe o valor e a quantidade no momento da
+      compra. Um registro manual bem feito, como no MeuGrana ou numa planilha,
+      resolve — com a vantagem de os dados ficarem só com você.
+  - q: "App de parcelas grátis funciona ou preciso pagar?"
+    a: >-
+      Dá para começar grátis em qualquer opção desta lista. Planos pagos
+      costumam valer a pena quando você tem vários cartões e muitas parcelas
+      ativas — no MeuGrana, por exemplo, o Premium (pagamento único de
+      R$ 19,90, acesso vitalício) libera cartões e parcelas ilimitados e a
+      projeção completa de 12 meses.
+  - q: "O que é projeção de fatura e por que ela importa?"
+    a: >-
+      É a soma de todas as parcelas que vão cair em cada fatura futura. Ela
+      responde a pergunta que evita o susto: "se eu parcelar isso agora, quanto
+      vou pagar em novembro?". Sem projeção, você só descobre a resposta quando
+      a fatura fecha — tarde demais para mudar a decisão.
 cover: "/images/blog/melhor-app-para-controlar-parcelas.jpg"
 coverAlt: "Ilustração: pessoa comparando apps de finanças no celular, com cartões de crédito ao redor"
 ---
@@ -95,15 +115,3 @@ Depende do seu problema real:
 - **Sua dor é especificamente parcela — prever as próximas faturas sem entregar acesso ao banco?** Aí o MeuGrana é a opção desenhada exatamente para isso, com a projeção de 12 meses como peça central. Se você usa iPhone, vale [baixar grátis e testar](https://apps.apple.com/br/app/meugrana-parcelas-finan%C3%A7as/id6759177555) com suas parcelas reais.
 
 O pior cenário é o mais comum: não usar nada e descobrir o tamanho do compromisso só quando a fatura fecha. Qualquer opção acima é melhor do que isso.
-
-### Preciso conectar minha conta bancária para controlar parcelas?
-
-Não. Conexão bancária ajuda a importar gastos automaticamente, mas parcelas são previsíveis: você sabe o valor e a quantidade no momento da compra. Um registro manual bem feito, como no MeuGrana ou numa planilha, resolve — com a vantagem de os dados ficarem só com você.
-
-### App de parcelas grátis funciona ou preciso pagar?
-
-Dá para começar grátis em qualquer opção desta lista. Planos pagos costumam valer a pena quando você tem vários cartões e muitas parcelas ativas — no MeuGrana, por exemplo, o Premium (pagamento único de R$ 19,90, acesso vitalício) libera cartões e parcelas ilimitados e a projeção completa de 12 meses.
-
-### O que é projeção de fatura e por que ela importa?
-
-É a soma de todas as parcelas que vão cair em cada fatura futura. Ela responde a pergunta que evita o susto: "se eu parcelar isso agora, quanto vou pagar em novembro?". Sem projeção, você só descobre a resposta quando a fatura fecha — tarde demais para mudar a decisão.
