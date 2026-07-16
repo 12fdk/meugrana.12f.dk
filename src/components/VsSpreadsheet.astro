@@ -1,0 +1,71 @@
+---
+// "MeuGrana vs a planilha" — positions the app against the tool most
+// prospects actually use today. Row N in each column is the same dimension.
+const rows = [
+  {
+    app: { key: "vs.app.r1", text: "Parcelas terminam sozinhas no mês certo" },
+    sheet: { key: "vs.sheet.r1", text: "Fórmulas e datas atualizadas na mão" },
+  },
+  {
+    app: { key: "vs.app.r2", text: "Projeção de 12 meses automática" },
+    sheet: { key: "vs.sheet.r2", text: "Copiar e colar colunas todo mês" },
+  },
+  {
+    app: { key: "vs.app.r3", text: "Compra registrada em 5 segundos, no celular" },
+    sheet: { key: "vs.sheet.r3", text: "Abrir o Excel quando lembrar" },
+  },
+  {
+    app: { key: "vs.app.r4", text: "Gráficos por categoria prontos" },
+    sheet: { key: "vs.sheet.r4", text: "Montar tabela dinâmica" },
+  },
+  {
+    app: { key: "vs.app.r5", text: "Alertas de fechamento e vencimento" },
+    sheet: { key: "vs.sheet.r5", text: "Susto quando a fatura chega" },
+  },
+  {
+    app: { key: "vs.app.r6", text: "Dados no iPhone, com backup no iCloud" },
+    sheet: { key: "vs.sheet.r6", text: "Arquivo perdido no Drive" },
+  },
+];
+---
+
+<section class="vs-planilha" id="vs-planilha" aria-label="MeuGrana vs spreadsheet">
+  <div class="container">
+    <div class="section-header fade-in">
+      <h2 data-i18n="vs.title">MeuGrana vs a planilha</h2>
+      <p data-i18n="vs.subtitle">Você não precisa de mais uma aba no Excel.</p>
+    </div>
+    <div class="vs-grid fade-in">
+      <div class="vs-col vs-col-app">
+        <h3>MeuGrana</h3>
+        <ul>
+          {
+            rows.map((r) => (
+              <li>
+                <span class="vs-mark vs-yes" aria-hidden="true">
+                  &#10003;
+                </span>
+                <span data-i18n={r.app.key}>{r.app.text}</span>
+              </li>
+            ))
+          }
+        </ul>
+      </div>
+      <div class="vs-col vs-col-sheet">
+        <h3 data-i18n="vs.sheet.label">A planilha</h3>
+        <ul>
+          {
+            rows.map((r) => (
+              <li>
+                <span class="vs-mark vs-no" aria-hidden="true">
+                  &#10007;
+                </span>
+                <span data-i18n={r.sheet.key}>{r.sheet.text}</span>
+              </li>
+            ))
+          }
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>

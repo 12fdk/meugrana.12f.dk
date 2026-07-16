@@ -631,6 +631,98 @@ a:hover {
   color: var(--text-primary);
 }
 
+/* ── Vs Planilha Section ── */
+.vs-planilha {
+  padding: 96px 24px;
+  background: var(--bg-light);
+}
+
+.vs-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+.vs-col {
+  border-radius: var(--radius-lg);
+  padding: 36px 32px;
+}
+
+.vs-col-app {
+  background: var(--bg-white);
+  border: 2px solid var(--brand-green);
+  box-shadow: var(--shadow-md);
+}
+
+.vs-col-sheet {
+  background: var(--bg-white);
+  border: 1px solid var(--border-color);
+  opacity: 0.85;
+}
+
+.vs-col h3 {
+  font-size: 1.2rem;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.vs-col-app h3 {
+  color: var(--brand-green);
+}
+
+.vs-col-sheet h3 {
+  color: var(--text-secondary);
+}
+
+.vs-col ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.vs-col li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.vs-mark {
+  flex-shrink: 0;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  margin-top: 1px;
+}
+
+.vs-yes {
+  background: var(--brand-green-light);
+  color: var(--brand-green);
+}
+
+.vs-no {
+  background: #fdecec;
+  color: var(--expense-red);
+}
+
+@media (max-width: 768px) {
+  .vs-planilha {
+    padding: 64px 20px;
+  }
+
+  .vs-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* ── Pricing Section (Free vs Premium) ── */
 .pricing {
   padding: 96px 24px;
