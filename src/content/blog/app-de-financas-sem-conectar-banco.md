@@ -46,7 +46,7 @@ Os motivos mais comuns não têm nada de irracional:
 
 ## Sendo justo: o Open Finance é regulado e seguro
 
-Aqui é importante não construir espantalho. O Open Finance brasileiro é **regulado pelo Banco Central**, o compartilhamento de dados só acontece com o seu consentimento explícito, para finalidades definidas, e você pode revogar esse consentimento quando quiser. Tecnicamente, é uma infraestrutura séria — não é "dar sua senha" para um app.
+Aqui é importante não construir espantalho. O Open Finance brasileiro é **regulado pelo [Banco Central](https://www.bcb.gov.br/estabilidadefinanceira/openfinance)**, o compartilhamento de dados só acontece com o seu consentimento explícito, para finalidades definidas, e você pode revogar esse consentimento quando quiser. Tecnicamente, é uma infraestrutura séria — não é "dar sua senha" para um app.
 
 Ou seja: se você quer automação total, conectar as contas por Open Finance em um app estabelecido é um caminho razoável e seguro. A escolha por um app sem conexão bancária é uma **escolha de preferência, não de medo**: sobre quanta exposição você aceita e sobre qual relação quer ter com os próprios gastos. Os dois caminhos são válidos — este post existe porque só um dos dois costuma ser apresentado como opção.
 
@@ -58,8 +58,8 @@ O segredo para isso funcionar é **escolher bem o escopo**. Registro manual de *
 
 Parcelas são o cenário ideal para o caminho manual por três motivos:
 
-1. **Você lança uma vez e vale por meses.** Um parcelamento em 12 vezes é um único registro que gera 12 meses de projeção automática. A relação esforço/benefício é imbatível.
-2. **São poucas.** A maioria das pessoas tem entre três e dez parcelamentos ativos — não trezentos lançamentos por mês.
+1. **Você lança uma vez e vale por meses.** Um parcelamento em 12 vezes é um único registro que alimenta a projeção de todos os meses seguintes. A relação esforço/benefício é imbatível.
+2. **São poucas.** Parcelamentos ativos costumam ser um punhado de registros — não trezentos lançamentos por mês.
 3. **É onde a surpresa mora.** A fatura que "veio alta do nada" quase sempre é soma de parcelas esquecidas, não de um gasto grande.
 
 É exatamente esse o desenho do [MeuGrana](https://apps.apple.com/br/app/meugrana-parcelas-finan%C3%A7as/id6759177555): um app para iPhone, **grátis**, focado só em parcelas no cartão. O registro é manual, o app **funciona offline** e os dados ficam **no seu aparelho** — não existe cadastro de conta bancária porque o app simplesmente não conecta a banco nenhum. O limite é o mesmo da proposta: ele não é um app de orçamento completo, e quem precisa de categorias, metas e contas sincronizadas vai se servir melhor em outra prateleira (comparamos as principais no post [Mobills ou Organizze: qual escolher](/blog/mobills-ou-organizze-qual-escolher.html)).

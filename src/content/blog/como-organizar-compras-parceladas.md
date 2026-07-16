@@ -90,7 +90,7 @@ Com as datas de término em mãos, monte a linha do tempo. Continuando o exemplo
 
 Essa projeção responde perguntas que a fatura sozinha não responde: "posso parcelar a viagem de dezembro?" ou "quando sobra espaço para trocar a geladeira?". No exemplo, outubro é o mês em que R$ 260 voltam para o orçamento — uma informação valiosa na hora de planejar a próxima compra.
 
-Fazer essa projeção no papel funciona, mas dá trabalho refazer a conta toda vez que algo muda. É exatamente esse o tipo de conta que um app como o [MeuGrana](https://apps.apple.com/br/app/meugrana-parcelas-finan%C3%A7as/id6759177555) automatiza: você registra cada parcelamento uma vez (manualmente, sem conectar sua conta bancária) e ele mostra o total comprometido por cartão e a projeção dos próximos 12 meses, atualizada sozinha a cada mês que passa.
+Fazer essa projeção no papel funciona, mas dá trabalho refazer a conta toda vez que algo muda. É exatamente esse o tipo de conta que um app como o [MeuGrana](https://apps.apple.com/br/app/meugrana-parcelas-finan%C3%A7as/id6759177555) automatiza: você registra cada parcelamento uma vez (manualmente, sem conectar sua conta bancária) e ele mostra o total comprometido por cartão e a projeção das próximas faturas, atualizada sozinha a cada mês que passa (a projeção completa de 12 meses faz parte do Premium).
 
 ## Passo 5: Defina um teto para novas parcelas
 
