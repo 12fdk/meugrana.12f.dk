@@ -1,0 +1,28 @@
+---
+interface Props {
+  minimal?: boolean;
+}
+
+const { minimal = false } = Astro.props;
+---
+
+<footer class="footer">
+  <div class="container">
+    {
+      minimal ? (
+        <span class="copyright">&copy; 2026 MeuGrana. Todos os direitos reservados. / All rights reserved.</span>
+      ) : (
+        <>
+          <span class="copyright" data-i18n="footer.copyright">
+            &copy; 2026 MeuGrana. Todos os direitos reservados.
+          </span>
+          <div class="footer-links">
+            <a href="privacy-policy.html" data-i18n="footer.privacy">
+              Política de Privacidade
+            </a>
+          </div>
+        </>
+      )
+    }
+  </div>
+</footer>

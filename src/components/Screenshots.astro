@@ -1,0 +1,41 @@
+---
+// Horizontal screenshot gallery. `data-screenshot` lets js/main.js swap the
+// image between pt-BR and en-US when the language is toggled.
+const screenshots = [
+  { num: 1, altKey: "screenshot1.alt", alt: "Dashboard — Resumo mensal" },
+  { num: 2, altKey: "screenshot2.alt", alt: "Parcelas — Acompanhamento de parcelamentos" },
+  { num: 3, altKey: "screenshot3.alt", alt: "Projeção — Faturas futuras" },
+  { num: 4, altKey: "screenshot4.alt", alt: "Cartões — Seus cartões de crédito" },
+  { num: 5, altKey: "screenshot5.alt", alt: "Transações — Histórico de gastos" },
+];
+---
+
+<section class="screenshots" id="screenshots" aria-label="Screenshots">
+  <div class="section-header fade-in">
+    <h2 data-i18n="screenshots.title">Veja o app em ação</h2>
+    <p data-i18n="screenshots.subtitle">
+      Interface moderna e intuitiva, pensada para facilitar seu controle financeiro.
+    </p>
+  </div>
+  <div class="screenshot-scroll">
+    <div class="screenshot-gallery">
+      {
+        screenshots.map((s) => (
+          <div class="screenshot-item">
+            <div class="phone-frame">
+              <img
+                src={`images/screenshots/pt-BR/screenshot-${s.num}.png`}
+                data-screenshot={s.num}
+                data-i18n={s.altKey}
+                alt={s.alt}
+                width="320"
+                height="695"
+                loading="lazy"
+              />
+            </div>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</section>
