@@ -5,6 +5,24 @@ keyword: "fatura comprometida com parcelas"
 publishDate: 2026-07-16
 tags: ["fatura", "cartão de crédito", "parcelas"]
 relatedSlugs: ["como-organizar-compras-parceladas", "fatura-do-cartao-veio-alta-o-que-fazer"]
+faq:
+  - q: "Toda compra parcelada aparece na fatura seguinte?"
+    a: >-
+      Não necessariamente. Depende da data de fechamento do seu cartão: compras
+      feitas depois do fechamento só entram na fatura seguinte, então a
+      primeira parcela pode demorar mais de um mês para aparecer.
+  - q: "Parcelas restantes contam a parcela do mês atual?"
+    a: >-
+      Se a fatura mostra "3/10", a parcela 3 já está na fatura atual. Para
+      projetar o futuro, conte as 7 que faltam (da 4 à 10). Na dúvida, olhe a
+      data prevista da última parcela.
+  - q: "Preciso refazer esse cálculo todo mês?"
+    a: >-
+      Se você fizer na mão, sim — cada compra parcelada nova muda o total, e
+      cada parcelamento que termina também. Uma alternativa é registrar as
+      compras num app como o MeuGrana, que mantém o compromisso mensal e a
+      projeção sempre atualizados conforme você adiciona ou conclui
+      parcelamentos.
 cover: "/images/blog/quanto-da-fatura-esta-comprometida.jpg"
 coverAlt: "Ilustração: fatura com parte comprometida destacada e gráfico de pizza"
 ---
@@ -91,15 +109,3 @@ Um teste simples: se perder a renda por um mês transformaria essas parcelas num
 Calcular quanto da sua fatura já está comprometida com parcelas leva dez minutos e muda completamente a forma como você enxerga o cartão. Em vez de descobrir o estrago quando a fatura fecha, você passa a saber, com antecedência, quanto cada mês já nasce devendo — e quando cada parcelamento sai da sua vida.
 
 Liste as parcelas ativas, some o compromisso mensal, projete os próximos meses e use essa projeção antes de qualquer parcelamento novo. Se preferir automatizar, o MeuGrana faz o cálculo e a projeção de 12 meses por você, direto no iPhone e sem precisar conectar sua conta bancária.
-
-### Toda compra parcelada aparece na fatura seguinte?
-
-Não necessariamente. Depende da data de fechamento do seu cartão: compras feitas depois do fechamento só entram na fatura seguinte, então a primeira parcela pode demorar mais de um mês para aparecer.
-
-### Parcelas restantes contam a parcela do mês atual?
-
-Se a fatura mostra "3/10", a parcela 3 já está na fatura atual. Para projetar o futuro, conte as 7 que faltam (da 4 à 10). Na dúvida, olhe a data prevista da última parcela.
-
-### Preciso refazer esse cálculo todo mês?
-
-Se você fizer na mão, sim — cada compra parcelada nova muda o total, e cada parcelamento que termina também. Uma alternativa é registrar as compras num app como o MeuGrana, que mantém o compromisso mensal e a projeção sempre atualizados conforme você adiciona ou conclui parcelamentos.
