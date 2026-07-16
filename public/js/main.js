@@ -39,6 +39,8 @@ const translations = {
     'screenshot3.alt': 'Projeção — Faturas futuras',
     'screenshot4.alt': 'Cartões — Seus cartões de crédito',
     'screenshot5.alt': 'Transações — Histórico de gastos',
+    'testimonials.title': 'O que dizem os usuários',
+    'testimonials.subtitle': 'Avaliações reais da App Store.',
     'premium.title': 'MeuGrana Premium',
     'premium.subtitle': 'Desbloqueie todo o potencial do app.',
     'premium.feature1': 'Cartões e parcelas ilimitados',
@@ -93,6 +95,8 @@ const translations = {
     'screenshot3.alt': 'Projection — Future bills',
     'screenshot4.alt': 'Cards — Your credit cards',
     'screenshot5.alt': 'Transactions — Spending history',
+    'testimonials.title': 'What users are saying',
+    'testimonials.subtitle': 'Real reviews from the App Store.',
     'premium.title': 'MeuGrana Premium',
     'premium.subtitle': 'Unlock the full power of the app.',
     'premium.feature1': 'Unlimited cards & installments',
@@ -124,6 +128,13 @@ function setLanguage(lang) {
   currentLang = lang;
   localStorage.setItem('meugrana-lang', lang);
   document.documentElement.lang = lang === 'pt' ? 'pt-BR' : 'en';
+
+  // Literal per-language attributes (used for content that isn't in the
+  // dictionary, e.g. testimonial quotes baked in at build time)
+  document.querySelectorAll('[data-i18n-pt]').forEach(el => {
+    const text = el.getAttribute(lang === 'pt' ? 'data-i18n-pt' : 'data-i18n-en');
+    if (text) el.textContent = text;
+  });
 
   document.querySelectorAll('[data-i18n]').forEach(el => {
     const key = el.getAttribute('data-i18n');

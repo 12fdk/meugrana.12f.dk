@@ -1,0 +1,44 @@
+---
+// "O que dizem os usuários" — social proof from real App Store reviews.
+// Renders nothing while src/data/testimonials.ts is empty (no fake quotes).
+// Quotes use data-i18n-pt/data-i18n-en attributes handled by js/main.js.
+import { testimonials } from "../data/testimonials";
+
+interface Props {
+  rating: number;
+  ratingCount: number;
+}
+
+const { rating, ratingCount } = Astro.props;
+import AppStoreRating from "./AppStoreRating.astro";
+---
+
+{
+  testimonials.length > 0 && (
+    <section class="testimonials" id="testimonials" aria-label="Testimonials">
+      <div class="container">
+        <div class="section-header fade-in">
+          <h2 data-i18n="testimonials.title">O que dizem os usuários</h2>
+          <p data-i18n="testimonials.subtitle">Avaliações reais da App Store.</p>
+        </div>
+        <div class="testimonials-grid">
+          {testimonials.map((t) => (
+            <figure class="testimonial-card fade-in">
+              <div class="testimonial-stars" aria-label={`${t.rating} de 5 estrelas`}>
+                {"★".repeat(t.rating)}
+                {"☆".repeat(5 - t.rating)}
+              </div>
+              <blockquote data-i18n-pt={t.quotePt} data-i18n-en={t.quoteEn}>
+                {t.quotePt}
+              </blockquote>
+              <figcaption>{t.name}</figcaption>
+            </figure>
+          ))}
+        </div>
+        <div class="testimonials-rating fade-in">
+          <AppStoreRating rating={rating} ratingCount={ratingCount} />
+        </div>
+      </div>
+    </section>
+  )
+}
