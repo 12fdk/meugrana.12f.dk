@@ -1,28 +1,53 @@
 ---
+import AppStoreRating from "./AppStoreRating.astro";
 import { APP_STORE_URL, APP_STORE_BADGE_URL } from "../consts";
+
+interface Props {
+  rating: number;
+  ratingCount: number;
+}
+
+const { rating, ratingCount } = Astro.props;
+
+// Hero phones: dashboard front and center, installments + projection behind.
+const phones = [
+  { num: 2, pos: "side left", altKey: "screenshot2.alt", alt: "Parcelas — Acompanhamento de parcelamentos", loading: "lazy" },
+  { num: 1, pos: "main", altKey: "screenshot1.alt", alt: "Dashboard — Resumo mensal", loading: "eager" },
+  { num: 3, pos: "side right", altKey: "screenshot3.alt", alt: "Projeção — Faturas futuras", loading: "lazy" },
+] as const;
 ---
 
 <section class="hero">
   <div class="hero-content">
     <img src="images/app-icon.png" alt="MeuGrana app icon" class="hero-icon" width="100" height="100" />
-    <h1>MeuGrana</h1>
-    <p class="tagline" data-i18n="hero.tagline">Controle seus gastos e parcelas</p>
+    <h1 data-i18n="hero.headline">Nunca mais perca o controle das parcelas</h1>
     <p class="subtitle" data-i18n="hero.subtitle">
-      O app de finanças feito para o jeito brasileiro de lidar com dinheiro. Acompanhe parcelas,
-      cartões de crédito e projete suas faturas futuras.
+      Chega de planilha e de susto na fatura. O MeuGrana reúne as parcelas espalhadas nos seus
+      cartões e mostra quanto da fatura já está comprometida — mês a mês.
     </p>
     <a href={APP_STORE_URL} class="app-store-badge" aria-label="Download on the App Store">
-      <img src={APP_STORE_BADGE_URL} alt="Download on the App Store" height="54" />
+      <img src={APP_STORE_BADGE_URL} data-badge alt="Download on the App Store" height="54" />
     </a>
-    <div class="phone-frame hero-screenshot">
-      <img
-        src="images/screenshots/pt-BR/screenshot-1.png"
-        alt="MeuGrana Dashboard"
-        data-screenshot="1"
-        width="320"
-        height="695"
-        loading="eager"
-      />
-    </div>
+    <AppStoreRating rating={rating} ratingCount={ratingCount} />
+    <p class="hero-microcopy" data-i18n="hero.microcopy">
+      Grátis para baixar · Sem cadastro · Dados só no seu iPhone
+    </p>
+  </div>
+  <div class="hero-phones">
+    {
+      phones.map((p) => (
+        <div class={`phone-frame hero-phone ${p.pos}`}>
+          <img
+            src={`images/screenshots/pt-BR/screenshot-${p.num}.png`}
+            alt={p.alt}
+            data-screenshot={p.num}
+            data-i18n={p.altKey}
+            width="320"
+            height="695"
+            loading={p.loading}
+          />
+        </div>
+      ))
+    }
   </div>
 </section>
