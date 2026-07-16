@@ -1,0 +1,37 @@
+---
+// FAQ accordion (native <details>) + FAQPage JSON-LD (pt-BR, the page's
+// primary language). Visible text switches language via data-i18n keys.
+import { faq } from "../data/faq";
+
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  inLanguage: "pt-BR",
+  mainEntity: faq.map((f) => ({
+    "@type": "Question",
+    name: f.questionPt,
+    acceptedAnswer: { "@type": "Answer", text: f.answerPt },
+  })),
+};
+---
+
+<section class="faq" id="faq" aria-label="FAQ">
+  <div class="container">
+    <div class="section-header fade-in">
+      <h2 data-i18n="faq.title">Perguntas frequentes</h2>
+      <p data-i18n="faq.subtitle">Tudo que você precisa saber antes de baixar.</p>
+    </div>
+    <div class="faq-list fade-in">
+      {
+        faq.map((f) => (
+          <details class="faq-item">
+            <summary data-i18n={`${f.key}.q`}>{f.questionPt}</summary>
+            <p data-i18n={`${f.key}.a`}>{f.answerPt}</p>
+          </details>
+        ))
+      }
+    </div>
+  </div>
+</section>
+
+<script is:inline type="application/ld+json" set:html={JSON.stringify(structuredData)} />
