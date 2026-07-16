@@ -35,18 +35,19 @@ automatically; per-post clicks are tracked in Umami as
 | 3 | `planilha-de-gastos-mensais-alternativa` | planilha de gastos mensais | Mid/Bottom | ✅ 2026-07-16 |
 | 4 | `quanto-da-fatura-esta-comprometida` | fatura comprometida com parcelas | Mid | ✅ 2026-07-16 |
 | 5 | `fatura-do-cartao-veio-alta-o-que-fazer` | fatura do cartão veio alta | Top | ✅ 2026-07-16 |
+| 6 | `mobills-vs-organizze` | mobills ou organizze | Bottom | ✅ 2026-07-16 |
 
 ## Backlog (validate keyword before writing)
 
 | # | Working title | Keyword idea | Funnel | Notes |
 |---|---------------|--------------|--------|-------|
-| 6 | Mobills vs Organizze vs MeuGrana: qual escolher | mobills ou organizze | Bottom | Highest-converting pattern; research competitor features/prices carefully before writing — no guessing |
 | 7 | 13º salário: como planejar (e não deixar sumir) | como planejar o 13º salário | Top | Seasonal — publish October/November |
 | 8 | Vale a pena parcelar? Quando o parcelamento ajuda e quando vira bola de neve | vale a pena parcelar | Top | Links to posts 2 & 4 |
 | 9 | Como funciona o fechamento da fatura do cartão | fechamento da fatura como funciona | Mid | Explains melhor dia de compra angle |
 | 10 | Como sair do rotativo do cartão | como sair do rotativo | Top | Sensitive: practical, no rate claims, no financial-advice framing |
 | 11 | App de finanças sem conectar o banco: por que escolher | app de finanças sem conectar banco | Bottom | Privacy angle, MeuGrana's differentiator |
 | 12 | Quantos cartões de crédito ter (e como não se perder) | quantos cartões de crédito ter | Top | Multi-card pain → projection per card |
+| 13 | Efeitos ocultos do mínimo do cartão de crédito | mínimo cartão crédito efeitos | Top | Explica o que é rotativo, como evitar |
 
 ## Per-post checklist
 
