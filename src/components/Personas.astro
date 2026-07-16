@@ -1,0 +1,55 @@
+---
+// "Para quem é o MeuGrana" — situation cards so visitors self-identify.
+// One line each: pain → how the app helps.
+const personas = [
+  {
+    key: "personas.p1",
+    title: "Parcela tudo e perdeu a conta",
+    desc: "Veja todas as parcelas ativas, quanto falta e quando cada uma termina — em um só lugar.",
+  },
+  {
+    key: "personas.p2",
+    title: "Tem 2+ cartões de crédito",
+    desc: "Fatura projetada por cartão, com o fechamento e o vencimento de cada um.",
+  },
+  {
+    key: "personas.p3",
+    title: "Leva susto quando a fatura fecha",
+    desc: "Saiba o valor da fatura antes de ela fechar, com alertas de fechamento e vencimento.",
+  },
+  {
+    key: "personas.p4",
+    title: "Casais organizando as contas",
+    desc: "Registrem os gastos em segundos e vejam juntos para onde vai o dinheiro da casa.",
+  },
+  {
+    key: "personas.p5",
+    title: "MEI ou freelancer",
+    desc: "Dashboard mensal para meses bons e ruins — com INSS e IRRF calculados no perfil de renda.",
+  },
+  {
+    key: "personas.p6",
+    title: "Quer sair do rotativo",
+    desc: "Enxergue o tamanho real do compromisso mensal e planeje os próximos meses com clareza.",
+  },
+];
+---
+
+<section class="personas" id="personas" aria-label="Who MeuGrana is for">
+  <div class="container">
+    <div class="section-header fade-in">
+      <h2 data-i18n="personas.title">Para quem é o MeuGrana</h2>
+      <p data-i18n="personas.subtitle">Se você se reconhecer aqui, o app é para você.</p>
+    </div>
+    <div class="personas-grid">
+      {
+        personas.map((p) => (
+          <div class="persona-card fade-in">
+            <h3 data-i18n={`${p.key}.title`}>{p.title}</h3>
+            <p data-i18n={`${p.key}.desc`}>{p.desc}</p>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</section>
