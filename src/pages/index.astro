@@ -3,6 +3,7 @@ import Layout from "../layouts/Layout.astro";
 import Navbar from "../components/Navbar.astro";
 import Hero from "../components/Hero.astro";
 import Features from "../components/Features.astro";
+import HowItWorks from "../components/HowItWorks.astro";
 import Screenshots from "../components/Screenshots.astro";
 import Premium from "../components/Premium.astro";
 import DownloadCta from "../components/DownloadCta.astro";
@@ -108,6 +109,7 @@ const structuredData = {
   <main>
     <Hero rating={appStore.rating} ratingCount={appStore.ratingCount} />
     <Features />
+    <HowItWorks />
     <Screenshots />
     <Premium />
     <DownloadCta />

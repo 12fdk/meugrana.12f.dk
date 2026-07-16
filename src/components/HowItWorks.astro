@@ -1,0 +1,79 @@
+---
+// "Como funciona" — step-by-step walkthrough reusing the locale-swapping
+// screenshots (data-screenshot lets js/main.js switch pt-BR/en-US images).
+const steps = [
+  {
+    screenshot: 4,
+    titleKey: "how.step1.title",
+    title: "Cadastre seus cartões e contas",
+    descKey: "how.step1.desc",
+    desc: "Adicione seus cartões de crédito com dia de fechamento e vencimento — o MeuGrana cuida do resto.",
+    altKey: "screenshot4.alt",
+    alt: "Cartões — Seus cartões de crédito",
+  },
+  {
+    screenshot: 5,
+    titleKey: "how.step2.title",
+    title: "Registre compras e parcelamentos",
+    descKey: "how.step2.desc",
+    desc: "À vista, PIX, boleto ou parcelado em 12x: registre em segundos e nunca mais esqueça uma parcela.",
+    altKey: "screenshot5.alt",
+    alt: "Transações — Histórico de gastos",
+  },
+  {
+    screenshot: 3,
+    titleKey: "how.step3.title",
+    title: "Veja a projeção das próximas faturas",
+    descKey: "how.step3.desc",
+    desc: "Saiba hoje quanto vai pagar nos próximos 12 meses, com cada parcela já contabilizada.",
+    altKey: "screenshot3.alt",
+    alt: "Projeção — Faturas futuras",
+  },
+  {
+    screenshot: 1,
+    titleKey: "how.step4.title",
+    title: "Acompanhe o mês no dashboard",
+    descKey: "how.step4.desc",
+    desc: "Receitas, despesas, parcelas e saldo em um só lugar — e gráficos por categoria para ver para onde vai seu dinheiro.",
+    altKey: "screenshot1.alt",
+    alt: "Dashboard — Resumo mensal",
+  },
+];
+---
+
+<section class="how-it-works" id="how-it-works" aria-label="How it works">
+  <div class="container">
+    <div class="section-header fade-in">
+      <h2 data-i18n="how.title">Como funciona</h2>
+      <p data-i18n="how.subtitle">Do cadastro ao controle total em quatro passos.</p>
+    </div>
+    <div class="how-steps">
+      {
+        steps.map((step, i) => (
+          <div class="how-step fade-in">
+            <div class="how-step-text">
+              <span class="how-step-number" aria-hidden="true">
+                {i + 1}
+              </span>
+              <h3 data-i18n={step.titleKey}>{step.title}</h3>
+              <p data-i18n={step.descKey}>{step.desc}</p>
+            </div>
+            <div class="how-step-image">
+              <div class="phone-frame">
+                <img
+                  src={`images/screenshots/pt-BR/screenshot-${step.screenshot}.png`}
+                  data-screenshot={step.screenshot}
+                  data-i18n={step.altKey}
+                  alt={step.alt}
+                  width="320"
+                  height="695"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</section>
