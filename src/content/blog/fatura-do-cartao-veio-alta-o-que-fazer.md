@@ -37,7 +37,7 @@ Vamos em três partes: o que fazer imediatamente, por que a fatura veio alta e c
 
 ### 1. Não entre no rotativo se puder evitar
 
-A primeira regra: evite pagar só uma parte da fatura e deixar o resto "rolando". Quando você paga menos que o total, a diferença entra no chamado crédito rotativo — e o rotativo do cartão está entre os créditos mais caros do mercado brasileiro. Em pouco tempo, uma dívida que parecia administrável pode crescer de forma muito difícil de controlar.
+A primeira regra: evite pagar só uma parte da fatura e deixar o resto "rolando". Quando você paga menos que o total, a diferença entra no chamado crédito rotativo — e o rotativo do cartão está entre os créditos mais caros do mercado brasileiro, como mostram as [taxas de juros divulgadas pelo Banco Central](https://www.bcb.gov.br/estatisticas/txjuros). Em pouco tempo, uma dívida que parecia administrável pode crescer de forma muito difícil de controlar.
 
 Por isso, antes de aceitar o pagamento mínimo como saída, vale explorar as alternativas abaixo, nesta ordem.
 

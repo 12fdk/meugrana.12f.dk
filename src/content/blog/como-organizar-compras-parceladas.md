@@ -118,7 +118,7 @@ Se você usa iPhone, o MeuGrana foi feito exatamente para esse fluxo: é grátis
 
 Alguns pontos que merecem atenção extra no dia a dia:
 
-- **Fuja do rotativo.** Se a fatura vier maior do que você consegue pagar, pagar só o mínimo joga o restante no crédito rotativo — uma das linhas de crédito mais caras que existem no Brasil. Organizar as parcelas serve justamente para a fatura nunca chegar como surpresa.
+- **Fuja do rotativo.** Se a fatura vier maior do que você consegue pagar, pagar só o mínimo joga o restante no crédito rotativo — uma das linhas de crédito mais caras que existem no Brasil, segundo as [taxas de juros divulgadas pelo Banco Central](https://www.bcb.gov.br/estatisticas/txjuros). Organizar as parcelas serve justamente para a fatura nunca chegar como surpresa.
 - **Desconfie da parcela "pequena".** R$ 40 por mês parece nada. Cinco compras de R$ 40 são R$ 200 todo mês, durante muitos meses. O perigo não está no valor de cada parcela, e sim na soma.
 - **Conheça o dia de fechamento do seu cartão.** Fechamento e vencimento são datas diferentes. Uma compra feita logo **depois** do fechamento só entra na fatura seguinte — o que te dá quase um mês extra de folga. Comprar um dia antes do fechamento faz a primeira parcela chegar já na próxima fatura.
 

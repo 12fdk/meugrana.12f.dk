@@ -102,7 +102,7 @@ Não existe um número mágico que sirva para todo mundo — depende da sua rend
 - **Deixe uma margem para o inesperado.** Um mês com remédio, conserto do carro ou presente de aniversário não pode ser suficiente para estourar o orçamento.
 - **Cuidado com o efeito acumulado.** Nenhuma parcela de R$ 90,00 parece perigosa sozinha. O problema é quando cinco compras "pequenas" somam R$ 1.250,00 por mês, como no exemplo da Carla.
 
-Um teste simples: se perder a renda por um mês transformaria essas parcelas num problema sério, a fatura está comprometida demais — e vale pausar novos parcelamentos até alguns terminarem.
+Um teste simples: se perder a renda por um mês transformaria essas parcelas num problema sério, a fatura está comprometida demais — e vale pausar novos parcelamentos até alguns terminarem. Para se aprofundar em orçamento e uso consciente do crédito, o portal de [Cidadania Financeira do Banco Central](https://cidadaniafinanceira.bcb.gov.br/) reúne material gratuito de educação financeira.
 
 ## Conclusão
 
