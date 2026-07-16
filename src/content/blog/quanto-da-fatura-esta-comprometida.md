@@ -80,6 +80,8 @@ Agora a parte mais útil: projetar como esse compromisso diminui nos próximos 6
 
 A partir do mês 7, o compromisso da Carla zera — se ela não parcelar mais nada até lá. Essa tabela responde perguntas importantes: "posso parcelar algo novo agora?" (provavelmente não, os três primeiros meses estão pesados) e "quando vou ter folga?" (a partir do mês 3 a coisa melhora bastante).
 
+![Mulher brasileira analisando projeções financeiras no laptop com expressão pensativa, mesa organizada ao fundo](/images/blog/fatura-inline.jpg)
+
 Se fazer essa conta na mão parece trabalhoso, o [MeuGrana](https://apps.apple.com/br/app/meugrana-parcelas-finan%C3%A7as/id6759177555) faz exatamente isso automaticamente: você cadastra suas compras parceladas e o app soma o compromisso mensal e projeta as faturas dos próximos 12 meses. É grátis, funciona offline, o registro é manual — sem conectar banco — e os dados ficam só no seu aparelho.
 
 ## Fechamento vs. vencimento: por que a compra de hoje pode cair só na próxima fatura

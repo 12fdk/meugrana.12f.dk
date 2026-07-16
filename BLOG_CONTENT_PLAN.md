@@ -53,6 +53,7 @@ automatically; per-post clicks are tracked in Umami as
 | 16 | Limite do cartão de crédito: como as parcelas ocupam seu limite | parcelas ocupam limite do cartão | Mid | Common surprise: limit doesn't free up until installments end |
 | 17 | Cartão adicional: como controlar gastos da família | cartão adicional controle | Mid | Shared-invoice pain → per-card view |
 | 18 | Como anotar gastos no celular sem planilha | como anotar gastos no celular | Bottom | Manual-entry-as-a-feature angle |
+| 19 | Efeitos ocultos do mínimo do cartão de crédito | mínimo cartão crédito efeitos | Top | Largely covered by post 10 — validate a distinct angle before writing |
 
 ## Per-post checklist
 
