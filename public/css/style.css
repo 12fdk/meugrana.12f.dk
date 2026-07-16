@@ -713,6 +713,12 @@ a:hover {
   color: var(--expense-red);
 }
 
+.vs-blog-link {
+  text-align: center;
+  margin-top: 32px;
+  font-weight: 600;
+}
+
 @media (max-width: 768px) {
   .vs-planilha {
     padding: 64px 20px;
