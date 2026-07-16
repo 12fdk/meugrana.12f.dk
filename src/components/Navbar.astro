@@ -1,18 +1,31 @@
 ---
 // Site navigation. On the homepage it shows section links + language toggle;
-// on other pages just the brand linking back home.
+// on other pages just the brand linking back home. Pass `root` on pages
+// outside the homepage so section anchors resolve against "/".
 interface Props {
   minimal?: boolean;
+  /** Set true on non-homepage pages (e.g. blog) to prefix anchors with "/". */
+  root?: boolean;
 }
 
-const { minimal = false } = Astro.props;
+const { minimal = false, root = false } = Astro.props;
+const prefix = root ? "/" : "";
+
+const links = [
+  { hash: "#features", key: "nav.features", text: "Recursos" },
+  { hash: "#how-it-works", key: "nav.how", text: "Como funciona" },
+  { hash: "#screenshots", key: "nav.screenshots", text: "Capturas" },
+  { hash: "#premium", key: "nav.premium", text: "Premium" },
+  { hash: "#faq", key: "nav.faq", text: "FAQ" },
+  { hash: "#download", key: "nav.download", text: "Baixar" },
+];
 ---
 
 <header>
   <nav class="navbar" role="navigation" aria-label="Main navigation">
     <div class="container">
-      <a href={minimal ? "index.html" : "#"} class="nav-brand">
-        <img src="images/app-icon.png" alt="MeuGrana" width="36" height="36" />
+      <a href={minimal || root ? "/" : "#"} class="nav-brand">
+        <img src="/images/app-icon.png" alt="MeuGrana" width="36" height="36" />
         MeuGrana
       </a>
       {
@@ -29,34 +42,16 @@ const { minimal = false } = Astro.props;
               <span />
             </button>
             <ul class="nav-links" id="nav-links">
+              {links.map((l) => (
+                <li>
+                  <a href={`${prefix}${l.hash}`} data-i18n={l.key}>
+                    {l.text}
+                  </a>
+                </li>
+              ))}
               <li>
-                <a href="#features" data-i18n="nav.features">
-                  Recursos
-                </a>
-              </li>
-              <li>
-                <a href="#how-it-works" data-i18n="nav.how">
-                  Como funciona
-                </a>
-              </li>
-              <li>
-                <a href="#screenshots" data-i18n="nav.screenshots">
-                  Capturas
-                </a>
-              </li>
-              <li>
-                <a href="#premium" data-i18n="nav.premium">
-                  Premium
-                </a>
-              </li>
-              <li>
-                <a href="#faq" data-i18n="nav.faq">
-                  FAQ
-                </a>
-              </li>
-              <li>
-                <a href="#download" data-i18n="nav.download">
-                  Baixar
+                <a href="/blog/" class="nav-blog-link">
+                  Blog
                 </a>
               </li>
               <li>

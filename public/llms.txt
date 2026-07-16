@@ -30,8 +30,11 @@ MeuGrana is offline-first. All financial data is stored exclusively on your devi
 ## Links
 
 - Website: https://meugrana.12f.dk/
+- Blog (pt-BR guides on parcelas, credit card bills, and personal finance in Brazil): https://meugrana.12f.dk/blog/
+- RSS feed: https://meugrana.12f.dk/rss.xml
 - App Store: https://apps.apple.com/br/app/meugrana-parcelas-finan%C3%A7as/id6759177555
 - Privacy Policy: https://meugrana.12f.dk/privacy-policy.html
+- Terms of Use: https://meugrana.12f.dk/terms-of-use.html
 
 ## Technical Details
 

@@ -303,7 +303,7 @@ function setLanguage(lang) {
   const screenshotLang = lang === 'pt' ? 'pt-BR' : 'en-US';
   document.querySelectorAll('[data-screenshot]').forEach(img => {
     const num = img.getAttribute('data-screenshot');
-    img.src = `images/screenshots/${screenshotLang}/screenshot-${num}.png`;
+    img.src = `/images/screenshots/${screenshotLang}/screenshot-${num}.png`;
   });
 
   // Swap the App Store badge for the localized version

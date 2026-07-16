@@ -5,17 +5,21 @@ import { APP_STORE_URL } from "../consts";
 
 interface Props {
   minimal?: boolean;
+  /** Set true on non-homepage pages (e.g. blog) to prefix anchors with "/". */
+  root?: boolean;
 }
 
-const { minimal = false } = Astro.props;
+const { minimal = false, root = false } = Astro.props;
+const prefix = root ? "/" : "";
 
 const sectionLinks = [
-  { href: "#features", key: "nav.features", text: "Recursos" },
-  { href: "#how-it-works", key: "nav.how", text: "Como funciona" },
-  { href: "#screenshots", key: "nav.screenshots", text: "Capturas" },
-  { href: "#premium", key: "nav.premium", text: "Premium" },
-  { href: "#faq", key: "nav.faq", text: "FAQ" },
-  { href: "#download", key: "nav.download", text: "Baixar" },
+  { href: `${prefix}#features`, key: "nav.features", text: "Recursos" },
+  { href: `${prefix}#how-it-works`, key: "nav.how", text: "Como funciona" },
+  { href: `${prefix}#screenshots`, key: "nav.screenshots", text: "Capturas" },
+  { href: `${prefix}#premium`, key: "nav.premium", text: "Premium" },
+  { href: `${prefix}#faq`, key: "nav.faq", text: "FAQ" },
+  { href: `${prefix}#download`, key: "nav.download", text: "Baixar" },
+  { href: "/blog/", key: "", text: "Blog" },
 ];
 ---
 
@@ -24,8 +28,8 @@ const sectionLinks = [
     !minimal && (
       <div class="container footer-main">
         <div class="footer-brand">
-          <a href="#" class="nav-brand">
-            <img src="images/app-icon.png" alt="MeuGrana" width="36" height="36" />
+          <a href={root ? "/" : "#"} class="nav-brand">
+            <img src="/images/app-icon.png" alt="MeuGrana" width="36" height="36" />
             MeuGrana
           </a>
           <p class="footer-madein" data-i18n="footer.madein">
@@ -38,17 +42,17 @@ const sectionLinks = [
         <nav class="footer-col" aria-label="App">
           <h4 data-i18n="footer.app">App</h4>
           {sectionLinks.map((l) => (
-            <a href={l.href} data-i18n={l.key}>
+            <a href={l.href} data-i18n={l.key || undefined}>
               {l.text}
             </a>
           ))}
         </nav>
         <nav class="footer-col" aria-label="Legal">
           <h4 data-i18n="footer.legal">Legal</h4>
-          <a href="privacy-policy.html" data-i18n="footer.privacy">
+          <a href="/privacy-policy.html" data-i18n="footer.privacy">
             Política de Privacidade
           </a>
-          <a href="terms-of-use.html" data-i18n="footer.terms">
+          <a href="/terms-of-use.html" data-i18n="footer.terms">
             Termos de Uso
           </a>
         </nav>
@@ -68,8 +72,8 @@ const sectionLinks = [
         <>
           <span class="copyright">&copy; 2026 MeuGrana. Todos os direitos reservados. / All rights reserved.</span>
           <div class="footer-links">
-            <a href="privacy-policy.html">Política de Privacidade · Privacy Policy</a>
-            <a href="terms-of-use.html">Termos de Uso · Terms of Use</a>
+            <a href="/privacy-policy.html">Política de Privacidade · Privacy Policy</a>
+            <a href="/terms-of-use.html">Termos de Uso · Terms of Use</a>
           </div>
         </>
       ) : (

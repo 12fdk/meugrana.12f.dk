@@ -10,6 +10,7 @@ import VsSpreadsheet from "../components/VsSpreadsheet.astro";
 import Personas from "../components/Personas.astro";
 import Pricing from "../components/Pricing.astro";
 import Faq from "../components/Faq.astro";
+import FromTheBlog from "../components/FromTheBlog.astro";
 import InlineCta from "../components/InlineCta.astro";
 import StickyDownload from "../components/StickyDownload.astro";
 import DownloadCta from "../components/DownloadCta.astro";
@@ -124,11 +125,12 @@ const structuredData = {
     <InlineCta placement="after-personas" />
     <Pricing />
     <Faq />
+    <FromTheBlog />
     <DownloadCta />
   </main>
 
   <Footer />
   <StickyDownload />
 
-  <script is:inline src="js/main.js"></script>
+  <script is:inline src="/js/main.js"></script>
 </Layout>
