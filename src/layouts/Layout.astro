@@ -1,0 +1,62 @@
+---
+// Shared page shell: head metadata, favicons, stylesheet, Umami analytics.
+// Pages pass their own title/description/canonical and extend the head via
+// the named "head" slot (OG tags, structured data, extra styles).
+interface Props {
+  title: string;
+  description?: string;
+  canonical?: string;
+  noindex?: boolean;
+  /** Load css/style.css (the site stylesheet). The 404 page opts out. */
+  siteStylesheet?: boolean;
+  /** Load the Umami analytics script. The 404 page opts out. */
+  analytics?: boolean;
+}
+
+const {
+  title,
+  description,
+  canonical,
+  noindex = false,
+  siteStylesheet = true,
+  analytics = true,
+} = Astro.props;
+---
+
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{title}</title>
+    {description && <meta name="description" content={description} />}
+    <meta name="theme-color" content="#006B4F" />
+    {noindex && <meta name="robots" content="noindex" />}
+
+    {canonical && <link rel="canonical" href={canonical} />}
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png" />
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
+
+    {siteStylesheet && <link rel="stylesheet" href="css/style.css" />}
+
+    <slot name="head" />
+
+    {
+      analytics && (
+        <script
+          is:inline
+          defer
+          src="https://umami.robert-jensen.dk/script.js"
+          data-website-id="6c5c421d-2eb8-4e0e-b1a3-3d945360f67f"
+        />
+      )
+    }
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>

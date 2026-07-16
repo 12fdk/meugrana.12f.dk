@@ -1,0 +1,68 @@
+---
+// Site navigation. On the homepage it shows section links + language toggle;
+// on other pages just the brand linking back home.
+interface Props {
+  minimal?: boolean;
+}
+
+const { minimal = false } = Astro.props;
+---
+
+<header>
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="container">
+      <a href={minimal ? "index.html" : "#"} class="nav-brand">
+        <img src="images/app-icon.png" alt="MeuGrana" width="36" height="36" />
+        MeuGrana
+      </a>
+      {
+        !minimal && (
+          <>
+            <button
+              class="mobile-nav-toggle"
+              id="mobile-nav-toggle"
+              aria-label="Menu"
+              aria-expanded="false"
+            >
+              <span />
+              <span />
+              <span />
+            </button>
+            <ul class="nav-links" id="nav-links">
+              <li>
+                <a href="#features" data-i18n="nav.features">
+                  Recursos
+                </a>
+              </li>
+              <li>
+                <a href="#screenshots" data-i18n="nav.screenshots">
+                  Capturas
+                </a>
+              </li>
+              <li>
+                <a href="#premium" data-i18n="nav.premium">
+                  Premium
+                </a>
+              </li>
+              <li>
+                <a href="#download" data-i18n="nav.download">
+                  Baixar
+                </a>
+              </li>
+              <li>
+                <button
+                  class="lang-btn"
+                  id="lang-toggle"
+                  onclick="toggleLanguage()"
+                  aria-label="Switch to English"
+                >
+                  EN
+                </button>
+              </li>
+            </ul>
+          </>
+        )
+      }
+    </div>
+  </nav>
+</header>

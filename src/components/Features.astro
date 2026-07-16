@@ -1,0 +1,69 @@
+---
+// Feature grid. Icon SVGs are inline so they inherit the card's icon color.
+const features = [
+  {
+    icon: "parcelas",
+    titleKey: "feature1.title",
+    title: "Rastreador de Parcelas",
+    descKey: "feature1.desc",
+    desc: "Acompanhe todas as suas compras parceladas em um só lugar. Veja parcela atual, valor restante e quando cada parcelamento termina.",
+    svg: '<rect x="1" y="4" width="22" height="16" rx="2" ry="2"/><line x1="1" y1="10" x2="23" y2="10"/>',
+  },
+  {
+    icon: "projection",
+    titleKey: "feature2.title",
+    title: "Projeção de Faturas",
+    descKey: "feature2.desc",
+    desc: "Veja como será sua fatura do cartão de crédito nos próximos 12 meses. Sem surpresas na hora de pagar.",
+    svg: '<polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>',
+  },
+  {
+    icon: "brazil",
+    titleKey: "feature3.title",
+    title: "Feito para o Brasil",
+    descKey: "feature3.desc",
+    desc: "PIX, boleto, vale-refeição, INSS, IRRF, 13º salário — tudo que os apps gringos não entendem.",
+    svg: '<circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>',
+  },
+  {
+    icon: "control",
+    titleKey: "feature4.title",
+    title: "Controle Completo",
+    descKey: "feature4.desc",
+    desc: "Dashboard com resumo mensal, gráficos de gastos por categoria, e relatórios detalhados para entender para onde vai seu dinheiro.",
+    svg: '<path d="M21.21 15.89A10 10 0 1 1 8 2.83"/><path d="M22 12A10 10 0 0 0 12 2v10z"/>',
+  },
+];
+---
+
+<section class="features" id="features" aria-label="Features">
+  <div class="container">
+    <div class="section-header fade-in">
+      <h2 data-i18n="features.title">Feito para o Brasil</h2>
+      <p data-i18n="features.subtitle">Recursos pensados para como você realmente usa seu dinheiro.</p>
+    </div>
+    <div class="features-grid">
+      {
+        features.map((f) => (
+          <div class="feature-card fade-in">
+            <div class={`feature-icon ${f.icon}`}>
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                set:html={f.svg}
+              />
+            </div>
+            <h3 data-i18n={f.titleKey}>{f.title}</h3>
+            <p data-i18n={f.descKey}>{f.desc}</p>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</section>
