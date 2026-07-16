@@ -1,0 +1,163 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Navbar from "../components/Navbar.astro";
+import Footer from "../components/Footer.astro";
+import { SITE, APP_STORE_URL } from "../consts";
+
+const title = "Termos de Uso — MeuGrana";
+const description = "Termos de Uso do app MeuGrana. Terms of Use for the MeuGrana app.";
+const canonical = `${SITE}/terms-of-use.html`;
+const APPLE_EULA = "https://www.apple.com/legal/internet-services/itunes/dev/stdeula/";
+---
+
+<Layout title={title} description={description} canonical={canonical}>
+  <Fragment slot="head">
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={`${SITE}/images/og-image.png`} />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:site_name" content="MeuGrana" />
+    <meta property="og:locale" content="pt_BR" />
+  </Fragment>
+
+  <Navbar minimal />
+
+  <main>
+    <article class="policy-content">
+      <h1>Termos de Uso</h1>
+      <p class="last-updated">Última atualização: 16 de julho de 2026</p>
+
+      <h2>1. Licença de uso</h2>
+      <p>
+        O uso do app MeuGrana: Parcelas &amp; Finanças é regido pelo
+        <a href={APPLE_EULA} target="_blank" rel="noopener">Contrato de Licença de Usuário Final (EULA) padrão da Apple</a>,
+        conforme indicado na página do app na App Store.
+      </p>
+
+      <h2>2. Assinatura Premium</h2>
+      <p>
+        O MeuGrana oferece uma assinatura opcional (MeuGrana Premium), a partir de R$ 14,90/mês,
+        processada pela Apple App Store. A assinatura é renovada automaticamente até ser cancelada.
+        Você pode cancelar a qualquer momento em Ajustes → seu nome → Assinaturas, sem multa. O
+        cancelamento vale a partir do fim do período já pago.
+      </p>
+
+      <h2>3. Sobre o app</h2>
+      <p>
+        O MeuGrana é uma ferramenta de organização financeira pessoal. As projeções e cálculos
+        exibidos são baseados nos dados que você mesmo registra e têm caráter informativo — o app
+        não presta consultoria financeira, de investimentos ou tributária.
+      </p>
+
+      <h2>4. Seus dados</h2>
+      <p>
+        O tratamento de dados é descrito na nossa
+        <a href="privacy-policy.html">Política de Privacidade</a>. Em resumo: seus dados ficam no
+        seu aparelho (e no seu iCloud pessoal, se você ativar a sincronização Premium).
+      </p>
+
+      <h2>5. Contato</h2>
+      <p>
+        Dúvidas sobre estes termos? Escreva para
+        <a href="mailto:support@12f.dk">support@12f.dk</a>.
+      </p>
+
+      <p>
+        <a href={APP_STORE_URL}>Baixar o MeuGrana na App Store</a>
+      </p>
+
+      <a href="index.html" class="back-link">&larr; Voltar para o site</a>
+    </article>
+
+    <hr class="policy-divider" />
+
+    <article class="policy-content">
+      <h1>Terms of Use</h1>
+      <p class="last-updated">Last updated: July 16, 2026</p>
+
+      <h2>1. License</h2>
+      <p>
+        Use of the MeuGrana: Parcelas &amp; Finanças app is governed by
+        <a href={APPLE_EULA} target="_blank" rel="noopener">Apple's standard End User License Agreement (EULA)</a>,
+        as indicated on the app's App Store page.
+      </p>
+
+      <h2>2. Premium subscription</h2>
+      <p>
+        MeuGrana offers an optional subscription (MeuGrana Premium), starting at R$ 14.90/month,
+        processed by the Apple App Store. The subscription renews automatically until cancelled.
+        You can cancel anytime in Settings → your name → Subscriptions, with no penalty.
+        Cancellation takes effect at the end of the paid period.
+      </p>
+
+      <h2>3. About the app</h2>
+      <p>
+        MeuGrana is a personal finance organization tool. Projections and calculations are based on
+        the data you enter yourself and are informational — the app does not provide financial,
+        investment, or tax advice.
+      </p>
+
+      <h2>4. Your data</h2>
+      <p>
+        Data handling is described in our <a href="privacy-policy.html">Privacy Policy</a>. In
+        short: your data stays on your device (and in your personal iCloud, if you enable Premium
+        sync).
+      </p>
+
+      <h2>5. Contact</h2>
+      <p>
+        Questions about these terms? Write to
+        <a href="mailto:support@12f.dk">support@12f.dk</a>.
+      </p>
+
+      <a href="index.html" class="back-link">&larr; Back to website</a>
+    </article>
+  </main>
+
+  <Footer minimal />
+</Layout>
+
+<style is:global>
+  .policy-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 120px 24px 80px;
+  }
+  .policy-content h1 {
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 8px;
+    color: var(--brand-green);
+  }
+  .policy-content .last-updated {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    margin-bottom: 40px;
+  }
+  .policy-content h2 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-top: 32px;
+    margin-bottom: 12px;
+    color: var(--text-primary);
+  }
+  .policy-content p,
+  .policy-content ul {
+    font-size: 1rem;
+    color: var(--text-secondary);
+    line-height: 1.8;
+    margin-bottom: 16px;
+  }
+  .back-link {
+    display: inline-block;
+    margin-top: 40px;
+    font-weight: 600;
+  }
+  .policy-divider {
+    max-width: 800px;
+    margin: 0 auto;
+    border: none;
+    border-top: 1px solid var(--border-color);
+  }
+</style>
