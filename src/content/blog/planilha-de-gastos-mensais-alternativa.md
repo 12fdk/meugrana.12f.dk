@@ -5,6 +5,8 @@ keyword: "planilha de gastos mensais"
 publishDate: 2026-07-16
 tags: ["planilha", "orçamento", "organização"]
 relatedSlugs: ["melhor-app-para-controlar-parcelas", "como-organizar-compras-parceladas"]
+cover: "/images/blog/planilha-de-gastos-mensais-alternativa.jpg"
+coverAlt: "Ilustração: notebook com planilha ao lado de um celular com app de finanças"
 ---
 
 Uma planilha de gastos mensais continua sendo uma das formas mais baratas e flexíveis de organizar o dinheiro: basta o Google Sheets ou o Excel, sem assinatura, com tudo do seu jeito. Neste guia, você aprende a criar a sua do zero em uns 10 minutos — e depois vê, com honestidade, quando a planilha funciona muito bem e quando ela começa a quebrar (spoiler: parcelas no cartão são o calcanhar de aquiles).

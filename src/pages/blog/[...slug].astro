@@ -35,6 +35,8 @@ const related = (
     : allPosts.filter((p) => p.id !== post.id)
 ).slice(0, 3);
 
+const ogImage = post.data.cover ? `${SITE}${post.data.cover}` : `${SITE}/images/og-image.png`;
+
 const structuredData = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
@@ -47,7 +49,7 @@ const structuredData = {
     : {}),
   author: { "@type": "Person", name: post.data.author, url: "https://12f.dk" },
   publisher: { "@type": "Organization", name: "MeuGrana", url: `${SITE}/` },
-  image: `${SITE}/images/og-image.png`,
+  image: ogImage,
   mainEntityOfPage: canonical,
 };
 ---
@@ -56,7 +58,7 @@ const structuredData = {
   <Fragment slot="head">
     <meta property="og:title" content={post.data.title} />
     <meta property="og:description" content={post.data.description} />
-    <meta property="og:image" content={`${SITE}/images/og-image.png`} />
+    <meta property="og:image" content={ogImage} />
     <meta property="og:type" content="article" />
     <meta property="og:url" content={canonical} />
     <meta property="og:site_name" content="MeuGrana" />
@@ -80,6 +82,19 @@ const structuredData = {
           {" · "}{minutes} min de leitura · {post.data.author}
         </p>
       </header>
+
+      {
+        post.data.cover && (
+          <img
+            class="blog-post-cover"
+            src={post.data.cover}
+            alt={post.data.coverAlt ?? ""}
+            width="1200"
+            height="700"
+            loading="eager"
+          />
+        )
+      }
 
       <div class="blog-content">
         <Content />

@@ -5,6 +5,8 @@ keyword: "fatura comprometida com parcelas"
 publishDate: 2026-07-16
 tags: ["fatura", "cartão de crédito", "parcelas"]
 relatedSlugs: ["como-organizar-compras-parceladas", "fatura-do-cartao-veio-alta-o-que-fazer"]
+cover: "/images/blog/quanto-da-fatura-esta-comprometida.jpg"
+coverAlt: "Ilustração: fatura com parte comprometida destacada e gráfico de pizza"
 ---
 
 Você já abriu a fatura achando que tinha gastado pouco — e o valor veio bem maior do que esperava? Na maioria das vezes, o "culpado" não é o que você comprou nas últimas semanas. É o que você comprou nos últimos meses.

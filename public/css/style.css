@@ -1095,6 +1095,23 @@ a:hover {
   text-decoration: none;
 }
 
+.blog-card-cover {
+  width: calc(100% + 56px);
+  margin: -28px -28px 20px;
+  max-width: none;
+  border-radius: var(--radius-md) var(--radius-md) 0 0;
+  aspect-ratio: 12 / 7;
+  object-fit: cover;
+}
+
+.blog-post-cover {
+  width: 100%;
+  border-radius: var(--radius-md);
+  margin-bottom: 36px;
+  aspect-ratio: 12 / 7;
+  object-fit: cover;
+}
+
 .blog-card h2,
 .blog-card h3 {
   font-size: 1.1rem;

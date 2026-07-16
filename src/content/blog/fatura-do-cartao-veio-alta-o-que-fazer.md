@@ -5,6 +5,8 @@ keyword: "fatura do cartão veio alta"
 publishDate: 2026-07-16
 tags: ["fatura", "cartão de crédito", "dívidas"]
 relatedSlugs: ["quanto-da-fatura-esta-comprometida", "como-organizar-compras-parceladas"]
+cover: "/images/blog/fatura-do-cartao-veio-alta-o-que-fazer.jpg"
+coverAlt: "Ilustração: pessoa surpresa com um recibo comprido saindo da maquininha"
 ---
 
 Você abre o app do banco e sente aquele frio na barriga: a fatura do cartão veio alta, bem mais do que você esperava. Respire. É uma situação comum, e existe um caminho prático — tanto para resolver o problema agora quanto para evitar que se repita no mês que vem.

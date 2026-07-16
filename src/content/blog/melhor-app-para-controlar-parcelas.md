@@ -5,6 +5,8 @@ keyword: "app para controlar parcelas"
 publishDate: 2026-07-16
 tags: ["parcelas", "apps"]
 relatedSlugs: ["como-organizar-compras-parceladas", "quanto-da-fatura-esta-comprometida"]
+cover: "/images/blog/melhor-app-para-controlar-parcelas.jpg"
+coverAlt: "Ilustração: pessoa comparando apps de finanças no celular, com cartões de crédito ao redor"
 ---
 
 Se você parcelou o celular em 12x num cartão, a passagem em 10x em outro e ainda tem um 3x do supermercado rodando, sabe como é: a fatura chega e o valor não bate com o que você lembrava. Não é que você gastou demais no mês — é que os meses passados continuam cobrando a conta. Parcelas espalhadas em vários cartões são invisíveis até o fechamento, e aí vem o susto.

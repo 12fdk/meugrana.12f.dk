@@ -5,6 +5,8 @@ keyword: "como organizar compras parceladas"
 publishDate: 2026-07-16
 tags: ["parcelas", "cartão de crédito", "organização"]
 relatedSlugs: ["melhor-app-para-controlar-parcelas", "quanto-da-fatura-esta-comprometida"]
+cover: "/images/blog/como-organizar-compras-parceladas.jpg"
+coverAlt: "Ilustração: mesa organizada com cartões de crédito, calendário e moedas"
 ---
 
 Se toda fatura chega maior do que você esperava, provavelmente o problema não é uma compra grande — são várias compras parceladas que você perdeu de vista. Uma parcela de R$ 70 aqui, outra de R$ 150 ali, e de repente boa parte do seu orçamento do mês já está comprometida antes de você gastar um centavo.
