@@ -121,6 +121,8 @@ const translations = {
     'cta.title': 'Comece a controlar seu dinheiro hoje',
     'cta.subtitle': 'Baixe o MeuGrana gratuitamente e veja para onde vai cada real.',
     'cta.button': 'Baixar na App Store',
+    'sticky.tagline': 'Parcelas sob controle',
+    'sticky.cta': 'Baixar grátis',
     'footer.privacy': 'Política de Privacidade',
     'footer.copyright': '© 2026 MeuGrana. Todos os direitos reservados.',
     'lang.toggle': 'EN',
@@ -245,6 +247,8 @@ const translations = {
     'cta.title': 'Start controlling your money today',
     'cta.subtitle': 'Download MeuGrana for free and see where every real goes.',
     'cta.button': 'Download on the App Store',
+    'sticky.tagline': 'Installments under control',
+    'sticky.cta': 'Get it free',
     'footer.privacy': 'Privacy Policy',
     'footer.copyright': '© 2026 MeuGrana. All rights reserved.',
     'lang.toggle': 'PT',
@@ -365,6 +369,43 @@ function setupMobileNav() {
   });
 }
 
+// Sticky download bar: show after scrolling past the hero, hide over the
+// footer, dismissible for the session
+function setupStickyDownload() {
+  const bar = document.getElementById('sticky-download');
+  if (!bar) return;
+  if (sessionStorage.getItem('meugrana-sticky-dismissed')) return;
+
+  let footerVisible = false;
+  let dismissed = false;
+
+  const update = () => {
+    const show = !dismissed && !footerVisible && window.scrollY > 500;
+    bar.classList.toggle('visible', show);
+  };
+
+  const footer = document.querySelector('.footer');
+  if (footer && 'IntersectionObserver' in window) {
+    new IntersectionObserver((entries) => {
+      footerVisible = entries[0].isIntersecting;
+      update();
+    }).observe(footer);
+  }
+
+  window.addEventListener('scroll', update, { passive: true });
+
+  const close = document.getElementById('sticky-download-close');
+  if (close) {
+    close.addEventListener('click', () => {
+      dismissed = true;
+      sessionStorage.setItem('meugrana-sticky-dismissed', '1');
+      update();
+    });
+  }
+
+  update();
+}
+
 // Init
 document.addEventListener('DOMContentLoaded', () => {
   const lang = detectLanguage();
@@ -372,4 +413,5 @@ document.addEventListener('DOMContentLoaded', () => {
   setupScrollAnimations();
   setupSmoothScroll();
   setupMobileNav();
+  setupStickyDownload();
 });

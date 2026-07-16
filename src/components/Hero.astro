@@ -25,7 +25,10 @@ const phones = [
       Chega de planilha e de susto na fatura. O MeuGrana reúne as parcelas espalhadas nos seus
       cartões e mostra quanto da fatura já está comprometida — mês a mês.
     </p>
-    <a href={APP_STORE_URL} class="app-store-badge" aria-label="Download on the App Store">
+    <a href={APP_STORE_URL} class="app-store-badge"
+      aria-label="Download on the App Store"
+      data-umami-event="app-store-click"
+      data-umami-event-placement="hero">
       <img src={APP_STORE_BADGE_URL} data-badge alt="Download on the App Store" height="54" />
     </a>
     <AppStoreRating rating={rating} ratingCount={ratingCount} />

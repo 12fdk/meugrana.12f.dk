@@ -1,0 +1,24 @@
+---
+// Mobile sticky download bar. Hidden until the visitor scrolls past the hero,
+// hides again when the footer is in view, dismissible for the session.
+// Behavior lives in js/main.js (setupStickyDownload).
+import { APP_STORE_URL } from "../consts";
+---
+
+<div class="sticky-download" id="sticky-download" role="complementary" aria-label="Download MeuGrana">
+  <img src="images/app-icon.png" alt="" width="40" height="40" />
+  <div class="sticky-download-text">
+    <strong>MeuGrana</strong>
+    <span data-i18n="sticky.tagline">Parcelas sob controle</span>
+  </div>
+  <a
+    href={APP_STORE_URL}
+    class="sticky-download-btn"
+    data-umami-event="app-store-click"
+    data-umami-event-placement="sticky"
+    data-i18n="sticky.cta"
+  >
+    Baixar grátis
+  </a>
+  <button class="sticky-download-close" id="sticky-download-close" aria-label="Fechar">&times;</button>
+</div>
