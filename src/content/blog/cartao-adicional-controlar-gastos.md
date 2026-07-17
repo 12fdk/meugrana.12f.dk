@@ -32,7 +32,7 @@ faq:
       Quando a pessoa sabe que o próximo gasto vai aparecer na fatura
       de quem paga, ela tende a gastar com mais cuidado.
 cover: "/images/blog/cartao-adicional-controlar-gastos.jpg"
-coverAlt: "Ilustração: dois cartões de crédito lado a lado sobre uma mesa, com pilhas de moedas separadas por cartão, bloco de anotações, caneta e copo de café"
+coverAlt: "Ilustração: dois cartões de crédito sobre uma mesa, com moedas, bloco de anotações com itens marcados, canetas e copo de café"
 ---
 
 A sua fatura fecha no dia 10, chega dia 15 e o valor dá um salto que nem o seu banco previa. Você revira os extratos e descobre o motivo: não foi uma compra sua. Foi o cartão adicional — ou melhor, foram três. A sua cunhada fez uma compra de R$ 380, seu filho de R$ 220 e a sua mãe de R$ 510. Cada uma isolada não é nada. Juntas, viram o maior item da fatura.
@@ -102,7 +102,7 @@ Se a família fosse fazer um compromisso novo — digamos, parcelar uma TV de R$
 
 **"Não quero criar desconfiança na família."** O problema não é o dinheiro ser uma conversa constrangedora — é o dinheiro ser uma conversa *não-conversada*. O desgaste real vem de faturas que chegam sem aviso, não de conversas antecipadas sobre limites.
 
-**"Meu banco mostra tudo junto, não dá para separar."** A maioria dos bancos de fato mostra a fatura consolidada. Por isso o acompanhamento manual (um app como o MeuGrana, um caderno, uma planilha) é essencial: é onde você cria a separação que o banco não oferece.
+**"Meu banco mostra tudo junto, não dá para separar."** A maioria dos bancos de fato mostra a fatura consolidada. Por isso o acompanhamento manual (um app, um caderno, uma planilha) é essencial: é onde você cria a separação que o banco não oferece.
 
 **"Os adicionais são meus, então não preciso controlar."** Mesmo que cada cartão seja seu, todos somam na mesma fatura. O controle não é sobre desconfiar de si mesmo — é sobre ter um número preciso para tomar decisões. Sem saber quanto cada cartão gasta, você não sabe se pode parcelar algo novo, se precisa cortar gastos em outro lugar ou se o orçamento do mês está no limite.
 

@@ -15,3 +15,7 @@ pnpm-debug.log*
 # Environment
 .env
 .env.production
+
+# Blog cover generation — raw renders are intermediate; only the
+# processed JPEG in public/images/blog/ is committed.
+scripts/covers/
