@@ -50,6 +50,9 @@ SCENES = {
     "como-evitar-compras-por-impulso":
         "a shopping cart in the center, a large hourglass, a wallet tied shut with a ribbon bow "
         "and a few stacks of coins",
+    "parcelas-ocupam-limite-cartao":
+        "a credit card being measured with a tape measure, a stack of coins, a notepad with "
+        "checkmarks and a calculator, a small alarm clock",
 }
 
 def workflow(prompt_text, seed):

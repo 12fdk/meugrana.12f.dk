@@ -4,7 +4,7 @@ description: "Aprenda como organizar compras parceladas no cartão de crédito e
 keyword: "como organizar compras parceladas"
 publishDate: 2026-07-16
 tags: ["parcelas", "cartão de crédito", "organização"]
-relatedSlugs: ["melhor-app-para-controlar-parcelas", "quanto-da-fatura-esta-comprometida", "vale-a-pena-parcelar"]
+relatedSlugs: ["melhor-app-para-controlar-parcelas", "quanto-da-fatura-esta-comprometida", "vale-a-pena-parcelar", "parcelas-ocupam-limite-cartao"]
 faq:
   - q: "Quantas parcelas posso ter ao mesmo tempo?"
     a: >-
