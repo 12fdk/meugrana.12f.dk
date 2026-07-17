@@ -65,6 +65,10 @@ SCENES = {
         "chip and no embossing and no text, lying side by side, "
         "a separate small stack of plain unmarked coins beside each card, "
         "a notepad with a checklist, a pen, and a coffee cup",
+    # seed 777019
+    "como-anotar-gastos-no-celular":
+        "a smartphone in the center showing a simple checklist with checkmarks on its screen, "
+        "a notepad with handwritten marks, a stack of plain unmarked coins, a coffee mug and a pen",
 }
 
 def workflow(prompt_text, seed):

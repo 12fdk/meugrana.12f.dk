@@ -52,7 +52,7 @@ automatically; per-post clicks are tracked in Umami as
 
 | # | Working title | Keyword idea | Funnel | Notes |
 |---|---------------|--------------|--------|-------|
-| 18 | Como anotar gastos no celular sem planilha | como anotar gastos no celular | Bottom | Manual-entry-as-a-feature angle |
+| 18 | Como anotar gastos no celular sem planilha | como anotar gastos no celular | Bottom | ✅ 2026-07-17 |
 | 19 | Efeitos ocultos do mínimo do cartão de crédito | mínimo cartão crédito efeitos | Top | Largely covered by post 10 — validate a distinct angle before writing |
 | 20 | Como saber se seu limite de cartão está baixo | limite baixo cartão crédito | Mid | Banks adjust limits frequently; tips for monitoring |
 | 21 | Como negociar aumento de limite do cartão de crédito | como aumentar limite cartão | Mid | When to ask, what banks look for, what happens after |

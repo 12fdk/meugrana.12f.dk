@@ -4,7 +4,7 @@ description: "Aprenda a montar uma planilha de gastos mensais em 10 minutos: col
 keyword: "planilha de gastos mensais"
 publishDate: 2026-07-16
 tags: ["planilha", "orçamento", "organização"]
-relatedSlugs: ["melhor-app-para-controlar-parcelas", "como-organizar-compras-parceladas", "como-controlar-gastos-com-assinaturas"]
+relatedSlugs: ["melhor-app-para-controlar-parcelas", "como-organizar-compras-parceladas", "como-controlar-gastos-com-assinaturas", "como-anotar-gastos-no-celular"]
 faq:
   - q: "É melhor controlar gastos por planilha ou por app?"
     a: >-
