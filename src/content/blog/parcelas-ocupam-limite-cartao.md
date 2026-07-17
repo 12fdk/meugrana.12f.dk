@@ -23,13 +23,14 @@ faq:
       um erro do banco.
   - q: "Como saber quanto do meu limite já está comprometido?"
     a: >-
-      Some o valor total de todas as parcelas que ainda não terminaram. Uma
-      compra de 6x de R$ 80 reserva R$ 480 no limite; uma de 12x de R$ 50
-      reserva R$ 600 — mesmo que você já tenha pago três parcelas dessas.
-      Esse total reservado é o que não está disponível para novas compras, e
-      muitas pessoas descobrem o valor real apenas quando tentam fazer algo novo.
+      Some o valor das parcelas que ainda faltam ser cobradas, compra por
+      compra. Se de uma compra em 6x de R$ 80 ainda restam 4 parcelas, ela
+      ocupa R$ 320 do limite; se de uma em 12x de R$ 50 restam 10, são mais
+      R$ 500. Esse total reservado é o que não está disponível para novas
+      compras — e muitas pessoas só descobrem o valor real quando uma
+      transação é recusada.
 cover: "/images/blog/parcelas-ocupam-limite-cartao.jpg"
-coverAlt: "Ilustração: cartão de crédito com uma fita métrica medindo sua largura, cercado por moedas e uma agenda de compromissos"
+coverAlt: "Ilustração: cartão de crédito cercado por pilhas de moedas, com bloco de anotações com itens marcados, calculadora e caneta"
 ---
 
 Você tenta fazer uma compra nova — um presente, uma passagem, algo que precisava do cartão — e a mensagem aparece: *transação não autorizada*. O limite está zerado. E a pessoa revira a mente: *"mas eu não tinha gasto tudo! só tinha uma ou duas parcelas rodando."*
@@ -67,7 +68,7 @@ Esse efeito é especialmente traiçoeiro para quem não acompanha as parcelas m�
 
 ## Por que o banco funciona assim
 
-Não é uma armadilha — é uma característica do modelo de crédito rotativo de curto prazo. O banco precisa de garantia de que você conseguirá pagar todas as parcelas. Se o limite fosse liberado parcela a parcela, não haveria proteção: você poderia parcelar uma nova compra a cada mês e o banco nunca saberia se o compromisso total caberia no seu orçamento.
+Não é uma armadilha — é uma característica de como o crédito parcelado funciona no cartão. O banco precisa de garantia de que você conseguirá pagar todas as parcelas. Se o limite fosse liberado parcela a parcela, não haveria proteção: você poderia parcelar uma nova compra a cada mês e o banco nunca saberia se o compromisso total caberia no seu orçamento.
 
 Reservando o valor total de imediato, o banco se protege contra o risco de sobrecomprometimento. Para você, o efeito é o mesmo: **o limite reflete o comprometimento total, não o gasto do mês corrente.**
 
@@ -106,23 +107,23 @@ Imagine uma pessoa com limite de R$ 5.000 no cartão que tem as seguintes parcel
 | Mochila | 3x | R$ 200 | R$ 600 |
 | **Total** | | | **R$ 1.840** |
 
-O valor total reservado é R$ 1.840. Desse total, apenas R$ 600 já foi cobrado nas faturas anteriores (o equivalente a 4 parcelas de R$ 150). O resto — R$ 1.240 — ainda está travado no limite e será cobrado nas faturas dos próximos meses.
+O valor total reservado é R$ 1.840 — a soma de todas as parcelas que ainda vão ser cobradas. Sobram R$ 3.160 de limite disponível para *tudo*: compras à vista, novas compras parceladas, assinaturas que passam no cartão.
 
-Se essa pessoa quer comprar um acessório de R$ 300 em 3x, o banco vai recisar a transação, porque o limite já está comprometido em R$ 1.840, restando apenas R$ 3.160 para *tudo* — e o sistema do banco não sabe o que é "só uma compra nova de R$ 300". Ele vê: R$ 1.840 já estão reservados.
+Agora imagine que essa pessoa quer parcelar um notebook de R$ 3.500 em 10x. A parcela de R$ 350 até caberia no orçamento do mês — mas o banco recusa a transação, porque o que ele reserva é o valor **total** da compra, e R$ 3.500 não cabem nos R$ 3.160 disponíveis. É exatamente assim que o susto acontece: nenhuma parcela individual é grande, mas o comprometimento acumulado fecha a porta para a compra seguinte.
 
-Se a pessoa quiser liberar espaço, precisa esperar as parcelas terminarem ou pagar alguma antecipadamente (o que reduz o comprometimento). Ou, mais realisticamente, simplesmente adiar a compra até que o limite libere.
+Se a pessoa quiser liberar espaço, as opções são esperar parcelas terminarem, antecipar alguma (o que reduz o comprometimento) ou, mais realisticamente, adiar a compra até que o limite libere.
 
 ## Como evitar ficar preso: hábitos que protegem o limite
 
 A solução não é nunca mais parcelar — é parcelar com consciência. Estes hábitos mantêm o limite sob controle:
 
-**- Acompanhe as parcelas ativas como acompanha a fatura mensal.** O limite não libera sozinho na sua cabeça; ele libera no sistema do banco conforme as parcelas são cobradas. Para saber o real disponível, é necessário rastrear quantas parcelas ainda estão rodando. **[Quantos da fatura estão comprometidos com parcelas](/blog/quanto-da-fatura-esta-comprometida.html)** é uma conta que você deve fazer antes de qualquer parcelamento novo.
+- **Acompanhe as parcelas ativas como acompanha a fatura mensal.** O limite não libera sozinho na sua cabeça; ele libera no sistema do banco conforme as parcelas são cobradas. Para saber o real disponível, é necessário rastrear quantas parcelas ainda estão rodando. [Quanto da fatura está comprometido com parcelas](/blog/quanto-da-fatura-esta-comprometida.html) é uma conta que vale fazer antes de qualquer parcelamento novo.
 
-**- Defina um teto de comprometimento antes de comprar.** Decida com antecedência quanto do seu limite total pode ficar reservado em parcelas. Um limite de R$ 5.000 com um teto de 60% deixa R$ 2.000 para imprevistos e compras à vista. Quando esse valor for atingido, novas parcelas ficam em espera.
+- **Defina um teto de comprometimento antes de comprar.** Decida com antecedência quanto do seu limite total pode ficar reservado em parcelas. Um limite de R$ 5.000 com um teto de 60% deixa R$ 2.000 para imprevistos e compras à vista. Quando esse valor for atingido, novas parcelas ficam em espera.
 
-**- Pague parcelas antecipadamente quando houver excedente.** Alguns bancos permitem quitar parcelas futuras com desconto (o valor atualizado pela tabela PRICE, mas com o desconto dos juros futuros restantes). Se sobrou dinheiro no mês, quitar parcelas restantes libera limite de imediato — e é economicamente racional, já que os juros futuros são removidos.
+- **Antecipe parcelas quando houver excedente.** Alguns bancos permitem antecipar parcelas futuras pelo app — e, quando o parcelamento tem juros, a antecipação costuma vir com desconto dos juros restantes. Confirme as condições no seu banco. Se sobrou dinheiro no mês, antecipar parcelas libera limite de imediato.
 
-**- Revise os limites dos seus cartões regularmente.** Se o banco reduz seu limite, o efeito se multiplica: o comprometido em parcelas continua o mesmo, mas o disponível encolhe. **Se o banco reduz o limite, as parcelas ocupam limite do cartão proporcionalmente mais.** Fique de olho nas comunicações do banco e esteja preparado para recalcular o comprometimento se houver redução.
+- **Revise os limites dos seus cartões regularmente.** Se o banco reduz seu limite, o efeito se multiplica: o valor comprometido em parcelas continua o mesmo, mas o disponível encolhe — o mesmo conjunto de parcelas passa a ocupar uma fatia maior do limite. Fique de olho nas comunicações do banco e recalcule o comprometimento se houver redução.
 
 Se você usa iPhone, o [MeuGrana](https://apps.apple.com/br/app/meugrana-parcelas-finan%C3%A7as/id6759177555) ajuda exatamente nesse ponto: você registra suas parcelas manualmente (sem conectar conta bancária) e acompanha o total comprometido mês a mês, cartão por cartão — grátis, funciona offline e os dados ficam no seu aparelho. Ele não libera limite por você, mas mostra o tamanho real do comprometimento para que você tome decisões informadas.
 
