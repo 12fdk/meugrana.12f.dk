@@ -151,17 +151,23 @@ The repo has the proven, reproducible recipe: `scripts/gen_blog_covers.py` (Flux
    - 3–5 desk objects, **one clear central metaphor** for the post's topic, described in plain English.
    - Reuse the established object vocabulary so covers stay a family: smartphone with abstract chart, credit card(s), coin stacks, piggy bank, calculator, notepad + pen, desk calendar, curled paper receipt, wallet, balance scale, hourglass, alarm clock, padlock/shield, small potted succulent, coffee mug.
    - The metaphor should be legible at thumbnail size (e.g., staircase of coins → getting out of debt; balance scale → comparison; padlock on phone → privacy).
-   - Do NOT change the `STYLE` prefix (flat 2D vector, top-down desk, pale mint background, emerald/charcoal/white/sage palette, "no text, no letters, no numbers, no words, no people").
-2. **Generate:** `python3 scripts/gen_blog_covers.py YOUR_SLUG` (writes `scripts/covers/YOUR_SLUG.png`). Note the seed used; bump the seed and re-roll if needed.
-3. **Quality-check the output — reject and re-roll on any of:**
-   - garbled pseudo-text, letters or numbers anywhere in the image
+   - **Flux fakes text on text-prone objects** — the model runs at `cfg 1.0`, so the negative prompt and the STYLE's "no text" clause are IGNORED for these. Any object that would realistically carry lettering WILL come out with garbled pseudo-text unless you neutralize it in the scene description:
+     - **Credit cards** — the #1 offender. Always describe them as "plain blank credit card in solid <color>, showing only a small chip, no embossing and no text". Never a plain "credit card".
+     - **Coins** — say "plain unmarked coins"; **calculators/keypads** — "blank keys"; **receipts/notepads/calendars/phone screens** — describe only abstract marks (checkmarks, bars, lines, circled day), never characters.
+   - Do NOT change the `STYLE` prefix (flat 2D vector, top-down desk, pale mint background, emerald/charcoal/white/sage palette).
+2. **Generate:** `python3 scripts/gen_blog_covers.py YOUR_SLUG` (writes `scripts/covers/YOUR_SLUG.png`). For a re-roll, pass a different seed: `MEUGRANA_SEED=<n> python3 scripts/gen_blog_covers.py YOUR_SLUG`. Record the winning seed in a comment above the `SCENES` entry.
+3. **Quality-check the output — this is a hard gate, not a formality. You MUST open and actually look at the rendered PNG before continuing.** Reject and re-roll (new seed) on ANY of:
+   - **garbled pseudo-text, letters or numbers anywhere** — cards, coins, keypads, receipts, screens. Zoom in on every card. This is the single most common defect; expect to re-roll once or twice to eliminate it. Never ship a cover with any text-like marks.
    - distorted/melted objects, extra limbs on objects, broken perspective
    - palette drift (anything not emerald/charcoal/white/sage/mint)
+   - lopsided composition — a large empty dead-zone; objects should be reasonably distributed, readable as a thumbnail
    - photorealistic rendering, or anything that could be mistaken for a real app screenshot (a past audit had to pull an image with garbled AI text that read as a fake screenshot)
-4. **Post-process** to the site format — 1200×700 JPEG, quality ~82:
+   Iterate seeds until a clean render passes. Only then continue.
+4. **Post-process** to the site format — 1200×700 JPEG, quality ~82. **Do NOT write a new script for this and do NOT commit any helper script** — use one of these one-liners as-is:
    - ImageMagick: `magick scripts/covers/YOUR_SLUG.png -resize 1200x700^ -gravity center -extent 1200x700 -quality 82 public/images/blog/YOUR_SLUG.jpg`
-   - (or Python Pillow if ImageMagick is unavailable)
-5. Keep the `SCENES` entry committed — prompts + seeds stay in the repo for reproducibility.
+   - or Pillow one-liner if ImageMagick is unavailable: `python3 -c "from PIL import Image,ImageOps; ImageOps.fit(Image.open('scripts/covers/YOUR_SLUG.png'),(1200,700),Image.LANCZOS).convert('RGB').save('public/images/blog/YOUR_SLUG.jpg',quality=82)"`
+5. Make `coverAlt` in the frontmatter describe the render you actually shipped (object count, layout) — not the scene you first imagined.
+6. **Commit ONLY the `SCENES` entry (with its seed comment) and the processed JPEG in `public/images/blog/`.** The raw `scripts/covers/*.png` is git-ignored — never force-add it. Do not create or commit `pnpm-workspace.yaml`, `postprocess_cover.py`, or any other stray file; if `pnpm install` interactively prompts about build scripts, answer so it proceeds without writing a workspace file (or run `pnpm install --config.confirmModulesPurge=false` / just accept defaults — do not commit whatever it writes).
 
 ## Step 5: Cross-link back from older posts
 
@@ -193,8 +199,15 @@ Run `pnpm install && pnpm build`. The Zod schema enforces title/description limi
 
 ## Step 9: Commit and Push
 
-1. `git add -A && git commit -m "Blog: POST_TITLE"`
-2. `git push origin main`
+1. **Run `git status` and confirm ONLY these paths changed** — nothing else gets committed:
+   - `src/content/blog/YOUR_SLUG.md` (new post)
+   - `public/images/blog/YOUR_SLUG.jpg` (processed cover)
+   - `scripts/gen_blog_covers.py` (new SCENES entry only)
+   - `BLOG_CONTENT_PLAN.md` (published row + backlog)
+   - the 1–2 older posts you added back-links to
+   If anything else appears (a `scripts/covers/*.png`, `pnpm-workspace.yaml`, a helper script, lockfile churn), remove/revert it before committing.
+2. `git add -A && git commit -m "Blog: POST_TITLE"`
+3. `git push origin main`
 
 ## Fallback topic ideas (only if the backlog is empty — validate the keyword first)
 

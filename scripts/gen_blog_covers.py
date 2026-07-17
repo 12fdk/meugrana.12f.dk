@@ -56,8 +56,14 @@ SCENES = {
         "a large credit card in the center almost completely covered by tall stacks of coins "
         "leaving only a small corner of the card visible, a calculator, a notepad with "
         "checkmarks and a pen",
+    # re-rolled with MEUGRANA_SEED=778217: original render (seed 777017) had
+    # garbled pseudo-text embossed on the card and symbols on the coins.
+    # Flux fakes text on face-up cards at cfg 1.0 (negative prompt is ignored),
+    # so the card and coins are specified as PLAIN and BLANK.
     "cartao-adicional-controlar-gastos":
-        "two credit cards side by side on a desk, each with a separate stack of coins beside it, "
+        "two plain blank credit cards in solid emerald and sage, each showing only a small "
+        "chip and no embossing and no text, lying side by side, "
+        "a separate small stack of plain unmarked coins beside each card, "
         "a notepad with a checklist, a pen, and a coffee cup",
 }
 
