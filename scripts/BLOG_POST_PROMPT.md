@@ -173,11 +173,25 @@ Add the new slug to `relatedSlugs` of 1–2 of the most closely related publishe
 2. If the backlog is now short (< 3 items), add 1–2 new backlog ideas with keyword, funnel stage, and a one-line angle note. Keep tables sorted by number.
 3. Tick through the per-post checklist in the plan and fix anything that fails.
 
-## Step 7: Verify the build
+## Step 7: Adversarial self-review — MANDATORY, do not skip
+
+Re-read the finished post as a hostile fact-checker who wants to find an error. This is a separate verification pass, not writing guidance — the first automated run shipped a worked example that disproved its own point, so check each item explicitly:
+
+1. **Recompute every number from scratch.** Every multiplication, sum, and subtraction in tables AND prose. Then check the numbers *against each other*: does the conclusion drawn from a table actually follow from it? (e.g., if R$ 3.160 is available, a R$ 300 purchase is approved, not refused — make the example's outcome match its own arithmetic.)
+2. **Check internal consistency**: FAQ answers vs body, table column headers vs how the text reads them ("parcelas restantes" ≠ "parcelas pagas"), earlier sections vs later ones. One mechanism, described identically everywhere.
+3. **Check terminology**: parcelado ≠ rotativo ≠ parcelamento da fatura — these are different credit products; never blur them. Bank-specific mechanics ("com desconto", "tabela PRICE") get hedged as "alguns bancos" + "confirme as condições no seu banco", or cut.
+4. **Proofread pt-BR**: typos, agreement errors, link anchor text that reads grammatically.
+5. **Check markdown rendering**: lists start with `- ` (not `**- `), tables aligned, no H1 in body.
+6. **Zoom into the cover image at full size**: any letters, numbers, or pseudo-text anywhere (cards, rulers, buttons, coins) → re-roll with a new seed. Lopsided composition (half the frame empty) → re-roll.
+7. **Re-run the smell test**: would this feel like an ad without the site logo?
+
+Fix everything found, then re-run this step until a full pass finds nothing.
+
+## Step 8: Verify the build
 
 Run `pnpm install && pnpm build`. The Zod schema enforces title/description limits — the build MUST pass before you commit. If it fails, fix the frontmatter, don't loosen the schema.
 
-## Step 8: Commit and Push
+## Step 9: Commit and Push
 
 1. `git add -A && git commit -m "Blog: POST_TITLE"`
 2. `git push origin main`

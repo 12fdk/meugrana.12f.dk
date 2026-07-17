@@ -50,9 +50,12 @@ SCENES = {
     "como-evitar-compras-por-impulso":
         "a shopping cart in the center, a large hourglass, a wallet tied shut with a ribbon bow "
         "and a few stacks of coins",
+    # re-rolled with MEUGRANA_SEED=777113: original render (seed 777011) had
+    # garbled pseudo-text on the card and a lopsided composition
     "parcelas-ocupam-limite-cartao":
-        "a credit card being measured with a tape measure, a stack of coins, a notepad with "
-        "checkmarks and a calculator, a small alarm clock",
+        "a large credit card in the center almost completely covered by tall stacks of coins "
+        "leaving only a small corner of the card visible, a calculator, a notepad with "
+        "checkmarks and a pen",
 }
 
 def workflow(prompt_text, seed):
@@ -111,11 +114,14 @@ def gen(slug, scene, seed):
 
 if __name__ == "__main__":
     only = sys.argv[1:] or list(SCENES)
+    # MEUGRANA_SEED overrides the per-slug seed — used to re-roll a weak render
+    # (garbled text, broken composition) without touching other covers.
+    seed_override = os.environ.get("MEUGRANA_SEED")
     base_seed = 777001
     ok = 0
     for i, slug in enumerate(SCENES):
         if slug not in only:
             continue
-        if gen(slug, SCENES[slug], base_seed + i):
+        if gen(slug, SCENES[slug], int(seed_override) if seed_override else base_seed + i):
             ok += 1
     print(f"DONE {ok}/{len(only)}", flush=True)
