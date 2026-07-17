@@ -78,7 +78,7 @@ Este método é ideal para quem está começando e quer entender a mecânica sem
 
 ### 2. Planilha no celular (o método que dá visão)
 
-Uma planilha com três colunas: data, descrição, valor. Apps como Google Sheets ou Sheets do Google funcionam no celular, sincronizam entre dispositivos e permitem usar fórmulas para somar totais por categoria.
+Uma planilha com três colunas: data, descrição, valor. Apps como Google Sheets ou Microsoft Excel funcionam no celular, sincronizam entre dispositivos e permitem usar fórmulas para somar totais por categoria.
 
 **Vantagens:** categorias, subtotais, gráficos, acesso de qualquer dispositivo, histórico que se expande sem perder dados.  
 **Desvantagens:** exige abrir um app específico, preencher células (mais lento que digitar em texto livre), pode parecer "trabalho demais" no começo.

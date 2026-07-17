@@ -50,21 +50,8 @@ SCENES = {
     "como-evitar-compras-por-impulso":
         "a shopping cart in the center, a large hourglass, a wallet tied shut with a ribbon bow "
         "and a few stacks of coins",
-    # re-rolled with MEUGRANA_SEED=777113: original render (seed 777011) had
-    # garbled pseudo-text on the card and a lopsided composition
-    "parcelas-ocupam-limite-cartao":
-        "a large credit card in the center almost completely covered by tall stacks of coins "
-        "leaving only a small corner of the card visible, a calculator, a notepad with "
-        "checkmarks and a pen",
-    # re-rolled with MEUGRANA_SEED=778217: original render (seed 777017) had
-    # garbled pseudo-text embossed on the card and symbols on the coins.
-    # Flux fakes text on face-up cards at cfg 1.0 (negative prompt is ignored),
-    # so the card and coins are specified as PLAIN and BLANK.
-    "cartao-adicional-controlar-gastos":
-        "two plain blank credit cards in solid emerald and sage, each showing only a small "
-        "chip and no embossing and no text, lying side by side, "
-        "a separate small stack of plain unmarked coins beside each card, "
-        "a notepad with a checklist, a pen, and a coffee cup",
+    # NOTE: Flux fakes text on face-up cards at cfg 1.0 (negative prompt is
+    # ignored) — always describe cards/coins/keypads as PLAIN and BLANK.
     # seed 777019
     "como-anotar-gastos-no-celular":
         "a smartphone in the center showing a simple checklist with checkmarks on its screen, "
