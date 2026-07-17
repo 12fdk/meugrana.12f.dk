@@ -4,7 +4,7 @@ description: "As parcelas ocupam limite do cartão mesmo antes da primeira compr
 keyword: "parcelas ocupam limite do cartão"
 publishDate: 2026-07-17
 tags: ["cartão de crédito", "parcelas", "orçamento"]
-relatedSlugs: ["como-organizar-compras-parceladas", "quanto-da-fatura-esta-comprometida", "fechamento-da-fatura-como-funciona"]
+relatedSlugs: ["como-organizar-compras-parceladas", "quanto-da-fatura-esta-comprometida", "fechamento-da-fatura-como-funciona", "cartao-adicional-controlar-gastos"]
 faq:
   - q: "O limite do cartão desbloqueia quando a compra é parcelada?"
     a: >-

@@ -46,16 +46,18 @@ automatically; per-post clicks are tracked in Umami as
 | 14 | `parcelamento-com-juros-ou-sem-juros` | parcelamento com juros ou sem juros | Mid | ✅ 2026-07-16 |
 | 15 | `como-evitar-compras-por-impulso` | como evitar compras por impulso | Top | ✅ 2026-07-16 |
 | 16 | `parcelas-ocupam-limite-cartao` | parcelas ocupam limite do cartão | Mid | ✅ 2026-07-17 |
+| 17 | `cartao-adicional-controlar-gastos` | cartão adicional | Mid | ✅ 2026-07-17 |
 
 ## Backlog (validate keyword before writing)
 
 | # | Working title | Keyword idea | Funnel | Notes |
 |---|---------------|--------------|--------|-------|
-| 17 | Cartão adicional: como controlar gastos da família | cartão adicional controle | Mid | Shared-invoice pain → per-card view |
 | 18 | Como anotar gastos no celular sem planilha | como anotar gastos no celular | Bottom | Manual-entry-as-a-feature angle |
 | 19 | Efeitos ocultos do mínimo do cartão de crédito | mínimo cartão crédito efeitos | Top | Largely covered by post 10 — validate a distinct angle before writing |
 | 20 | Como saber se seu limite de cartão está baixo | limite baixo cartão crédito | Mid | Banks adjust limits frequently; tips for monitoring |
 | 21 | Como negociar aumento de limite do cartão de crédito | como aumentar limite cartão | Mid | When to ask, what banks look for, what happens after |
+| 22 | Reserva de emergência para quem vive de parcelas | reserva de emergência parcelas | Top | Emergency fund for people living on installments |
+| 23 | Vale-refeição e vale-alimentação no orçamento | vale refeição orçamento mensal | Mid | Free-tier tie-in: PIX/boleto/VR |
 
 ## Per-post checklist
 

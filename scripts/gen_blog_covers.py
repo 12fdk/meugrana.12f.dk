@@ -56,6 +56,9 @@ SCENES = {
         "a large credit card in the center almost completely covered by tall stacks of coins "
         "leaving only a small corner of the card visible, a calculator, a notepad with "
         "checkmarks and a pen",
+    "cartao-adicional-controlar-gastos":
+        "two credit cards side by side on a desk, each with a separate stack of coins beside it, "
+        "a notepad with a checklist, a pen, and a coffee cup",
 }
 
 def workflow(prompt_text, seed):
