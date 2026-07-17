@@ -63,7 +63,8 @@ automatically; per-post clicks are tracked in Umami as
 - [ ] Worked example with realistic R$ numbers, clearly framed as example
 - [ ] 2–3 FAQ H3s at the end (targets People-Also-Ask)
 - [ ] `relatedSlugs` set (2 posts) — internal linking both directions
-- [ ] MeuGrana mentioned naturally 1–2×; competitors treated honestly
+- [ ] MeuGrana mentioned 0–1× (zero when nothing fits naturally — the layout's
+      CTA banner converts, the body never sells); competitors treated honestly
 - [ ] No invented statistics, rates, or competitor specifics
 
 ## Measurement
