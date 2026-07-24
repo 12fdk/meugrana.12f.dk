@@ -28,7 +28,7 @@ faq:
       O app do cartão ou o internet banking mostram o limite disponível, mas esse
       número é o limite **total** menos o que já usou. O que falta é entender o
       que está comprometido nas faturas futuras: liste seus parcelamentos ativos
-      e Some o valor das parcelas que ainda vão cair. O que sobra é o limite
+      e some o valor total de cada uma. O que sobra é o limite
       livre real para compras novas.
 cover: "/images/blog/parcelas-ocupam-limite-do-cartao.jpg"
 coverAlt: "Ilustração: cartão de crédito genérico em plástico sólido com uma pilha de caixas empilhadas sobre ele, simbolizando parcelas bloqueando o limite, uma moeda e uma régua de medição sobre mesa verde-menta"
@@ -103,7 +103,7 @@ Se você usa iPhone, o [MeuGrana](https://apps.apple.com/br/app/meugrana-parcela
 ## O que não fazer: armadilhas comuns
 
 - **Achando que "paguei a fatura, então posso usar tudo de novo."** Só a parcela daquele mês foi liberada. O restante continua travado.
-- **Parcellando para "pagar menos por mês" sem olhar o total travado.** A parcela parece mansa. O valor total no limite não é.
+- **Parcelando para "pagar menos por mês" sem olhar o total travado.** A parcela parece mansa. O valor total no limite não é.
 - **Usar o limite "disponível" como sinônimo de "dinheiro que eu tenho."** Ele é apenas um snapshot momentâneo, antes de considerar o impacto de uma nova compra parcelada.
 - **Fechar o cartão de crédito para "poupar."** Se não houver gastos parcelados, fechar não traz benefício — mas pode afetar seu score se o banco interpreta como inatividade.
 
