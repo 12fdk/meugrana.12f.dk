@@ -56,6 +56,11 @@ SCENES = {
     "como-anotar-gastos-no-celular":
         "a smartphone in the center showing a simple checklist with checkmarks on its screen, "
         "a notepad with handwritten marks, a stack of plain unmarked coins, a coffee mug and a pen",
+    # seed 777016
+    "parcelas-ocupam-limite-do-cartao":
+        "a plain blank credit card in solid charcoal gray showing only a small chip, no embossing and no text, "
+        "with several thick books stacked on top of it like bricks, "
+        "a metal ruler next to the stack, and a single plain unmarked coin",
 }
 
 def workflow(prompt_text, seed):

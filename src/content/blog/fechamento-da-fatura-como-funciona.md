@@ -4,7 +4,7 @@ description: "Entenda como funciona o fechamento da fatura do cartão, a diferen
 keyword: "fechamento da fatura"
 publishDate: 2026-07-16
 tags: ["cartão de crédito", "fatura", "fechamento"]
-relatedSlugs: ["fatura-do-cartao-veio-alta-o-que-fazer", "como-organizar-compras-parceladas"]
+relatedSlugs: ["fatura-do-cartao-veio-alta-o-que-fazer", "como-organizar-compras-parceladas", "parcelas-ocupam-limite-do-cartao"]
 faq:
   - q: "Qual a diferença entre fechamento e vencimento da fatura?"
     a: >-

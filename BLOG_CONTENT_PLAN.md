@@ -46,6 +46,7 @@ automatically; per-post clicks are tracked in Umami as
 | 14 | `parcelamento-com-juros-ou-sem-juros` | parcelamento com juros ou sem juros | Mid | ✅ 2026-07-16 |
 | 15 | `como-evitar-compras-por-impulso` | como evitar compras por impulso | Top | ✅ 2026-07-16 |
 | 16 | `como-anotar-gastos-no-celular` | como anotar gastos no celular | Bottom | ✅ 2026-07-17 |
+| 17 | `parcelas-ocupam-limite-do-cartao` | parcelas ocupam limite do cartão | Mid | ✅ 2026-07-24 |
 
 > Note: three posts were generated on 2026-07-17 while validating the automated
 > pipeline. To avoid a same-day flood on the blog, only the last (#16) was kept
@@ -56,13 +57,12 @@ automatically; per-post clicks are tracked in Umami as
 
 | # | Working title | Keyword idea | Funnel | Notes |
 |---|---------------|--------------|--------|-------|
-| 17 | Parcelas ocupam limite do cartão | parcelas ocupam limite do cartão | Mid | Drafted+reviewed 2026-07-17, unpublished to avoid same-day flooding — republish another day |
-| 18 | Cartão adicional: controlar gastos da família | cartão adicional | Mid | Drafted+reviewed 2026-07-17, unpublished to avoid same-day flooding — republish another day |
-| 19 | Efeitos ocultos do mínimo do cartão de crédito | mínimo cartão crédito efeitos | Top | Largely covered by post 10 — validate a distinct angle before writing |
-| 20 | Como saber se seu limite de cartão está baixo | limite baixo cartão crédito | Mid | Banks adjust limits frequently; tips for monitoring |
-| 21 | Como negociar aumento de limite do cartão de crédito | como aumentar limite cartão | Mid | When to ask, what banks look for, what happens after |
-| 22 | Reserva de emergência para quem vive de parcelas | reserva de emergência parcelas | Top | Emergency fund for people living on installments |
-| 23 | Vale-refeição e vale-alimentação no orçamento | vale refeição orçamento mensal | Mid | Free-tier tie-in: PIX/boleto/VR |
+| 17 | Cartão adicional: controlar gastos da família | cartão adicional | Mid | Drafted+reviewed 2026-07-17, unpublished to avoid same-day flooding — republish another day |
+| 18 | Efeitos ocultos do mínimo do cartão de crédito | mínimo cartão crédito efeitos | Top | Largely covered by post 10 — validate a distinct angle before writing |
+| 19 | Como saber se seu limite de cartão está baixo | limite baixo cartão crédito | Mid | Banks adjust limits frequently; tips for monitoring |
+| 20 | Como negociar aumento de limite do cartão de crédito | como aumentar limite cartão | Mid | When to ask, what banks look for, what happens after |
+| 21 | Reserva de emergência para quem vive de parcelas | reserva de emergência parcelas | Top | Emergency fund for people living on installments |
+| 22 | Vale-refeição e vale-alimentação no orçamento | vale refeição orçamento mensal | Mid | Free-tier tie-in: PIX/boleto/VR |
 
 ## Per-post checklist
 
