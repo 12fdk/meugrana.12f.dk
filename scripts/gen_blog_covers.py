@@ -61,6 +61,11 @@ SCENES = {
         "a plain blank credit card in solid charcoal gray showing only a small chip, no embossing and no text, "
         "with several thick books stacked on top of it like bricks, "
         "a metal ruler next to the stack, and a single plain unmarked coin",
+    # seed 777012
+    "cartao-adicional-controlar-gastos-familia":
+        "a fan of four plain blank credit cards in solid colors (emerald, charcoal, white, sage), "
+        "each with a small colored ribbon marker attached, "
+        "an open notepad with handwritten marks, a pen and a coffee mug",
 }
 
 def workflow(prompt_text, seed):

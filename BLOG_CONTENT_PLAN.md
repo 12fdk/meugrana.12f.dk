@@ -30,23 +30,24 @@ automatically; per-post clicks are tracked in Umami as
 
 | # | Slug | Keyword | Funnel | Status |
 |---|------|---------|--------|--------|
-| 1 | `melhor-app-para-controlar-parcelas` | app para controlar parcelas | Bottom | ✅ 2026-07-16 |
-| 2 | `como-organizar-compras-parceladas` | como organizar compras parceladas | Mid | ✅ 2026-07-16 |
-| 3 | `planilha-de-gastos-mensais-alternativa` | planilha de gastos mensais | Mid/Bottom | ✅ 2026-07-16 |
-| 4 | `quanto-da-fatura-esta-comprometida` | fatura comprometida com parcelas | Mid | ✅ 2026-07-16 |
-| 5 | `fatura-do-cartao-veio-alta-o-que-fazer` | fatura do cartão veio alta | Top | ✅ 2026-07-16 |
-| 6 | `mobills-ou-organizze-qual-escolher` | mobills ou organizze | Bottom | ✅ 2026-07-16 |
-| 7 | `como-planejar-o-13-salario` | como planejar o 13º salário | Top | ✅ 2026-07-16 (seasonal — indexed early, peaks Oct–Dec) |
-| 8 | `vale-a-pena-parcelar` | vale a pena parcelar | Top | ✅ 2026-07-16 |
-| 9 | `fechamento-da-fatura-como-funciona` | fechamento da fatura | Mid | ✅ 2026-07-16 |
-| 10 | `como-sair-do-rotativo-do-cartao` | como sair do rotativo | Top | ✅ 2026-07-16 |
-| 11 | `app-de-financas-sem-conectar-banco` | app de finanças sem conectar banco | Bottom | ✅ 2026-07-16 |
-| 12 | `quantos-cartoes-de-credito-ter` | quantos cartões de crédito ter | Top | ✅ 2026-07-16 |
-| 13 | `como-controlar-gastos-com-assinaturas` | controlar gastos com assinaturas | Mid | ✅ 2026-07-16 |
-| 14 | `parcelamento-com-juros-ou-sem-juros` | parcelamento com juros ou sem juros | Mid | ✅ 2026-07-16 |
-| 15 | `como-evitar-compras-por-impulso` | como evitar compras por impulso | Top | ✅ 2026-07-16 |
-| 16 | `como-anotar-gastos-no-celular` | como anotar gastos no celular | Bottom | ✅ 2026-07-17 |
-| 17 | `parcelas-ocupam-limite-do-cartao` | parcelas ocupam limite do cartão | Mid | ✅ 2026-07-24 |
+| 17 | `melhor-app-para-controlar-parcelas` | app para controlar parcelas | Bottom | ✅ 2026-07-16 |
+| 18 | `como-organizar-compras-parceladas` | como organizar compras parceladas | Mid | ✅ 2026-07-16 |
+| 19 | `planilha-de-gastos-mensais-alternativa` | planilha de gastos mensais | Mid/Bottom | ✅ 2026-07-16 |
+| 20 | `quanto-da-fatura-esta-comprometida` | fatura comprometida com parcelas | Mid | ✅ 2026-07-16 |
+| 21 | `fatura-do-cartao-veio-alta-o-que-fazer` | fatura do cartão veio alta | Top | ✅ 2026-07-16 |
+| 22 | `mobills-ou-organizze-qual-escolher` | mobills ou organizze | Bottom | ✅ 2026-07-16 |
+| 23 | `como-planejar-o-13-salario` | como planejar o 13º salário | Top | ✅ 2026-07-16 (seasonal — indexed early, peaks Oct–Dec) |
+| 24 | `vale-a-pena-parcelar` | vale a pena parcelar | Top | ✅ 2026-07-16 |
+| 25 | `fechamento-da-fatura-como-funciona` | fechamento da fatura | Mid | ✅ 2026-07-16 |
+| 26 | `como-sair-do-rotativo-do-cartao` | como sair do rotativo | Top | ✅ 2026-07-16 |
+| 27 | `app-de-financas-sem-conectar-banco` | app de finanças sem conectar banco | Bottom | ✅ 2026-07-16 |
+| 28 | `quantos-cartoes-de-credito-ter` | quantos cartões de crédito ter | Top | ✅ 2026-07-16 |
+| 29 | `como-controlar-gastos-com-assinaturas` | controlar gastos com assinaturas | Mid | ✅ 2026-07-16 |
+| 30 | `parcelamento-com-juros-ou-sem-juros` | parcelamento com juros ou sem juros | Mid | ✅ 2026-07-16 |
+| 31 | `como-evitar-compras-por-impulso` | como evitar compras por impulso | Top | ✅ 2026-07-16 |
+| 32 | `como-anotar-gastos-no-celular` | como anotar gastos no celular | Bottom | ✅ 2026-07-17 |
+| 33 | `parcelas-ocupam-limite-do-cartao` | parcelas ocupam limite do cartão | Mid | ✅ 2026-07-24 |
+| 34 | `cartao-adicional-controlar-gastos-familia` | cartão adicional | Mid | ✅ 2026-07-30 |
 
 > Note: three posts were generated on 2026-07-17 while validating the automated
 > pipeline. To avoid a same-day flood on the blog, only the last (#16) was kept
@@ -57,13 +58,13 @@ automatically; per-post clicks are tracked in Umami as
 
 | # | Working title | Keyword idea | Funnel | Notes |
 |---|---------------|--------------|--------|-------|
-| 17 | Parcelas ocupam limite do cartão | parcelas ocupam limite do cartão | Mid | Drafted+reviewed 2026-07-17, unpublished to avoid same-day flooding — republish another day |
-| 18 | Cartão adicional: controlar gastos da família | cartão adicional | Mid | Drafted+reviewed 2026-07-17, unpublished to avoid same-day flooding — republish another day |
 | 19 | Efeitos ocultos do mínimo do cartão de crédito | mínimo cartão crédito efeitos | Top | Largely covered by post 10 — validate a distinct angle before writing |
 | 20 | Como saber se seu limite de cartão está baixo | limite baixo cartão crédito | Mid | Banks adjust limits frequently; tips for monitoring |
 | 21 | Como negociar aumento de limite do cartão de crédito | como aumentar limite cartão | Mid | When to ask, what banks look for, what happens after |
 | 22 | Reserva de emergência para quem vive de parcelas | reserva de emergência parcelas | Top | Emergency fund for people living on installments |
 | 23 | Vale-refeição e vale-alimentação no orçamento | vale refeição orçamento mensal | Mid | Free-tier tie-in: PIX/boleto/VR |
+| 24 | Como anotar gastos no celular sem planilha | anotar gastos celular | Bottom | Manual entry as a feature vs spreadsheets |
+| 25 | Como dividir as contas da casa sem briga | dividir contas casa casal | Mid | Top, casal/família — budgeting for couples with shared expenses |
 
 ## Per-post checklist
 
