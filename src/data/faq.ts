@@ -99,4 +99,22 @@ export const faq: FaqEntry[] = [
     answerEn:
       "Yes. PIX, boleto, meal vouchers and other Brazilian payment methods are native in MeuGrana — along with INSS, IRRF and 13th salary in your income profile.",
   },
+  {
+    key: "faq.q11",
+    questionPt: "Lancei um gasto no mês errado. Dá para apagar ou corrigir?",
+    answerPt:
+      "Dá sim. Você pode apagar qualquer lançamento a qualquer momento — mas quase sempre não precisa: é só editar o lançamento e mudar a data. Todo gasto, receita ou compra parcelada tem uma data que você define, e é ela que decide em qual mês ele aparece. Corrigiu a data, o valor sai do mês errado e entra no mês certo automaticamente.",
+    questionEn: "I logged an expense in the wrong month. Can I delete or fix it?",
+    answerEn:
+      "Yes. You can delete any entry at any time — but you usually don't need to: just edit the entry and change its date. Every expense, income or installment purchase has a date you set, and that date decides which month it shows up in. Fix the date and the amount moves out of the wrong month and into the right one automatically.",
+  },
+  {
+    key: "faq.q12",
+    questionPt: "Posso lançar gastos de meses anteriores para ter um panorama do ano?",
+    answerPt:
+      "Pode. Ao registrar um gasto ou uma receita você escolhe a data — inclusive de meses que já passaram. O lançamento entra no mês correspondente e o dashboard e os gráficos por categoria daquele mês são recalculados. Assim dá para preencher o histórico do ano aos poucos e comparar os meses; no Premium, os relatórios e tendências reúnem tudo em uma visão anual.",
+    questionEn: "Can I log expenses from previous months to get a picture of the whole year?",
+    answerEn:
+      "Yes. When you log an expense or income you pick the date — including months that have already passed. The entry lands in that month and the dashboard and category charts for it are recalculated. That way you can fill in the year's history bit by bit and compare months; with Premium, reports and trends pull it all into a yearly view.",
+  },
 ];
