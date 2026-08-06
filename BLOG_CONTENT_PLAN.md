@@ -47,7 +47,8 @@ automatically; per-post clicks are tracked in Umami as
 | 31 | `como-evitar-compras-por-impulso` | como evitar compras por impulso | Top | ✅ 2026-07-16 |
 | 32 | `como-anotar-gastos-no-celular` | como anotar gastos no celular | Bottom | ✅ 2026-07-17 |
 | 33 | `parcelas-ocupam-limite-do-cartao` | parcelas ocupam limite do cartão | Mid | ✅ 2026-07-24 |
-| 34 | `cartao-adicional-controlar-gastos-familia` | cartão adicional | Mid | ✅ 2026-07-30 |
+|| 34 | `cartao-adicional-controlar-gastos-familia` | cartão adicional | Mid | ✅ 2026-07-30 |
+|| 35 | `minimo-do-cartao-o-que-oculta` | mínimo do cartão de crédito | Top | ✅ 2026-08-06 |
 
 > Note: three posts were generated on 2026-07-17 while validating the automated
 > pipeline. To avoid a same-day flood on the blog, only the last (#16) was kept

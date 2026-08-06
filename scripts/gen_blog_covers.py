@@ -66,6 +66,11 @@ SCENES = {
         "a fan of four plain blank credit cards in solid colors (emerald, charcoal, white, sage), "
         "each with a small colored ribbon marker attached, "
         "an open notepad with handwritten marks, a pen and a coffee mug",
+    # seed 777022
+    "minimo-do-cartao-o-que-oculta":
+        "a large plain unmarked coin in the center being pushed down by three stacked blocks, "
+        "symbolizing the minimum payment being overwhelmed by interest, "
+        "a metal ruler next to the stack, and a bar chart on a notepad",
 }
 
 def workflow(prompt_text, seed):

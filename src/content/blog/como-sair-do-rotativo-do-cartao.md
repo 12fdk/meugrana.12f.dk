@@ -4,7 +4,7 @@ description: "Caiu no rotativo? Veja como sair do rotativo do cartão com caminh
 keyword: "como sair do rotativo"
 publishDate: 2026-07-16
 tags: ["rotativo", "dívidas", "cartão de crédito"]
-relatedSlugs: ["fatura-do-cartao-veio-alta-o-que-fazer", "quanto-da-fatura-esta-comprometida"]
+relatedSlugs: ["fatura-do-cartao-veio-alta-o-que-fazer", "quanto-da-fatura-esta-comprometida", "minimo-do-cartao-o-que-oculta"]
 faq:
   - q: "O que é o crédito rotativo do cartão?"
     a: >-
