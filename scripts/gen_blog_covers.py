@@ -71,6 +71,11 @@ SCENES = {
         "a large plain unmarked coin in the center being pushed down by three stacked blocks, "
         "symbolizing the minimum payment being overwhelmed by interest, "
         "a metal ruler next to the stack, and a bar chart on a notepad",
+    # seed 777030
+    "limite-baixo-cartao-credito":
+        "a thermometer showing a low level mark on a desk, "
+        "a plain blank credit card in solid charcoal gray showing only a small chip, no embossing and no text, "
+        "a stack of three small books forming a barrier and a wall clock on the desk",
 }
 
 def workflow(prompt_text, seed):

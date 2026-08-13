@@ -47,8 +47,9 @@ automatically; per-post clicks are tracked in Umami as
 | 31 | `como-evitar-compras-por-impulso` | como evitar compras por impulso | Top | ✅ 2026-07-16 |
 | 32 | `como-anotar-gastos-no-celular` | como anotar gastos no celular | Bottom | ✅ 2026-07-17 |
 | 33 | `parcelas-ocupam-limite-do-cartao` | parcelas ocupam limite do cartão | Mid | ✅ 2026-07-24 |
-|| 34 | `cartao-adicional-controlar-gastos-familia` | cartão adicional | Mid | ✅ 2026-07-30 |
-|| 35 | `minimo-do-cartao-o-que-oculta` | mínimo do cartão de crédito | Top | ✅ 2026-08-06 |
+| 34 | `cartao-adicional-controlar-gastos-familia` | cartão adicional | Mid | ✅ 2026-07-30 |
+| 35 | `minimo-do-cartao-o-que-oculta` | mínimo do cartão de crédito | Top | ✅ 2026-08-06 |
+| 36 | `limite-baixo-cartao-credito` | limite baixo cartão crédito | Mid | ✅ 2026-08-13 |
 
 > Note: three posts were generated on 2026-07-17 while validating the automated
 > pipeline. To avoid a same-day flood on the blog, only the last (#16) was kept
@@ -59,13 +60,11 @@ automatically; per-post clicks are tracked in Umami as
 
 | # | Working title | Keyword idea | Funnel | Notes |
 |---|---------------|--------------|--------|-------|
-| 19 | Efeitos ocultos do mínimo do cartão de crédito | mínimo cartão crédito efeitos | Top | Largely covered by post 10 — validate a distinct angle before writing |
-| 20 | Como saber se seu limite de cartão está baixo | limite baixo cartão crédito | Mid | Banks adjust limits frequently; tips for monitoring |
-| 21 | Como negociar aumento de limite do cartão de crédito | como aumentar limite cartão | Mid | When to ask, what banks look for, what happens after |
-| 22 | Reserva de emergência para quem vive de parcelas | reserva de emergência parcelas | Top | Emergency fund for people living on installments |
-| 23 | Vale-refeição e vale-alimentação no orçamento | vale refeição orçamento mensal | Mid | Free-tier tie-in: PIX/boleto/VR |
-| 24 | Como anotar gastos no celular sem planilha | anotar gastos celular | Bottom | Manual entry as a feature vs spreadsheets |
-| 25 | Como dividir as contas da casa sem briga | dividir contas casa casal | Mid | Top, casal/família — budgeting for couples with shared expenses |
+| 19 | Efeitos ocultos do mínimo do cartão de crédito | mínimo cartão crédito efeitos | Top | Largamente coberto por post 10 — validar ângulo distinto antes de escrever |
+| 20 | Como aumentar limite de cartão: quando pedir e como preparar | como aumentar limite cartão | Mid | Quando pedir, o que o banco analisa, preparar histórico |
+| 21 | Reserva de emergência para quem vive de parcelas | reserva de emergência parcelas | Top | Fundo de emergência para quem vive de parcelas |
+| 22 | Vale-refeição e vale-alimentação no orçamento | vale refeição orçamento mensal | Mid | Conector tier gratuito: PIX/boleto/VR |
+| 23 | Como dividir as contas da casa sem briga | dividir contas casa casal | Mid | Top, casal/família — orçamento para casais com despesas compartilhadas |
 
 ## Per-post checklist
 

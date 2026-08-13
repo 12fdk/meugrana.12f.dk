@@ -8,6 +8,7 @@ relatedSlugs:
   - "quanto-da-fatura-esta-comprometida"
   - "como-organizar-compras-parceladas"
   - "fechamento-da-fatura-como-funciona"
+  - "limite-baixo-cartao-credito"
 faq:
   - q: "Por que meu limite não volta quando pago a fatura?"
     a: >-
