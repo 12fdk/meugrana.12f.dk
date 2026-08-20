@@ -8,6 +8,7 @@ relatedSlugs:
   - "parcelas-ocupam-limite-do-cartao"
   - "quantos-cartoes-de-credito-ter"
   - "fatura-do-cartao-veio-alta-o-que-fazer"
+  - "quando-pedir-aumento-de-limite-do-cartao"
 faq:
   - q: "Por que meu limite não aumenta mesmo pagando em dia?"
     a: >-

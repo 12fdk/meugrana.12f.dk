@@ -4,7 +4,7 @@ description: "Não existe número mágico de cartões: veja os prós e contras d
 keyword: "quantos cartões de crédito ter"
 publishDate: 2026-07-16
 tags: ["cartão de crédito", "organização", "limite"]
-relatedSlugs: ["como-organizar-compras-parceladas", "fechamento-da-fatura-como-funciona", "cartao-adicional-controlar-gastos-familia"]
+relatedSlugs: ["como-organizar-compras-parceladas", "fechamento-da-fatura-como-funciona", "cartao-adicional-controlar-gastos-familia", "quando-pedir-aumento-de-limite-do-cartao"]
 faq:
   - q: "Ter muitos cartões de crédito prejudica o score?"
     a: >-

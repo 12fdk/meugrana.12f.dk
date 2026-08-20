@@ -76,6 +76,11 @@ SCENES = {
         "a thermometer showing a low level mark on a desk, "
         "a plain blank credit card in solid charcoal gray showing only a small chip, no embossing and no text, "
         "a stack of three small books forming a barrier and a wall clock on the desk",
+    # seed 777032
+    "quando-pedir-aumento-de-limite-do-cartao":
+        "a plain blank credit card in solid charcoal gray showing only a small chip, no embossing and no text, "
+        "placed under an open paper document with blank abstract lines and a large round checkmark, "
+        "a pen resting beside the document, a small stack of plain unmarked coins and a coffee mug",
 }
 
 def workflow(prompt_text, seed):
