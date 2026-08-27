@@ -6,9 +6,15 @@ interface Props {
   minimal?: boolean;
   /** Set true on non-homepage pages (e.g. blog) to prefix anchors with "/". */
   root?: boolean;
+  /**
+   * Show the PT/EN toggle. Only true on pages that opt into Layout's `i18n`
+   * prop — offering the switch on a pt-BR-only page does nothing but
+   * mislabel the content language (issue #64).
+   */
+  langToggle?: boolean;
 }
 
-const { minimal = false, root = false } = Astro.props;
+const { minimal = false, root = false, langToggle = false } = Astro.props;
 const prefix = root ? "/" : "";
 
 const links = [
@@ -54,16 +60,18 @@ const links = [
                   Blog
                 </a>
               </li>
-              <li>
-                <button
-                  class="lang-btn"
-                  id="lang-toggle"
-                  onclick="toggleLanguage()"
-                  aria-label="Switch to English"
-                >
-                  EN
-                </button>
-              </li>
+              {langToggle && (
+                <li>
+                  <button
+                    class="lang-btn"
+                    id="lang-toggle"
+                    onclick="toggleLanguage()"
+                    aria-label="Switch to English"
+                  >
+                    EN
+                  </button>
+                </li>
+              )}
             </ul>
           </>
         )

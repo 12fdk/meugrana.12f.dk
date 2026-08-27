@@ -6,6 +6,17 @@ export const SITE = "https://meugrana.12f.dk";
 export const ORG_ID = `${SITE}/#organization`;
 export const WEBSITE_ID = `${SITE}/#website`;
 
+// The author entity, defined in full on /sobre.html and referenced by @id
+// from every BlogPosting so the byline resolves to a real, crawlable page.
+export const PERSON_ID = `${SITE}/sobre.html#robert-jensen`;
+export const ABOUT_URL = `${SITE}/sobre.html`;
+
+/** Author bio (E-E-A-T). Single source for /sobre.html and BlogPosting.author. */
+export const AUTHOR_NAME = "Robert Jensen";
+export const AUTHOR_BIO =
+  "Robert Jensen é o desenvolvedor independente por trás do MeuGrana. Cria apps para iPhone na Dinamarca e escreve guias práticos sobre parcelas, cartão de crédito e controle financeiro para o público brasileiro.";
+export const AUTHOR_SITE = "https://12f.dk";
+
 export const APP_STORE_URL =
   "https://apps.apple.com/br/app/meugrana-parcelas-finan%C3%A7as/id6759177555";
 

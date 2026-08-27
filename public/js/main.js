@@ -3,6 +3,7 @@
 const translations = {
   pt: {
     'nav.features': 'Recursos',
+    'nav.about': 'Sobre',
     'nav.how': 'Como funciona',
     'nav.screenshots': 'Capturas',
     'nav.premium': 'Premium',
@@ -173,6 +174,7 @@ const translations = {
   },
   en: {
     'nav.features': 'Features',
+    'nav.about': 'About',
     'nav.how': 'How it works',
     'nav.screenshots': 'Screenshots',
     'nav.premium': 'Premium',
@@ -352,7 +354,16 @@ function detectLanguage() {
   return browserLang.startsWith('pt') ? 'pt' : 'en';
 }
 
+function i18nEnabled() {
+  return document.documentElement.hasAttribute('data-i18n-enabled');
+}
+
 function setLanguage(lang) {
+  // Pages without full data-i18n coverage (blog, legal) stay pt-BR. Running
+  // this there would flip <html lang> to "en" over Portuguese copy — the
+  // lang attribute would then misreport the content language to crawlers
+  // and screen readers. See issue #64.
+  if (!i18nEnabled()) return;
   currentLang = lang;
   localStorage.setItem('meugrana-lang', lang);
   document.documentElement.lang = lang === 'pt' ? 'pt-BR' : 'en';
@@ -399,6 +410,7 @@ function setLanguage(lang) {
 }
 
 function toggleLanguage() {
+  if (!i18nEnabled()) return;
   setLanguage(currentLang === 'pt' ? 'en' : 'pt');
 }
 
@@ -496,8 +508,9 @@ function setupStickyDownload() {
 
 // Init
 document.addEventListener('DOMContentLoaded', () => {
-  const lang = detectLanguage();
-  setLanguage(lang);
+  if (i18nEnabled()) {
+    setLanguage(detectLanguage());
+  }
   setupScrollAnimations();
   setupSmoothScroll();
   setupMobileNav();

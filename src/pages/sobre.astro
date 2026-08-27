@@ -1,0 +1,190 @@
+---
+// About / author page. Exists so the byline on every blog post resolves to a
+// real, crawlable page instead of living only inside BlogPosting JSON-LD
+// (E-E-A-T gap found in the 2026-08-27 SEO audit, issue #64).
+//
+// pt-BR only, like the blog: the audience is Brazil and there is no EN
+// translation of this copy, so it does not opt into Layout's `i18n`.
+//
+// Every claim here must be traceable to something the app or site already
+// states (see src/data/faq.ts and privacy-policy.astro). Do not add
+// biographical detail that isn't already public.
+import Layout from "../layouts/Layout.astro";
+import Navbar from "../components/Navbar.astro";
+import Footer from "../components/Footer.astro";
+import {
+  SITE,
+  ORG_ID,
+  PERSON_ID,
+  ABOUT_URL,
+  AUTHOR_NAME,
+  AUTHOR_BIO,
+  AUTHOR_SITE,
+  APP_STORE_URL,
+} from "../consts";
+
+const title = "Sobre o MeuGrana e quem escreve aqui — MeuGrana";
+const description =
+  "Quem faz o MeuGrana: Robert Jensen, desenvolvedor independente. Como o app é construído, por que ele não conecta ao seu banco e como os guias do blog são escritos.";
+
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "ProfilePage",
+  mainEntity: {
+    "@type": "Person",
+    "@id": PERSON_ID,
+    name: AUTHOR_NAME,
+    description: AUTHOR_BIO,
+    url: ABOUT_URL,
+    jobTitle: "Desenvolvedor de apps para iPhone",
+    knowsAbout: [
+      "Compras parceladas",
+      "Cartão de crédito",
+      "Fatura de cartão",
+      "Finanças pessoais",
+      "Desenvolvimento iOS",
+    ],
+    sameAs: [AUTHOR_SITE],
+    worksFor: { "@id": ORG_ID },
+  },
+  about: { "@id": ORG_ID },
+  inLanguage: "pt-BR",
+};
+
+const breadcrumbData = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Início", item: `${SITE}/` },
+    { "@type": "ListItem", position: 2, name: "Sobre", item: ABOUT_URL },
+  ],
+};
+---
+
+<Layout title={title} description={description} canonical={ABOUT_URL}>
+  <Fragment slot="head">
+    <meta property="og:title" content="Sobre o MeuGrana e quem escreve aqui" />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={`${SITE}/images/og-image.jpg`} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:type" content="profile" />
+    <meta property="og:url" content={ABOUT_URL} />
+    <meta property="og:site_name" content="MeuGrana" />
+    <meta property="og:locale" content="pt_BR" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Sobre o MeuGrana e quem escreve aqui" />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={`${SITE}/images/og-image.jpg`} />
+
+    <script is:inline type="application/ld+json" set:html={JSON.stringify(structuredData)} />
+    <script is:inline type="application/ld+json" set:html={JSON.stringify(breadcrumbData)} />
+  </Fragment>
+
+  <Navbar root />
+
+  <main class="blog-post">
+    <article class="container">
+      <header class="blog-post-header">
+        <p class="blog-breadcrumb"><a href="/">← Início</a></p>
+        <h1>Sobre o MeuGrana e quem escreve aqui</h1>
+        <p class="blog-meta">Quem faz o app, como ele é construído e como os guias são escritos</p>
+      </header>
+
+      <div class="blog-content">
+        <h2>Quem faz o MeuGrana</h2>
+        <p>
+          {AUTHOR_BIO} Mais sobre os outros apps em <a href={AUTHOR_SITE} rel="author">12f.dk</a>.
+        </p>
+        <p>
+          O MeuGrana não é feito por uma fintech nem por um banco. É um app independente, sem
+          investidores e sem parcerias com instituições financeiras — o que significa que ele não
+          precisa vender seus dados nem empurrar produto de crédito para se sustentar.
+        </p>
+
+        <h2>Por que o app existe</h2>
+        <p>
+          Quase todo app de finanças assume que o problema é saber onde o dinheiro foi parar no mês
+          passado. No Brasil, o problema costuma ser outro: <strong>quanto das próximas faturas já
+          está comprometido com parcelas que você assumiu meses atrás</strong>. Doze parcelas de
+          R$ 80 não parecem nada na hora da compra e viram uma fatura difícil de explicar seis meses
+          depois.
+        </p>
+        <p>
+          O MeuGrana foi construído em volta desse problema específico: registrar cada parcelamento,
+          somar o que já está travado em cada cartão e projetar as próximas faturas antes de elas
+          chegarem.
+        </p>
+
+        <h2>Como o app é construído</h2>
+        <ul>
+          <li>
+            <strong>Não conecta ao seu banco.</strong> Sem Open Finance, sem pedir senha, sem acesso
+            ao seu extrato. Você registra os gastos manualmente — leva segundos e mantém você
+            consciente do que está gastando.
+          </li>
+          <li>
+            <strong>Não pede cadastro.</strong> Sem e-mail, sem CPF, sem senha. Não existe uma
+            “conta MeuGrana”.
+          </li>
+          <li>
+            <strong>Seus dados ficam no seu iPhone.</strong> Lançamentos, cartões e salário ficam no
+            aparelho e, se você ativar a sincronização Premium, no seu iCloud pessoal — ao qual nós
+            não temos acesso. Nenhum dado financeiro é enviado para servidores nossos. Os detalhes
+            estão na <a href="/privacy-policy.html">Política de Privacidade</a>.
+          </li>
+          <li>
+            <strong>Funciona offline.</strong> Registrar gastos e consultar o dashboard não depende
+            de internet.
+          </li>
+          <li>
+            <strong>Premium é compra única.</strong> R$ 19,90, acesso vitalício, sem assinatura e
+            sem nada para cancelar depois.
+          </li>
+        </ul>
+
+        <h2>Como os guias do blog são escritos</h2>
+        <p>
+          O <a href="/blog/">blog</a> existe para responder dúvidas reais sobre parcelas, fatura e
+          cartão de crédito — não para vender o app. Algumas regras que eu sigo:
+        </p>
+        <ul>
+          <li>
+            <strong>O texto responde à pergunta primeiro.</strong> Se der para resolver seu problema
+            com uma planilha ou com o app de outra pessoa, o post diz isso.
+          </li>
+          <li>
+            <strong>Comparações são honestas.</strong> Os posts que citam Mobills, Organizze ou
+            planilhas apontam onde essas opções são melhores que o MeuGrana — porque em vários casos
+            elas são.
+          </li>
+          <li>
+            <strong>Nada de depoimento inventado.</strong> A página inicial só mostra avaliações
+            reais da App Store; enquanto não houver avaliações escritas, a seção simplesmente não
+            aparece.
+          </li>
+          <li>
+            <strong>Correções são feitas no lugar.</strong> Quando um post fica desatualizado — uma
+            regra muda, um preço muda — o texto é corrigido em vez de ficar no ar como estava.
+          </li>
+        </ul>
+
+        <h2>Falar comigo</h2>
+        <p>
+          Dúvida, erro num post, sugestão de recurso ou problema com o app:
+          <a href="mailto:support@12f.dk">support@12f.dk</a>. É o mesmo endereço para suporte e para
+          assuntos de imprensa, e quem responde sou eu.
+        </p>
+        <p>
+          <a href={APP_STORE_URL}>Baixar o MeuGrana na App Store</a>
+        </p>
+      </div>
+    </article>
+  </main>
+
+  <Footer root />
+
+  <script is:inline src="/js/main.js"></script>
+</Layout>

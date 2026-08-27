@@ -14,7 +14,7 @@ const canonical = `${SITE}/privacy-policy.html`;
     <!-- Open Graph -->
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
-    <meta property="og:image" content={`${SITE}/images/og-image.png`} />
+    <meta property="og:image" content={`${SITE}/images/og-image.jpg`} />
     <meta property="og:type" content="website" />
     <meta property="og:url" content={canonical} />
     <meta property="og:site_name" content="MeuGrana" />
@@ -24,23 +24,23 @@ const canonical = `${SITE}/privacy-policy.html`;
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content="Política de Privacidade do app MeuGrana." />
-    <meta name="twitter:image" content={`${SITE}/images/og-image.png`} />
+    <meta name="twitter:image" content={`${SITE}/images/og-image.jpg`} />
   </Fragment>
 
   <Navbar minimal />
 
   <main>
     <article class="policy-content" id="policy-pt">
-      <h1>Política de Privacidade</h1>
+      <h1 class="policy-title">Política de Privacidade</h1>
       <p class="last-updated">Última atualização: 16 de fevereiro de 2026</p>
 
-      <h2>1. Introdução</h2>
+      <h2 class="policy-section">1. Introdução</h2>
       <p>
         O MeuGrana ("nós", "nosso" ou "app") respeita sua privacidade. Esta política explica como
         tratamos suas informações ao usar o app MeuGrana: Parcelas & Finanças.
       </p>
 
-      <h2>2. Dados que coletamos</h2>
+      <h2 class="policy-section">2. Dados que coletamos</h2>
       <p>
         <strong>Não coletamos dados pessoais.</strong> O MeuGrana é um app offline-first. Todos os
         seus dados financeiros (transações, parcelas, cartões, perfil de salário) são armazenados
@@ -48,7 +48,7 @@ const canonical = `${SITE}/privacy-policy.html`;
         (SwiftData).
       </p>
 
-      <h2>3. Sincronização via iCloud (Premium)</h2>
+      <h2 class="policy-section">3. Sincronização via iCloud (Premium)</h2>
       <p>
         Se você assinar o MeuGrana Premium e ativar a sincronização, seus dados serão sincronizados
         via <strong>Apple iCloud/CloudKit</strong>. Neste caso:
@@ -62,43 +62,43 @@ const canonical = `${SITE}/privacy-policy.html`;
         </li>
       </ul>
 
-      <h2>4. Compras e assinaturas</h2>
+      <h2 class="policy-section">4. Compras e assinaturas</h2>
       <p>
         Assinaturas são processadas pela <strong>Apple App Store</strong>. Não temos acesso às suas
         informações de pagamento. A Apple gerencia todas as transações financeiras.
       </p>
 
-      <h2>5. Análises e diagnóstico</h2>
+      <h2 class="policy-section">5. Análises e diagnóstico</h2>
       <p>
         Não utilizamos ferramentas de análise de terceiros (analytics). Não rastreamos seu
         comportamento no app. As únicas informações de diagnóstico disponíveis são as que a Apple
         coleta através das configurações padrão do iOS, sujeitas ao seu consentimento.
       </p>
 
-      <h2>6. Dados de terceiros</h2>
+      <h2 class="policy-section">6. Dados de terceiros</h2>
       <p>O MeuGrana não compartilha, vende ou transfere seus dados para terceiros sob nenhuma circunstância.</p>
 
-      <h2>7. Segurança</h2>
+      <h2 class="policy-section">7. Segurança</h2>
       <p>
         Seus dados são protegidos pelas camadas de segurança do iOS, incluindo criptografia do
         dispositivo e, quando aplicável, criptografia end-to-end do iCloud. Como não armazenamos
         dados em servidores próprios, não há risco de vazamento do nosso lado.
       </p>
 
-      <h2>8. Crianças</h2>
+      <h2 class="policy-section">8. Crianças</h2>
       <p>
         O MeuGrana não é direcionado a crianças menores de 13 anos e não coletamos intencionalmente
         dados de menores.
       </p>
 
-      <h2>9. Alterações nesta política</h2>
+      <h2 class="policy-section">9. Alterações nesta política</h2>
       <p>
         Podemos atualizar esta política periodicamente. Alterações significativas serão comunicadas
         através de uma atualização do app. A data da última atualização está indicada no topo desta
         página.
       </p>
 
-      <h2>10. Contato</h2>
+      <h2 class="policy-section">10. Contato</h2>
       <p>
         Se você tiver dúvidas sobre esta política de privacidade, entre em contato conosco pelo
         e-mail: <a href="mailto:support@12f.dk">support@12f.dk</a>
@@ -109,24 +109,24 @@ const canonical = `${SITE}/privacy-policy.html`;
 
     <hr class="policy-divider" />
 
-    <article class="policy-content" id="policy-en">
-      <h1>Privacy Policy</h1>
+    <article class="policy-content" id="policy-en" lang="en">
+      <h2 class="policy-title" lang="en">Privacy Policy</h2>
       <p class="last-updated">Last updated: February 16, 2026</p>
 
-      <h2>1. Introduction</h2>
+      <h3 class="policy-section">1. Introduction</h3>
       <p>
         MeuGrana ("we", "our" or "app") respects your privacy. This policy explains how we handle
         your information when you use the MeuGrana: Parcelas & Finanças app.
       </p>
 
-      <h2>2. Data we collect</h2>
+      <h3 class="policy-section">2. Data we collect</h3>
       <p>
         <strong>We do not collect personal data.</strong> MeuGrana is an offline-first app. All your
         financial data (transactions, installments, cards, salary profile) is stored
         <strong>exclusively on your device</strong> using iOS local storage (SwiftData).
       </p>
 
-      <h2>3. iCloud Sync (Premium)</h2>
+      <h3 class="policy-section">3. iCloud Sync (Premium)</h3>
       <p>
         If you subscribe to MeuGrana Premium and enable sync, your data will be synchronized via
         <strong>Apple iCloud/CloudKit</strong>. In this case:
@@ -140,42 +140,42 @@ const canonical = `${SITE}/privacy-policy.html`;
         </li>
       </ul>
 
-      <h2>4. Purchases and subscriptions</h2>
+      <h3 class="policy-section">4. Purchases and subscriptions</h3>
       <p>
         Subscriptions are processed by the <strong>Apple App Store</strong>. We do not have access
         to your payment information. Apple manages all financial transactions.
       </p>
 
-      <h2>5. Analytics and diagnostics</h2>
+      <h3 class="policy-section">5. Analytics and diagnostics</h3>
       <p>
         We do not use third-party analytics tools. We do not track your behavior in the app. The
         only diagnostic information available is what Apple collects through default iOS settings,
         subject to your consent.
       </p>
 
-      <h2>6. Third-party data</h2>
+      <h3 class="policy-section">6. Third-party data</h3>
       <p>MeuGrana does not share, sell, or transfer your data to third parties under any circumstances.</p>
 
-      <h2>7. Security</h2>
+      <h3 class="policy-section">7. Security</h3>
       <p>
         Your data is protected by iOS security layers, including device encryption and, when
         applicable, iCloud end-to-end encryption. Since we do not store data on our own servers,
         there is no risk of data breach on our end.
       </p>
 
-      <h2>8. Children</h2>
+      <h3 class="policy-section">8. Children</h3>
       <p>
         MeuGrana is not directed at children under 13 years of age and we do not intentionally
         collect data from minors.
       </p>
 
-      <h2>9. Changes to this policy</h2>
+      <h3 class="policy-section">9. Changes to this policy</h3>
       <p>
         We may update this policy periodically. Significant changes will be communicated through an
         app update. The date of the last update is indicated at the top of this page.
       </p>
 
-      <h2>10. Contact</h2>
+      <h3 class="policy-section">10. Contact</h3>
       <p>
         If you have questions about this privacy policy, contact us at:
         <a href="mailto:support@12f.dk">support@12f.dk</a>
@@ -194,7 +194,7 @@ const canonical = `${SITE}/privacy-policy.html`;
     margin: 0 auto;
     padding: 120px 24px 80px;
   }
-  .policy-content h1 {
+  .policy-content .policy-title {
     font-size: 2rem;
     font-weight: 800;
     margin-bottom: 8px;
@@ -205,7 +205,7 @@ const canonical = `${SITE}/privacy-policy.html`;
     font-size: 0.9rem;
     margin-bottom: 40px;
   }
-  .policy-content h2 {
+  .policy-content .policy-section {
     font-size: 1.3rem;
     font-weight: 700;
     margin-top: 32px;
