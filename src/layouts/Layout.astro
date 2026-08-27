@@ -2,7 +2,7 @@
 // Shared page shell: head metadata, favicons, stylesheet, Umami analytics.
 // Pages pass their own title/description/canonical and extend the head via
 // the named "head" slot (OG tags, structured data, extra styles).
-import { SITE, ORG_ID, WEBSITE_ID, APP_STORE_URL } from "../consts";
+import { SITE, ORG_ID, WEBSITE_ID, PERSON_ID, APP_STORE_URL } from "../consts";
 
 interface Props {
   title: string;
@@ -13,6 +13,14 @@ interface Props {
   siteStylesheet?: boolean;
   /** Load the Umami analytics script. The 404 page opts out. */
   analytics?: boolean;
+  /**
+   * Opt this page into the client-side PT/EN switcher in js/main.js.
+   * Only set it on pages whose content is fully covered by `data-i18n`
+   * attributes — currently just the homepage. Blog posts and the legal
+   * pages are pt-BR only, and letting the switcher run there would set
+   * document.lang="en" over Portuguese text (issue #64).
+   */
+  i18n?: boolean;
 }
 
 const {
@@ -22,6 +30,7 @@ const {
   noindex = false,
   siteStylesheet = true,
   analytics = true,
+  i18n = false,
 } = Astro.props;
 
 // Site-wide brand entity graph: Organization + WebSite, referenced by
@@ -46,6 +55,8 @@ const siteEntities = {
         availableLanguage: ["Portuguese", "English"],
       },
       sameAs: [APP_STORE_URL, "https://12f.dk"],
+      // Ties the brand entity to the author entity defined on /sobre.html.
+      founder: { "@id": PERSON_ID },
     },
     {
       "@type": "WebSite",
@@ -60,7 +71,7 @@ const siteEntities = {
 ---
 
 <!doctype html>
-<html lang="pt-BR">
+<html lang="pt-BR" data-i18n-enabled={i18n ? "" : undefined}>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />

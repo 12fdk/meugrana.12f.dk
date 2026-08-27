@@ -3,7 +3,15 @@ import { render } from "astro:content";
 import Layout from "../../layouts/Layout.astro";
 import Navbar from "../../components/Navbar.astro";
 import Footer from "../../components/Footer.astro";
-import { SITE, ORG_ID, APP_STORE_URL, APP_STORE_BADGE_URL } from "../../consts";
+import {
+  SITE,
+  ORG_ID,
+  PERSON_ID,
+  ABOUT_URL,
+  AUTHOR_BIO,
+  APP_STORE_URL,
+  APP_STORE_BADGE_URL,
+} from "../../consts";
 import { getPublishedPosts, postUrl, formatDate, type BlogPost } from "../../utils/blog";
 import { readingTime } from "../../utils/readingTime";
 
@@ -35,13 +43,7 @@ const related = (
     : allPosts.filter((p) => p.id !== post.id)
 ).slice(0, 3);
 
-// Author bio (E-E-A-T): shown under the post and mirrored into
-// BlogPosting.author.description. Keep it factual.
-const AUTHOR_BIO =
-  "Robert Jensen é o desenvolvedor independente por trás do MeuGrana. Cria apps para iPhone na Dinamarca e escreve guias práticos sobre parcelas, cartão de crédito e controle financeiro para o público brasileiro.";
-const AUTHOR_URL = "https://12f.dk";
-
-const ogImage = post.data.cover ? `${SITE}${post.data.cover}` : `${SITE}/images/og-image.png`;
+const ogImage = post.data.cover ? `${SITE}${post.data.cover}` : `${SITE}/images/og-image.jpg`;
 // Blog covers are 1200×700; the site-wide OG fallback is 1200×630.
 const ogImageHeight = post.data.cover ? "700" : "630";
 
@@ -57,8 +59,9 @@ const structuredData = {
     : {}),
   author: {
     "@type": "Person",
+    "@id": PERSON_ID,
     name: post.data.author,
-    url: AUTHOR_URL,
+    url: ABOUT_URL,
     description: AUTHOR_BIO,
   },
   publisher: { "@id": ORG_ID },
@@ -83,7 +86,7 @@ const faqData =
       }
     : null;
 
-// Mirrors the visible "← Blog" breadcrumb.
+// Mirrors the visible breadcrumb trail rendered above the title.
 const breadcrumbData = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
@@ -123,7 +126,11 @@ const breadcrumbData = {
   <main class="blog-post">
     <article class="container">
       <header class="blog-post-header">
-        <p class="blog-breadcrumb"><a href="/blog/">← Blog</a></p>
+        <nav class="blog-breadcrumb" aria-label="Breadcrumb">
+          <a href="/blog/">← Blog</a>
+          <span aria-hidden="true"> / </span>
+          <span aria-current="page">{post.data.title}</span>
+        </nav>
         <h1>{post.data.title}</h1>
         <p class="blog-meta">
           <time datetime={post.data.publishDate.toISOString().slice(0, 10)}>
@@ -185,7 +192,7 @@ const breadcrumbData = {
         <p class="blog-author-label">Sobre o autor</p>
         <strong>{post.data.author}</strong>
         <p>
-          {AUTHOR_BIO} Mais em <a href={AUTHOR_URL} rel="author">12f.dk</a>.
+          {AUTHOR_BIO} <a href="/sobre.html" rel="author">Sobre o autor e o MeuGrana</a>.
         </p>
       </aside>
 

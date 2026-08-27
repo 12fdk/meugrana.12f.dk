@@ -1181,6 +1181,14 @@ a:hover {
 .blog-breadcrumb {
   margin-bottom: 16px;
   font-weight: 600;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* Trailing crumb is the current page: present but visibly secondary. */
+.blog-breadcrumb [aria-current="page"] {
+  color: var(--text-secondary);
+  font-weight: 400;
 }
 
 .blog-post-header h1 {

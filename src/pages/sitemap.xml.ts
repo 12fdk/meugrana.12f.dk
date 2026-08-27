@@ -19,7 +19,7 @@ export async function GET(_context: APIContext) {
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image>
-      <image:loc>${SITE}/images/og-image.png</image:loc>
+      <image:loc>${SITE}/images/og-image.jpg</image:loc>
       <image:title>MeuGrana — Parcelas &amp; Finanças</image:title>
     </image:image>
 ${[1, 2, 3, 4, 5]
@@ -34,6 +34,11 @@ ${[1, 2, 3, 4, 5]
     <loc>${SITE}/blog/</loc>${lastmod}
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>${SITE}/sobre.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>${SITE}/privacy-policy.html</loc>
