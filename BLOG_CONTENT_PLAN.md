@@ -51,6 +51,7 @@ automatically; per-post clicks are tracked in Umami as
 | 35 | `minimo-do-cartao-o-que-oculta` | mínimo do cartão de crédito | Top | ✅ 2026-08-06 |
 | 36 | `limite-baixo-cartao-credito` | limite baixo cartão crédito | Mid | ✅ 2026-08-13 |
 | 37 | `quando-pedir-aumento-de-limite-do-cartao` | quando pedir aumento de limite do cartão | Mid | ✅ 2026-08-20 |
+| 21 | `reserva-de-emergencia-para-quem-vive-de-parcelas` | reserva de emergência parcelas | Top | ✅ 2026-08-27 |
 
 > Note: three posts were generated on 2026-07-17 while validating the automated
 > pipeline. To avoid a same-day flood on the blog, only the last (#16) was kept
@@ -61,8 +62,6 @@ automatically; per-post clicks are tracked in Umami as
 
 | # | Working title | Keyword idea | Funnel | Notes |
 |---|---------------|--------------|--------|-------|
-| 19 | Efeitos ocultos do mínimo do cartão de crédito | mínimo cartão crédito efeitos | Top | Largamente coberto por post 35 — ângulo não distinto o suficiente; descontinuar |
-| 21 | Reserva de emergência para quem vive de parcelas | reserva de emergência parcelas | Top | Fundo de emergência para quem vive de parcelas |
 | 22 | Vale-refeição e vale-alimentação no orçamento | vale refeição orçamento mensal | Mid | Conector tier gratuito: PIX/boleto/VR |
 | 23 | Como dividir as contas da casa sem briga | dividir contas casa casal | Mid | Top, casal/família — orçamento para casais com despesas compartilhadas |
 | 24 | Assinatura mensal ou anual: quando cada uma compensa | assinatura mensal ou anual | Mid | Comparativo de custo total ao longo de 12–36 meses |

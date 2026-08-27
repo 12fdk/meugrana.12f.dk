@@ -81,6 +81,13 @@ SCENES = {
         "a plain blank credit card in solid charcoal gray showing only a small chip, no embossing and no text, "
         "placed under an open paper document with blank abstract lines and a large round checkmark, "
         "a pen resting beside the document, a small stack of plain unmarked coins and a coffee mug",
+    # seed 11111 (rejected: 777041 objects right-clustered; 424242 pink palette drift;
+    # 909090 warm palette; 555777 / 808080 / 31337 / 2024 / 6161 / 4242 / 9091 — marked coins or card/tag text)
+    "reserva-de-emergencia-para-quem-vive-de-parcelas":
+        "a small white piggy bank in the center of the desk, a few plain unmarked coins "
+        "scattered around it, a plain blank credit card in solid emerald green showing only "
+        "a small chip, no embossing and no text, a small shield padlock icon on a flat tag, "
+        "and a tiny potted succulent plant",
 }
 
 def workflow(prompt_text, seed):
