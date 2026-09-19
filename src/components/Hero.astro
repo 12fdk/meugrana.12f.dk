@@ -25,6 +25,17 @@ const phones = [
       Chega de planilha e de susto na fatura. O MeuGrana reúne as parcelas espalhadas nos seus
       cartões e mostra quanto da fatura já está comprometida — mês a mês.
     </p>
+    {/* Authority, stated once and honestly: the projection is the card's real
+        closing-day arithmetic, not an average. This is the only credential we
+        have actually earned and it was buried in the App Store description. */}
+    <p class="hero-authority" data-i18n="hero.authority">
+      Não é estimativa: é o cálculo exato do fechamento do seu cartão.
+    </p>
+    {/* Stakes — a taste, not a scare. It names a real mechanism and says
+        nothing about the reader. No debt-shame. */}
+    <p class="hero-stakes" data-i18n="hero.stakes">
+      A parcela que você esqueceu já está na fatura do mês que vem.
+    </p>
     <a href={APP_STORE_URL} class="app-store-badge"
       aria-label="Download on the App Store"
       data-umami-event="app-store-click"
@@ -33,8 +44,13 @@ const phones = [
     </a>
     <AppStoreRating rating={rating} ratingCount={ratingCount} />
     <p class="hero-microcopy" data-i18n="hero.microcopy">
-      Grátis para baixar · Sem cadastro · Dados só no seu iPhone
+      Grátis para baixar · Sem cadastro · A gente não conecta no seu banco
     </p>
+    {/* Transitional CTA for people who are not ready to install. */}
+    <a href="/blog/" class="hero-transitional" data-i18n="hero.transitional"
+      data-umami-event="blog-click" data-umami-event-placement="hero">
+      Ainda decidindo? Veja quanto custa parcelar →
+    </a>
   </div>
   <div class="hero-phones">
     {

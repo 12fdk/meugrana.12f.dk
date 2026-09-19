@@ -299,6 +299,36 @@ a:hover {
   opacity: 0.75;
 }
 
+.hero-authority {
+  margin-top: 18px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  opacity: 0.92;
+}
+
+.hero-stakes {
+  margin-top: 6px;
+  margin-bottom: 22px;
+  font-size: 0.9rem;
+  opacity: 0.72;
+}
+
+.hero-transitional {
+  display: inline-block;
+  margin-top: 12px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: inherit;
+  opacity: 0.8;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.hero-transitional:hover,
+.hero-transitional:focus-visible {
+  opacity: 1;
+}
+
 .hero-phones {
   display: flex;
   justify-content: center;

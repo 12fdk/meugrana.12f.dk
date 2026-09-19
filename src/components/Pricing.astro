@@ -3,7 +3,7 @@
 // badge — the goal is the download, not the subscription. Feature lists match
 // the App Store listing (Premium = unlimited cards/installments, 12-month
 // projection, custom categories, widgets, CSV; iCloud sync per privacy policy).
-import { APP_STORE_URL, APP_STORE_BADGE_URL } from "../consts";
+import { APP_STORE_URL, APP_STORE_BADGE_URL, PRICE_DISPLAY_PT } from "../consts";
 
 const freeFeatures = [
   { key: "pricing.free.f1", text: "Dashboard com resumo do mês" },
@@ -60,7 +60,7 @@ const premiumFeatures = [
       </div>
       <div class="pricing-card pricing-card-premium fade-in">
         <h3 data-i18n="pricing.premium.name">Premium</h3>
-        <p class="pricing-price" data-i18n="pricing.premium.price">Pagamento único de R$ 19,90</p>
+        <p class="pricing-price" data-i18n="pricing.premium.price">Pagamento único de {PRICE_DISPLAY_PT}</p>
         <p class="pricing-tagline" data-i18n="pricing.premium.tagline">Para controle total</p>
         <ul class="pricing-features">
           {

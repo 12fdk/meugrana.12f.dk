@@ -17,7 +17,7 @@ faq:
       Dá para começar grátis em qualquer opção desta lista. Planos pagos
       costumam valer a pena quando você tem vários cartões e muitas parcelas
       ativas — no MeuGrana, por exemplo, o Premium (pagamento único de
-      R$ 19,90, acesso vitalício) libera cartões e parcelas ilimitados e a
+      R$ 29,90, acesso vitalício) libera cartões e parcelas ilimitados e a
       projeção completa de 12 meses.
   - q: "O que é projeção de fatura e por que ela importa?"
     a: >-
@@ -89,7 +89,7 @@ Outros pontos que pesam na prática:
 - **Registro manual, sem conectar o banco.** Seus dados ficam só no aparelho — para quem valoriza privacidade, é decisivo. E como registrar leva segundos, o "custo" do manual é baixo.
 - **Feito para o Brasil:** categorias brasileiras e suporte a PIX, boleto e vale-refeição, além do cartão.
 - **Dashboard mensal** para ver o mês atual de relance, e funciona offline.
-- **Grátis para baixar.** O plano Premium — pagamento único de R$ 19,90, com acesso vitalício — libera cartões e parcelas ilimitados, projeção completa de 12 meses, categorias personalizadas, relatórios, widgets, exportação CSV e sincronização via iCloud.
+- **Grátis para baixar.** O plano Premium — pagamento único de R$ 29,90, com acesso vitalício — libera cartões e parcelas ilimitados, projeção completa de 12 meses, categorias personalizadas, relatórios, widgets, exportação CSV e sincronização via iCloud.
 
 A limitação honesta: é **só para iPhone** — não há versão Android por enquanto. E se você quer sincronização bancária automática, não é aqui — o registro manual é uma escolha deliberada do app, não uma falta.
 
