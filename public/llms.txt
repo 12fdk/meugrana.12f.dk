@@ -21,9 +21,9 @@ MeuGrana Premium unlocks:
 - CSV export
 - Extra widgets
 
-Premium is a **one-time purchase of R$ 19.90 with lifetime access** — it is not a subscription, it does not renew, and there is nothing to cancel. Older versions of the app offered monthly and annual plans; anyone who subscribed back then keeps their access, but those plans are no longer sold.
+Premium is a **one-time purchase of R$ 29.90 with lifetime access** — it is not a subscription, it does not renew, and there is nothing to cancel. Older versions of the app offered monthly and annual plans; anyone who subscribed back then keeps their access, but those plans are no longer sold.
 
-New installs start with 30 days of Premium unlocked — no card required, no charge, no auto-renewal. When the trial ends nothing is billed and no data is lost: the app continues on the free plan with all entries intact.
+Adding your first installment or card starts 7 days of Premium unlocked — no card required, no charge, no auto-renewal. When the trial ends nothing is billed and no data is lost: the app continues on the free plan with all entries intact.
 
 ## Privacy
 
@@ -42,7 +42,7 @@ MeuGrana is offline-first. All financial data is stored exclusively on your devi
 ## Technical Details
 
 - Platform: iOS
-- Price: Free to download; Premium is a one-time R$ 19.90 purchase (lifetime, not a subscription)
+- Price: Free to download; Premium is a one-time R$ 29.90 purchase (lifetime, not a subscription)
 - Currency: BRL (Brazilian Real)
 - Languages: Portuguese (Brazil), English
 - Available in: Brazil

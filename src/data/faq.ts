@@ -22,28 +22,28 @@ export const faq: FaqEntry[] = [
     key: "faq.q1",
     questionPt: "O MeuGrana é grátis? O que está incluído no plano gratuito?",
     answerPt:
-      "Sim, o MeuGrana é grátis para baixar e usar. O plano gratuito inclui o dashboard mensal, registro de transações e acompanhamento de parcelas. O Premium desbloqueia cartões e parcelas ilimitados, projeção de 12 meses, categorias personalizadas, relatórios, exportação CSV e widgets extras — pagamento único de R$ 19,90 (acesso vitalício).",
+      "Sim, o MeuGrana é grátis para baixar e usar. O plano gratuito inclui o dashboard mensal, registro de transações e acompanhamento de parcelas. O Premium desbloqueia cartões e parcelas ilimitados, projeção de 12 meses, categorias personalizadas, relatórios, exportação CSV e widgets extras — pagamento único de R$ 29,90 (acesso vitalício).",
     questionEn: "Is MeuGrana free? What's included in the free plan?",
     answerEn:
-      "Yes, MeuGrana is free to download and use. The free plan includes the monthly dashboard, transaction logging and installment tracking. Premium unlocks unlimited cards and installments, 12-month projection, custom categories, reports, CSV export and extra widgets — a one-time payment of R$ 19.90 (lifetime access).",
+      "Yes, MeuGrana is free to download and use. The free plan includes the monthly dashboard, transaction logging and installment tracking. Premium unlocks unlimited cards and installments, 12-month projection, custom categories, reports, CSV export and extra widgets — a one-time payment of R$ 29.90 (lifetime access).",
   },
   {
     key: "faq.q13",
     questionPt: "Existe teste grátis do Premium?",
     answerPt:
-      "Existe. Ao instalar o app você começa com 30 dias de Premium liberado — sem cartão, sem cobrança e sem renovação automática. Quando o período termina, nada é cobrado e nada some: o app continua funcionando no plano gratuito, com todos os seus lançamentos no lugar. Se quiser manter os recursos Premium, é uma compra única de R$ 19,90.",
+      "Existe. Quando você cadastra sua primeira parcela ou seu primeiro cartão, começam 7 dias de Premium liberado — sem cartão de crédito, sem cobrança e sem renovação automática. Quando o período termina, nada é cobrado e nada some: o app continua funcionando no plano gratuito, com todos os seus lançamentos no lugar. Se quiser manter os recursos Premium, é uma compra única de R$ 29,90.",
     questionEn: "Is there a free trial of Premium?",
     answerEn:
-      "There is. When you install the app you start with 30 days of Premium unlocked — no card, no charge, no auto-renewal. When it ends nothing is billed and nothing disappears: the app keeps working on the free plan with all your entries intact. If you want to keep the Premium features, it's a one-time R$ 19.90 purchase.",
+      "There is. When you add your first installment or card, 7 days of Premium unlock — no credit card, no charge, no auto-renewal. When it ends nothing is billed and nothing disappears: the app keeps working on the free plan with all your entries intact. If you want to keep the Premium features, it's a one-time R$ 29.90 purchase.",
   },
   {
     key: "faq.q8",
     questionPt: "O Premium é assinatura? Preciso cancelar depois?",
     answerPt:
-      "Não é assinatura. O Premium do MeuGrana é uma compra única de R$ 19,90 pela App Store: você paga uma vez, o acesso é vitalício e não há nada para cancelar depois. Versões antigas do app chegaram a oferecer planos mensal e anual — quem assinou naquela época mantém o acesso e pode cancelar quando quiser em Ajustes → seu nome → Assinaturas.",
+      "Não é assinatura. O Premium do MeuGrana é uma compra única de R$ 29,90 pela App Store: você paga uma vez, o acesso é vitalício e não há nada para cancelar depois. Versões antigas do app chegaram a oferecer planos mensal e anual — quem assinou naquela época mantém o acesso e pode cancelar quando quiser em Ajustes → seu nome → Assinaturas.",
     questionEn: "Is Premium a subscription? Do I have to cancel it later?",
     answerEn:
-      "It's not a subscription. MeuGrana Premium is a one-time R$ 19.90 App Store purchase: you pay once, access is for life, and there's nothing to cancel later. Older versions of the app did offer monthly and annual plans — anyone who subscribed back then keeps their access and can cancel anytime in Settings → your name → Subscriptions.",
+      "It's not a subscription. MeuGrana Premium is a one-time R$ 29.90 App Store purchase: you pay once, access is for life, and there's nothing to cancel later. Older versions of the app did offer monthly and annual plans — anyone who subscribed back then keeps their access and can cancel anytime in Settings → your name → Subscriptions.",
   },
   {
     key: "faq.q14",
@@ -265,10 +265,10 @@ export const faq: FaqEntry[] = [
     key: "faq.q29",
     questionPt: "Qual a diferença entre o MeuGrana e apps como Mobills ou Organizze?",
     answerPt:
-      "São apps mais amplos, com conexão bancária e cobrança por assinatura — e atendem bem quem quer isso. O MeuGrana foi construído em volta de um problema específico: as parcelas. Ele projeta a fatura de cada cartão pelos próximos 12 meses, não pede acesso ao seu banco, funciona offline e custa uma compra única de R$ 19,90 em vez de mensalidade. Se você quer o extrato bancário importado automaticamente, eles resolvem melhor; se você quer saber quanto das suas próximas faturas já está comprometido, o MeuGrana resolve melhor.",
+      "São apps mais amplos, com conexão bancária e cobrança por assinatura — e atendem bem quem quer isso. O MeuGrana foi construído em volta de um problema específico: as parcelas. Ele projeta a fatura de cada cartão pelos próximos 12 meses, não pede acesso ao seu banco, funciona offline e custa uma compra única de R$ 29,90 em vez de mensalidade. Se você quer o extrato bancário importado automaticamente, eles resolvem melhor; se você quer saber quanto das suas próximas faturas já está comprometido, o MeuGrana resolve melhor.",
     questionEn: "How is MeuGrana different from apps like Mobills or Organizze?",
     answerEn:
-      "They're broader apps, with bank connections and subscription pricing — and they serve people who want that well. MeuGrana was built around one specific problem: instalments. It projects each card's bill for the next 12 months, never asks for bank access, works offline and costs a one-time R$ 19.90 instead of a monthly fee. If you want your bank statement imported automatically, they do it better; if you want to know how much of your next bills is already committed, MeuGrana does.",
+      "They're broader apps, with bank connections and subscription pricing — and they serve people who want that well. MeuGrana was built around one specific problem: instalments. It projects each card's bill for the next 12 months, never asks for bank access, works offline and costs a one-time R$ 29.90 instead of a monthly fee. If you want your bank statement imported automatically, they do it better; if you want to know how much of your next bills is already committed, MeuGrana does.",
   },
   {
     key: "faq.q7",

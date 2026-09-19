@@ -27,3 +27,13 @@ export const APP_STORE_BADGE_BASE =
   "https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/";
 
 export const APP_STORE_BADGE_URL = `${APP_STORE_BADGE_BASE}pt-br?size=250x83`;
+
+// Premium price. One number, one place — it was left at R$ 19,90 in the
+// SoftwareApplication JSON-LD for the whole of 12fdk/meugrana#365, which is
+// the copy Google and the AI crawlers read. Raised to R$ 29,90 on 2026-09-11.
+// When it changes: edit here, then grep for the display strings in
+// src/data/faq.ts, src/pages/*.astro, public/llms.txt and the blog, and run
+// `node scripts/sync-faq-i18n.mjs`.
+export const PRICE_BRL = "29.90";        // schema.org numeric, BRL
+export const PRICE_DISPLAY_PT = "R$ 29,90";
+export const PRICE_DISPLAY_EN = "R$ 29.90";

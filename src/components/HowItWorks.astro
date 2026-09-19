@@ -1,40 +1,36 @@
 ---
 // "Como funciona" — step-by-step walkthrough reusing the locale-swapping
 // screenshots (data-screenshot lets js/main.js switch pt-BR/en-US images).
+// Three steps, in the order the app actually asks for them. Step 1 used to be
+// "cadastre seus cartões" — the standalone card step that 12fdk/meugrana#363
+// deleted from onboarding because half of everyone who abandoned quit on it.
+// The card is now created inline from the parcela, so the site says the same.
+// See MESSAGING.md in the app repo.
 const steps = [
   {
-    screenshot: 4,
+    screenshot: 2,
     titleKey: "how.step1.title",
-    title: "Cadastre seus cartões e contas",
+    title: "Cadastre uma parcela",
     descKey: "how.step1.desc",
-    desc: "Adicione seus cartões de crédito com dia de fechamento e vencimento — o MeuGrana cuida do resto.",
-    altKey: "screenshot4.alt",
-    alt: "Cartões — Seus cartões de crédito",
-  },
-  {
-    screenshot: 5,
-    titleKey: "how.step2.title",
-    title: "Registre compras e parcelamentos",
-    descKey: "how.step2.desc",
-    desc: "À vista, PIX, boleto ou parcelado em 12x: registre em segundos e nunca mais esqueça uma parcela.",
-    altKey: "screenshot5.alt",
-    alt: "Transações — Histórico de gastos",
+    desc: "Loja, valor e em quantas vezes. O cartão você cria na hora, ali mesmo — sem formulário separado.",
+    altKey: "screenshot2.alt",
+    alt: "Parcelas — Acompanhamento de parcelamentos",
   },
   {
     screenshot: 3,
-    titleKey: "how.step3.title",
+    titleKey: "how.step2.title",
     title: "Veja a projeção das próximas faturas",
-    descKey: "how.step3.desc",
+    descKey: "how.step2.desc",
     desc: "Saiba hoje quanto vai pagar nos próximos 12 meses, com cada parcela já contabilizada.",
     altKey: "screenshot3.alt",
     alt: "Projeção — Faturas futuras",
   },
   {
     screenshot: 1,
-    titleKey: "how.step4.title",
-    title: "Acompanhe o mês no dashboard",
-    descKey: "how.step4.desc",
-    desc: "Receitas, despesas, parcelas e saldo em um só lugar — e gráficos por categoria para ver para onde vai seu dinheiro.",
+    titleKey: "how.step3.title",
+    title: "Receba o aviso antes do mês pesado",
+    descKey: "how.step3.desc",
+    desc: "Fechamento, vencimento e parcela pesada chegando: o MeuGrana avisa antes, não depois.",
     altKey: "screenshot1.alt",
     alt: "Dashboard — Resumo mensal",
   },
@@ -45,7 +41,7 @@ const steps = [
   <div class="container">
     <div class="section-header fade-in">
       <h2 data-i18n="how.title">Como funciona</h2>
-      <p data-i18n="how.subtitle">Do cadastro ao controle total em quatro passos.</p>
+      <p data-i18n="how.subtitle">Da primeira parcela ao controle total em três passos.</p>
     </div>
     <div class="how-steps">
       {
