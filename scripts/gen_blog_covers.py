@@ -81,6 +81,12 @@ SCENES = {
         "a plain blank credit card in solid charcoal gray showing only a small chip, no embossing and no text, "
         "placed under an open paper document with blank abstract lines and a large round checkmark, "
         "a pen resting beside the document, a small stack of plain unmarked coins and a coffee mug",
+    # Published JPEG is a photorealistic warm table scene (no Flux seed).
+    # Flat scene kept so a later re-roll stays on the same metaphor.
+    "vale-refeicao-orcamento-mensal":
+        "a plain blank meal card in solid emerald green showing only a small chip, no embossing and no text, "
+        "a simple lunch plate, a small grocery bag with bread and vegetables, "
+        "a blank notepad with a pen, a coffee mug and a few plain unmarked coins",
     # seed 11111 (rejected: 777041 objects right-clustered; 424242 pink palette drift;
     # 909090 warm palette; 555777 / 808080 / 31337 / 2024 / 6161 / 4242 / 9091 — marked coins or card/tag text)
     "reserva-de-emergencia-para-quem-vive-de-parcelas":

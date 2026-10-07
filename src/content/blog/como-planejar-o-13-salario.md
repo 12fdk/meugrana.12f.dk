@@ -4,7 +4,7 @@ description: "Aprenda como planejar o 13º salário em 4 prioridades: dívidas c
 keyword: "como planejar o 13º salário"
 publishDate: 2026-07-16
 tags: ["13º salário", "planejamento", "fim de ano"]
-relatedSlugs: ["vale-a-pena-parcelar", "como-organizar-compras-parceladas"]
+relatedSlugs: ["vale-a-pena-parcelar", "como-organizar-compras-parceladas", "vale-refeicao-orcamento-mensal"]
 faq:
   - q: "Quando o 13º salário é pago?"
     a: >-
