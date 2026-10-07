@@ -52,17 +52,22 @@ automatically; per-post clicks are tracked in Umami as
 | 36 | `limite-baixo-cartao-credito` | limite baixo cartão crédito | Mid | ✅ 2026-08-13 |
 | 37 | `quando-pedir-aumento-de-limite-do-cartao` | quando pedir aumento de limite do cartão | Mid | ✅ 2026-08-20 |
 | 21 | `reserva-de-emergencia-para-quem-vive-de-parcelas` | reserva de emergência parcelas | Top | ✅ 2026-08-27 |
+| 38 | `vale-refeicao-orcamento-mensal` | vale refeição orçamento mensal | Mid | ✅ 2026-10-07 |
 
 > Note: three posts were generated on 2026-07-17 while validating the automated
 > pipeline. To avoid a same-day flood on the blog, only the last (#16) was kept
 > published; the other two were unpublished and returned to the backlog (#17–18)
 > to be republished on separate days.
 
+> Keyword check 2026-10-07 for `vale refeição orçamento mensal`: page 1 was
+> employer-side calculators and benefit explainers (Sem Parar Empresas, Ticket,
+> Flash, calculadoras). No Nubank/Serasa exact-match titles, so the
+> personal-budget angle stayed (backlog #22, published as #38).
+
 ## Backlog (validate keyword before writing)
 
 | # | Working title | Keyword idea | Funnel | Notes |
 |---|---------------|--------------|--------|-------|
-| 22 | Vale-refeição e vale-alimentação no orçamento | vale refeição orçamento mensal | Mid | Conector tier gratuito: PIX/boleto/VR |
 | 23 | Como dividir as contas da casa sem briga | dividir contas casa casal | Mid | Top, casal/família — orçamento para casais com despesas compartilhadas |
 | 24 | Assinatura mensal ou anual: quando cada uma compensa | assinatura mensal ou anual | Mid | Comparativo de custo total ao longo de 12–36 meses |
 | 25 | Como anotar gastos no papel sem planilha | anotar gastos no papel | Bottom | Alternativa baixa-fricção para quem não quer app nem planilha |
