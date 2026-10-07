@@ -27,7 +27,7 @@ faq:
       dias — e os que sobrevivem são compras mais conscientes, muitas vezes
       pesquisadas e mais baratas.
 cover: "/images/blog/como-evitar-compras-por-impulso.jpg"
-coverAlt: "Ilustração: ampulheta, carrinho de compras, relógio, moedas e presente amarrado com laço"
+coverAlt: "Foto: cesta de compras, ampulheta de vidro, carteira fechada com fita e pilhas de moedas lisas sobre mesa de madeira"
 ---
 
 Ninguém compra por impulso por falta de inteligência — compra porque todo o sistema foi desenhado para isso: cartão salvo, checkout em um toque, notificação de oferta na hora certa. Aprender como evitar compras por impulso não é questão de força de vontade, e sim de devolver fricção a um processo que ficou rápido demais.

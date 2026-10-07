@@ -28,7 +28,7 @@ faq:
       paga por completo, o saldo vai para o crédito rotativo, que é uma das
       linhas mais caras segundo as taxas divulgadas pelo Banco Central.
 cover: "/images/blog/parcelamento-com-juros-ou-sem-juros.jpg"
-coverAlt: "Ilustração: lupa com símbolo de porcentagem sobre um recibo longo, ao lado de calculadora e cartão de crédito"
+coverAlt: "Foto: lupa sobre um papel em branco enrolado, cartão escuro sem texto e moedas lisas sobre mesa de madeira"
 ---
 
 "Em até 12× sem juros!" é provavelmente a frase mais repetida do varejo brasileiro. Às vezes ela é verdadeira. Outras vezes, os juros estão lá — só que embutidos no preço. Saber distinguir um parcelamento com juros ou sem juros antes de fechar a compra é uma habilidade simples, que cabe numa conta de multiplicar, e que pode mudar sua decisão na hora H.

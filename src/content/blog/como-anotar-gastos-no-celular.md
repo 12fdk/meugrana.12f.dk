@@ -34,7 +34,7 @@ faq:
       ser o que já existe no seu celular — o importante é começar, e ajustar
       depois.
 cover: "/images/blog/como-anotar-gastos-no-celular.jpg"
-coverAlt: "Ilustração: bloco de notas digital em tela de smartphone ao lado de uma lista de compras com marcas de verificação, moedas empilhadas e caneta sobre mesa"
+coverAlt: "Foto: celular virado para baixo ao lado de um caderno em branco, caneta, moedas lisas e uma xícara de café sobre mesa de madeira"
 ---
 
 Você comprou um café de R$ 14, um almoço de R$ 32 e um par de meias na promoção por R$ 19. Se perguntar a si mesmo no final do dia quanto gastou, o palpite provavelmente vai ficar muito abaixo dos R$ 65. Isso não é falta de memória — é o cérebro humano que filtra o menor do que é importante. E gastar no dia a dia é, até uma semana antes, o menor dos problemas.

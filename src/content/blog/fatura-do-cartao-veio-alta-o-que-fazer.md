@@ -26,14 +26,14 @@ faq:
       automaticamente a partir das parcelas que você registrar — assim você vê
       o valor comprometido antes de decidir qualquer compra nova.
 cover: "/images/blog/fatura-do-cartao-veio-alta-o-que-fazer.jpg"
-coverAlt: "Ilustração: pessoa surpresa com um recibo comprido saindo da maquininha"
+coverAlt: "Foto: rolo longo de papel em branco desenrolado sobre uma mesa de madeira, ao lado de um cartão fosco sem texto, uma caneca de café e uma caneta"
 ---
 
 Você abre o app do banco e sente aquele frio na barriga: a fatura do cartão veio alta, bem mais do que você esperava. Respire. É uma situação comum, e existe um caminho prático — tanto para resolver o problema agora quanto para evitar que se repita no mês que vem.
 
 Vamos em três partes: o que fazer imediatamente, por que a fatura veio alta e como evitar que a próxima te pegue de surpresa.
 
-![Mulher brasileira preocupada olhando o celular com a fatura alta do cartão de crédito](/images/blog/fatura-alta-inline.jpg)
+![Foto: rolo de papel em branco desenrolado, celular virado para baixo e xícara de café sobre mesa de madeira](/images/blog/fatura-alta-inline.jpg)
 
 ## O que fazer agora que a fatura veio alta
 

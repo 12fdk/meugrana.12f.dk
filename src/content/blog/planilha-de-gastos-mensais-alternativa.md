@@ -25,7 +25,7 @@ faq:
       definir, como "alimentação". É a fórmula ideal para alimentar a aba de
       resumo mensal.
 cover: "/images/blog/planilha-de-gastos-mensais-alternativa.jpg"
-coverAlt: "Ilustração: notebook com planilha ao lado de um celular com app de finanças"
+coverAlt: "Foto: notebook fechado sem logo, celular virado para baixo, caderno, caneta e café sobre mesa de madeira"
 ---
 
 Uma planilha de gastos mensais continua sendo uma das formas mais baratas e flexíveis de organizar o dinheiro: basta o Google Sheets ou o Excel, sem assinatura, com tudo do seu jeito. Neste guia, você aprende a criar a sua do zero em uns 10 minutos — e depois vê, com honestidade, quando a planilha funciona muito bem e quando ela começa a quebrar (spoiler: parcelas no cartão são o calcanhar de Aquiles).
@@ -75,7 +75,7 @@ Aqui a coisa complica. Digamos que você parcelou um celular em 10x de R$ 250 no
 
 E tem um agravante: cada cartão tem **data de fechamento diferente**. Uma compra do dia 28 pode cair na fatura deste mês num cartão e só na do mês seguinte no outro. A planilha não sabe disso — quem calcula é você, compra por compra.
 
-![Mulher brasileira preocupada olhando projeções financeiras no celular, com caderno e calculadora na mesa](/images/blog/planilha-inline.jpg)
+![Foto: celular virado para baixo, caderno em branco, caneta e xícara de café sobre mesa de madeira](/images/blog/planilha-inline.jpg)
 
 Com duas ou três parcelas ativas, dá para administrar. Com dez ou quinze compras parceladas espalhadas em dois cartões, a manutenção vira um trabalho mensal de verdade — e é aí que a maioria das planilhas morre abandonada.
 

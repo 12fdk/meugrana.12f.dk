@@ -30,7 +30,7 @@ faq:
       próprio limite. Mas um segundo cartão com limite próprio dá mais espaço
       total para compras. O risco é se os dois limitarem juntos no momento errado.
 cover: "/images/blog/limite-baixo-cartao-credito.jpg"
-coverAlt: "Ilustração: um termômetro com a marcação baixa sobre uma mesa verde-menta, ao lado um cartão de crédito genérico sem texto, uma pilha de livros pequenos empilhados como barreira e um relógio de parede"
+coverAlt: "Foto: cartão escuro sem texto diante de três livros de capa lisa e um copo quase vazio, sobre mesa de madeira"
 ---
 
 Você precisa fazer uma compra grande — uma tela de 55 polegadas, um jantar especial, a inscrição daquele curso. Abre o app do cartão, confere o limite disponível e a resposta vem seca: **compra recusada**. Não é que você não tenha dinheiro no banco. É que o limite do cartão está mais baixo do que o valor da compra — e você não faz ideia de como aumentar.

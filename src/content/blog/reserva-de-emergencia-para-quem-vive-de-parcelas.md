@@ -30,7 +30,7 @@ faq:
       saldo do cartão: **o dinheiro da reserva não pode ficar no limite do
       cartão nem no mesmo lugar onde as parcelas correm.**
 cover: "/images/blog/reserva-de-emergencia-para-quem-vive-de-parcelas.jpg"
-coverAlt: "Ilustração: porquinho-cofrinho branco ao centro da mesa, moedas simples sem marcação espalhadas, cartões de crédito verdes sem texto, um cadeado, plantas pequenas e uma mesa verde-menta vista de cima"
+coverAlt: "Foto: cofrinho de cerâmica branca, moedas lisas, cartão verde sem texto, cadeado de latão e suculenta sobre mesa de madeira"
 ---
 
 Sexta à noite, o cartão chega com a parcela do eletrodoméstico, a da academia, a do celular — e, do nada, a fatura fecha mais alta do que o previsto. E o imprevisto vem junto: a conta da luz saltou, o carro fez barulho estranho, apareceu uma consulta que não estava no plano. **Aí mora a diferença entre quem vive de parcelas e quem começa a sair delas: ter uma reserva de emergência pequena, guardada de verdade, que dá opção quando o imprevisto bate à porta.**

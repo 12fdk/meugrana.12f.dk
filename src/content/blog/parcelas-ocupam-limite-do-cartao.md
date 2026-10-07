@@ -32,7 +32,7 @@ faq:
       e some o valor total de cada uma. O que sobra é o limite
       livre real para compras novas.
 cover: "/images/blog/parcelas-ocupam-limite-do-cartao.jpg"
-coverAlt: "Ilustração: cartão de crédito genérico em plástico sólido com uma pilha de caixas empilhadas sobre ele, simbolizando parcelas bloqueando o limite, uma moeda e uma régua de medição sobre mesa verde-menta"
+coverAlt: "Foto: três livros de capa lisa empilhados sobre um cartão escuro sem texto, com uma moeda lisa ao lado"
 ---
 
 Você pagou a fatura inteira. Limpou o cartão. E mesmo assim, na hora de fazer uma compra nova, aparece: **compra recusada — limite excedido**. Não é erro do sistema. É o fato de que, por baixo dos panos, o seu limite não funciona como você imagina.
