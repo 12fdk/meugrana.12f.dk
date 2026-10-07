@@ -28,7 +28,7 @@ faq:
       ordem de prioridade. Sem dívidas caras, reforçar a reserva e separar as
       contas de início de ano passa a ser o melhor uso.
 cover: "/images/blog/como-planejar-o-13-salario.jpg"
-coverAlt: "Ilustração: cofrinho cercado por moedas, presente embrulhado e ramos de pinheiro"
+coverAlt: "Foto: cofrinho branco, pilhas de moedas lisas, presente em papel kraft e um ramo de pinheiro sobre mesa de madeira"
 ---
 
 Todo fim de ano a história se repete: o 13º cai na conta em novembro e, quando janeiro chega, ninguém sabe direito para onde ele foi. Entender como planejar o 13º salário **antes** de o dinheiro chegar é o que separa começar o ano com as contas em dia de passar o primeiro trimestre correndo atrás do prejuízo.

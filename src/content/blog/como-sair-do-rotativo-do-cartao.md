@@ -30,7 +30,7 @@ faq:
       com outras opções, como negociar a dívida ou buscar portabilidade em
       outra instituição.
 cover: "/images/blog/como-sair-do-rotativo-do-cartao.jpg"
-coverAlt: "Ilustração: cartão de crédito diante de uma escada de moedas que sobe até uma bandeira verde"
+coverAlt: "Foto: escada feita de pilhas de moedas lisas, cartão escuro sem texto na base e uma bandeira verde lisa no topo"
 ---
 
 Se você pagou menos que o total da fatura e viu a diferença voltar maior no mês seguinte, você está no crédito rotativo. Antes de qualquer conta, uma coisa precisa ficar clara: **como sair do rotativo** é uma pergunta com resposta — existe um mecanismo conhecido, com regras definidas pelo Banco Central, e muita gente já percorreu esse caminho.

@@ -19,81 +19,88 @@ STYLE = ("Flat 2D vector illustration, digital drawing, minimalist tech style, "
          "flat cartoon illustration style, not a photograph, "
          "no text, no letters, no numbers, no words, no people. Scene: ")
 
+# Published JPEGs in public/images/blog/ are warm photorealistic table photos
+# (1200×700 covers), not Flux flat renders. Scene strings match those photos.
+# Flux still fakes text at cfg 1.0 — keep cards, coins, screens and paper blank.
+# No Flux seed: the shipped files were photographed-style renders, then fit to JPEG.
 SCENES = {
     "mobills-ou-organizze-qual-escolher":
-        "two smartphones lying side by side showing abstract bar charts on their screens, "
-        "a small balance scale between them, a notepad, a pen and a tiny potted succulent plant",
+        "two smartphones lying face down with plain backs and no logos, "
+        "a small brass balance scale between them, a closed notepad, a pen "
+        "and a tiny potted succulent",
     "como-planejar-o-13-salario":
-        "a large piggy bank in the center surrounded by neat stacks of coins, "
-        "a wrapped gift box with a bow and a small pine branch",
+        "a small white ceramic piggy bank, neat stacks of smooth unmarked coins, "
+        "a gift wrapped in plain kraft paper with twine and a pine sprig",
     "vale-a-pena-parcelar":
-        "a balance scale with a stack of coins on one pan and a small shopping bag on the other, "
-        "a credit card, a calculator and a notepad",
+        "a brass balance scale with smooth unmarked coins on one pan and a plain "
+        "kraft shopping bag on the other, a blank emerald card with only a chip, "
+        "and a coffee cup",
     "fechamento-da-fatura-como-funciona":
-        "a large desk calendar with one day circled, a credit card, a small alarm clock, "
-        "a curled paper receipt and a pen",
+        "a small analog alarm clock with a completely blank face and no numerals, "
+        "a blank emerald card with only a chip, a curl of blank paper and a coffee cup",
     "como-sair-do-rotativo-do-cartao":
-        "a credit card at the bottom of a gentle ascending staircase made of coin stacks "
-        "leading up to a small green flag, a notepad and a compass",
+        "a blank charcoal card at the bottom of a staircase made of unmarked coin stacks, "
+        "leading up to a plain green fabric flag with no emblem",
     "app-de-financas-sem-conectar-banco":
-        "a smartphone in the center with a large white padlock shield icon filling its screen, "
-        "a closed vault safe, a single key and a potted succulent plant",
+        "a smartphone lying face down with a plain back, a small brass padlock on it, "
+        "a closed metal cash box, one old key and a potted succulent",
     "quantos-cartoes-de-credito-ter":
-        "a fan of four credit cards spread out, an open slim wallet, "
-        "a notepad with a checklist of empty checkboxes, a coffee cup and a pen",
+        "an open leather wallet with three blank cards in emerald, charcoal and cream, "
+        "each showing only a chip, a coffee cup and a small succulent",
     "como-controlar-gastos-com-assinaturas":
-        "a smartphone surrounded by small rounded app cards with play button and music note "
-        "and film icons, headphones, a calendar with circular repeat arrows and a mug",
+        "matte headphones with no logo, a smartphone lying face down, "
+        "three small blank colored tiles with no icons, and a coffee mug",
     "parcelamento-com-juros-ou-sem-juros":
-        "a magnifying glass held over a long curled paper receipt with a large percent symbol, "
-        "a calculator, a credit card and scattered coins",
+        "a magnifying glass over a long curl of completely blank paper, "
+        "a blank charcoal card with only a chip and a few smooth unmarked coins",
     "como-evitar-compras-por-impulso":
-        "a shopping cart in the center, a large hourglass, a wallet tied shut with a ribbon bow "
-        "and a few stacks of coins",
-    # NOTE: Flux fakes text on face-up cards at cfg 1.0 (negative prompt is
-    # ignored) — always describe cards/coins/keypads as PLAIN and BLANK.
-    # seed 777019
+        "a small woven shopping basket, a glass hourglass, a leather wallet tied "
+        "shut with a ribbon and a few stacks of smooth unmarked coins",
     "como-anotar-gastos-no-celular":
-        "a smartphone in the center showing a simple checklist with checkmarks on its screen, "
-        "a notepad with handwritten marks, a stack of plain unmarked coins, a coffee mug and a pen",
-    # seed 777016
+        "a smartphone lying face down with a plain back and no logo, "
+        "an open notepad with completely blank pages, a pen, "
+        "a stack of smooth unmarked coins and a coffee cup",
     "parcelas-ocupam-limite-do-cartao":
-        "a plain blank credit card in solid charcoal gray showing only a small chip, no embossing and no text, "
-        "with several thick books stacked on top of it like bricks, "
-        "a metal ruler next to the stack, and a single plain unmarked coin",
-    # seed 777012
+        "a plain blank charcoal card showing only a small chip, no embossing and no text, "
+        "with three thick plain linen books stacked on top of it and one smooth unmarked coin",
     "cartao-adicional-controlar-gastos-familia":
-        "a fan of four plain blank credit cards in solid colors (emerald, charcoal, white, sage), "
-        "each with a small colored ribbon marker attached, "
-        "an open notepad with handwritten marks, a pen and a coffee mug",
-    # seed 777022
+        "a fan of four plain blank cards in emerald, charcoal, cream and sage, "
+        "each with only a chip and a small colored ribbon, a closed notepad and a coffee cup",
     "minimo-do-cartao-o-que-oculta":
-        "a large plain unmarked coin in the center being pushed down by three stacked blocks, "
-        "symbolizing the minimum payment being overwhelmed by interest, "
-        "a metal ruler next to the stack, and a bar chart on a notepad",
-    # seed 777030
+        "one large smooth unmarked coin pressed down by three plain wooden blocks, "
+        "a closed notepad and a coffee cup",
     "limite-baixo-cartao-credito":
-        "a thermometer showing a low level mark on a desk, "
-        "a plain blank credit card in solid charcoal gray showing only a small chip, no embossing and no text, "
-        "a stack of three small books forming a barrier and a wall clock on the desk",
-    # seed 777032
+        "a plain blank charcoal card showing only a small chip, no embossing and no text, "
+        "three plain linen books with blank spines forming a low barrier, "
+        "and a drinking glass that is almost empty",
     "quando-pedir-aumento-de-limite-do-cartao":
-        "a plain blank credit card in solid charcoal gray showing only a small chip, no embossing and no text, "
-        "placed under an open paper document with blank abstract lines and a large round checkmark, "
-        "a pen resting beside the document, a small stack of plain unmarked coins and a coffee mug",
+        "a plain blank charcoal card showing only a small chip, no embossing and no text, "
+        "an open notepad with completely blank pages and a single green leaf, "
+        "a pen, a small stack of smooth unmarked coins and a coffee cup",
+    "fatura-do-cartao-veio-alta-o-que-fazer":
+        "a long roll of completely blank white paper unspooled across the table, "
+        "a plain blank charcoal card showing only a small chip, a coffee cup and a pen",
+    "quanto-da-fatura-esta-comprometida":
+        "stacks of smooth unmarked coins, one cluster tied with a green ribbon and a smaller "
+        "loose pile set aside, a plain blank charcoal card and a coffee cup",
+    "planilha-de-gastos-mensais-alternativa":
+        "a closed laptop with a plain lid and no logo, a smartphone lying face down, "
+        "a closed notepad, a pen and a coffee cup",
+    "como-organizar-compras-parceladas":
+        "a row of plain kraft envelopes with no printing, two blank cards showing only chips, "
+        "a few smooth unmarked coins and a pen",
+    "melhor-app-para-controlar-parcelas":
+        "a smartphone lying face down with a plain back, three blank cards in emerald, "
+        "cream and charcoal showing only chips, a coffee cup and a small succulent",
     # Published JPEG is a photorealistic warm table scene (no Flux seed).
-    # Flat scene kept so a later re-roll stays on the same metaphor.
     "vale-refeicao-orcamento-mensal":
         "a plain blank meal card in solid emerald green showing only a small chip, no embossing and no text, "
         "a simple lunch plate, a small grocery bag with bread and vegetables, "
         "a blank notepad with a pen, a coffee mug and a few plain unmarked coins",
-    # seed 11111 (rejected: 777041 objects right-clustered; 424242 pink palette drift;
-    # 909090 warm palette; 555777 / 808080 / 31337 / 2024 / 6161 / 4242 / 9091 — marked coins or card/tag text)
     "reserva-de-emergencia-para-quem-vive-de-parcelas":
-        "a small white piggy bank in the center of the desk, a few plain unmarked coins "
-        "scattered around it, a plain blank credit card in solid emerald green showing only "
-        "a small chip, no embossing and no text, a small shield padlock icon on a flat tag, "
-        "and a tiny potted succulent plant",
+        "a small white ceramic piggy bank, a few smooth unmarked coins, "
+        "a plain blank emerald card showing only a small chip, no embossing and no text, "
+        "a small brass padlock and a tiny potted succulent",
 }
 
 def workflow(prompt_text, seed):

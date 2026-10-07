@@ -27,7 +27,7 @@ faq:
       seu cartão, pois as regras e a frequência permitida de mudança variam de
       banco para banco.
 cover: "/images/blog/fechamento-da-fatura-como-funciona.jpg"
-coverAlt: "Ilustração: calendário de mesa com um dia circulado, cartão de crédito, despertador e xícara de café"
+coverAlt: "Foto: despertador analógico de mostrador em branco, cartão verde sem texto, papel em branco enrolado e xícara de café"
 ---
 
 Quase todo mundo sabe o dia do vencimento do cartão — afinal, é quando o dinheiro sai da conta. Mas pergunte a data do **fechamento da fatura** e a maioria das pessoas hesita. É uma pena, porque é o fechamento, e não o vencimento, que decide em qual mês cada compra vai ser cobrada.

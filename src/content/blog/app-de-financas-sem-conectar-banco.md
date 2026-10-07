@@ -28,7 +28,7 @@ faq:
       manual, funciona offline e guarda os dados no próprio aparelho, sem pedir
       acesso a nenhuma conta bancária.
 cover: "/images/blog/app-de-financas-sem-conectar-banco.jpg"
-coverAlt: "Ilustração: smartphone com escudo de proteção na tela, ao lado de cofre, chave e planta"
+coverAlt: "Foto: celular virado para baixo com um cadeado de latão, caixa de metal fechada, chave antiga e suculenta sobre mesa de madeira"
 ---
 
 Todo app de finanças famoso parece empurrar você para o mesmo lugar: "conecte suas contas e deixe tudo automático". Mas se essa ideia te causa desconforto, você não está sozinho — procurar um app de finanças sem conectar banco é uma escolha legítima, e mais comum do que a propaganda dos grandes apps sugere.
