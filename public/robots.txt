@@ -1,8 +1,14 @@
 User-agent: *
 Allow: /
 
-# AI Crawlers — welcome
+# Answer engines and AI crawlers are welcome.
+# Full citation facts: https://meugrana.12f.dk/llms.txt
+# Short fact sheet: https://meugrana.12f.dk/ai.txt
+
 User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
 Allow: /
 
 User-agent: ChatGPT-User
@@ -11,16 +17,34 @@ Allow: /
 User-agent: ClaudeBot
 Allow: /
 
+User-agent: Claude-SearchBot
+Allow: /
+
 User-agent: Claude-Web
+Allow: /
+
+User-agent: anthropic-ai
 Allow: /
 
 User-agent: PerplexityBot
 Allow: /
 
-User-agent: Amazonbot
+User-agent: Google-Extended
 Allow: /
 
 User-agent: GoogleOther
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: Meta-ExternalAgent
 Allow: /
 
 User-agent: cohere-ai

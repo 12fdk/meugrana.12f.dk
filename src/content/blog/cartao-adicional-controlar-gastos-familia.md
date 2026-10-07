@@ -1,6 +1,6 @@
 ---
 title: "Cartão adicional: controlar gastos da família sem se perder"
-description: "Cartão adicional da família traz praticidade, mas também risco. Veja como controlar os gastos e acompanhar quem gastou o quê em cada fatura."
+description: "Cartão adicional da família traz praticidade, mas também risco. Veja como controlar os gastos e acompanhar quem gastou o quê em cada fatura do cartão."
 keyword: "cartão adicional"
 publishDate: 2026-07-30
 tags: ["cartão adicional", "orçamento", "família"]

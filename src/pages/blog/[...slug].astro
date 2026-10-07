@@ -6,6 +6,7 @@ import Footer from "../../components/Footer.astro";
 import {
   SITE,
   ORG_ID,
+  WEBSITE_ID,
   PERSON_ID,
   ABOUT_URL,
   AUTHOR_BIO,
@@ -34,29 +35,36 @@ const { Content } = await render(post);
 const canonical = `${SITE}${postUrl(post)}`;
 const minutes = readingTime(post.body ?? "");
 
-// Related: explicit slugs first, else the 3 newest other posts.
-const related = (
-  post.data.relatedSlugs.length > 0
-    ? post.data.relatedSlugs
-        .map((slug) => allPosts.find((p) => p.id === slug))
-        .filter((p): p is BlogPost => Boolean(p))
-    : allPosts.filter((p) => p.id !== post.id)
-).slice(0, 3);
+// Related: every curated slug (they are the internal links). If a post has
+// none, fall back to the 3 newest other posts.
+const explicitRelated = post.data.relatedSlugs
+  .map((slug) => allPosts.find((p) => p.id === slug))
+  .filter((p): p is BlogPost => Boolean(p));
+const related =
+  explicitRelated.length > 0
+    ? explicitRelated
+    : allPosts.filter((p) => p.id !== post.id).slice(0, 3);
 
 const ogImage = post.data.cover ? `${SITE}${post.data.cover}` : `${SITE}/images/og-image.jpg`;
 // Blog covers are 1200×700; the site-wide OG fallback is 1200×630.
-const ogImageHeight = post.data.cover ? "700" : "630";
+const ogImageHeight = post.data.cover ? 700 : 630;
+const imageAlt = post.data.coverAlt ?? post.data.title;
+const publishedDay = post.data.publishDate.toISOString().slice(0, 10);
+const modifiedDay = (post.data.updatedDate ?? post.data.publishDate).toISOString().slice(0, 10);
+const wordCount = (post.body ?? "").trim().split(/\s+/).filter(Boolean).length;
 
 const structuredData = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
+  "@id": `${canonical}#article`,
   headline: post.data.title,
   description: post.data.description,
   inLanguage: "pt-BR",
-  datePublished: post.data.publishDate.toISOString().slice(0, 10),
-  ...(post.data.updatedDate
-    ? { dateModified: post.data.updatedDate.toISOString().slice(0, 10) }
-    : {}),
+  isAccessibleForFree: true,
+  datePublished: publishedDay,
+  dateModified: modifiedDay,
+  wordCount,
+  timeRequired: `PT${minutes}M`,
   author: {
     "@type": "Person",
     "@id": PERSON_ID,
@@ -64,10 +72,29 @@ const structuredData = {
     url: ABOUT_URL,
     description: AUTHOR_BIO,
   },
-  publisher: { "@id": ORG_ID },
-  image: ogImage,
-  mainEntityOfPage: canonical,
+  publisher: {
+    "@type": "Organization",
+    "@id": ORG_ID,
+    name: "MeuGrana",
+    url: `${SITE}/`,
+    logo: {
+      "@type": "ImageObject",
+      url: `${SITE}/images/app-icon.png`,
+      width: 1024,
+      height: 1024,
+    },
+  },
+  image: {
+    "@type": "ImageObject",
+    url: ogImage,
+    width: 1200,
+    height: ogImageHeight,
+    caption: imageAlt,
+  },
+  mainEntityOfPage: { "@type": "WebPage", "@id": canonical },
+  isPartOf: { "@id": WEBSITE_ID },
   ...(post.data.tags.length > 0 ? { keywords: post.data.tags.join(", ") } : {}),
+  ...(post.data.keyword ? { articleSection: post.data.keyword } : {}),
 };
 
 // FAQPage JSON-LD from the same frontmatter that renders the visible
@@ -91,8 +118,9 @@ const breadcrumbData = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   itemListElement: [
-    { "@type": "ListItem", position: 1, name: "Blog", item: `${SITE}/blog/` },
-    { "@type": "ListItem", position: 2, name: post.data.title, item: canonical },
+    { "@type": "ListItem", position: 1, name: "Início", item: `${SITE}/` },
+    { "@type": "ListItem", position: 2, name: "Blog", item: `${SITE}/blog/` },
+    { "@type": "ListItem", position: 3, name: post.data.title, item: canonical },
   ],
 };
 ---
@@ -102,6 +130,7 @@ const breadcrumbData = {
     <meta property="og:title" content={post.data.title} />
     <meta property="og:description" content={post.data.description} />
     <meta property="og:image" content={ogImage} />
+    <meta property="og:image:alt" content={imageAlt} />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content={ogImageHeight} />
     <meta property="og:type" content="article" />
@@ -109,13 +138,18 @@ const breadcrumbData = {
     <meta property="og:site_name" content="MeuGrana" />
     <meta property="og:locale" content="pt_BR" />
     <meta property="article:published_time" content={post.data.publishDate.toISOString()} />
+    <meta property="article:modified_time" content={(post.data.updatedDate ?? post.data.publishDate).toISOString()} />
+    <meta property="article:author" content={ABOUT_URL} />
+    {post.data.tags.map((tag) => <meta property="article:tag" content={tag} />)}
+    <meta name="author" content={post.data.author} />
+    <link rel="author" href={ABOUT_URL} />
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content={post.data.title} />
     <meta name="twitter:description" content={post.data.description} />
     <meta name="twitter:image" content={ogImage} />
-    <link rel="alternate" type="application/rss+xml" title="Blog do MeuGrana" href="/rss.xml" />
+    <meta name="twitter:image:alt" content={imageAlt} />
     <script is:inline type="application/ld+json" set:html={JSON.stringify(structuredData)} />
     <script is:inline type="application/ld+json" set:html={JSON.stringify(breadcrumbData)} />
     {faqData && <script is:inline type="application/ld+json" set:html={JSON.stringify(faqData)} />}
@@ -127,7 +161,9 @@ const breadcrumbData = {
     <article class="container">
       <header class="blog-post-header">
         <nav class="blog-breadcrumb" aria-label="Breadcrumb">
-          <a href="/blog/">← Blog</a>
+          <a href="/">Início</a>
+          <span aria-hidden="true"> / </span>
+          <a href="/blog/">Blog</a>
           <span aria-hidden="true"> / </span>
           <span aria-current="page">{post.data.title}</span>
         </nav>

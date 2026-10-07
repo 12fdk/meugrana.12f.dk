@@ -1,6 +1,6 @@
 ---
 title: "Planilha de gastos mensais: como montar (e quando trocar por app)"
-description: "Aprenda a montar uma planilha de gastos mensais em 10 minutos: colunas, abas e fórmulas. E veja com honestidade quando vale trocar por um app."
+description: "Aprenda a montar uma planilha de gastos mensais em 10 minutos: colunas, abas e fórmulas. E veja com honestidade quando vale trocar a planilha por um app."
 keyword: "planilha de gastos mensais"
 publishDate: 2026-07-16
 tags: ["planilha", "orçamento", "organização"]

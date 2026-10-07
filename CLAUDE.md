@@ -39,12 +39,15 @@ src/
     index.astro             # landing page (+ SoftwareApplication JSON-LD)
     privacy-policy.astro    # bilingual PT/EN privacy policy
     404.astro               # standalone error page
+    llms.txt.ts             # generated /llms.txt (GEO facts + blog index)
+    ai.txt.ts               # generated /ai.txt (short citation fact sheet)
+    sitemap.xml.ts          # sitemap, including blog covers
 public/                     # copied verbatim into dist/
   CNAME                     # GitHub Pages custom domain
   css/style.css             # all styles (CSS custom properties)
   js/main.js                # i18n, scroll animations, mobile nav
   images/screenshots/       # locale-specific: pt-BR/ and en-US/ (1-5.png)
-  robots.txt, llms.txt, sitemap.xml
+  robots.txt
 ```
 
 **Important:** `build.format: 'file'` in `astro.config.mjs` makes `src/pages/foo.astro` emit `/foo.html` so URLs from the pre-Astro site keep working. Keep this until redirects are set up.

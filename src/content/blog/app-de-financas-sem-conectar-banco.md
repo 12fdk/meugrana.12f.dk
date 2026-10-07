@@ -1,6 +1,6 @@
 ---
 title: "App de finanças sem conectar banco: por que (e quando) escolher"
-description: "Por que usar um app de finanças sem conectar banco: privacidade, dados no aparelho e controle consciente. E o trade-off honesto do registro manual."
+description: "Por que usar um app de finanças sem conectar o banco: privacidade, dados no aparelho e controle consciente. E o trade-off honesto do registro manual de gastos."
 keyword: "app de finanças sem conectar banco"
 publishDate: 2026-07-16
 tags: ["privacidade", "apps", "open finance"]

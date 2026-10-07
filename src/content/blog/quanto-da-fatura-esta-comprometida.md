@@ -1,6 +1,6 @@
 ---
 title: "Fatura comprometida com parcelas: como calcular o valor travado"
-description: "Descubra quanto da sua fatura já nasce comprometida com parcelas: cálculo passo a passo, exemplo prático e tabela mês a mês dos próximos 6 meses."
+description: "Descubra quanto da sua fatura já nasce comprometida com parcelas: cálculo passo a passo, exemplo prático em reais e tabela mês a mês dos próximos 6 meses."
 keyword: "fatura comprometida com parcelas"
 publishDate: 2026-07-16
 tags: ["fatura", "cartão de crédito", "parcelas"]

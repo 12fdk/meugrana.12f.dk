@@ -4,7 +4,7 @@ description: "Vale a pena parcelar? Veja os 3 critérios de um parcelamento saud
 keyword: "vale a pena parcelar"
 publishDate: 2026-07-16
 tags: ["parcelas", "cartão de crédito", "decisão de compra"]
-relatedSlugs: ["como-organizar-compras-parceladas", "quanto-da-fatura-esta-comprometida"]
+relatedSlugs: ["como-organizar-compras-parceladas", "quanto-da-fatura-esta-comprometida", "parcelamento-com-juros-ou-sem-juros"]
 faq:
   - q: "Parcelar sem juros é sempre melhor do que pagar à vista?"
     a: >-

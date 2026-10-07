@@ -2,7 +2,15 @@
 // Shared page shell: head metadata, favicons, stylesheet, Umami analytics.
 // Pages pass their own title/description/canonical and extend the head via
 // the named "head" slot (OG tags, structured data, extra styles).
-import { SITE, ORG_ID, WEBSITE_ID, PERSON_ID, APP_STORE_URL } from "../consts";
+import {
+  SITE,
+  ORG_ID,
+  WEBSITE_ID,
+  PERSON_ID,
+  APP_STORE_URL,
+  SITE_DESCRIPTION,
+  IOS_REQUIREMENT_PT,
+} from "../consts";
 
 interface Props {
   title: string;
@@ -44,10 +52,14 @@ const siteEntities = {
       "@id": ORG_ID,
       name: "MeuGrana",
       url: `${SITE}/`,
+      description: `MeuGrana é o app de parcelas e finanças para ${IOS_REQUIREMENT_PT}, feito para o Brasil. Não conecta no banco.`,
       logo: {
         "@type": "ImageObject",
         url: `${SITE}/images/app-icon.png`,
+        width: 1024,
+        height: 1024,
       },
+      areaServed: { "@type": "Country", name: "BR" },
       contactPoint: {
         "@type": "ContactPoint",
         contactType: "customer support",
@@ -63,6 +75,7 @@ const siteEntities = {
       "@id": WEBSITE_ID,
       name: "MeuGrana",
       url: `${SITE}/`,
+      description: SITE_DESCRIPTION,
       inLanguage: "pt-BR",
       publisher: { "@id": ORG_ID },
     },
@@ -78,9 +91,21 @@ const siteEntities = {
     <title>{title}</title>
     {description && <meta name="description" content={description} />}
     <meta name="theme-color" content="#006B4F" />
-    {noindex && <meta name="robots" content="noindex" />}
+    {
+      noindex ? (
+        <meta name="robots" content="noindex, follow" />
+      ) : (
+        <meta
+          name="robots"
+          content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        />
+      )
+    }
 
     {canonical && <link rel="canonical" href={canonical} />}
+    <link rel="alternate" type="text/plain" href={`${SITE}/llms.txt`} title="Resumo do MeuGrana para modelos de linguagem" />
+    <link rel="alternate" type="text/plain" href={`${SITE}/ai.txt`} title="Fatos do MeuGrana para respostas de IA" />
+    <link rel="alternate" type="application/rss+xml" title="Blog do MeuGrana" href={`${SITE}/rss.xml`} />
 
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />

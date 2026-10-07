@@ -6,6 +6,13 @@ import { SITE } from "../consts";
 // search consoles) keeps its URL while blog posts are included automatically.
 const day = (d: Date) => d.toISOString().slice(0, 10);
 
+const xml = (value: string) =>
+  value
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;");
+
 export async function GET(_context: APIContext) {
   const posts = await getPublishedPosts();
 
@@ -49,20 +56,42 @@ ${[1, 2, 3, 4, 5]
     <loc>${SITE}/terms-of-use.html</loc>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>${SITE}/llms.txt</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>${SITE}/ai.txt</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.3</priority>
   </url>`;
 
   const postUrls = posts
-    .map(
-      (post) => `  <url>
+    .map((post) => {
+      const cover = post.data.cover
+        ? `
+    <image:image>
+      <image:loc>${SITE}${post.data.cover}</image:loc>
+      <image:title>${xml(post.data.title)}</image:title>
+      ${
+        post.data.coverAlt
+          ? `<image:caption>${xml(post.data.coverAlt)}</image:caption>`
+          : ""
+      }
+    </image:image>`
+        : "";
+      return `  <url>
     <loc>${SITE}${postUrl(post)}</loc>
     <lastmod>${day(post.data.updatedDate ?? post.data.publishDate)}</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>`,
-    )
+    <priority>0.7</priority>${cover}
+  </url>`;
+    })
     .join("\n");
 
-  const xml = `<?xml version="1.0" encoding="UTF-8"?>
+  const body = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 ${staticUrls}
@@ -70,7 +99,7 @@ ${postUrls}
 </urlset>
 `;
 
-  return new Response(xml, {
+  return new Response(body, {
     headers: { "Content-Type": "application/xml; charset=utf-8" },
   });
 }
