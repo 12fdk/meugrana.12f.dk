@@ -34,7 +34,7 @@ faq:
       o benefício chegou sem desconto — e o salário líquido não precisa de um
       corte extra.
 cover: "/images/blog/vale-refeicao-orcamento-mensal.jpg"
-coverAlt: "Foto: mesa de madeira vista de cima, com prato de almoço, cartão verde liso sem texto, sacola de mercado, caneca de café, caderno em branco e moedas sem marcação"
+coverAlt: "Foto: bandeja de inox com arroz, feijão, frango grelhado e salada, ao lado de um cartão verde liso, no balcão de um refeitório"
 ---
 
 Você recebe o salário, abre o app do banco e monta o mês em cima daquele número. O almoço passa no vale-refeição, o mercado come um pedaço do vale-alimentação, e a planilha — feita só com o que caiu na conta — não fecha. **O vale refeição orçamento mensal começa por uma conta simples: saldo de cartão não é dinheiro na conta.**

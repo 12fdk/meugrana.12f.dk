@@ -28,7 +28,7 @@ faq:
       ser só para iPhone e não cobrir orçamento completo — para isso, Mobills
       ou Organizze fazem mais sentido.
 cover: "/images/blog/mobills-ou-organizze-qual-escolher.jpg"
-coverAlt: "Foto: dois celulares virados para baixo com uma balança de latão entre eles, caderno, caneta e suculenta sobre mesa de madeira"
+coverAlt: "Foto: dois celulares lado a lado sobre mármore branco, telas desfocadas em azul e âmbar, com um copo de água entre eles"
 ---
 
 Se você pesquisou "mobills ou organizze", provavelmente já decidiu que quer um app de finanças — a dúvida agora é qual deles cabe melhor no seu bolso e na sua rotina. E a resposta honesta é: depende do que você quer controlar, de quanto trabalho aceita ter e de quanto está disposto a pagar.

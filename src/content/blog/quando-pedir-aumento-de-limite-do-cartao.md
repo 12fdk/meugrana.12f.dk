@@ -33,7 +33,7 @@ faq:
       temporariamente. Cada banco tem política diferente; pergunte antes de
       solicitar.
 cover: "/images/blog/quando-pedir-aumento-de-limite-do-cartao.jpg"
-coverAlt: "Foto: cartão escuro sem texto, caderno em branco com uma folha verde, caneta, moedas lisas e café sobre mesa de madeira"
+coverAlt: "Foto: pasta parda fechada sobre uma cadeira laranja na sala de espera de um banco"
 ---
 
 Você já teve essa sensação: precisava de uma compra um pouco acima do seu limite — um eletrodoméstico novo, uma viagem parcelada, um curso que você queria. Abre o app do banco, vê o limite disponível, e a primeira pergunta que aparece é: **quando pedir aumento de limite do cartão**? E a segunda: como se preparar para que a resposta não seja um "não" seco?

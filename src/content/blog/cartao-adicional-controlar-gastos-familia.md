@@ -27,7 +27,7 @@ faq:
       compras no mercado mas bloquear lojas online). Consulte o aplicativo do seu banco para
       ver quais controles estão disponíveis para cada portador.
 cover: "/images/blog/cartao-adicional-controlar-gastos-familia.jpg"
-coverAlt: "Foto: quatro cartões lisos em verde, carvão, creme e sálvia, cada um com uma fita colorida, sobre mesa de madeira com caderno e café"
+coverAlt: "Foto: um cartão grande cinza e um cartão menor rosa, ambos lisos e sem texto, sobre uma toalha verde-azulada"
 ---
 
 Você concede um cartão adicional para o filho universitário, o cônjuge ou o pai — e de repente, no dia do fechamento, a fatura veio um valor que não corresponde ao que você gastou. Não foi fraude: foi o adicional. E a parte mais frustrante é que a soma de tudo que cada pessoa gastou só existe lá, no relatório da fatura, com números que às vezes nem dizem claramente "isso foi cartão do fulano, aquilo do beltrano".

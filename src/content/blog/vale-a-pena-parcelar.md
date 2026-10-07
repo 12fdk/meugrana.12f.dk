@@ -28,7 +28,7 @@ faq:
       tem esse teto, defina antes da próxima compra: é o critério que
       transforma "acho que cabe" em uma resposta objetiva.
 cover: "/images/blog/vale-a-pena-parcelar.jpg"
-coverAlt: "Foto: balança de latão com moedas de um lado e uma sacola de papel do outro, cartão verde sem texto e café"
+coverAlt: "Foto: air fryer branca sem marca sobre um balcão de vidro, com um longo recibo térmico caindo até o chão"
 ---
 
 Vale a pena parcelar? Se você já ouviu tanto "parcelar é furada" quanto "parcelar sem juros é dinheiro grátis", saiba que os dois lados simplificam demais. O parcelamento é uma ferramenta — e, como toda ferramenta, o resultado depende de como você usa.

@@ -28,7 +28,7 @@ faq:
       pelo anual, anote a data de renovação na agenda: a cobrança chega de uma
       vez e costuma pegar as pessoas de surpresa.
 cover: "/images/blog/como-controlar-gastos-com-assinaturas.jpg"
-coverAlt: "Foto: fone de ouvido, celular virado para baixo, três peças coloridas sem ícones e uma caneca sobre mesa de madeira"
+coverAlt: "Foto: fone de ouvido, controle remoto e um celular com tela colorida desfocada, sob a luz azul da televisão"
 ---
 
 Streaming de vídeo, música, armazenamento na nuvem, app de treino, clube do livro. Nenhuma dessas cobranças assusta sozinha — e é exatamente por isso que controlar gastos com assinaturas ficou tão difícil: elas entram uma a uma, em meses diferentes, e vão se acomodando na fatura até ninguém mais saber quanto somam.
