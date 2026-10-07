@@ -15,14 +15,13 @@ import InlineCta from "../components/InlineCta.astro";
 import StickyDownload from "../components/StickyDownload.astro";
 import DownloadCta from "../components/DownloadCta.astro";
 import Footer from "../components/Footer.astro";
-import { SITE, ORG_ID, APP_STORE_URL, PRICE_BRL } from "../consts";
+import { SITE, ORG_ID, APP_STORE_URL, PRICE_BRL, SITE_DESCRIPTION, IOS_REQUIREMENT_EN } from "../consts";
 import { fetchAppStoreData, MIN_RATING_COUNT } from "../utils/appStoreData";
 
 const title = "MeuGrana — Controle de Parcelas e Cartão de Crédito";
 // Kept deliberately free-plan-safe: the *12-month* projection is Premium
 // (see Pricing.astro), so the description promises only "próximas faturas".
-const description =
-  "O app de finanças feito para o Brasil: acompanhe parcelas, cartões e a projeção das próximas faturas. Grátis, sem cadastro e sem conectar o banco.";
+const description = SITE_DESCRIPTION;
 
 const appStore = await fetchAppStoreData();
 
@@ -31,31 +30,48 @@ const structuredData = {
   "@type": "SoftwareApplication",
   name: "MeuGrana",
   alternateName: "MeuGrana: Parcelas & Finanças",
-  operatingSystem: "iOS",
+  operatingSystem: IOS_REQUIREMENT_EN,
   applicationCategory: "FinanceApplication",
   description,
   url: `${SITE}/`,
   image: `${SITE}/images/og-image.jpg`,
   screenshot: [1, 2, 3, 4, 5].map((n) => `${SITE}/images/screenshots/pt-BR/screenshot-${n}.png`),
+  // Premium-only items are labeled. The full 12-month projection is not free.
   featureList: [
-    "Installment tracking (parcelas)",
-    "Credit card bill projection (12 months)",
-    "PIX, boleto, meal voucher support",
-    "Monthly dashboard with spending charts",
-    "Custom categories",
-    "CSV export",
-    "iCloud sync (Premium)",
+    "Acompanhamento de parcelas por cartão",
+    "Projeção das próximas faturas no plano grátis; projeção completa de 12 meses no Premium",
+    "PIX, boleto e vale-refeição",
+    "Dashboard mensal e gráficos de gastos por categoria",
+    "Alertas de fechamento e vencimento",
+    "Widget de resumo do mês no plano grátis; demais widgets no Premium",
+    "Categorias personalizadas (Premium)",
+    "Relatórios e tendências (Premium)",
+    "Exportação CSV (Premium)",
+    "Sincronização via iCloud pessoal (Premium)",
+    "Modo escuro (Premium)",
+    "Leitura de comprovante no próprio iPhone",
   ],
   inLanguage: ["pt-BR", "en-US"],
   availableCountry: "BR",
   offers: [
-    { "@type": "Offer", price: "0", priceCurrency: "BRL", name: "Free" },
+    {
+      "@type": "Offer",
+      price: "0",
+      priceCurrency: "BRL",
+      name: "Grátis",
+      url: APP_STORE_URL,
+      availability: "https://schema.org/InStock",
+      eligibleRegion: { "@type": "Country", name: "BR" },
+    },
     {
       "@type": "Offer",
       price: PRICE_BRL,
       priceCurrency: "BRL",
       name: "Premium (Acesso Vitalício)",
-      description: "One-time purchase, lifetime access",
+      description: "Compra única, acesso vitalício. Não é assinatura.",
+      url: APP_STORE_URL,
+      availability: "https://schema.org/InStock",
+      eligibleRegion: { "@type": "Country", name: "BR" },
     },
   ],
   installUrl: APP_STORE_URL,
@@ -88,6 +104,7 @@ const structuredData = {
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:image" content={`${SITE}/images/og-image.jpg`} />
+    <meta property="og:image:alt" content="MeuGrana — controle de parcelas e cartão de crédito no iPhone" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
     <meta property="og:type" content="website" />
@@ -101,9 +118,7 @@ const structuredData = {
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={description} />
     <meta name="twitter:image" content={`${SITE}/images/og-image.jpg`} />
-
-    <!-- AI crawler metadata -->
-    <link rel="alternate" type="text/plain" href={`${SITE}/llms.txt`} title="LLM-friendly site summary" />
+    <meta name="twitter:image:alt" content="MeuGrana — controle de parcelas e cartão de crédito no iPhone" />
 
     <!-- Structured Data -->
     <script is:inline type="application/ld+json" set:html={JSON.stringify(structuredData)} />

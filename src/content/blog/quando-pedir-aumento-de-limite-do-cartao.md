@@ -1,6 +1,6 @@
 ---
 title: "Quando pedir aumento de limite do cartão (e como se preparar)"
-description: "Descubra quando pedir aumento de limite do cartão e como se preparar: sinais, documentos e o momento certo para aumentar o limite sem erros."
+description: "Descubra quando pedir aumento de limite do cartão e como se preparar: os sinais, os documentos e o momento certo para aumentar o limite sem erros comuns."
 keyword: "quando pedir aumento de limite do cartão"
 publishDate: 2026-08-20
 tags: ["cartão de crédito", "limite", "crédito"]

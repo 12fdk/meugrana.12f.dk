@@ -10,13 +10,20 @@ import Layout from "../layouts/Layout.astro";
     <img src="/images/app-icon.png" alt="MeuGrana" />
     <h1>404</h1>
     <p id="message">Página não encontrada. A página que você procura não existe ou foi movida.</p>
-    <a href="/" id="link">Voltar ao início</a>
+    <div class="actions">
+      <a href="/" id="link">Voltar ao início</a>
+      <a href="/blog/" id="blog-link">Ver o blog</a>
+      <a href="/sobre.html" id="about-link">Sobre o MeuGrana</a>
+    </div>
   </div>
   <script is:inline>
     if (!navigator.language.startsWith("pt")) {
+      document.documentElement.lang = "en";
       document.getElementById("message").textContent =
         "Page not found. The page you are looking for doesn't exist or has been moved.";
       document.getElementById("link").textContent = "Back to home";
+      document.getElementById("blog-link").textContent = "Read the blog";
+      document.getElementById("about-link").textContent = "About MeuGrana";
     }
   </script>
 </Layout>
@@ -63,6 +70,12 @@ import Layout from "../layouts/Layout.astro";
     opacity: 0.85;
     line-height: 1.6;
     margin-bottom: 32px;
+  }
+  .actions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
   }
   a {
     display: inline-block;

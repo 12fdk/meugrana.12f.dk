@@ -31,13 +31,13 @@ Pull latest first: `git pull origin main`.
 
 You will usually not need most of this. It exists so that **when** MeuGrana comes up (or a bottom-funnel post is about apps), every claim is accurate — a past audit had to fix 5 posts that overclaimed the free tier.
 
-MeuGrana ("MeuGrana – Parcelas & Finanças") is an **iOS-only** iPhone app for tracking credit-card installments (parcelas) and personal finances.
+MeuGrana ("MeuGrana – Parcelas & Finanças") is an **iOS-only** iPhone app (iOS 17 or later; there is no Android version) for tracking credit-card installments (parcelas) and personal finances.
 App Store: https://apps.apple.com/br/app/meugrana-parcelas-finan%C3%A7as/id6759177555
 
 **Core differentiators (safe to emphasize):**
 - 100% manual entry — **never connects to bank accounts** (no Open Finance, no bank passwords)
-- Works **100% offline**; data stays on the user's iPhone
-- No personal data collection, no third-party analytics
+- Works **100% offline**; financial data stays on the user's iPhone
+- The only collection is anonymous usage statistics (which screens are opened) — no amounts, store names, or anything that identifies the user
 - Built around **parcelas**: per-card installment tracking with closing/due dates
 
 **Free plan** (attribute ONLY these to the free tier):
@@ -49,15 +49,17 @@ App Store: https://apps.apple.com/br/app/meugrana-parcelas-finan%C3%A7as/id67591
 - Alertas de fechamento e vencimento
 - PIX, boleto e vale-refeição
 - 100% offline
+- Widget de resumo do mês na tela de início (os demais widgets são Premium)
 
-**Premium** — pagamento único de R$ 19,90, acesso vitalício (planos mensal/anual também existem no app):
+**Premium** — pagamento único de R$ 29,90, acesso vitalício. Não é assinatura e não se renova. Versões antigas chegaram a oferecer planos mensal e anual; esses planos não são mais vendidos, mas quem assinou na época mantém o acesso:
 - Cartões e parcelas ilimitados
 - **Projeção completa de 12 meses**
 - Categorias personalizadas
 - Relatórios e tendências
-- Widgets na tela inicial
+- Todos os widgets da tela inicial (o de resumo já está no grátis)
 - Exportação CSV
 - Sincronização via iCloud (iCloud **pessoal** do usuário — say "seu iCloud", never imply a MeuGrana server)
+- Modo escuro (claro, escuro ou automático)
 
 ⚠️ **CRITICAL (a past audit had to fix this in 5 posts):** the 12-month projection is **Premium**. If you mention projections in a free-tier context, say "projeção das próximas faturas" and add a Premium caveat if you mean the full 12 months. When in doubt, check the pricing copy in `public/js/main.js` — it is the source of truth for every feature/price claim.
 
@@ -112,7 +114,7 @@ Create `src/content/blog/YOUR_SLUG.md`. The slug is the keyword in kebab-case, n
 - `relatedSlugs` — exactly 2–3 slugs of genuinely related existing posts
 - `faq` — **3 entries** `{q, a}`; answers 40–90 words, self-contained (they double as FAQPage JSON-LD, targeting People-Also-Ask). Use `>-` block style for answers.
 - `cover` — `/images/blog/YOUR_SLUG.jpg`
-- `coverAlt` — pt-BR description starting "Ilustração: …" describing the actual scene
+- `coverAlt` — pt-BR description of the scene that was actually shipped. Current covers are photorealistic photos, so start with "Foto: …". Do not replace an existing cover unless the alt is wrong
 
 ### Content requirements
 

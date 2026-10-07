@@ -5,8 +5,17 @@ import Footer from "../components/Footer.astro";
 import { SITE } from "../consts";
 
 const title = "Política de Privacidade — MeuGrana";
-const description = "Política de Privacidade do app MeuGrana. Privacy Policy for the MeuGrana app.";
+const description =
+  "Política de Privacidade do MeuGrana: lançamentos ficam no iPhone, a sincronização pelo iCloud pessoal é opcional no Premium e o contato é support@12f.dk.";
 const canonical = `${SITE}/privacy-policy.html`;
+const breadcrumbData = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Início", item: `${SITE}/` },
+    { "@type": "ListItem", position: 2, name: "Política de Privacidade", item: canonical },
+  ],
+};
 ---
 
 <Layout title={title} description={description} canonical={canonical}>
@@ -15,22 +24,32 @@ const canonical = `${SITE}/privacy-policy.html`;
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:image" content={`${SITE}/images/og-image.jpg`} />
+    <meta property="og:image:alt" content="MeuGrana — Política de Privacidade" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content={canonical} />
     <meta property="og:site_name" content="MeuGrana" />
     <meta property="og:locale" content="pt_BR" />
 
     <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content={title} />
-    <meta name="twitter:description" content="Política de Privacidade do app MeuGrana." />
+    <meta name="twitter:description" content={description} />
     <meta name="twitter:image" content={`${SITE}/images/og-image.jpg`} />
+    <meta name="twitter:image:alt" content="MeuGrana — Política de Privacidade" />
+    <script is:inline type="application/ld+json" set:html={JSON.stringify(breadcrumbData)} />
   </Fragment>
 
   <Navbar minimal />
 
   <main>
     <article class="policy-content" id="policy-pt">
+      <nav class="blog-breadcrumb" aria-label="Breadcrumb">
+        <a href="/">Início</a>
+        <span aria-hidden="true"> / </span>
+        <span aria-current="page">Política de Privacidade</span>
+      </nav>
       <h1 class="policy-title">Política de Privacidade</h1>
       <p class="last-updated">Última atualização: 16 de fevereiro de 2026</p>
 

@@ -5,8 +5,17 @@ import Footer from "../components/Footer.astro";
 import { SITE, APP_STORE_URL } from "../consts";
 
 const title = "Termos de Uso — MeuGrana";
-const description = "Termos de Uso do app MeuGrana. Terms of Use for the MeuGrana app.";
+const description =
+  "Termos de Uso do MeuGrana: licença padrão da Apple, Premium em compra única de R$ 29,90 (acesso vitalício, sem assinatura) e o que o app organiza para você.";
 const canonical = `${SITE}/terms-of-use.html`;
+const breadcrumbData = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Início", item: `${SITE}/` },
+    { "@type": "ListItem", position: 2, name: "Termos de Uso", item: canonical },
+  ],
+};
 const APPLE_EULA = "https://www.apple.com/legal/internet-services/itunes/dev/stdeula/";
 ---
 
@@ -15,22 +24,32 @@ const APPLE_EULA = "https://www.apple.com/legal/internet-services/itunes/dev/std
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:image" content={`${SITE}/images/og-image.jpg`} />
+    <meta property="og:image:alt" content="MeuGrana — Termos de Uso" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content={canonical} />
     <meta property="og:site_name" content="MeuGrana" />
     <meta property="og:locale" content="pt_BR" />
 
     <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content={title} />
-    <meta name="twitter:description" content="Termos de Uso do app MeuGrana." />
+    <meta name="twitter:description" content={description} />
     <meta name="twitter:image" content={`${SITE}/images/og-image.jpg`} />
+    <meta name="twitter:image:alt" content="MeuGrana — Termos de Uso" />
+    <script is:inline type="application/ld+json" set:html={JSON.stringify(breadcrumbData)} />
   </Fragment>
 
   <Navbar minimal />
 
   <main>
     <article class="policy-content">
+      <nav class="blog-breadcrumb" aria-label="Breadcrumb">
+        <a href="/">Início</a>
+        <span aria-hidden="true"> / </span>
+        <span aria-current="page">Termos de Uso</span>
+      </nav>
       <h1 class="policy-title">Termos de Uso</h1>
       <p class="last-updated">Última atualização: 16 de julho de 2026</p>
 

@@ -32,8 +32,17 @@ export const APP_STORE_BADGE_URL = `${APP_STORE_BADGE_BASE}pt-br?size=250x83`;
 // SoftwareApplication JSON-LD for the whole of 12fdk/meugrana#365, which is
 // the copy Google and the AI crawlers read. Raised to R$ 29,90 on 2026-09-11.
 // When it changes: edit here, then grep for the display strings in
-// src/data/faq.ts, src/pages/*.astro, public/llms.txt and the blog, and run
-// `node scripts/sync-faq-i18n.mjs`.
+// src/data/faq.ts, src/pages/*.astro, src/utils/aiDiscovery.ts and the blog,
+// and run `node scripts/sync-faq-i18n.mjs`.
 export const PRICE_BRL = "29.90";        // schema.org numeric, BRL
 export const PRICE_DISPLAY_PT = "R$ 29,90";
 export const PRICE_DISPLAY_EN = "R$ 29.90";
+
+// Homepage meta description. Also the WebSite JSON-LD description.
+// Free-plan-safe: the 12-month projection is Premium (see public/js/main.js).
+export const SITE_DESCRIPTION =
+  "App de parcelas exclusivo para iPhone, feito para o Brasil: acompanhe cartões e a projeção das próximas faturas. Grátis, sem cadastro e sem conectar o banco.";
+
+// faq.q7 in public/js/main.js. There is no Android app.
+export const IOS_REQUIREMENT_PT = "iPhone (iOS 17 ou superior)";
+export const IOS_REQUIREMENT_EN = "iPhone (iOS 17 or later)";

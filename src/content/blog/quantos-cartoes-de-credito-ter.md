@@ -1,6 +1,6 @@
 ---
 title: "Quantos cartões de crédito ter (e como não se perder)"
-description: "Não existe número mágico de cartões: veja os prós e contras de ter 1, 2–3 ou 4+ e dois testes práticos para saber se você já passou do seu limite."
+description: "Não existe número mágico de cartões de crédito: veja os prós e contras de ter 1, 2–3 ou 4+ e dois testes práticos para saber se você já passou do seu limite."
 keyword: "quantos cartões de crédito ter"
 publishDate: 2026-07-16
 tags: ["cartão de crédito", "organização", "limite"]

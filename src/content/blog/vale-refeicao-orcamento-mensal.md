@@ -1,6 +1,6 @@
 ---
 title: "Vale refeição orçamento mensal: VR e VA sem contar duas vezes"
-description: "Aprenda a colocar o vale refeição no orçamento mensal junto com o vale-alimentação: o que fica no cartão, o que sai da conta e um exemplo em reais."
+description: "Aprenda a colocar o vale-refeição no orçamento mensal junto com o vale-alimentação: o que fica no cartão, o que sai da conta e um exemplo prático em reais."
 keyword: "vale refeição orçamento mensal"
 publishDate: 2026-10-07
 tags: ["orçamento", "alimentação", "vale-refeição"]
