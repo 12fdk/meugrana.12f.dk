@@ -38,7 +38,7 @@ faq:
       acaba absorvido pelo mínimo, deixando outras frentes descobertas.
       O score sente os atrasos que vêm depois, não o mínimo em si.
 cover: "/images/blog/minimo-do-cartao-o-que-oculta.jpg"
-coverAlt: "Foto: uma moeda lisa sob três blocos de madeira, com caderno fechado e xícara de café sobre a mesa"
+coverAlt: "Foto: canto de uma folha de papel quase toda na sombra, com uma moeda lisa e uma régua de metal"
 ---
 
 Você abre o app do cartão, vê o total: R$ 1.420,00. Seu orçamento do mês já está apertado. E então a opção "pagar apenas o mínimo" aparece logo ali, com aquele número que parece razoável: R$ 284,00. Parece inofensivo. É um respiro. Mas existe um mecanismo silencioso que ninguém explica direito, e é ele que mantém muita gente presa num ciclo que não deveria existir.

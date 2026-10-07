@@ -26,7 +26,7 @@ faq:
       vou pagar em novembro?". Sem projeção, você só descobre a resposta quando
       a fatura fecha — tarde demais para mudar a decisão.
 cover: "/images/blog/melhor-app-para-controlar-parcelas.jpg"
-coverAlt: "Foto: celular virado para baixo cercado por três cartões lisos sem texto, xícara de café e suculenta"
+coverAlt: "Foto: três celulares em pé no parapeito da janela, telas desfocadas em verde, azul e laranja, com folhagem ao fundo"
 ---
 
 Se você parcelou o celular em 12x num cartão, a passagem em 10x em outro e ainda tem um 3x do supermercado rodando, sabe como é: a fatura chega e o valor não bate com o que você lembrava. Não é que você gastou demais no mês — é que os meses passados continuam cobrando a conta. Parcelas espalhadas em vários cartões são invisíveis até o fechamento, e aí vem o susto.
@@ -45,7 +45,7 @@ Antes de comparar, vale definir o critério. Para resolver o problema das compra
 
 Com esses critérios em mente, vamos às opções.
 
-![Foto: celular virado para baixo ao lado de um caderno em branco, caneta e xícara de café](/images/blog/app-features-inline.jpg)
+![Foto: celular sobre o tecido verde de um sofá, tela com marcas de verificação verdes e sem texto](/images/blog/app-features-inline.jpg)
 
 ## As opções para controlar parcelas em 2026
 

@@ -27,14 +27,14 @@ faq:
       para cada compra, você monta a projeção do passo 4. Um app de controle de
       parcelas faz esse cálculo automaticamente a partir do registro da compra.
 cover: "/images/blog/como-organizar-compras-parceladas.jpg"
-coverAlt: "Foto: fileira de envelopes de papel kraft sem impressão, dois cartões lisos, moedas e uma caneta sobre mesa de madeira"
+coverAlt: "Foto: quadro de cortiça com cinco recibos em branco presos por alfinetes coloridos e ligados por um fio vermelho"
 ---
 
 Se toda fatura chega maior do que você esperava, provavelmente o problema não é uma compra grande — são várias compras parceladas que você perdeu de vista. Uma parcela de R$ 70 aqui, outra de R$ 150 ali, e de repente boa parte do seu orçamento do mês já está comprometida antes de você gastar um centavo.
 
 A boa notícia: aprender como organizar compras parceladas não exige planilha complicada nem curso de finanças. É um processo de seis passos que você faz uma vez e depois só mantém atualizado. Vamos a ele.
 
-![Foto: envelopes de papel kraft, cartões lisos sem texto, livros de capa lisa, moedas e uma caneta sobre mesa de madeira](/images/blog/organizar-inline.jpg)
+![Foto: caixa de sapato com envelopes de papel kraft e abas coloridas sobre toalha xadrez azul](/images/blog/organizar-inline.jpg)
 
 ## Passo 1: Levante todas as parcelas ativas
 

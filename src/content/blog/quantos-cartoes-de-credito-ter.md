@@ -28,7 +28,7 @@ faq:
       ou cobranças recorrentes vinculadas a ele, e acompanhe a fatura mesmo
       sem usar.
 cover: "/images/blog/quantos-cartoes-de-credito-ter.jpg"
-coverAlt: "Foto: carteira de couro aberta com três cartões lisos sem texto, xícara de café e suculenta sobre mesa de madeira"
+coverAlt: "Foto: carteira de couro escura aberta com três cartões lisos sem texto, sobre um balcão de pedra preta"
 ---
 
 Pesquise quantos cartões de crédito ter e você encontra resposta para todos os gostos: um só, dois, três, "quantos o seu limite aguentar". A verdade é menos empolgante — não existe número mágico. Existe o número que **você** consegue controlar.

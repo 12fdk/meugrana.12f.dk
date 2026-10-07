@@ -24,7 +24,7 @@ faq:
       projeção sempre atualizados conforme você adiciona ou conclui
       parcelamentos.
 cover: "/images/blog/quanto-da-fatura-esta-comprometida.jpg"
-coverAlt: "Foto: pilhas de moedas lisas, parte delas amarrada com fita verde, ao lado de um cartão escuro sem texto e uma xícara de café"
+coverAlt: "Foto: bolo de creme sobre ardósia escura com uma fatia já cortada e separada no prato ao lado"
 ---
 
 Você já abriu a fatura achando que tinha gastado pouco — e o valor veio bem maior do que esperava? Na maioria das vezes, o "culpado" não é o que você comprou nas últimas semanas. É o que você comprou nos últimos meses.
@@ -80,7 +80,7 @@ Agora a parte mais útil: projetar como esse compromisso diminui nos próximos 6
 
 A partir do mês 7, o compromisso da Carla zera — se ela não parcelar mais nada até lá. Essa tabela responde perguntas importantes: "posso parcelar algo novo agora?" (provavelmente não, os três primeiros meses estão pesados) e "quando vou ter folga?" (a partir do mês 3 a coisa melhora bastante).
 
-![Foto: notebook fechado, caderno, pilhas de moedas lisas e xícara de café sobre mesa de madeira](/images/blog/fatura-inline.jpg)
+![Foto: notebook aberto na varanda ao pôr do sol, tela com um gráfico de linha desfocado e prédios ao fundo](/images/blog/fatura-inline.jpg)
 
 Se fazer essa conta na mão parece trabalhoso, o [MeuGrana](https://apps.apple.com/br/app/meugrana-parcelas-finan%C3%A7as/id6759177555) faz exatamente isso automaticamente: você cadastra suas compras parceladas e o app soma o compromisso mensal e projeta as suas próximas faturas. É grátis, funciona offline, o registro é manual — sem conectar banco — e os dados ficam só no seu aparelho.
 
