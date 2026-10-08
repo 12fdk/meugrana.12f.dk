@@ -69,6 +69,20 @@ SUBREDDITS = [
 ]
 WINDOWS = ["month", "year"]
 
+# General advice/venting subs. Their /top is mostly relationships and family
+# drama — a live run put "Minha namorada já dormiu com o melhor amigo" under
+# casal-familia — so a title from one of these only counts when it is also
+# visibly about money.
+GENERAL_SUBS = {"conselhos", "desabafos", "brasil"}
+MONEY_WORDS = [
+    "dinheiro", "grana", "reais", "r$", "salário", "fatura", "cartão", "dívida",
+    "devendo", "banco", "pagar", "paguei", "gastos", "gastar", "empréstimo",
+    "parcela", "aluguel", "contas", "financiamento", "juros", "pix", "serasa",
+    "nome sujo", "orçamento", "economizar", "poupar", "guardar dinheiro",
+    "bets", "apostas", "herança", "mesada", "pensão",
+]
+_MONEY_RE = re.compile(r"\b\d+([.,]\d+)?\s?(k|mil)\b")      # "50k", "5 mil"
+
 # Theme buckets. A title can land in several; each is counted once per theme.
 # Keywords are written in normal pt-BR (with accents); both they and the titles
 # are lower-cased and accent-stripped before matching, so "cartão" also matches
@@ -305,6 +319,12 @@ def _matches(word: str, low: str) -> bool:
 _FOLDED_THEMES = {k: [fold(w) for w in words] for k, (_, words) in THEMES.items()}
 _FOLDED_NOISE = [fold(n) for n in NOISE]
 _FOLDED_QUESTIONS = [fold(q) for q in QUESTION_WORDS]
+_FOLDED_MONEY = [fold(m) for m in MONEY_WORDS]
+
+
+def is_about_money(title: str) -> bool:
+    low = f" {fold(title)} "
+    return bool(_MONEY_RE.search(low)) or any(_matches(m, low) for m in _FOLDED_MONEY)
 
 
 def is_useful(title: str) -> bool:
@@ -437,7 +457,8 @@ def main() -> int:
               "and fine.", file=sys.stderr)
         return 2
 
-    useful = [(t, s, r) for t, s, r in entries if is_useful(t)]
+    useful = [(t, s, r) for t, s, r in entries
+              if is_useful(t) and (s.lower() not in GENERAL_SUBS or is_about_money(t))]
     covered = covered_themes()
     plan_rows = backlog()
 

@@ -79,6 +79,17 @@ class IsUseful(unittest.TestCase):
         self.assertFalse(rt.is_useful("Parcelar tudo em 12x é a pior coisa, né?"))
 
 
+class IsAboutMoney(unittest.TestCase):
+    def test_relationship_drama_is_not_money(self):
+        self.assertFalse(rt.is_about_money(
+            "Minha namorada já dormiu com o melhor amigo, eles ainda são melhores amigos."))
+
+    def test_money_words(self):
+        self.assertTrue(rt.is_about_money("Meu namorado não quer dividir as contas, o que faço?"))
+        self.assertTrue(rt.is_about_money("Preciso de 50k para uma emergência"))
+        self.assertTrue(rt.is_about_money("Devo 5 mil no cartao"))
+
+
 class CoveredThemes(unittest.TestCase):
     def test_reads_keyword_and_slug_not_title_or_body(self):
         with tempfile.TemporaryDirectory() as d:
