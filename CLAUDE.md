@@ -75,7 +75,13 @@ Uses IntersectionObserver for fade-in effects. Respects `prefers-reduced-motion`
 
 ## Testing
 
-No automated tests (CI just runs `pnpm build`). Manually verify:
+The only automated tests are for the blog job's topic tool (`tools/reddit-topics.py`, stdlib unittest, no network):
+
+```bash
+python3 -m unittest discover -s tools -p 'test_*.py'
+```
+
+CI just runs `pnpm build`. The Hermes blog job builds with **npm** (no pnpm in its container); its brief is `scripts/BLOG_POST_PROMPT.md`. For the site itself, manually verify:
 - Both languages (toggle in nav)
 - Mobile and desktop viewports
 - iOS Safari (primary target audience)

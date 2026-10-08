@@ -12,7 +12,10 @@ and do not ask for hands.
 """
 import json, time, urllib.request, urllib.parse, sys, os
 
-HOST = "http://spark-72aa.tail7196c.ts.net:8188"
+# ComfyUI on the spark. The default is right for the Hermes blog job, which runs
+# on the spark itself. From a Mac set
+# COMFY_URL=http://spark-231c.tail7196c.ts.net:8188 (the old spark-72aa box is gone).
+HOST = os.environ.get("COMFY_URL", "http://localhost:8188").rstrip("/")
 OUT = os.path.dirname(os.path.abspath(__file__)) + "/covers"
 os.makedirs(OUT, exist_ok=True)
 
