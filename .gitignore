@@ -19,3 +19,7 @@ pnpm-debug.log*
 # Blog cover generation — raw renders are intermediate; only the
 # processed JPEG in public/images/blog/ is committed.
 scripts/covers/
+
+# reddit-topics.py feed cache (tools/reddit-topics.py)
+.cache/
+__pycache__/
