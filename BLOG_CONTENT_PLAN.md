@@ -53,6 +53,7 @@ automatically; per-post clicks are tracked in Umami as
 | 37 | `quando-pedir-aumento-de-limite-do-cartao` | quando pedir aumento de limite do cartão | Mid | ✅ 2026-08-20 |
 | 21 | `reserva-de-emergencia-para-quem-vive-de-parcelas` | reserva de emergência parcelas | Top | ✅ 2026-08-27 |
 | 38 | `vale-refeicao-orcamento-mensal` | vale refeição orçamento mensal | Mid | ✅ 2026-10-07 |
+| 39 | `dividir-contas-casa-casal` | dividir contas casa casal | Mid | ✅ 2026-10-09 |
 
 > Note: three posts were generated on 2026-07-17 while validating the automated
 > pipeline. To avoid a same-day flood on the blog, only the last (#16) was kept
@@ -64,13 +65,19 @@ automatically; per-post clicks are tracked in Umami as
 > Flash, calculadoras). No Nubank/Serasa exact-match titles, so the
 > personal-budget angle stayed (backlog #22, published as #38).
 
+> Keyword check 2026-10-09 for `dividir contas casa casal`: page 1 mixed
+> smaller sites (Optio, Patrimo, QuiteJá) with one bank blog (C6) on couple
+> finance. Not an all-Nubank/Serasa exact-match page, so the household-budget
+> angle stayed (backlog #23, published as #39).
+
 ## Backlog (validate keyword before writing)
 
 | # | Working title | Keyword idea | Funnel | Notes |
 |---|---------------|--------------|--------|-------|
-| 23 | Como dividir as contas da casa sem briga | dividir contas casa casal | Mid | Top, casal/família — orçamento para casais com despesas compartilhadas |
 | 24 | Assinatura mensal ou anual: quando cada uma compensa | assinatura mensal ou anual | Mid | Comparativo de custo total ao longo de 12–36 meses |
 | 25 | Como anotar gastos no papel sem planilha | anotar gastos no papel | Bottom | Alternativa baixa-fricção para quem não quer app nem planilha |
+| 26 | Como separar o PIX do trabalho da conta da casa | separar pix do trabalho da casa | Mid | Para quem recebe freela na mesma conta que paga aluguel e mercado |
+| 27 | Conta de luz alta no orçamento do mês | conta de luz alta orçamento | Mid | O que revisar quando a conta sobe, sem tratar o aumento como renda que sumiu |
 
 ## Per-post checklist
 

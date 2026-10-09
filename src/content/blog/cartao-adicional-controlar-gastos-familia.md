@@ -4,7 +4,7 @@ description: "Cartão adicional da família traz praticidade, mas também risco.
 keyword: "cartão adicional"
 publishDate: 2026-07-30
 tags: ["cartão adicional", "orçamento", "família"]
-relatedSlugs: ["quantos-cartoes-de-credito-ter", "como-organizar-compras-parceladas", "parcelas-ocupam-limite-do-cartao"]
+relatedSlugs: ["quantos-cartoes-de-credito-ter", "como-organizar-compras-parceladas", "parcelas-ocupam-limite-do-cartao", "dividir-contas-casa-casal"]
 faq:
   - q: "Quem pode usar um cartão adicional?"
     a: >-
