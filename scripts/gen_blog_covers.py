@@ -17,6 +17,8 @@ import json, time, urllib.request, urllib.parse, sys, os
 # COMFY_URL=http://spark-231c.tail7196c.ts.net:8188 (the old spark-72aa box is gone).
 HOST = os.environ.get("COMFY_URL", "http://localhost:8188").rstrip("/")
 OUT = os.path.dirname(os.path.abspath(__file__)) + "/covers"
+PUBLIC = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
+                      "public", "images", "blog")
 os.makedirs(OUT, exist_ok=True)
 
 STYLE = ("Photorealistic documentary photograph, real camera, natural grain, "
@@ -168,7 +170,22 @@ def gen(slug, scene, seed):
     print(f"[{slug}] TIMEOUT", flush=True)
     return False
 
+def publish(src, dst, size=(1200, 700), quality=82):
+    """Fit a raw render to the site format: centre-crop to 1200x700, RGB JPEG.
+    A flag of this script rather than a `python3 -c` one-liner, because the
+    Hermes agent's terminal can block `-c`, and a helper script must not be
+    committed. Pillow is in the Hermes container; ImageMagick is not."""
+    from PIL import Image, ImageOps
+    with Image.open(src) as im:
+        ImageOps.fit(im, size, Image.LANCZOS).convert("RGB").save(dst, quality=quality)
+    return dst
+
 if __name__ == "__main__":
+    if sys.argv[1:2] == ["--publish"]:
+        # --publish SLUG: scripts/covers/SLUG.png -> public/images/blog/SLUG.jpg
+        for slug in sys.argv[2:] or sys.exit("usage: --publish SLUG [SLUG ...]"):
+            print("published", publish(f"{OUT}/{slug}.png", f"{PUBLIC}/{slug}.jpg"), flush=True)
+        sys.exit(0)
     only = sys.argv[1:] or list(SCENES)
     # MEUGRANA_SEED overrides the per-slug seed — used to re-roll a weak render
     # (garbled text, broken composition) without touching other covers.

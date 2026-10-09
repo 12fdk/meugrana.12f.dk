@@ -210,26 +210,26 @@ Create `src/content/blog/YOUR_SLUG.md`. The slug is the keyword in kebab-case, n
 
 The repo has the proven, reproducible recipe: `scripts/gen_blog_covers.py` (Flux dev fp8 on the spark server, 1216×704, FluxGuidance 3.5, 24 steps, euler/simple).
 
-1. **Design the scene** — add an entry to the `SCENES` dict in `scripts/gen_blog_covers.py`:
-   - 3–5 desk objects, **one clear central metaphor** for the post's topic, described in plain English.
-   - Reuse the established object vocabulary so covers stay a family: smartphone with abstract chart, credit card(s), coin stacks, piggy bank, calculator, notepad + pen, desk calendar, curled paper receipt, wallet, balance scale, hourglass, alarm clock, padlock/shield, small potted succulent, coffee mug.
-   - The metaphor should be legible at thumbnail size (e.g., staircase of coins → getting out of debt; balance scale → comparison; padlock on phone → privacy).
+1. **Design the scene** — add an entry to the `SCENES` dict in `scripts/gen_blog_covers.py`. Covers are **photorealistic photographs** (since #72/#73); the script's `STYLE` prefix makes them so — do NOT change `STYLE`.
+   - **One real place and one clear central subject** for the post's topic, described in plain English: where it is, what is in the frame, the light, the camera angle. Read two or three existing `SCENES` entries first and match their shape.
+   - **Every cover is a different scene.** Do not reuse another entry's place or main prop. `STYLE` bans the old flat-lay family — wooden desk, notebook, coffee cup, coin stacks, succulent — so do not ask for those.
+   - **No people and no hands** (`STYLE` says so; Flux draws them badly).
+   - The subject should be legible at thumbnail size (e.g., a sealed envelope on a windowsill → the 13º salário; a cafeteria tray → vale-refeição).
    - **Flux fakes text on text-prone objects** — the model runs at `cfg 1.0`, so the negative prompt and the STYLE's "no text" clause are IGNORED for these. Any object that would realistically carry lettering WILL come out with garbled pseudo-text unless you neutralize it in the scene description:
      - **Credit cards** — the #1 offender. Always describe them as "plain blank credit card in solid <color>, showing only a small chip, no embossing and no text". Never a plain "credit card".
-     - **Coins** — say "plain unmarked coins"; **calculators/keypads** — "blank keys"; **receipts/notepads/calendars/phone screens** — describe only abstract marks (checkmarks, bars, lines, circled day), never characters.
-   - Do NOT change the `STYLE` prefix (flat 2D vector, top-down desk, pale mint background, emerald/charcoal/white/sage palette).
+     - **Coins** — say "plain unmarked coins"; **calculators/keypads** — "blank keys"; **receipts/notepads/calendars/phone screens/signs/packaging** — describe only abstract marks (checkmarks, bars, lines, circled day), never characters.
 2. **Generate:** `python3 scripts/gen_blog_covers.py YOUR_SLUG` (writes `scripts/covers/YOUR_SLUG.png`). For a re-roll, pass a different seed: `MEUGRANA_SEED=<n> python3 scripts/gen_blog_covers.py YOUR_SLUG`. Record the winning seed in a comment above the `SCENES` entry.
 3. **Quality-check the output — this is a hard gate, not a formality. You MUST open and actually look at the rendered PNG before continuing.** Reject and re-roll (new seed) on ANY of:
-   - **garbled pseudo-text, letters or numbers anywhere** — cards, coins, keypads, receipts, screens. Zoom in on every card. This is the single most common defect; expect to re-roll once or twice to eliminate it. Never ship a cover with any text-like marks.
-   - distorted/melted objects, extra limbs on objects, broken perspective
-   - palette drift (anything not emerald/charcoal/white/sage/mint)
-   - lopsided composition — a large empty dead-zone; objects should be reasonably distributed, readable as a thumbnail
-   - photorealistic rendering, or anything that could be mistaken for a real app screenshot (a past audit had to pull an image with garbled AI text that read as a fake screenshot)
+   - **garbled pseudo-text, letters or numbers anywhere** — cards, coins, keypads, receipts, screens, signs. Zoom in on every card. This is the single most common defect; expect to re-roll once or twice to eliminate it. Never ship a cover with any text-like marks.
+   - people, hands or body parts
+   - distorted/melted objects, broken perspective, floating objects without contact shadows
+   - anything that does not read as a real photograph (illustration, 3D-render look, flat vector)
+   - the subject you asked for is missing, or the scene is a different one
+   - lopsided composition — a large empty dead-zone; readable as a thumbnail
+   - anything that could be mistaken for a real app screenshot (a past audit had to pull an image with garbled AI text that read as a fake screenshot)
    Iterate seeds until a clean render passes. Only then continue.
-4. **Post-process** to the site format — 1200×700 JPEG, quality ~82. **Do NOT write a new script for this and do NOT commit any helper script** — use one of these one-liners as-is:
-   - ImageMagick: `magick scripts/covers/YOUR_SLUG.png -resize 1200x700^ -gravity center -extent 1200x700 -quality 82 public/images/blog/YOUR_SLUG.jpg`
-   - or Pillow one-liner if ImageMagick is unavailable: `python3 -c "from PIL import Image,ImageOps; ImageOps.fit(Image.open('scripts/covers/YOUR_SLUG.png'),(1200,700),Image.LANCZOS).convert('RGB').save('public/images/blog/YOUR_SLUG.jpg',quality=82)"`
-5. Make `coverAlt` in the frontmatter describe the render you actually shipped (object count, layout) — not the scene you first imagined.
+4. **Post-process** to the site format — 1200×700 JPEG, quality 82: `python3 scripts/gen_blog_covers.py --publish YOUR_SLUG` (writes `public/images/blog/YOUR_SLUG.jpg`). **Do NOT write a new script for this and do NOT commit any helper script.**
+5. Make `coverAlt` in the frontmatter describe the photo you actually shipped, in pt-BR, starting with "Foto: …" — not the scene you first imagined.
 6. **Commit ONLY the `SCENES` entry (with its seed comment) and the processed JPEG in `public/images/blog/`.** The raw `scripts/covers/*.png` is git-ignored — never force-add it. Do not create or commit `pnpm-workspace.yaml`, `postprocess_cover.py`, or any other stray file; never commit a `package-lock.json` or whatever else an install writes.
 
 ### Image fallback — if ComfyUI hangs
@@ -276,7 +276,7 @@ Re-read the finished post as a hostile fact-checker who wants to find an error. 
 3. **Check terminology**: parcelado ≠ rotativo ≠ parcelamento da fatura — these are different credit products; never blur them. Bank-specific mechanics ("com desconto", "tabela PRICE") get hedged as "alguns bancos" + "confirme as condições no seu banco", or cut.
 4. **Proofread pt-BR**: typos, agreement errors, link anchor text that reads grammatically.
 5. **Check markdown rendering**: lists start with `- ` (not `**- `), tables aligned, no H1 in body.
-6. **Zoom into the cover image at full size**: any letters, numbers, or pseudo-text anywhere (cards, rulers, buttons, coins) → re-roll with a new seed. Lopsided composition (half the frame empty) → re-roll.
+6. **Zoom into the cover image at full size**: any letters, numbers, or pseudo-text anywhere (cards, rulers, buttons, coins, signs) → re-roll with a new seed. People or hands, a non-photographic look, or lopsided composition (half the frame empty) → re-roll.
 7. **Re-run the smell test**: would this feel like an ad without the site logo?
 8. **Count the MeuGrana mentions**: `grep -o -i meugrana src/content/blog/YOUR_SLUG.md | wc -l` must be 0 or 1 (bottom-funnel app posts excepted), and never in the intro or the conclusion.
 9. **Every MeuGrana claim matches `public/js/main.js`**: price, "compra única"/not a subscription, the 7-day trial, and which features are free vs Premium (12-month projection = Premium). Grep the post for `R$` near "MeuGrana"/"Premium" and compare character for character.

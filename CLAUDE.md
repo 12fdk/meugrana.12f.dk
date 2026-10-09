@@ -75,7 +75,7 @@ Uses IntersectionObserver for fade-in effects. Respects `prefers-reduced-motion`
 
 ## Testing
 
-The only automated tests are for the blog job's topic tool (`tools/reddit-topics.py`, stdlib unittest, no network):
+The only automated tests are for the blog job's tools — the topic digest (`tools/reddit-topics.py`) and the cover post-process (`scripts/gen_blog_covers.py --publish`, needs Pillow). unittest, no network:
 
 ```bash
 python3 -m unittest discover -s tools -p 'test_*.py'
