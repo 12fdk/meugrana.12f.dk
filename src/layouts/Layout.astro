@@ -122,12 +122,26 @@ const siteEntities = {
 
     {
       analytics && (
+        // Production-hostname guard: local dev (localhost/127.0.0.1/preview domains)
+        // never reports to the meugrana.12f.dk production site.
         <script
           is:inline
-          defer
-          src="https://umami.robert-jensen.dk/script.js"
-          data-website-id="6c5c421d-2eb8-4e0e-b1a3-3d945360f67f"
-        />
+          define:vars={{ umamiHost: "meugrana.12f.dk", umamiWebsiteId: "6c5c421d-2eb8-4e0e-b1a3-3d945360f67f" }}
+        >
+          (function () {
+            var d = document;
+            if (
+              location.hostname === umamiHost ||
+              location.hostname === "www." + umamiHost
+            ) {
+              var s = d.createElement("script");
+              s.defer = true;
+              s.src = "https://umami.robert-jensen.dk/script.js";
+              s.dataset.websiteId = umamiWebsiteId;
+              d.head.appendChild(s);
+            }
+          })();
+        </script>
       )
     }
   </head>
