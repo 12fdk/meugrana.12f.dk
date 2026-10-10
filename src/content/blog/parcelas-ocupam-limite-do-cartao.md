@@ -99,7 +99,7 @@ Aqui estão hábitos que protegem seu limite para o que realmente importa:
 
 **5. Tenha um segundo cartão como reserva.** Não para gastar mais, mas para ter um limite separando compras planejadas de emergências. É um truque de logística: se um cartão tem parcelas ocupando 80% do limite, o outro pode salvar uma compra urgente — desde que o total de parcelas nos dois cartões não destrave o orçamento mensal.
 
-Se você usa iPhone, o [MeuGrana](https://apps.apple.com/br/app/meugrana-parcelas-finan%C3%A7as/id6759177555) ajuda exatamente nesse ponto: você registra suas parcelas manualmente (sem conectar conta bancária) e vê o valor total que cada uma está travando no seu limite, mês a mês. É grátis, funciona offline e os dados ficam no seu aparelho. Ele não quita dívida por você, mas tira a fatura da caixa-preta.
+Se você usa iPhone, o [MeuGrana](https://apps.apple.com/app/id6759177555?ct=blog-parcelas-ocupam-limite-do-cartao&mt=8) ajuda exatamente nesse ponto: você registra suas parcelas manualmente (sem conectar conta bancária) e vê o valor total que cada uma está travando no seu limite, mês a mês. É grátis, funciona offline e os dados ficam no seu aparelho. Ele não quita dívida por você, mas tira a fatura da caixa-preta.
 
 ## O que não fazer: armadilhas comuns
 

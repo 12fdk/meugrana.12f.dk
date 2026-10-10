@@ -98,7 +98,7 @@ Para ver como o gasto some quando se espalha, imagine alguém com três cartões
 
 Olhando cada fatura isolada, nenhuma assusta: R$ 220 aqui, R$ 250 ali. Mas são **R$ 660 por mês** já comprometidos antes de qualquer compra nova — e esse total não aparece em nenhuma das três faturas. Ele só existe quando alguém junta tudo num lugar só.
 
-É exatamente esse o buraco que derruba quem tem vários cartões. Se você usa iPhone, o [MeuGrana](https://apps.apple.com/br/app/meugrana-parcelas-finan%C3%A7as/id6759177555) foi feito para esse cenário: você registra cada parcelamento manualmente (sem conectar conta bancária), o app separa as parcelas por cartão e mostra o total geral e a projeção dos próximos meses. É grátis, funciona offline e os dados ficam no aparelho.
+É exatamente esse o buraco que derruba quem tem vários cartões. Se você usa iPhone, o [MeuGrana](https://apps.apple.com/app/id6759177555?ct=blog-quantos-cartoes-de-credito-ter&mt=8) foi feito para esse cenário: você registra cada parcelamento manualmente (sem conectar conta bancária), o app separa as parcelas por cartão e mostra o total geral e a projeção dos próximos meses. É grátis, funciona offline e os dados ficam no aparelho.
 
 ## Como manter mais de um cartão sob controle
 

@@ -108,7 +108,7 @@ Saber quando a fatura vai fechar te dá controle sobre o *timing* das compras. U
 
 Estabeleça um valor máximo mensal que você aceita comprometer com parcelas somadas. Quando o total atingir esse teto, novas compras parceladas ficam em espera até alguma parcela antiga terminar.
 
-Se você quer fazer tudo isso sem planilha, o [MeuGrana](https://apps.apple.com/br/app/meugrana-parcelas-finan%C3%A7as/id6759177555) foi feito exatamente para esse problema: o app mostra a projeção das suas próximas faturas antes de elas fecharem, somando todas as suas parcelas, e envia alertas de fechamento e vencimento. O registro é manual — você não precisa conectar sua conta bancária — funciona offline e o app é grátis para iPhone.
+Se você quer fazer tudo isso sem planilha, o [MeuGrana](https://apps.apple.com/app/id6759177555?ct=blog-fatura-do-cartao-veio-alta-o-que-fa&mt=8) foi feito exatamente para esse problema: o app mostra a projeção das suas próximas faturas antes de elas fecharem, somando todas as suas parcelas, e envia alertas de fechamento e vencimento. O registro é manual — você não precisa conectar sua conta bancária — funciona offline e o app é grátis para iPhone.
 
 ## Conclusão
 

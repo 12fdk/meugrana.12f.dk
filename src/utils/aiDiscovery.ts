@@ -3,7 +3,7 @@
 // Do not add a price, limit, or feature that is not in that file.
 import {
   ABOUT_URL,
-  APP_STORE_URL,
+  APP_STORE_URL_LLMS,
   AUTHOR_NAME,
   IOS_REQUIREMENT_EN,
   IOS_REQUIREMENT_PT,
@@ -88,7 +88,7 @@ A compra vale nos outros iPhones com o mesmo ID Apple (Ajustes → Restaurar com
 - Sobre o autor: ${ABOUT_URL}
 - Blog: ${SITE}/blog/
 - RSS: ${SITE}/rss.xml
-- App Store: ${APP_STORE_URL}
+- App Store: ${APP_STORE_URL_LLMS}
 - Política de Privacidade: ${SITE}/privacy-policy.html
 - Termos de Uso: ${SITE}/terms-of-use.html
 - Este arquivo: ${SITE}/llms.txt
@@ -119,7 +119,7 @@ product: MeuGrana
 app_store_name: MeuGrana: Parcelas & Finanças
 app_store_id: 6759177555
 url: ${SITE}/
-app_store_url: ${APP_STORE_URL}
+app_store_url: ${APP_STORE_URL_LLMS}
 author: ${AUTHOR_NAME}
 author_url: ${ABOUT_URL}
 contact: support@12f.dk

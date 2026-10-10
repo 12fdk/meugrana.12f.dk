@@ -62,7 +62,7 @@ Parcelas são o cenário ideal para o caminho manual por três motivos:
 2. **São poucas.** Parcelamentos ativos costumam ser um punhado de registros — não trezentos lançamentos por mês.
 3. **É onde a surpresa mora.** A fatura que "veio alta do nada" quase sempre é soma de parcelas esquecidas, não de um gasto grande.
 
-É exatamente esse o desenho do [MeuGrana](https://apps.apple.com/br/app/meugrana-parcelas-finan%C3%A7as/id6759177555): um app para iPhone, **grátis**, focado só em parcelas no cartão. O registro é manual, o app **funciona offline** e os dados ficam **no seu aparelho** — não existe cadastro de conta bancária porque o app simplesmente não conecta a banco nenhum. O limite é o mesmo da proposta: ele não é um app de orçamento completo, e quem precisa de categorias, metas e contas sincronizadas vai se servir melhor em outra prateleira (comparamos as principais no post [Mobills ou Organizze: qual escolher](/blog/mobills-ou-organizze-qual-escolher.html)).
+É exatamente esse o desenho do [MeuGrana](https://apps.apple.com/app/id6759177555?ct=blog-app-de-financas-sem-conectar-banco&mt=8): um app para iPhone, **grátis**, focado só em parcelas no cartão. O registro é manual, o app **funciona offline** e os dados ficam **no seu aparelho** — não existe cadastro de conta bancária porque o app simplesmente não conecta a banco nenhum. O limite é o mesmo da proposta: ele não é um app de orçamento completo, e quem precisa de categorias, metas e contas sincronizadas vai se servir melhor em outra prateleira (comparamos as principais no post [Mobills ou Organizze: qual escolher](/blog/mobills-ou-organizze-qual-escolher.html)).
 
 ## Quanto trabalho dá, na prática?
 

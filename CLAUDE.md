@@ -6,7 +6,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 Landing page for **MeuGrana**, an iOS finance app (parcelas/financas). Astro static site hosted on GitHub Pages at meugrana.12f.dk.
 
-App Store: https://apps.apple.com/br/app/meugrana-parcelas-finan%C3%A7as/id6759177555
+App Store: https://apps.apple.com/app/id6759177555?ct=site-meugrana&mt=8 (`ct` scheme lives in `src/consts.ts`: `site-meugrana` for site chrome, `blog-<slug>` truncated to 40 for posts, `llms-meugrana` for `/llms.txt` and `/ai.txt`)
 
 ## Development
 

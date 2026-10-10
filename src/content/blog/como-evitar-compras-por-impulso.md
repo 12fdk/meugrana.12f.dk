@@ -84,7 +84,7 @@ Dos R$ 1.730 que teriam saído por impulso, sobreviveu uma compra de R$ 290 — 
 
 Uma última técnica, para quem já controla as parcelas em algum lugar: **registre a compra no seu controle antes de passar o cartão** e olhe o efeito nos próximos meses.
 
-No [MeuGrana](https://apps.apple.com/br/app/meugrana-parcelas-finan%C3%A7as/id6759177555), por exemplo, você pode lançar o parcelamento que está considerando (o registro é manual, sem conectar conta bancária) e ver na hora quanto a soma mensal sobe e como ficam as faturas dos próximos meses. Se a projeção assustar, é só apagar o lançamento — desistir de um registro é infinitamente mais fácil do que desistir de uma compra feita. O app é grátis, funciona offline e guarda os dados no aparelho; a mesma simulação funciona em papel ou planilha, apenas com mais conta manual.
+No [MeuGrana](https://apps.apple.com/app/id6759177555?ct=blog-como-evitar-compras-por-impulso&mt=8), por exemplo, você pode lançar o parcelamento que está considerando (o registro é manual, sem conectar conta bancária) e ver na hora quanto a soma mensal sobe e como ficam as faturas dos próximos meses. Se a projeção assustar, é só apagar o lançamento — desistir de um registro é infinitamente mais fácil do que desistir de uma compra feita. O app é grátis, funciona offline e guarda os dados no aparelho; a mesma simulação funciona em papel ou planilha, apenas com mais conta manual.
 
 Ver o futuro da fatura **antes** de comprometer o futuro da fatura é a fricção mais honesta que existe: não é ninguém dizendo "não" — são os seus próprios números.
 
