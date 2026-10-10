@@ -10,8 +10,8 @@ import {
   PERSON_ID,
   ABOUT_URL,
   AUTHOR_BIO,
-  APP_STORE_URL,
   APP_STORE_BADGE_URL,
+  appStoreBlogUrl,
 } from "../../consts";
 import { getPublishedPosts, postUrl, formatDate, type BlogPost } from "../../utils/blog";
 import { readingTime } from "../../utils/readingTime";
@@ -214,7 +214,7 @@ const breadcrumbData = {
           <p>Grátis para baixar · Sem cadastro · Dados só no seu iPhone</p>
         </div>
         <a
-          href={APP_STORE_URL}
+          href={appStoreBlogUrl(post.id)}
           class="app-store-badge"
           aria-label="Download on the App Store"
           data-umami-event="app-store-click"

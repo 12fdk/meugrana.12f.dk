@@ -122,7 +122,7 @@ O mínimo existe porque as faturas crescem sem a pessoa perceber. Se você quer 
 
 **- Rastreie seu comprometimento futuro.** Listar parcelas ativas, ver quanto já está comprometido nos próximos meses e quanto resta do orçamento. **Sem visibilidade, o mínimo aparece como única opção — com visibilidade, você tem dados para tomar a decisão antes da fatura fechar.**
 
-Se você usa iPhone, o [MeuGrana](https://apps.apple.com/br/app/meugrana-parcelas-finan%C3%A7as/id6759177555) ajuda exatamente nesse ponto: você registra suas parcelas manualmente (sem conectar conta bancária) e vê o valor total que cada uma está travando no seu limite, mês a mês. É grátis, funciona offline e os dados ficam no seu aparelho. Ele não quita dívida por você, mas tira a fatura da caixa-preta.
+Se você usa iPhone, o [MeuGrana](https://apps.apple.com/app/id6759177555?ct=blog-minimo-do-cartao-o-que-oculta&mt=8) ajuda exatamente nesse ponto: você registra suas parcelas manualmente (sem conectar conta bancária) e vê o valor total que cada uma está travando no seu limite, mês a mês. É grátis, funciona offline e os dados ficam no seu aparelho. Ele não quita dívida por você, mas tira a fatura da caixa-preta.
 
 ## O que não fazer
 

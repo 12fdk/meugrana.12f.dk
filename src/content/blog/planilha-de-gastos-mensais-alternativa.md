@@ -101,7 +101,7 @@ Se você se reconheceu mais na segunda lista, não é falta de força de vontade
 
 ## A alternativa sem planilha: um app feito para isso
 
-O [MeuGrana](https://apps.apple.com/br/app/meugrana-parcelas-finan%C3%A7as/id6759177555) é um app para iPhone, grátis para baixar, criado exatamente para os pontos onde a planilha quebra:
+O [MeuGrana](https://apps.apple.com/app/id6759177555?ct=blog-planilha-de-gastos-mensais-alternat&mt=8) é um app para iPhone, grátis para baixar, criado exatamente para os pontos onde a planilha quebra:
 
 - **Registro em segundos, no celular.** Você anota a compra na hora, em vez de acumular notinhas para lançar "quando sentar no computador".
 - **Parcelas terminam sozinhas.** Você registra "10x de R$ 250" uma única vez; o app distribui as parcelas nos meses certos e encerra tudo automaticamente quando a última cai. Nada de copiar linha e trocar "3/10" por "4/10".

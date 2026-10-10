@@ -130,7 +130,7 @@ As parcelas de R$ 350 já nascem na fatura mesmo que ela não passe mais nada no
 
 **Não anotar na hora.** Almoço de R$ 26 parece invisível porque não mexe no saldo do banco. No fim do mês, 22 almoços são R$ 572 — e foi isso que segurou o VR da Marina. Caderno, uma [planilha de gastos mensais](/blog/planilha-de-gastos-mensais-alternativa.html) ou o bloco de notas do celular resolvem, desde que a anotação aconteça na fila do restaurante, não no domingo seguinte.
 
-Se você usa iPhone, o [MeuGrana](https://apps.apple.com/br/app/meugrana-parcelas-finan%C3%A7as/id6759177555) ajuda exatamente nesse ponto: você registra o almoço no vale-refeição, o mercado no PIX e o boleto do mês manualmente, sem conectar conta bancária. PIX, boleto e vale-refeição fazem parte do plano grátis; o app funciona offline e os lançamentos ficam no seu aparelho. Ele não quita dívida por você, mas tira a comida da caixa-preta.
+Se você usa iPhone, o [MeuGrana](https://apps.apple.com/app/id6759177555?ct=blog-vale-refeicao-orcamento-mensal&mt=8) ajuda exatamente nesse ponto: você registra o almoço no vale-refeição, o mercado no PIX e o boleto do mês manualmente, sem conectar conta bancária. PIX, boleto e vale-refeição fazem parte do plano grátis; o app funciona offline e os lançamentos ficam no seu aparelho. Ele não quita dívida por você, mas tira a comida da caixa-preta.
 
 ## Conclusão
 

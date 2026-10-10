@@ -82,7 +82,7 @@ A partir do mês 7, o compromisso da Carla zera — se ela não parcelar mais na
 
 ![Foto: notebook aberto na varanda ao pôr do sol, tela com um gráfico de linha desfocado e prédios ao fundo](/images/blog/fatura-inline.jpg)
 
-Se fazer essa conta na mão parece trabalhoso, o [MeuGrana](https://apps.apple.com/br/app/meugrana-parcelas-finan%C3%A7as/id6759177555) faz exatamente isso automaticamente: você cadastra suas compras parceladas e o app soma o compromisso mensal e projeta as suas próximas faturas. É grátis, funciona offline, o registro é manual — sem conectar banco — e os dados ficam só no seu aparelho.
+Se fazer essa conta na mão parece trabalhoso, o [MeuGrana](https://apps.apple.com/app/id6759177555?ct=blog-quanto-da-fatura-esta-comprometida&mt=8) faz exatamente isso automaticamente: você cadastra suas compras parceladas e o app soma o compromisso mensal e projeta as suas próximas faturas. É grátis, funciona offline, o registro é manual — sem conectar banco — e os dados ficam só no seu aparelho.
 
 ## Fechamento vs. vencimento: por que a compra de hoje pode cair só na próxima fatura
 

@@ -87,7 +87,7 @@ Uma planilha funciona especialmente bem para quem já usa planilhas para outras 
 
 ### 3. App de finanças (o método estruturado)
 
-Apps de finanças permitem registrar com uma única categoria pré-definida, adicionam gráficos automáticos, alertas de orçamento e, em alguns casos, projeções. O [MeuGrana](https://apps.apple.com/br/app/meugrana-parcelas-finan%C3%A7as/id6759177555), por exemplo, é focado em parcelas mas também registra transações por categoria e mostra resumos do mês.
+Apps de finanças permitem registrar com uma única categoria pré-definida, adicionam gráficos automáticos, alertas de orçamento e, em alguns casos, projeções. O [MeuGrana](https://apps.apple.com/app/id6759177555?ct=blog-como-anotar-gastos-no-celular&mt=8), por exemplo, é focado em parcelas mas também registra transações por categoria e mostra resumos do mês.
 
 **Vantagens:** entrada rápida, categorias organizadas, gráficos automáticos, pode registrar parcelas e recorrências em um só lugar.  
 **Desvantagens:** exige download, configuração inicial, e alguns apps cobram por recursos avançados.

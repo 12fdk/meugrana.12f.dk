@@ -107,7 +107,7 @@ Aqui estão as ações práticas, ordenadas por impacto:
 - **Usar todas as linhas de crédito disponíveis.** Se você tem três cartões e usa os três no limite, o banco vê um perfil de alto risco. Concentrar o uso em 1–2 cartões é mais eficiente.
 - **Trocar de banco a cada aumento negado.** Bancos têm políticas diferentes. O que é restrito para um pode ser generoso para outro. Mover-se é válido, mas não substitui construir histórico.
 
-Se você usa iPhone, o [MeuGrana](https://apps.apple.com/br/app/meugrana-parcelas-finan%C3%A7as/id6759177555) pode ajudar a manter o controle: registre todas as suas compras e parcelas manualmente, sem conectar conta bancária, e visualize o comprometimento de cada cartão. É grátis, funciona offline e os dados ficam no seu aparelho. Ele não aumenta seu limite, mas mostra exatamente onde você está — o que é o primeiro passo para mudar.
+Se você usa iPhone, o [MeuGrana](https://apps.apple.com/app/id6759177555?ct=blog-limite-baixo-cartao-credito&mt=8) pode ajudar a manter o controle: registre todas as suas compras e parcelas manualmente, sem conectar conta bancária, e visualize o comprometimento de cada cartão. É grátis, funciona offline e os dados ficam no seu aparelho. Ele não aumenta seu limite, mas mostra exatamente onde você está — o que é o primeiro passo para mudar.
 
 ## Conclusão
 

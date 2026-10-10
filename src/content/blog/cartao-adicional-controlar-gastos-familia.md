@@ -99,7 +99,7 @@ Controlar gastos de cartão adicional é simples quando o sistema está em movim
 - **Faça um resumo mensal rápido.** Uma vez por mês, some os gastos de cada portador e compartilhe o resultado. Não é cobrança — é informação. Quando todos veem o total, ninguém se perde na fatura.
 - **Revise os limites e os portadores a cada seis meses.** Você ainda precisa do cartão da sogra? A universidade do filho acabou? O número de adicionais pode cair — e com ele, a complexidade de controle.
 
-Se você usa iPhone, o [MeuGrana](https://apps.apple.com/br/app/meugrana-parcelas-finan%C3%A7as/id6759177555) ajuda exatamente nesse ponto: você registra suas parcelas manualmente (sem conectar conta bancária) e vê o total já comprometido nos próximos meses, cartão por cartão — grátis, funciona offline e os dados ficam no seu aparelho. Ele não paga as contas por você, mas tira o controle de parcelas do piloto automático.
+Se você usa iPhone, o [MeuGrana](https://apps.apple.com/app/id6759177555?ct=blog-cartao-adicional-controlar-gastos-f&mt=8) ajuda exatamente nesse ponto: você registra suas parcelas manualmente (sem conectar conta bancária) e vê o total já comprometido nos próximos meses, cartão por cartão — grátis, funciona offline e os dados ficam no seu aparelho. Ele não paga as contas por você, mas tira o controle de parcelas do piloto automático.
 
 ## Conclusão
 

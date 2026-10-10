@@ -95,7 +95,7 @@ Na prática, a decisão diante do caixa (ou do checkout) se resume a três pergu
 2. **Quanto somam minhas parcelas hoje, e a nova cabe no teto?** Se você não sabe a soma de cabeça, esse é o sinal para descobrir antes de comprar.
 3. **Eu planejei essa compra?** Se ela apareceu há minutos, dormir sobre a decisão custa zero.
 
-A pergunta 2 é a única que exige controle contínuo — e é o que um app como o [MeuGrana](https://apps.apple.com/br/app/meugrana-parcelas-finan%C3%A7as/id6759177555) resolve: você registra cada parcelamento uma vez (manualmente, sem conectar conta bancária) e o app mostra a soma atual por cartão e a projeção dos próximos meses, na hora da decisão. É grátis, iOS, funciona offline e os dados ficam no aparelho. Quem prefere papel ou planilha consegue o mesmo número — só precisa manter a soma atualizada.
+A pergunta 2 é a única que exige controle contínuo — e é o que um app como o [MeuGrana](https://apps.apple.com/app/id6759177555?ct=blog-vale-a-pena-parcelar&mt=8) resolve: você registra cada parcelamento uma vez (manualmente, sem conectar conta bancária) e o app mostra a soma atual por cartão e a projeção dos próximos meses, na hora da decisão. É grátis, iOS, funciona offline e os dados ficam no aparelho. Quem prefere papel ou planilha consegue o mesmo número — só precisa manter a soma atualizada.
 
 ## Conclusão
 

@@ -95,7 +95,7 @@ Parcelamento sem juros é bom negócio — você usa o dinheiro do futuro sem pa
 1. **A soma das parcelas.** Cada "sem juros" individual é inofensivo; oito deles ao mesmo tempo comprometem a fatura por meses. Antes de aceitar mais um, some o que já está ativo e confira se a nova parcela cabe no seu teto mensal.
 2. **A fatura precisa ser paga integralmente.** O "sem juros" só vale enquanto você paga o total da fatura. Se num mês apertado o pagamento for parcial, o saldo vai para o crédito rotativo — uma das linhas mais caras do país — e o parcelamento gratuito sai caro por tabela. Se isso já aconteceu, o caminho de volta está em [como sair do rotativo do cartão](/blog/como-sair-do-rotativo-do-cartao.html).
 
-Para quem usa iPhone, o [MeuGrana](https://apps.apple.com/br/app/meugrana-parcelas-finan%C3%A7as/id6759177555) foi feito para esse controle: você registra cada parcelamento manualmente (sem conectar conta bancária) e vê a soma comprometida nos próximos meses, cartão por cartão — grátis, offline e com os dados guardados no aparelho. Registrar a compra antes de fechá-la mostra na hora o efeito dela nas próximas faturas.
+Para quem usa iPhone, o [MeuGrana](https://apps.apple.com/app/id6759177555?ct=blog-parcelamento-com-juros-ou-sem-juros&mt=8) foi feito para esse controle: você registra cada parcelamento manualmente (sem conectar conta bancária) e vê a soma comprometida nos próximos meses, cartão por cartão — grátis, offline e com os dados guardados no aparelho. Registrar a compra antes de fechá-la mostra na hora o efeito dela nas próximas faturas.
 
 ## Conclusão
 

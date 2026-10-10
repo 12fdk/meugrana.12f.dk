@@ -89,6 +89,8 @@ automatically; per-post clicks are tracked in Umami as
 - [ ] `relatedSlugs` set (2 posts) — internal linking both directions
 - [ ] MeuGrana mentioned 0–1× (zero when nothing fits naturally — the layout's
       CTA banner converts, the body never sells); competitors treated honestly
+- [ ] App Store link, if the post has one, is `ct=blog-<slug>` (truncate the
+      token to 40 characters) with `mt=8` and no `pt=`
 - [ ] No invented statistics, rates, or competitor specifics
 
 ## Measurement

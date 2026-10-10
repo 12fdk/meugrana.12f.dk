@@ -2,7 +2,7 @@
 
 Landing page for **MeuGrana — Parcelas & Finanças**, an iOS finance app built for Brazil.
 
-Live at [meugrana.12f.dk](https://meugrana.12f.dk) · [App Store](https://apps.apple.com/br/app/meugrana-parcelas-finan%C3%A7as/id6759177555)
+Live at [meugrana.12f.dk](https://meugrana.12f.dk) · [App Store](https://apps.apple.com/app/id6759177555?ct=site-meugrana&mt=8)
 
 ## Stack
 

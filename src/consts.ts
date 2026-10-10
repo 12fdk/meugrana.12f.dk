@@ -17,8 +17,30 @@ export const AUTHOR_BIO =
   "Robert Jensen é o desenvolvedor independente por trás do MeuGrana. Cria apps para iPhone na Dinamarca e escreve guias práticos sobre parcelas, cartão de crédito e controle financeiro para o público brasileiro.";
 export const AUTHOR_SITE = "https://12f.dk";
 
-export const APP_STORE_URL =
-  "https://apps.apple.com/br/app/meugrana-parcelas-finan%C3%A7as/id6759177555";
+const APP_STORE_ID = "6759177555";
+
+/** App Store Connect reads `ct` into the Campaign column. Max 40 characters. */
+const APP_STORE_CT_MAX = 40;
+
+/**
+ * Tagged App Store link. `mt=8` is the iOS app media type.
+ * Do not add `pt=` (provider token) unless Connect still leaves Campaign empty.
+ */
+export function appStoreCampaignUrl(token: string): string {
+  const ct = token.slice(0, APP_STORE_CT_MAX);
+  return `https://apps.apple.com/app/id${APP_STORE_ID}?ct=${encodeURIComponent(ct)}&mt=8`;
+}
+
+/** Homepage and site-chrome CTAs. */
+export const APP_STORE_URL = appStoreCampaignUrl("site-meugrana");
+
+/** /llms.txt and /ai.txt, so assistant referrals are their own campaign. */
+export const APP_STORE_URL_LLMS = appStoreCampaignUrl("llms-meugrana");
+
+/** In-post links and the blog banner. Token is `blog-<slug>`, truncated to 40. */
+export function appStoreBlogUrl(slug: string): string {
+  return appStoreCampaignUrl(`blog-${slug}`);
+}
 
 // Localized "Download on the App Store" badges. The pt-BR badge is the static
 // default (page default language); js/main.js swaps `img[data-badge]` sources
