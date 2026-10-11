@@ -348,7 +348,12 @@ Report:
 - traffic check: after the deploy is green, run
   `python3 /opt/data/profiles/blogger/scripts/umami_post_views.py
   6c5c421d-2eb8-4e0e-b1a3-3d945360f67f /blog/YOUR_SLUG.html 12` and report the
-  number as a **traffic line** (0 na primeiras horas é normal — tráfego real e
+  number as a **traffic line** (0 nas primeiras horas é normal — tráfego real e
   indexação levam tempo; nunca falhe nem repita a publicação por causa disso,
   a prova da publicação é o deploy + HTTP 200).
+- search line: `python3 /opt/data/profiles/blogger/scripts/gsc.py page-views
+  https://meugrana.12f.dk/ /blog/YOUR_SLUG.html 14` and report its output
+  (e.g. `GSC_SEARCH 12 impressions, 2 clicks, position 5.3`). Google indexa
+  novos posts em dias, então `0 impressions … no position yet` é normal num
+  post novo — nunca falhe a publicação por isso; a prova é o deploy + HTTP 200.
 - anything worth a human glance (Backlog running low, Reddit blocked, a stale fact in this brief)
