@@ -1,5 +1,5 @@
 ---
-title: "Como anotar gastos no celular (métodos que funcionam de verdade)"
+title: "Como anotar gastos no celular: métodos que funcionam"
 description: "Aprenda como anotar gastos no celular: compare anotações rápidas, planilhas, apps de finanças e o método manual — e veja o que realmente funciona no dia a dia."
 keyword: "como anotar gastos no celular"
 publishDate: 2026-07-17

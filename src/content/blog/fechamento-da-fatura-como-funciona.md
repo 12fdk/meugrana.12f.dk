@@ -1,5 +1,5 @@
 ---
-title: "Fechamento da fatura: como funciona e qual o melhor dia de compra"
+title: "Como funciona o fechamento da fatura do cartão"
 description: "Entenda como funciona o fechamento da fatura do cartão, a diferença para o vencimento e como usar o melhor dia de compra a seu favor — com exemplo prático."
 keyword: "fechamento da fatura"
 publishDate: 2026-07-16

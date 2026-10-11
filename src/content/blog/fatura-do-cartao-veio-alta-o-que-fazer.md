@@ -1,5 +1,5 @@
 ---
-title: "Fatura do cartão veio alta: o que fazer agora (e como evitar)"
+title: "Fatura do cartão veio alta? O que fazer agora"
 description: "Fatura do cartão veio alta? Veja o que fazer agora para fugir do rotativo e como evitar sustos na próxima fatura do cartão, com passos simples e práticos."
 keyword: "fatura do cartão veio alta"
 publishDate: 2026-07-16
