@@ -1,5 +1,5 @@
 ---
-title: "Como saber se seu limite de cartão está baixo: motivos e o que fazer"
+title: "Limite baixo no cartão de crédito: o que fazer"
 description: "Entenda por que seu limite de cartão de crédito pode estar baixo e o que fazer: como monitorar o uso e quando pedir um aumento sem repetir erros comuns."
 keyword: "limite baixo cartão crédito"
 publishDate: 2026-08-13

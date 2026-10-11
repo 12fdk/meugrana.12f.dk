@@ -1,5 +1,5 @@
 ---
-title: "Parcelamento com juros ou sem juros: como descobrir antes de comprar"
+title: "Parcelamento com juros ou sem juros: como saber"
 description: "Saiba identificar um parcelamento com juros ou sem juros: compare o total parcelado com o preço à vista, entenda o CET e decida antes de fechar a compra."
 keyword: "parcelamento com juros ou sem juros"
 publishDate: 2026-07-16
