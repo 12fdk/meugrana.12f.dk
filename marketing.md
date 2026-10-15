@@ -344,7 +344,7 @@ angle), Dia dos Namorados (June 12 — the next plan), Imposto de Renda season
 
 | Week of | # | Format | Series | Feature / message | Hook (pt-BR, first 1–2 s) | Look / scene (start point; must differ from recent looks) | Status |
 |---|---|---|---|---|---|---|---|
-| Oct 19 | 1 | Reel | Placar | Fatura comprometida | "Seis parcelinhas que 'nem pesam'. Somadas: R$ 612 por mês." | mercadinho de bairro at night, plastic bag on the counter, direct flash, bottle-green shelves; bold/laranja | queued |
+| Oct 19 | 1 | Reel | Placar | Fatura comprometida | "Seis parcelinhas que 'nem pesam'. Somadas: R$ 612 por mês." | mercadinho de bairro at night, plastic bag on the counter, direct flash, bottle-green shelves; bold/laranja | built 2026-10-15 6ad0bae6efb15b654d4d |
 | Oct 19 | 2 | Carousel | Qual fatura? | Fechamento | "Cartão fecha dia 5, compra no dia 6: ela só aparece na fatura seguinte." | blank card beside a glass of guaraná on a yellow plastic boteco table, flash, black night | queued |
 | Oct 26 | 1 | Reel | Fantasma | Parcelas por cartão | "Fone em 10x em março? Ainda tem parcela dele na fatura de novembro." | bedroom at night, ceiling fan, earphone case on a sheet, cobalt light + flash; bold/vermelho | queued |
 | Oct 26 | 2 | Carousel | Conta de padaria | Projeção (próximas faturas) | "Black Friday é dia 27 de novembro: veja o que já está na fatura de dezembro antes de comprar." | São Paulo apartment varanda at dusk, laundry line and plants, orange sky | queued |
@@ -486,6 +486,7 @@ Append-only. Newest at bottom. Never edit or delete rows.
 | Date | Post | Numbers | Verdict | Change |
 |---|---|---|---|---|
 | 2026-10-15 | CREATED: marketing.md for the nightly `meugrana-social-content` job (spark#140) | baseline (§5): 110 feed posts 2026-04-05 – 2026-09-02, median reach 0; the one reel (2026-06-16, number reveal) reach 44 | BASELINE | Plan starts week of Oct 19 (70 rows, reel-led). Banned the "Você sabe quanto/quantas…" openers. MeuGrana's own look: text slides #004d38/#e5f2ee/#ffa940, "flash da noite" photos, reel skins and music rotation in §5. |
+| 2026-10-15 | 6ad0bae6efb15b654d4d "Seis parcelinhas que 'nem pesam'. Somadas: R$ 612 por mês." (reel, Placar) | created ready, scheduled 2026-10-20T15:00Z; built for the first post of the Oct 19 week (funnel flat: 0 attributed social visits) | BUILT | First post of the plan. Placar reel, bold/laranja, music v1 (rotation start), fresh flash shoot (prefix mg-social-20261015): five stills from a mercadinho at night; three of the first takes were re-rendered because Flux drew legible text/price tags/logos on boxes and shelf edges. Plate #004d38. Sum check passed (72+85+96+108+117+134 = 612). |
 
 ## 9. Open questions & watch items
 
