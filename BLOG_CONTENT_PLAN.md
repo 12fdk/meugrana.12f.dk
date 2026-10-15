@@ -54,6 +54,7 @@ automatically; per-post clicks are tracked in Umami as
 | 21 | `reserva-de-emergencia-para-quem-vive-de-parcelas` | reserva de emergência parcelas | Top | ✅ 2026-08-27 |
 | 38 | `vale-refeicao-orcamento-mensal` | vale refeição orçamento mensal | Mid | ✅ 2026-10-07 |
 | 39 | `dividir-contas-casa-casal` | dividir contas casa casal | Mid | ✅ 2026-10-09 |
+| 40 | `compensa-pagar-divida` | compensa pagar dívida | Top | ✅ 2026-10-15 |
 
 > Note: three posts were generated on 2026-07-17 while validating the automated
 > pipeline. To avoid a same-day flood on the blog, only the last (#16) was kept
@@ -69,6 +70,12 @@ automatically; per-post clicks are tracked in Umami as
 > smaller sites (Optio, Patrimo, QuiteJá) with one bank blog (C6) on couple
 > finance. Not an all-Nubank/Serasa exact-match page, so the household-budget
 > angle stayed (backlog #23, published as #39).
+
+> Keyword check 2026-10-15 for `compensa pagar dívida`: page 1 was smaller
+> personal-finance sites (Organizze, Plus Dinheiro, Estação Finanças) on
+> "dívida caducada" — no Nubank/Serasa exact-match titles, so the "pagar ou
+> deixar arder" decision angle stayed (new keyword, no Backlog row; published
+> as #40).
 
 ## Backlog (validate keyword before writing)
 

@@ -8,6 +8,7 @@ relatedSlugs:
   - "como-sair-do-rotativo-do-cartao"
   - "fatura-do-cartao-veio-alta-o-que-fazer"
   - "parcelas-ocupam-limite-do-cartao"
+  - "compensa-pagar-divida"
 faq:
   - q: "Pagar o mínimo da fatura é ruim?"
     a: >-

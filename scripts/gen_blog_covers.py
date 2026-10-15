@@ -99,6 +99,10 @@ SCENES = {
     "quanto-da-fatura-esta-comprometida":
         "a cream cake on dark slate with one large slice cut and set on a side plate, "
         "warm side light, food photography",
+    # seed: 777024 (777001 + index 23) — envelopes through the mail slot, clean render
+    "compensa-pagar-divida":
+        "a stack of plain pale unmarked envelopes pushed through a brass mail slot "
+        "onto a worn tile entry floor, front door ajar, warm morning light, low angle",
 }
 
 # Inline photos. Different scenes from the covers above.
