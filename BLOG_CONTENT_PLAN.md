@@ -55,6 +55,7 @@ automatically; per-post clicks are tracked in Umami as
 | 38 | `vale-refeicao-orcamento-mensal` | vale refeição orçamento mensal | Mid | ✅ 2026-10-07 |
 | 39 | `dividir-contas-casa-casal` | dividir contas casa casal | Mid | ✅ 2026-10-09 |
 | 40 | `compensa-pagar-divida` | compensa pagar dívida | Top | ✅ 2026-10-15 |
+| 41 | `meus-cartoes-ou-meugrana` | meus cartões ou meugrana | Bottom | ✅ 2026-10-22 |
 
 > Note: three posts were generated on 2026-07-17 while validating the automated
 > pipeline. To avoid a same-day flood on the blog, only the last (#16) was kept
@@ -76,6 +77,13 @@ automatically; per-post clicks are tracked in Umami as
 > "dívida caducada" — no Nubank/Serasa exact-match titles, so the "pagar ou
 > deixar arder" decision angle stayed (new keyword, no Backlog row; published
 > as #40).
+
+> Keyword check 2026-10-22 for `meus cartões ou meugrana`: SERP is thin — the
+> App Store / Google Play listing for "Meus Cartões" plus MeuGrana's own page,
+> no Nubank/Serasa/major-portal exact-match page. Chosen for the one-in-three
+> comparison cadence (post #41), not from this week's Reddit themes: the
+> uncovered themes (empréstimo/financiamento; renda variável; poupar) do not
+> map to an app comparison. First comparison post after #38–#40.
 
 ## Backlog (validate keyword before writing)
 

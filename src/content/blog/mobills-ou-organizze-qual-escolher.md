@@ -4,7 +4,7 @@ description: "Mobills ou Organizze? Compare plano grátis, Open Finance e interf
 keyword: "mobills ou organizze"
 publishDate: 2026-07-16
 tags: ["apps", "comparativo", "finanças pessoais"]
-relatedSlugs: ["melhor-app-para-controlar-parcelas", "app-de-financas-sem-conectar-banco"]
+relatedSlugs: ["melhor-app-para-controlar-parcelas", "app-de-financas-sem-conectar-banco", "meus-cartoes-ou-meugrana"]
 faq:
   - q: "O Mobills tem versão gratuita?"
     a: >-

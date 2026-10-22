@@ -4,7 +4,7 @@ description: "Por que usar um app de finanças sem conectar o banco: privacidade
 keyword: "app de finanças sem conectar banco"
 publishDate: 2026-07-16
 tags: ["privacidade", "apps", "open finance"]
-relatedSlugs: ["melhor-app-para-controlar-parcelas", "mobills-ou-organizze-qual-escolher"]
+relatedSlugs: ["melhor-app-para-controlar-parcelas", "mobills-ou-organizze-qual-escolher", "meus-cartoes-ou-meugrana"]
 faq:
   - q: "O Open Finance é seguro?"
     a: >-

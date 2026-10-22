@@ -103,6 +103,12 @@ SCENES = {
     "compensa-pagar-divida":
         "a stack of plain pale unmarked envelopes pushed through a brass mail slot "
         "onto a worn tile entry floor, front door ajar, warm morning light, low angle",
+    # seed: 777302 — two doors, ochre + pale blue, clean render
+    "meus-cartoes-ou-meugrana":
+        "two plain closed wooden doors side by side in a whitewashed colonial "
+        "wall, the left door painted solid ochre and the right door painted "
+        "solid pale blue, simple iron hinges, no signs, no lettering, no house "
+        "numbers, soft morning light, straight-on view",
 }
 
 # Inline photos. Different scenes from the covers above.
