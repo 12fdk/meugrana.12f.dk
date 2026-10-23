@@ -1,6 +1,6 @@
 # MeuGrana — Marketing Plan (living doc)
 
-Owner: Robert · Maintained by: Hermes (social pipeline agent) · Last updated: 2026-10-22
+Owner: Robert · Maintained by: Hermes (social pipeline agent) · Last updated: 2026-10-23
 
 ## 1. What this is & how it's updated
 
@@ -488,6 +488,7 @@ Append-only. Newest at bottom. Never edit or delete rows.
 | 2026-10-21 | 6ad89b42123861e553d7 "O cartão fecha sexta. A compra de sábado só entra na fatura seguinte." (reel, Cena — built from the Oct 26 #3 No-app row; the real pt-BR footage is not on the spark, §9) | created ready, scheduled 2026-10-29T15:00Z (Thu, 12h BRT); funnel flat (5 pageviews 7d, 0 social-attributed visits, 0 store taps) so product-focused (fechamento + alertas) | BUILT | Oct 26 week #3 row. Look: Cena · clean/jade #00a676 · padaria antes das 6h, flash direto, amarelo quente contra azulejo verde · music v4 (Cena-slower direction; v2 blocked 2 reels back; deliberate rotation deviation — v5 saved for the next Placar; last two reels were look bold, so this one is clean). Reel 19.0 s: 3 fresh flash stills + 2 LTX clips (prefix mg-social-20261021; spec at motion repo commit e289d7f); all stills and all 10 clip frames vision-checked clean (no text/logos/faces/hands/screens; blank card and bags) — no re-renders. Shot 3 on-screen sub shortened to the verbatim tail "Feita depois, escorrega para a fatura seguinte." because the full 87-char verbatim claim failed the Reel template's 2-line fit; the full line stays verbatim in both captions. Sum check passed (6 × R$ 80 = R$ 480, the only total; parts shown on screen and in the captions). scheduledAt Thu 10-29: the two already-published posts still carry stale stored slots 10-27/10-28 at 15:00Z and the Oct 20 build's precedent avoided them. IG 680 chars, FB 452 chars (shorter rewrite for the 30+ reader), 4 hashtags. Render: all PASS, WARN true peak 0 dBTP (limiter 2.9 dB, within budget). Gate 1 passed; Claude review round 1 FAIL was the not-yet-done create/bookkeeping steps, fixed in this run. |
 
 | 2026-10-22 | 6ad0bae6efb15b654d4d "Seis parcelinhas que 'nem pesam'. Somadas: R$ 612 por mês." (reel, Placar) | IG r0/l0/c0/s0/sh0 · FB r0/reactions0/c0/sh0 · Umami 7d 0 social referrers, 0 store taps | NO-DATA | metricsUpdatedAt 2026-10-15T14:00Z (>24h stale); re-run next night; no change |
+| 2026-10-23 | 6ad0bae6efb15b654d4d "Seis parcelinhas que 'nem pesam'. Somadas: R$ 612 por mês." (reel, Placar) | IG r0/l0/c0/s0/sh0 · FB r0/reactions0/c0/sh0 · Umami 7d 0 social referrers, 0 store taps | NO-DATA | re-run per 2026-10-22 row: doc metrics unchanged, metricsUpdatedAt still 2026-10-15T14:00Z — stuck 8 days although collect-metrics executions all report `completed` with empty output; the metrics pipeline is suspect (flagged). No verdict possible; re-run next night. No plan row due tonight: first `queued` week (Nov 2) starts in 10 days, outside the 7-day window. |
 ## 9. Open questions & watch items
 
 - **Bio links** (owner: Robert) — what do the IG and FB bios link to today?
