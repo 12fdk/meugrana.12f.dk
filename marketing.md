@@ -1,6 +1,6 @@
 # MeuGrana — Marketing Plan (living doc)
 
-Owner: Robert · Maintained by: Hermes (social pipeline agent) · Last updated: 2026-10-24
+Owner: Robert · Maintained by: Hermes (social pipeline agent) · Last updated: 2026-10-25
 
 ## 1. What this is & how it's updated
 
@@ -490,6 +490,7 @@ Append-only. Newest at bottom. Never edit or delete rows.
 | 2026-10-22 | 6ad0bae6efb15b654d4d "Seis parcelinhas que 'nem pesam'. Somadas: R$ 612 por mês." (reel, Placar) | IG r0/l0/c0/s0/sh0 · FB r0/reactions0/c0/sh0 · Umami 7d 0 social referrers, 0 store taps | NO-DATA | metricsUpdatedAt 2026-10-15T14:00Z (>24h stale); re-run next night; no change |
 | 2026-10-23 | 6ad0bae6efb15b654d4d "Seis parcelinhas que 'nem pesam'. Somadas: R$ 612 por mês." (reel, Placar) | IG r0/l0/c0/s0/sh0 · FB r0/reactions0/c0/sh0 · Umami 7d 0 social referrers, 0 store taps | NO-DATA | re-run per 2026-10-22 row: doc metrics unchanged, metricsUpdatedAt still 2026-10-15T14:00Z — stuck 8 days although collect-metrics executions all report `completed` with empty output; the metrics pipeline is suspect (flagged). No verdict possible; re-run next night. No plan row due tonight: first `queued` week (Nov 2) starts in 10 days, outside the 7-day window. |
 | 2026-10-24 | 6ad0bae6efb15b654d4d "Seis parcelinhas que 'nem pesam'. Somadas: R$ 612 por mês." (reel, Placar) | IG r0/l0/c0/s0/sh0 · FB r0/reactions0/c0/sh0 · Umami 7d 0 social referrers, 0 store taps | NO-DATA | re-run per 2026-10-23 row: doc metrics unchanged, metricsUpdatedAt still 2026-10-15T14:00Z — stuck 9 days; the metrics pipeline is still suspect (flagged). No verdict possible; re-run next night. No plan row due tonight: first `queued` week (Nov 2) starts Sun Nov 2, 9 days away, outside the 7-day window. `plan_prune.py` removed nothing (all built rows already pruned). No failed posts in the schedule. |
+| 2026-10-25 | 6ad0bae6efb15b654d4d "Seis parcelinhas que 'nem pesam'. Somadas: R$ 612 por mês." (reel, Placar) | IG r0/l0/c0/s0/sh0 · FB r0/reactions0/c0/sh0 · Umami 7d 0 social referrers, 0 store taps | NO-DATA | re-run per 2026-10-24 row: doc metrics unchanged, metricsUpdatedAt still 2026-10-15T14:00Z — stuck 10 days; the metrics pipeline is still suspect (flagged). No verdict possible; re-run next night. No plan row due tonight: first `queued` week (Nov 2) starts Sun Nov 2, 8 days away, outside the 7-day window. `plan_prune.py` removed nothing. No failed posts in the schedule. |
 ## 9. Open questions & watch items
 
 - **Bio links** (owner: Robert) — what do the IG and FB bios link to today?
