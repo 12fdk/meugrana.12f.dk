@@ -120,7 +120,7 @@ O teste para o app que você estiver avaliando: cadastre as três compras e veja
 Chega de especificação. A escolha se resume a fatos sobre você:
 
 - **Android, ou iPhone com iOS anterior ao 17: Meus Cartões.** É o app que roda no seu aparelho — não adianta adotar um que o celular não aceita.
-- **iPhone com iOS 17+ e dor principal em parcelas por cartão: MeuGrana.** Projeção das faturas com os dias reais de fechamento e vencimento, alerta de mês pesado e limite comprometido por cartão. Para iPhone, o [MeuGrana](https://apps.apple.com/app/id6759177555?ct=blog-meus-cartoes-ou-meugrana&mt=8) está na App Store.
+- **iPhone com iOS 17+ e dor principal em parcelas por cartão: MeuGrana.** Projeção das faturas com os dias reais de fechamento e vencimento, alerta de mês pesado e limite comprometido por cartão. Para iPhone, o [MeuGrana](https://apps.apple.com/app/id6759177555?ct=blog-meus-cartoes-ou-meugrana&pt=127521693&mt=8) está na App Store.
 - **Extrato bancário importado (Open Finance): nenhum dos dois faz isso** — nesse perfil, leia [Mobills ou Organizze: qual escolher](/blog/mobills-ou-organizze-qual-escolher.html).
 - **Prefere não instalar app:** uma [planilha de gastos mensais](/blog/planilha-de-gastos-mensais-alternativa.html) bem feita resolve, e o comparativo do [melhor app para controlar parcelas](/blog/melhor-app-para-controlar-parcelas.html) mostra o que você abre mão.
 

@@ -54,7 +54,7 @@ MeuGrana ("MeuGrana – Parcelas & Finanças") is an **iOS-only** iPhone app (iO
 App Store campaign link — use this form for every App Store href in the post (the layout banner already does). Do not add `pt=`.
 
 ```
-https://apps.apple.com/app/id6759177555?ct=blog-<slug>&mt=8
+https://apps.apple.com/app/id6759177555?ct=blog-<slug>&pt=127521693&mt=8
 ```
 
 `<slug>` is this post's filename without `.md`. `ct` is at most **40 characters**: if `blog-<slug>` is longer, truncate the token to 40 (the same rule as `appStoreBlogUrl` in `src/consts.ts`). A body link must use that same token so the download is attributed to this post.
@@ -203,7 +203,7 @@ Create `src/content/blog/YOUR_SLUG.md`. The slug is the keyword in kebab-case, n
 - Tables where they clarify (installment projections, decision comparisons — the "Decisão | O que acontece" pattern works well).
 - Internal links to related posts use the **`.html` extension**: `[texto](/blog/slug-do-post.html)` (the site builds with `format: 'file'`).
 - MeuGrana: **0–1 mentions** (see Editorial stance). If one fits, it goes in the prevention/tracking section, phrased as one option among others (a notebook, a spreadsheet, an app), never as the fix for the problem itself. Model it on the established pattern — note it's an aside inside a bigger tip, not a paragraph of its own. Replace `YOUR_SLUG` with this post's slug, then truncate `ct` to 40 characters:
-  > "Se você usa iPhone, o [MeuGrana](https://apps.apple.com/app/id6759177555?ct=blog-YOUR_SLUG&mt=8) ajuda exatamente nesse ponto: você registra suas parcelas manualmente (sem conectar conta bancária) e vê o total já comprometido nos próximos meses, cartão por cartão — grátis, funciona offline e os dados ficam no seu aparelho. Ele não quita dívida por você, mas tira a fatura da caixa-preta."
+  > "Se você usa iPhone, o [MeuGrana](https://apps.apple.com/app/id6759177555?ct=blog-YOUR_SLUG&pt=127521693&mt=8) ajuda exatamente nesse ponto: você registra suas parcelas manualmente (sem conectar conta bancária) e vê o total já comprometido nos próximos meses, cartão por cartão — grátis, funciona offline e os dados ficam no seu aparelho. Ele não quita dívida por você, mas tira a fatura da caixa-preta."
 - Never open or close the post with the app. The intro is 100% the reader's problem; the conclusion is 100% encouragement and next steps. (The layout's auto-injected CTA banner handles conversion.)
 
 ### Hard accuracy guardrails (each of these caused a real audit fix)
@@ -299,7 +299,7 @@ Re-read the finished post as a hostile fact-checker who wants to find an error. 
 10. **No printed interest rates or invented statistics**; any juros topic links the Banco Central rates page instead.
 11. **Front matter**: `title` ≤ 70 chars, `description` ≤ 160, `keyword` matches the plan row, exactly 3 FAQ entries in front matter (no FAQ H3s in the body), 2–3 `relatedSlugs` that exist, internal links use `/blog/<slug>.html`.
 12. **Cover**: either `cover:` points at a JPEG that exists in `public/images/blog/` and `coverAlt` describes that render, or both fields are absent (image fallback).
-13. **App Store href, if the post links the app:** `https://apps.apple.com/app/id6759177555?ct=<token>&mt=8`, where `<token>` is `blog-<slug>` truncated to 40 characters. No `pt=`. No App Store link is correct when MeuGrana is not mentioned.
+13. **App Store href, if the post links the app:** `https://apps.apple.com/app/id6759177555?ct=<token>&pt=127521693&mt=8`, where `<token>` is `blog-<slug>` truncated to 40 characters. No `pt=`. No App Store link is correct when MeuGrana is not mentioned.
 
 ## Step 8: Verify the build
 

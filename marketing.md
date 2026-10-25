@@ -45,7 +45,7 @@ Every line here is from the live site, read 2026-10-15: the homepage
 - App Store (verified 200 on 2026-10-15):
   `https://apps.apple.com/br/app/meugrana-parcelas-finan%C3%A7as/id6759177555`
   (the app record's `appStoreUrl`). The site's own links are
-  `https://apps.apple.com/app/id6759177555?ct=<token>&mt=8` (`src/consts.ts`).
+  `https://apps.apple.com/app/id6759177555?ct=<token>&pt=127521693&mt=8` (`src/consts.ts`).
 - Funnel: IG/FB profile bio → App Store (or the site) → install.
   - The site has **no `/go/?src=` hop** (`/go/` returns 404). Social traffic to
     the site shows only as referrers in Umami (site
@@ -495,7 +495,7 @@ Append-only. Newest at bottom. Never edit or delete rows.
 
 - **Bio links** (owner: Robert) — what do the IG and FB bios link to today?
   Proposal: the App Store with its own campaign token, e.g.
-  `https://apps.apple.com/app/id6759177555?ct=social-instagram&mt=8` (and
+  `https://apps.apple.com/app/id6759177555?ct=social-instagram&pt=127521693&mt=8` (and
   `ct=social-facebook`), so App Store Connect counts social installs. "Link na
   bio" stays out of posts until this is confirmed.
 - **No `/go/?src=` hop** (owner: Robert) — the site has none, so Umami cannot
