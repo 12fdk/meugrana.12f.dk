@@ -14,7 +14,7 @@ faq:
       grátis para baixar, com compras dentro do app. O que a versão paga inclui
       e quanto custa não foi verificado aqui — confira na loja antes de
       decidir. No MeuGrana, o plano grátis organiza parcelas e o Premium é uma
-      compra única de R$ 29,90, com acesso vitalício e sem assinatura.
+      compra única de R$ 19,90, com acesso vitalício e sem assinatura.
   - q: "O MeuGrana funciona no Android?"
     a: >-
       Não. O MeuGrana é feito só para iPhone e pede iOS 17 ou mais recente. Se
@@ -76,7 +76,7 @@ O plano grátis inclui:
 
 Você também informa o **limite do cartão** e vê quanto as parcelas em andamento comprometem de cada fatura, e pode marcar um lançamento como **recorrente** para contas fixas.
 
-O **Premium** é um pagamento único de **R$ 29,90**, com acesso vitalício — não é assinatura e nada se renova. Ele libera cartões e parcelas ilimitados, projeção completa de 12 meses, categorias personalizadas, relatórios e tendências, todos os widgets, exportação CSV e sincronização pelo seu iCloud pessoal. Existe um teste: ao cadastrar o primeiro cartão ou a primeira parcela, começam 7 dias de Premium, sem cartão e sem renovação automática.
+O **Premium** é um pagamento único de **R$ 19,90**, com acesso vitalício — não é assinatura e nada se renova. Ele libera cartões e parcelas ilimitados, projeção completa de 12 meses, categorias personalizadas, relatórios e tendências, todos os widgets, exportação CSV e sincronização pelo seu iCloud pessoal. Existe um teste: ao cadastrar o primeiro cartão ou a primeira parcela, começam 7 dias de Premium, sem cartão e sem renovação automática.
 
 Os limites honestos: **o MeuGrana é só para iPhone (iOS 17+), sem versão para Android** — e ele organiza e mostra, não quita dívida nem negocia com o banco.
 
@@ -86,7 +86,7 @@ Os limites honestos: **o MeuGrana é só para iPhone (iOS 17+), sem versão para
 |---|---|---|
 | Plataformas | iPhone, iPad e Android | Somente iPhone (iOS 17+) |
 | Custo para começar | Grátis, com compras dentro do app | Grátis |
-| Plano pago | Confira na loja | Pagamento único de R$ 29,90, acesso vitalício, sem assinatura |
+| Plano pago | Confira na loja | Pagamento único de R$ 19,90, acesso vitalício, sem assinatura |
 | Registro de gastos | Manual, ligado a um cartão | Manual |
 | Conexão com banco | Não, segundo a listagem da loja | Nunca |
 | Dados | Guardados no aparelho, segundo a listagem da loja | No aparelho, 100% offline |

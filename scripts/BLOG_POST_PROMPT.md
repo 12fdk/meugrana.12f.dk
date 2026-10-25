@@ -76,7 +76,7 @@ https://apps.apple.com/app/id6759177555?ct=blog-<slug>&mt=8
 - 100% offline
 - Widget de resumo do mês na tela de início (os demais widgets são Premium)
 
-**Premium** — pagamento único de R$ 29,90 (as of 2026-10 — always read the live price from `pricing.premium.price` in `public/js/main.js`, never from memory or from this brief), acesso vitalício. Não é assinatura e não se renova. Versões antigas chegaram a oferecer planos mensal e anual; esses planos não são mais vendidos, mas quem assinou na época mantém o acesso. A 7-day Premium trial starts when the user adds their first parcela or card, with no card required and no auto-renewal (`faq.q13.a` in `public/js/main.js`):
+**Premium** — pagamento único de R$ 19,90 (as of 2026-10 — always read the live price from `pricing.premium.price` in `public/js/main.js`, never from memory or from this brief), acesso vitalício. Não é assinatura e não se renova. Versões antigas chegaram a oferecer planos mensal e anual; esses planos não são mais vendidos, mas quem assinou na época mantém o acesso. A 7-day Premium trial starts when the user adds their first parcela or card, with no card required and no auto-renewal (`faq.q13.a` in `public/js/main.js`):
 - Cartões e parcelas ilimitados
 - **Projeção completa de 12 meses**
 - Categorias personalizadas
