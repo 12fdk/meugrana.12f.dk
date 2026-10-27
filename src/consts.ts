@@ -17,18 +17,26 @@ export const AUTHOR_BIO =
   "Robert Jensen é o desenvolvedor independente por trás do MeuGrana. Cria apps para iPhone na Dinamarca e escreve guias práticos sobre parcelas, cartão de crédito e controle financeiro para o público brasileiro.";
 export const AUTHOR_SITE = "https://12f.dk";
 
-const APP_STORE_ID = "6759177555";
+export const APP_STORE_ID = "6759177555";
+
+/**
+ * Apple provider token. With `ct`, it lets App Store Connect attribute web
+ * downloads to a campaign; without it the Campaign column stays empty
+ * (12fdk/meugrana#394).
+ */
+export const APP_STORE_PROVIDER_TOKEN = "127521693";
 
 /** App Store Connect reads `ct` into the Campaign column. Max 40 characters. */
 const APP_STORE_CT_MAX = 40;
 
 /**
  * Tagged App Store link. `mt=8` is the iOS app media type.
- * Do not add `pt=` (provider token) unless Connect still leaves Campaign empty.
+ * Every App Store link on the site must carry both `ct` and `pt`;
+ * tools/test_app_store_links.py fails the build otherwise.
  */
 export function appStoreCampaignUrl(token: string): string {
   const ct = token.slice(0, APP_STORE_CT_MAX);
-  return `https://apps.apple.com/app/id${APP_STORE_ID}?ct=${encodeURIComponent(ct)}&mt=8`;
+  return `https://apps.apple.com/app/id${APP_STORE_ID}?ct=${encodeURIComponent(ct)}&pt=${APP_STORE_PROVIDER_TOKEN}&mt=8`;
 }
 
 /** Homepage and site-chrome CTAs. */
@@ -52,13 +60,14 @@ export const APP_STORE_BADGE_URL = `${APP_STORE_BADGE_BASE}pt-br?size=250x83`;
 
 // Premium price. One number, one place — it was left at R$ 19,90 in the
 // SoftwareApplication JSON-LD for the whole of 12fdk/meugrana#365, which is
-// the copy Google and the AI crawlers read. Raised to R$ 29,90 on 2026-09-11.
+// the copy Google and the AI crawlers read. Raised to R$ 29,90 on 2026-09-11,
+// back to R$ 19,90 on ~2026-09-20 (the site kept saying 29,90 until #394).
 // When it changes: edit here, then grep for the display strings in
 // src/data/faq.ts, src/pages/*.astro, src/utils/aiDiscovery.ts and the blog,
 // and run `node scripts/sync-faq-i18n.mjs`.
-export const PRICE_BRL = "29.90";        // schema.org numeric, BRL
-export const PRICE_DISPLAY_PT = "R$ 29,90";
-export const PRICE_DISPLAY_EN = "R$ 29.90";
+export const PRICE_BRL = "19.90";        // schema.org numeric, BRL
+export const PRICE_DISPLAY_PT = "R$ 19,90";
+export const PRICE_DISPLAY_EN = "R$ 19.90";
 
 // Homepage meta description. Also the WebSite JSON-LD description.
 // Free-plan-safe: the 12-month projection is Premium (see public/js/main.js).

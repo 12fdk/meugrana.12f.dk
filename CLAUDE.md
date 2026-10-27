@@ -6,7 +6,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 Landing page for **MeuGrana**, an iOS finance app (parcelas/financas). Astro static site hosted on GitHub Pages at meugrana.12f.dk.
 
-App Store: https://apps.apple.com/app/id6759177555?ct=site-meugrana&mt=8 (`ct` scheme lives in `src/consts.ts`: `site-meugrana` for site chrome, `blog-<slug>` truncated to 40 for posts, `llms-meugrana` for `/llms.txt` and `/ai.txt`)
+App Store: https://apps.apple.com/app/id6759177555?ct=site-meugrana&pt=127521693&mt=8 (`ct` scheme lives in `src/consts.ts`: `site-meugrana` for site chrome, `blog-<slug>` truncated to 40 for posts, `llms-meugrana` for `/llms.txt` and `/ai.txt`)
 
 ## Development
 
@@ -75,7 +75,7 @@ Uses IntersectionObserver for fade-in effects. Respects `prefers-reduced-motion`
 
 ## Testing
 
-The only automated tests are for the blog job's tools — the topic digest (`tools/reddit-topics.py`) and the cover post-process (`scripts/gen_blog_covers.py --publish`, needs Pillow). unittest, no network:
+`tools/test_app_store_links.py` guards three things (12fdk/meugrana#394): every App Store link carries `ct=` **and** `pt=127521693` (without `pt`, App Store Connect cannot attribute web downloads), the layout has the `apple-itunes-app` Smart App Banner, and every prose price matches `PRICE_DISPLAY_*` in `src/consts.ts`. Other automated tests are for the blog job's tools — the topic digest (`tools/reddit-topics.py`) and the cover post-process (`scripts/gen_blog_covers.py --publish`, needs Pillow). unittest, no network:
 
 ```bash
 python3 -m unittest discover -s tools -p 'test_*.py'

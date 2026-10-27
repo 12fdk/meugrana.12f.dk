@@ -17,7 +17,7 @@ faq:
       Dá para começar grátis em qualquer opção desta lista. Planos pagos
       costumam valer a pena quando você tem vários cartões e muitas parcelas
       ativas — no MeuGrana, por exemplo, o Premium (pagamento único de
-      R$ 29,90, acesso vitalício) libera cartões e parcelas ilimitados e a
+      R$ 19,90, acesso vitalício) libera cartões e parcelas ilimitados e a
       projeção completa de 12 meses.
   - q: "O que é projeção de fatura e por que ela importa?"
     a: >-
@@ -80,7 +80,7 @@ Mas não escala. Com quatro ou cinco compras parceladas em dois cartões, a nota
 
 ### MeuGrana: foco total em parcelas
 
-O [MeuGrana](https://apps.apple.com/app/id6759177555?ct=blog-melhor-app-para-controlar-parcelas&mt=8) parte de uma premissa diferente: em vez de ser mais um app de orçamento geral, ele foca no problema específico das compras parceladas.
+O [MeuGrana](https://apps.apple.com/app/id6759177555?ct=blog-melhor-app-para-controlar-parcelas&pt=127521693&mt=8) parte de uma premissa diferente: em vez de ser mais um app de orçamento geral, ele foca no problema específico das compras parceladas.
 
 Você registra a compra uma vez — "notebook, 10x de R$ 350, cartão X" — e o app distribui as parcelas nos meses seguintes, mostrando em qual você está ("3 de 10") em cada cartão. A funcionalidade central é a **projeção da fatura dos próximos 12 meses**: antes de parcelar qualquer coisa nova, você vê quanto de cada fatura futura já está comprometido.
 
@@ -89,7 +89,7 @@ Outros pontos que pesam na prática:
 - **Registro manual, sem conectar o banco.** Seus dados ficam só no aparelho — para quem valoriza privacidade, é decisivo. E como registrar leva segundos, o "custo" do manual é baixo.
 - **Feito para o Brasil:** categorias brasileiras e suporte a PIX, boleto e vale-refeição, além do cartão.
 - **Dashboard mensal** para ver o mês atual de relance, e funciona offline.
-- **Grátis para baixar.** O plano Premium — pagamento único de R$ 29,90, com acesso vitalício — libera cartões e parcelas ilimitados, projeção completa de 12 meses, categorias personalizadas, relatórios, widgets, exportação CSV e sincronização via iCloud.
+- **Grátis para baixar.** O plano Premium — pagamento único de R$ 19,90, com acesso vitalício — libera cartões e parcelas ilimitados, projeção completa de 12 meses, categorias personalizadas, relatórios, widgets, exportação CSV e sincronização via iCloud.
 
 A limitação honesta: é **só para iPhone** — não há versão Android por enquanto. E se você quer sincronização bancária automática, não é aqui — o registro manual é uma escolha deliberada do app, não uma falta.
 
@@ -114,6 +114,6 @@ Depende do seu problema real:
 
 - **Quer visão completa do orçamento, com gastos importados do banco?** Teste um app consolidado como Mobills ou Organizze e veja qual interface funciona melhor para você.
 - **Gosta de montar seu próprio sistema e tem disciplina semanal?** A planilha continua imbatível em flexibilidade — só não subestime a manutenção.
-- **Sua dor é especificamente parcela — prever as próximas faturas sem entregar acesso ao banco?** Aí o MeuGrana é a opção desenhada exatamente para isso, com a projeção de 12 meses como peça central. Se você usa iPhone, vale [baixar grátis e testar](https://apps.apple.com/app/id6759177555?ct=blog-melhor-app-para-controlar-parcelas&mt=8) com suas parcelas reais.
+- **Sua dor é especificamente parcela — prever as próximas faturas sem entregar acesso ao banco?** Aí o MeuGrana é a opção desenhada exatamente para isso, com a projeção de 12 meses como peça central. Se você usa iPhone, vale [baixar grátis e testar](https://apps.apple.com/app/id6759177555?ct=blog-melhor-app-para-controlar-parcelas&pt=127521693&mt=8) com suas parcelas reais.
 
 O pior cenário é o mais comum: não usar nada e descobrir o tamanho do compromisso só quando a fatura fecha. Qualquer opção acima é melhor do que isso.

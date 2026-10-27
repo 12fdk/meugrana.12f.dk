@@ -8,6 +8,7 @@ import {
   WEBSITE_ID,
   PERSON_ID,
   APP_STORE_URL,
+  APP_STORE_ID,
   SITE_DESCRIPTION,
   IOS_REQUIREMENT_PT,
 } from "../consts";
@@ -91,6 +92,8 @@ const siteEntities = {
     <title>{title}</title>
     {description && <meta name="description" content={description} />}
     <meta name="theme-color" content="#006B4F" />
+    <!-- Smart App Banner: Safari on iPhone shows "Open"/"Get" for the app (12fdk/meugrana#394). -->
+    <meta name="apple-itunes-app" content={`app-id=${APP_STORE_ID}`} />
     {
       noindex ? (
         <meta name="robots" content="noindex, follow" />
