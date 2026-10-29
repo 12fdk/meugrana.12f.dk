@@ -109,6 +109,13 @@ SCENES = {
         "wall, the left door painted solid ochre and the right door painted "
         "solid pale blue, simple iron hinges, no signs, no lettering, no house "
         "numbers, soft morning light, straight-on view",
+    # seed: 777410 — car key fob on a stack of blank paper + ceramic dish/cup,
+    # on a light-oak hallway console by the window, plants behind, clean render
+    "parcela-de-emprestimo-no-orcamento":
+        "a plain black car key with blank unmarked fob buttons resting on a "
+        "neat bundle of blank unmarked paper sheets, beside a ceramic dish and "
+        "a cup, on a light-oak hallway console under a soft window light in the "
+        "morning, potted plants in the background, side view",
 }
 
 # Inline photos. Different scenes from the covers above.

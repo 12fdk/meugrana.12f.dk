@@ -4,7 +4,7 @@ description: "Compensa pagar dívida ou deixar arder? Entenda o prazo de 5 anos 
 keyword: "compensa pagar dívida"
 publishDate: 2026-10-15
 tags: ["dívidas", "negociação", "nome sujo"]
-relatedSlugs: ["como-sair-do-rotativo-do-cartao", "minimo-do-cartao-o-que-oculta", "reserva-de-emergencia-para-quem-vive-de-parcelas"]
+relatedSlugs: ["como-sair-do-rotativo-do-cartao", "minimo-do-cartao-o-que-oculta", "reserva-de-emergencia-para-quem-vive-de-parcelas", "parcela-de-emprestimo-no-orcamento"]
 faq:
   - q: "Sujar o nome persegue pelo resto da vida?"
     a: >-

@@ -56,6 +56,7 @@ automatically; per-post clicks are tracked in Umami as
 | 39 | `dividir-contas-casa-casal` | dividir contas casa casal | Mid | ✅ 2026-10-09 |
 | 40 | `compensa-pagar-divida` | compensa pagar dívida | Top | ✅ 2026-10-15 |
 | 41 | `meus-cartoes-ou-meugrana` | meus cartões ou meugrana | Bottom | ✅ 2026-10-22 |
+| 42 | `parcela-de-emprestimo-no-orcamento` | parcela de empréstimo no orçamento | Mid | ✅ 2026-10-29 |
 
 > Note: three posts were generated on 2026-07-17 while validating the automated
 > pipeline. To avoid a same-day flood on the blog, only the last (#16) was kept
@@ -84,6 +85,14 @@ automatically; per-post clicks are tracked in Umami as
 > comparison cadence (post #41), not from this week's Reddit themes: the
 > uncovered themes (empréstimo/financiamento; renda variável; poupar) do not
 > map to an app comparison. First comparison post after #38–#40.
+
+> Keyword check 2026-10-29 for `parcela de empréstimo no orçamento`: page 1 was
+> loan calculators, bank blogs (Sicredi, Santander, Nubank product pages) and
+> smaller finance sites (ClickGrátis, Meutudo) — mixed results, no all-
+> Nubank/Serasa exact-match page, so the long-tail budget-test angle stayed
+> (new keyword, no Backlog row; published as #42). Topic from this week's
+> Reddit theme "Empréstimo, consignado, financiamento e consórcio" (3 posts),
+> verbatim title "Fiz um empréstimo de 6k e não faço idéia de como vou pagar".
 
 ## Backlog (validate keyword before writing)
 

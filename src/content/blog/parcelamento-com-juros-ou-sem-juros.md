@@ -4,7 +4,7 @@ description: "Saiba identificar um parcelamento com juros ou sem juros: compare 
 keyword: "parcelamento com juros ou sem juros"
 publishDate: 2026-07-16
 tags: ["juros", "parcelas", "compras"]
-relatedSlugs: ["vale-a-pena-parcelar", "como-sair-do-rotativo-do-cartao"]
+relatedSlugs: ["vale-a-pena-parcelar", "como-sair-do-rotativo-do-cartao", "parcela-de-emprestimo-no-orcamento"]
 faq:
   - q: "Como saber se o parcelamento da loja tem juros?"
     a: >-
