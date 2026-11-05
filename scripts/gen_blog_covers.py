@@ -116,6 +116,14 @@ SCENES = {
         "neat bundle of blank unmarked paper sheets, beside a ceramic dish and "
         "a cup, on a light-oak hallway console under a soft window light in the "
         "morning, potted plants in the background, side view",
+    # seed: 904213 — brass two-pan balance scale (pans tilted) on a dark slate
+    # slab by a bright window, no text/no people, clean render
+    "orcamento-com-renda-variavel":
+        "a brass two-pan balance scale with its pans tilted to one side, the "
+        "empty pans plain and unmarked, standing on a polished dark slate stone "
+        "slab on a tiled floor, tall bright window behind, soft morning light, "
+        "three-quarter angle, plain unmarked surfaces, no numbers, no letters, "
+        "no coins, no paper, no notebook, no desk",
 }
 
 # Inline photos. Different scenes from the covers above.

@@ -4,7 +4,7 @@ description: "Reserva de emergência para quem vive de parcelas: como separar um
 keyword: "reserva de emergência parcelas"
 publishDate: 2026-08-27
 tags: ["reserva de emergência", "parcelas", "orçamento"]
-relatedSlugs: ["como-sair-do-rotativo-do-cartao", "quanto-da-fatura-esta-comprometida", "fatura-do-cartao-veio-alta-o-que-fazer", "como-planejar-o-13-salario"]
+relatedSlugs: ["como-sair-do-rotativo-do-cartao", "quanto-da-fatura-esta-comprometida", "fatura-do-cartao-veio-alta-o-que-fazer", "como-planejar-o-13-salario", "orcamento-com-renda-variavel"]
 faq:
   - q: "Reserva de emergência para quem vive de parcelas deve começar de quanto?"
     a: >-

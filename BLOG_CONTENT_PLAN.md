@@ -57,6 +57,7 @@ automatically; per-post clicks are tracked in Umami as
 | 40 | `compensa-pagar-divida` | compensa pagar dívida | Top | ✅ 2026-10-15 |
 | 41 | `meus-cartoes-ou-meugrana` | meus cartões ou meugrana | Bottom | ✅ 2026-10-22 |
 | 42 | `parcela-de-emprestimo-no-orcamento` | parcela de empréstimo no orçamento | Mid | ✅ 2026-10-29 |
+| 43 | `orcamento-com-renda-variavel` | orçamento com renda variável | Top | ✅ 2026-11-05 |
 
 > Note: three posts were generated on 2026-07-17 while validating the automated
 > pipeline. To avoid a same-day flood on the blog, only the last (#16) was kept
@@ -93,6 +94,15 @@ automatically; per-post clicks are tracked in Umami as
 > (new keyword, no Backlog row; published as #42). Topic from this week's
 > Reddit theme "Empréstimo, consignado, financiamento e consórcio" (3 posts),
 > verbatim title "Fiz um empréstimo de 6k e não faço idéia de como vou pagar".
+
+> Keyword check 2026-11-05 for `orçamento com renda variável`: page 1 was
+> smaller personal-finance sites (Auro, GrabrFi, Capital à Vista, PlanPenny,
+> iadodinheiro) and Mercado Pago on "orçamento com renda variável" — no
+> Nubank/Serasa exact-match page, so the floor-vs-average (piso vs média)
+> angle stayed (new keyword, no Backlog row; published as #43). Topic from this
+> week's Reddit theme "MEI, autônomo, freela: renda que muda todo mês" (2
+> posts), verbatim title "Preciso organizar minha vida financeira aos 19 anos:
+> ganho R$ 3.120, mas gasto muito com Uber, alimentação e c".
 
 ## Backlog (validate keyword before writing)
 
