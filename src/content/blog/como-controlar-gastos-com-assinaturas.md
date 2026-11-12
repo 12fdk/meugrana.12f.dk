@@ -4,7 +4,7 @@ description: "Assinaturas são parcelas que nunca acabam. Aprenda a controlar ga
 keyword: "controlar gastos com assinaturas"
 publishDate: 2026-07-16
 tags: ["assinaturas", "gastos recorrentes", "organização"]
-relatedSlugs: ["planilha-de-gastos-mensais-alternativa", "como-evitar-compras-por-impulso"]
+relatedSlugs: ["planilha-de-gastos-mensais-alternativa", "como-evitar-compras-por-impulso", "assinatura-mensal-ou-anual"]
 faq:
   - q: "Como descobrir todas as assinaturas que eu pago?"
     a: >-

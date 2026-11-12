@@ -124,6 +124,14 @@ SCENES = {
         "slab on a tiled floor, tall bright window behind, soft morning light, "
         "three-quarter angle, plain unmarked surfaces, no numbers, no letters, "
         "no coins, no paper, no notebook, no desk",
+    # seed: 777028 (777001 + index 27) — plain green hardcover book on oak table,
+    # potted plant left, green mug + small dish right, radiator behind, clean render
+    "assinatura-mensal-ou-anual":
+        "a single thick hardcover book with a plain deep-green unmarked cloth "
+        "cover lying flat on a light oak coffee table in a quiet living room, "
+        "a small brass bookend beside it, soft window daylight, three-quarter "
+        "angle, plain unmarked surfaces, no letters, no numbers, no title on "
+        "the cover",
 }
 
 # Inline photos. Different scenes from the covers above.

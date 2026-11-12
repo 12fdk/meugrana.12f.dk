@@ -58,6 +58,7 @@ automatically; per-post clicks are tracked in Umami as
 | 41 | `meus-cartoes-ou-meugrana` | meus cartões ou meugrana | Bottom | ✅ 2026-10-22 |
 | 42 | `parcela-de-emprestimo-no-orcamento` | parcela de empréstimo no orçamento | Mid | ✅ 2026-10-29 |
 | 43 | `orcamento-com-renda-variavel` | orçamento com renda variável | Top | ✅ 2026-11-05 |
+| 44 | `assinatura-mensal-ou-anual` | assinatura mensal ou anual | Mid | ✅ 2026-11-12 |
 
 > Note: three posts were generated on 2026-07-17 while validating the automated
 > pipeline. To avoid a same-day flood on the blog, only the last (#16) was kept
@@ -104,14 +105,23 @@ automatically; per-post clicks are tracked in Umami as
 > posts), verbatim title "Preciso organizar minha vida financeira aos 19 anos:
 > ganho R$ 3.120, mas gasto muito com Uber, alimentação e c".
 
+> Keyword check 2026-11-12 for `assinatura mensal ou anual`: page 1 was the
+> vendors' own plan pages (Canva, CapCut, PebMed/Whitebook) plus generic
+> plan-explainer posts (Certisign, Mettzer) — no Nubank/Serasa/InfoMoney
+> exact-match page, so the comparison angle stayed (Backlog #24, published as
+> #44). Topic from the Backlog fallback: this week's Reddit digest had a single
+> uncovered theme ("poupar", 1 post, below the 2-post minimum), so the
+> lowest-numbered Backlog row was used.
+
 ## Backlog (validate keyword before writing)
 
 | # | Working title | Keyword idea | Funnel | Notes |
 |---|---------------|--------------|--------|-------|
-| 24 | Assinatura mensal ou anual: quando cada uma compensa | assinatura mensal ou anual | Mid | Comparativo de custo total ao longo de 12–36 meses |
 | 25 | Como anotar gastos no papel sem planilha | anotar gastos no papel | Bottom | Alternativa baixa-fricção para quem não quer app nem planilha |
 | 26 | Como separar o PIX do trabalho da conta da casa | separar pix do trabalho da casa | Mid | Para quem recebe freela na mesma conta que paga aluguel e mercado |
 | 27 | Conta de luz alta no orçamento do mês | conta de luz alta orçamento | Mid | O que revisar quando a conta sobe, sem tratar o aumento como renda que sumiu |
+| 45 | Assinatura no cartão: como parcelar e quando vale a pena | parcelar assinatura no cartão | Mid | Ligação direta com parcelas-ocupam-limite; o anual parcelado trava o limite o ano todo |
+| 46 | Quanto custa ficar no streaming dois anos | streaming quanto custa 2 anos | Top | Custo acumulado de assinaturas ao longo de 2 anos, com auditoria de uso (topo de funil) |
 
 ## Per-post checklist
 

@@ -6,6 +6,7 @@ publishDate: 2026-07-24
 tags: ["parcelas", "cartão de crédito", "limite"]
 relatedSlugs:
   - "quanto-da-fatura-esta-comprometida"
+  - "assinatura-mensal-ou-anual"
   - "como-organizar-compras-parceladas"
   - "fechamento-da-fatura-como-funciona"
   - "limite-baixo-cartao-credito"
