@@ -344,7 +344,6 @@ angle), Dia dos Namorados (June 12 — the next plan), Imposto de Renda season
 
 | Week of | # | Format | Series | Feature / message | Hook (pt-BR, first 1–2 s) | Look / scene (start point; must differ from recent looks) | Status |
 |---|---|---|---|---|---|---|---|
-| Nov 16 | 4 | Reel | Fantasma | Parcelas por cartão | "Comprou em 12x na Black Friday? A última parcela chega no fim de 2027." | laje in Rio at sunset, water tank and plastic chairs, orange haze; bold/laranja | built 2026-11-12 6af5b099734cc297074c |
 | Nov 16 | 5 | Carousel | Qual fatura? | Fechamento | "Seu cartão fecha antes ou depois do dia 27? Isso muda a fatura da Black Friday." | two blank cards on a yellow plastic table, beer-crate stools, night flash | queued |
 | Nov 23 | 1 | Reel | Placar | Projeção | "Black Friday é sexta. Sua fatura de dezembro já começa em R$ 1.380 — antes de comprar." (publish by Nov 26) | empty mall car park at 6am, concrete, sodium lamps fading to dawn; bold/verde | queued |
 | Nov 23 | 2 | Reel | No app | Comprovante | "Comprou na Black Friday? Compartilha o comprovante e o lançamento abre preenchido." | real footage (Transações) + mall entrance at night with bags (no faces), magenta; clean/jade | queued |
@@ -555,3 +554,54 @@ Append-only. Newest at bottom. Never edit or delete rows.
 | 2026-11-12 | 6aeb2427a09a3ec7212b "Black Friday é dia 27. Se o cartão fecha dia 25, a compra só entra na fatura seguinte." (reel, Qual fatura?) | IG r0/l0/c0/s0/sh0 · FB null · Umami 7d 0 ig/0 fb referrers, 0 store taps | NO-DATA | first review (published 2026-11-04T12:31Z, 8 days ago): doc metrics all zero, metricsUpdatedAt still 2026-11-04T14:00Z (>24h stale, 8 days); FB metrics null. No verdict possible; re-run next night. No failed posts in the schedule. |
 | 2026-11-12 | 6aec72539504dc9e6af2 "Dezembro, janeiro, fevereiro: veja o que já está comprometido antes da Black Friday." (reel, Cena) | IG r0/l0/c0/s0/sh0 · FB null · Umami 7d 0 ig/0 fb referrers, 0 store taps | NO-DATA | first review (published 2026-11-05T12:16Z, 7 days ago): doc metrics all zero, metricsUpdatedAt still 2026-11-05T14:00Z (>24h stale, 7 days); FB metrics null. No verdict possible; re-run next night. No failed posts in the schedule. |
 | 2026-11-12 | 6af5b099734cc297074c "Comprou em 12x na Black Friday? A última parcela chega no fim de 2027." (reel, Fantasma) | created ready, stored slot 2026-11-16T15:00:00Z (Mon, 12h BRT — first free slot of the Nov 16 week; ≥20h from every taken slot: latest real publish 6af30fab 11-10T12:49Z, stored slots 11-17T15:00Z and 11-18T15:00Z belong to the week's other posts; the §9 early-publish anomaly means publish-social posts it as soon as the 20h gap opens — it is already open — so the post is expected to publish tonight rather than hold to the slot — logged); funnel flat (2 pageviews 7d vs 3, 1 store tap, 0 social-attributed) so product-focused (Parcelas por cartão: the last parcela of a 12x Black Friday purchase lands at the end of 2027) | BUILT | Nov 16 week #4 row — after plan_prune removed the published Nov 16 #3 row (6af45de1), #4 is the first queued row; the week of Nov 16 starts Mon 2026-11-16, 4 days out — inside the 7-day window. Look: Fantasma · bold/laranja #ffa940 · laje no Rio à noite, flash direto, cadeiras laranja + caixa d'água, azul da madrugada · music v3 (rotation position 6 of v1,v2,v5,v4,v0,v3 — the last 5 reels used v1 (11-02), v2 (11-04), v4 (11-05), v5 (11-09), v0 (11-11); v3 is next in the rotation and the least recently used — last v3 reel 10-29). Reel 15.0 s, bold/laranja skin (accent #ffa940, ink #1a1a1a), end card bg #004d38 (oldest usable of the recent set: #006b4f 11-11, #e5f2ee 11-09; #1a1a1a end cards and flat plates trip the look ledger per the 10-26/10-29 precedent — no plates). 5 fresh "flash da noite" 9:16 stills (prefix mg-social-20261112: a chairs + tank wide / b stacked chairs / c tank low angle / d chair at railing / e row of chairs — e take 1 came out ambient-lit without a hard flash shadow and was re-rendered as take 2 with a hard flash; all five final takes vision-checked clean — no text, numbers, logos, faces, hands or screens). The row's "sunset, orange haze" was adjusted to §3 (night/dim interior: blue hour with a direct flash); the row's setting (laje in Rio, water tank, plastic chairs) and orange accent kept — flagged, §5 not changed. On-screen number: 12 × R$ 110 = R$ 1.320 (exemplo, labelled on screen and in both captions); the last parcela at the end of 2027 per the calendar hooks table (Black Friday 2026-11-27 + 12x). Sum check passed programmatically (12×110=1320). Verbatim claim: "Acompanhe todas as suas compras parceladas em um só lugar. Veja parcela atual, valor restante e quando cada parcelamento termina." (full line in both captions; on-screen the tail "Quando cada parcelamento termina" + "parcela atual, valor restante e o fim de cada um", Oct 21 precedent). Spec: motion repo reels/fantasma-bf-12x.json + docs/fantasma-bf-12x.md (assets committed). Render: all PASS; WARN true peak -0.7 dBTP (limiter 1.1 dB, within the ≤3 dB budget). IG 506 chars, FB rewrite 378 chars, 5/4 hashtags. Gate 1 passed; Claude design and review unavailable — `claude-consult` failed with "Failed to authenticate: OAuth session expired and could not be refreshed" (claude-consult check: not logged in; fix: `spark-hermes claude-login` on the host). Not reviewed by Claude. No failed posts in the schedule. `plan_prune.py` removed 1 published row (6af45de1). |
+
+## 9. Open questions & watch items
+
+- **Bio links** (owner: Robert) — what do the IG and FB bios link to today?
+  Proposal: the App Store with its own campaign token, e.g.
+  `https://apps.apple.com/app/id6759177555?ct=social-instagram&pt=127521693&mt=8` (and
+  `ct=social-facebook`), so App Store Connect counts social installs. "Link na
+  bio" stays out of posts until this is confirmed.
+- **No `/go/?src=` hop** (owner: Robert) — the site has none, so Umami cannot
+  tie a visit to a post. Event Stories has one; adding it here is its own PR.
+- **Real app footage is not on the spark** (owner: Robert) — a real pt-BR
+  screen recording exists: `12fdk/meugrana`
+  `fastlane/previews/pt-BR/IPHONE_67/parcelas.mp4` (19.7 s, 1290×2796, light
+  mode, sample data: dashboard 0–14 s, Cartões 14–16 s, card detail 16–18 s,
+  Transações 18–19.7 s). Hermes cannot read that repo. Copy it to
+  `/workspace/motion/assets/meugrana/footage-parcelas.mp4` to unlock the 8
+  "No app" rows. Its sample data shows real bank names on cards — decide if
+  that is OK in ads. It is short: record more pt-BR footage (Projeção, the
+  comprovante share sheet, widgets, the last-parcela moment) when possible.
+- **True count-up reel** (owner: Robert) — the 2026-06-16 reel (reach 44) came
+  from the platform's old number template, which no longer exists. Placar now
+  steps the number in cuts. A Remotion "number reveal" composition in
+  `12fdk/motion` (number counting up, parcela list) would restore the real
+  animation; decide if it is worth building.
+- **Flat colour plates vs the look ledger** (owner: Hermes) — Placar reels use
+  solid colour plates. If `marketing-post` flags frames as a repeat, switch the
+  plate colour or use a fresh still instead; never `--allow-similar`. Log it.
+- **Brand config conflicts with the pipeline** (owner: Robert) — the app
+  record's `comfyuiStylePreset` asks for "iPhone app mockup style … no stock
+  photography, illustration or custom graphics", and the brand tone asks for
+  "App mockups in iPhone frames". The pipeline forbids phone screens and app UI
+  in generated media, so §3 uses photographs (fresh, never stock) and the real
+  footage instead. Update the brand config to match, or tell Hermes otherwise.
+- **Stories decision** (owner: Robert) — the brand wants daily stories; the
+  pipeline is feed-only, and 8 stories failed in Apr–May.
+- **Claims from the old posts** (owner: Robert) — the Apr–Sep posts claimed a
+  weekly Sunday summary, "notificações inteligentes" and Brazilian categories
+  (Feira, Padaria, Açougue). None is on the site, so §5 bans them. If the app
+  has them, put them on the site first; then add them to the claim sheet.
+- **Upload size cap** (owner: Hermes) — the platform's upload path was found to
+  reject request bodies between 8 and 12 MB (Event Stories, 2026-10-15).
+  `marketing-post` re-encodes videos over the cap; check the reel arrives.
+- **Appwrite `umamiWebsiteId`** (owner: Hermes) — check that the funnel report
+  uses `6c5c421d-…` for `meugrana`; it does in `social_funnel_report.py`.
+- **Publish time** (owner: Hermes) — 15:00 / 23:00 UTC is a starting guess from
+  the brand config's auto-observed active hour (14:00 UTC). After 4 weeks of
+  §8 rows, compare the two slots and propose one.
+- **Old posts' review** — the 110 old posts are baseline only; §7 judges posts
+  from this plan on.
+- `optimize-guidelines` is dormant — enable once §8 has ≥ 4 weeks of reviews.
+- **Early-publish anomaly** (owner: Hermes) — four of the last five plan posts were published before their stored `scheduledAt` without the field being flipped: 6ad201b8 published 2026-10-19T13:37Z vs stored 10-21T15:00Z; 6ad5efac published 2026-10-19T16:46Z vs stored 10-27T15:00Z; 6ad745c3 published 2026-10-20T10:46Z vs stored 10-28T15:00Z; 6ad89b42 published 2026-10-21T11:15Z vs stored 10-29T15:00Z. 6ad0bae6 published ~9 min after its stored slot (10-15T12:49Z vs 12:40Z). publish-social execution logs show empty output, so the cause is not visible there — check the function source/config. Until resolved, pick slots conservatively (the 2026-10-21 build used Thu 10-29 15:00Z, clear of the stale stored slots). 2026-11-03: 6ae9c7d1 stored 11-11T15:00Z, published 11-03T11:46Z (~8 days early, in the first publish-social cycle after the 20h gap opened) — slots cannot hold a post back; the row's "publish by" deadline is the only real constraint.
