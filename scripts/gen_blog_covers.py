@@ -132,6 +132,15 @@ SCENES = {
         "a small brass bookend beside it, soft window daylight, three-quarter "
         "angle, plain unmarked surfaces, no letters, no numbers, no title on "
         "the cover",
+    # seed: 777029 (777001 + index 28) — blank ruled sheet + pencil + brass clip,
+    # clean render, no text
+    "anotar-gastos-no-papel":
+        "a single blank sheet of ruled paper with plain empty lines and no "
+        "printed words, held at the top-left corner by one small brass clip, "
+        "a wooden pencil lying diagonally across the empty paper, on a worn "
+        "light-wood kitchen counter, warm window daylight from the left, "
+        "three-quarter angle, plain unmarked surfaces, no letters, no "
+        "numbers, no handwritten marks, no coffee, no notebook",
 }
 
 # Inline photos. Different scenes from the covers above.

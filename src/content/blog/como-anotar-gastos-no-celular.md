@@ -8,6 +8,7 @@ relatedSlugs:
   - "como-organizar-compras-parceladas"
   - "planilha-de-gastos-mensais-alternativa"
   - "como-evitar-compras-por-impulso"
+  - "anotar-gastos-no-papel"
 faq:
   - q: "Anotar gastos no celular realmente funciona?"
     a: >-
