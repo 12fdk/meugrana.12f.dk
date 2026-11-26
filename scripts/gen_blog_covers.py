@@ -141,6 +141,15 @@ SCENES = {
         "light-wood kitchen counter, warm window daylight from the left, "
         "three-quarter angle, plain unmarked surfaces, no letters, no "
         "numbers, no handwritten marks, no coffee, no notebook",
+    # seed: 904522 — two ceramic piggy banks (work vs house) on a white-painted
+    # windowsill, plants at both sides, clean render (904521 rejected: coin with a "2")
+    "separar-pix-do-trabalho-da-casa":
+        "two small ceramic piggy banks standing side by side on a narrow "
+        "concrete windowsill inside a room, one solid matte blue and the "
+        "other solid off-white, both with open empty coin slots on top and "
+        "no coins anywhere, soft late-afternoon window light, shallow depth "
+        "of field, plain unmarked surfaces, no letters, no numbers, no paper, "
+        "no notebook",
 }
 
 # Inline photos. Different scenes from the covers above.

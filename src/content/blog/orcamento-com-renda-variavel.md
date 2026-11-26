@@ -4,7 +4,7 @@ description: "Monte seu orçamento com renda variável pelo piso, não pela méd
 keyword: "orçamento com renda variável"
 publishDate: 2026-11-05
 tags: ["orçamento", "renda variável", "freela"]
-relatedSlugs: ["como-sair-do-rotativo-do-cartao", "reserva-de-emergencia-para-quem-vive-de-parcelas", "como-anotar-gastos-no-celular"]
+relatedSlugs: ["como-sair-do-rotativo-do-cartao", "reserva-de-emergencia-para-quem-vive-de-parcelas", "como-anotar-gastos-no-celular", "separar-pix-do-trabalho-da-casa"]
 faq:
   - q: "Como fazer um orçamento quando a renda muda todo mês?"
     a: >-

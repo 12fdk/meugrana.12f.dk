@@ -60,6 +60,7 @@ automatically; per-post clicks are tracked in Umami as
 | 43 | `orcamento-com-renda-variavel` | orçamento com renda variável | Top | ✅ 2026-11-05 |
 | 44 | `assinatura-mensal-ou-anual` | assinatura mensal ou anual | Mid | ✅ 2026-11-12 |
 | 45 | `anotar-gastos-no-papel` | anotar gastos no papel | Bottom | ✅ 2026-11-19 |
+| 47 | `separar-pix-do-trabalho-da-casa` | separar pix do trabalho da casa | Mid | ✅ 2026-11-26 |
 
 > Note: three posts were generated on 2026-07-17 while validating the automated
 > pipeline. To avoid a same-day flood on the blog, only the last (#16) was kept
@@ -114,12 +115,20 @@ automatically; per-post clicks are tracked in Umami as
 > uncovered theme ("poupar", 1 post, below the 2-post minimum), so the
 > lowest-numbered Backlog row was used.
 
+> Keyword check 2026-11-26 for `separar pix do trabalho da casa`: page 1 was
+> smaller blogs and fintech blogs (Sigeflex, Mercado Pago, Remindoo,
+> VemProJuca, FreelaSemCrise) on the PF/PJ separation angle, no
+> Nubank/Serasa/major-portal exact-match page, so the household-budget angle
+> for freelancers stayed (Backlog #26, published as #47). Topic via the
+> brief's fallback: this week's digest (10 feeds) had a single uncovered theme
+> ("poupar", 1 post, below the 2-post minimum), so the lowest-numbered
+> unpublished Backlog row was used. Backlog row 25 removed (stale — already
+> published as #45 on 2026-11-19).
+
 ## Backlog (validate keyword before writing)
 
 | # | Working title | Keyword idea | Funnel | Notes |
 |---|---------------|--------------|--------|-------|
-| 25 | Como anotar gastos no papel sem planilha | anotar gastos no papel | Bottom | Alternativa baixa-fricção para quem não quer app nem planilha — publicada como #45 em 2026-11-19 (keyword validada: SERP sem Nubank/Serasa exact-match) |
-| 26 | Como separar o PIX do trabalho da conta da casa | separar pix do trabalho da casa | Mid | Para quem recebe freela na mesma conta que paga aluguel e mercado |
 | 27 | Conta de luz alta no orçamento do mês | conta de luz alta orçamento | Mid | O que revisar quando a conta sobe, sem tratar o aumento como renda que sumiu |
 | 45 | Assinatura no cartão: como parcelar e quando vale a pena | parcelar assinatura no cartão | Mid | Ligação direta com parcelas-ocupam-limite; o anual parcelado trava o limite o ano todo |
 | 46 | Quanto custa ficar no streaming dois anos | streaming quanto custa 2 anos | Top | Custo acumulado de assinaturas ao longo de 2 anos, com auditoria de uso (topo de funil) |
